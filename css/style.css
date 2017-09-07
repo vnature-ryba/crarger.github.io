@@ -1,0 +1,586 @@
+
+/* font-family: "amonumentotitul_bold"; */
+
+@font-face {
+    font-family: "amonumentotitul_bold";
+    src: url("../fonts/amonumentotitul_bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "OxygenRegular"; */
+
+@font-face {
+    font-family: "OxygenRegular";
+    src: url("../fonts/OxygenRegular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*--------------Смежные классы------*/
+
+body {
+    font-family: OxygenRegular;
+}
+
+button, input {
+    outline: none;
+}
+
+.btn-orange {
+    background: #e47b39;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    height: 73px;
+    max-width: 458px;
+    width: 100%;
+    font-size: 2.8em;
+    transition: 0.2s;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.radial-cell {
+    border-radius: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.btn-white {
+    max-width: 457px;
+    width: 100%;
+    height: 72px;
+    border-radius: 50px;
+    background: #fff;
+    border: none;
+    color: #e37b3a;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 2.8em;
+}
+
+p {
+    color: #666666;
+    font-size: 1.4em;
+}
+
+/*----------end Смежные классы------*/
+
+/*--------------Block-start---------*/
+
+/*--------------Header--------------*/
+
+.logo {
+    color: fff;
+    font-size: 24pt;
+}
+
+.logo img {
+    max-height: 67px;
+}
+
+.call-number {
+    font-size: 2em;
+    padding: 20px 15px;
+}
+
+.call-number p {
+    color: #fff;
+    font-size: 28px;
+}
+
+.call-number span {
+    font-size: 1.4em;
+}
+
+/*--------------end Header--------------*/
+
+.block-start {
+    background: url("../images/system/block-start-bg.jpg");
+    padding: 45px 0 45px 0;
+    background-size: cover;
+}
+
+.block-start .title h1 {
+    color: #fff;
+    font-size: 6.3em;
+    padding: 45px 0 65px 0;
+    font-family: amonumentotitul_bold;
+    line-height: 1.2em;
+    transition: 0.2s;
+}
+
+.areas-of-use .title {
+    color: #fff;
+    font-size: 2.1em;
+    padding: 105px 0 35px 0;
+}
+
+.block-start .cell {
+    width: 150px;
+    display: inline-block;
+    margin: 15px auto;
+    vertical-align: top;
+}
+
+.block-start .cell p {
+    font-size: 1.35em;
+    color: #fff;
+    padding-top: 5px;
+}
+
+.block-start .cell .radial-cell {
+    width: 87px;
+    height: 87px;
+    background: #008364;
+    margin: auto;
+    transition: 0.2s;
+}
+
+/*------------end Block-start-----------*/
+
+/*------------block-examples-----------*/
+
+.examples {
+    display: flex;
+    max-width: 1920px;
+    overflow: hidden;
+    max-height: 480px;
+}
+
+.examples .image {
+    display: flex;
+    width: 12.5%;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.2s;
+    max-height: 483px;
+    height: 100%;
+}
+
+.examples .image:hover {
+    transition: 0.2s;
+    width: 29%;
+
+}
+
+.examples .img-1 {
+    background-image: url("../images/content/examples/1.jpg");
+}
+.examples .img-2 {
+    background-image: url("../images/content/examples/2.jpg");
+}
+.examples .img-3 {
+    background-image: url("../images/content/examples/3.jpg");
+}
+.examples .img-4 {
+    background-image: url("../images/content/examples/4.jpg");
+}
+.examples .img-5 {
+    background-image: url("../images/content/examples/5.jpg");
+}
+.examples .img-6 {
+    background-image: url("../images/content/examples/6.jpg");
+}
+.examples .img-7 {
+    background-image: url("../images/content/examples/7.jpg");
+}
+.examples .img-8 {
+    background-image: url("../images/content/examples/8.jpg");
+}
+
+.examples .mask {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, #008364, rgba(0, 131, 100, 0));
+    opacity: 0;
+    color: #fff;
+    padding: 57px;
+    transition: 0.2s;
+}
+
+.mask p {
+    color: #fff;
+    font-size: 29px;
+}
+
+.examples .image:hover .mask {
+  opacity: 1;
+    transition: 0.5s;
+}
+
+
+/*------------end block-examples-----------*/
+
+/*------------block-bended-panels-----------*/
+
+.block-bended-panels {
+    padding: 25px 0;
+}
+
+.block-bended-panels .block-title {
+    padding-bottom: 15px;
+}
+
+.block-bended-panels .diagramm-sezes {
+    background-image: url(../svg/gitter-sizes.svg);
+    max-height: 680px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    max-width: 1067px;
+    margin: 30px auto 0 auto;
+    background-size: contain;
+    text-align: right;
+    padding: 0 36px;
+    background-position: center bottom;
+}
+
+.block-bended-panels .title {
+    font-family: amonumentotitul_bold;
+    color: #008263;
+    font-size: 3em;
+}
+
+.block-bended-panels .subtitle {
+    font-family: amonumentotitul_bold;
+    color: #008263;
+    font-size: 2.1em;
+    margin: 0;
+}
+
+.block-bended-panels .text-area p {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.block-bended-panels p span {
+    color: #000;
+}
+
+/*------------end block-bended-panels-----------*/
+
+/*------------ Block-production-----------*/
+
+.block-production {
+    padding: 25px 0;
+}
+
+.block-production .title {
+    font-family: amonumentotitul_bold;
+    color: #008263;
+    font-size: 3em;
+}
+
+.block-production .image {
+    max-width: 300px;
+}
+
+.block-production .img-2 {
+    margin: auto;
+}
+
+.block-production .image img {
+    max-width: 100%;
+}
+
+.block-production p {
+    color: #666666;
+    font-size: 1.25em;
+}
+
+.block-production p span {
+    color: #000;
+}
+
+/*------------end Block-production-----------*/
+
+/*------------ Examples-slider---------------*/
+
+.examples-slider .title {
+    font-family: amonumentotitul_bold;
+    color: #008263;
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+
+.examples-slider .left-image, .examples-slider .right-image {
+    height: 454px;
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: flex-end;
+}
+
+.examples-slider .img-xs {
+    height: 354px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.examples-slider .img-1 {background-image: url(../images/content/slider/1.jpg);}
+.examples-slider .img-2 {background-image: url(../images/content/slider/2.jpg);}
+.examples-slider .img-3 {background-image: url(../images/content/slider/3.jpg);}
+.examples-slider .img-4 {background-image: url(../images/content/slider/4.jpg);}
+.examples-slider .img-5 {background-image: url(../images/content/slider/5.jpg);}
+.examples-slider .img-6 {background-image: url(../images/content/slider/6.jpg);}
+.examples-slider .img-7 {background-image: url(../images/content/slider/7.jpg);}
+.examples-slider .img-8 {background-image: url(../images/content/slider/8.jpg);}
+.examples-slider .img-9 {background-image: url(../images/content/slider/9.jpg);}
+.examples-slider .img-10 {background-image: url(../images/content/slider/10.jpg);}
+.examples-slider .img-11 {background-image: url(../images/content/slider/11.jpg);}
+.examples-slider .img-12 {background-image: url(../images/content/slider/12.jpg);}
+.examples-slider .img-13 {background-image: url(../images/content/slider/13.jpg);}
+.examples-slider .img-14 {background-image: url(../images/content/slider/14.jpg);}
+.examples-slider .img-15 {background-image: url(../images/content/slider/15.jpg);}
+.examples-slider .img-16 {background-image: url(../images/content/slider/16.jpg);}
+.examples-slider .img-17 {background-image: url(../images/content/slider/17.jpg);}
+.examples-slider .img-18 {background-image: url(../images/content/slider/18.jpg);}
+.examples-slider .img-19 {background-image: url(../images/content/slider/19.jpg);}
+.examples-slider .img-20 {background-image: url(../images/content/slider/20.jpg);}
+.examples-slider .img-21 {background-image: url(../images/content/slider/21.jpg);}
+.examples-slider .img-22 {background-image: url(../images/content/slider/22.jpg);}
+.examples-slider .img-23 {background-image: url(../images/content/slider/23.jpg);}
+.examples-slider .img-24 {background-image: url(../images/content/slider/24.jpg);}
+.examples-slider .img-25 {background-image: url(../images/content/slider/25.jpg);}
+.examples-slider .img-26 {background-image: url(../images/content/slider/26.jpg);}
+
+
+.examples-slider .mask {
+    padding: 85px 35px 15px 35px;
+    color: #fff;
+    background: linear-gradient(to top, #3a7353, rgba(58, 115, 83, 0));
+    width: 100%;
+}
+
+.examples-slider .owl-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.examples-slider .owl-carousel {
+    display: flex;
+    align-items: center;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    background-image: url(../svg/slide-arrow.svg);
+    background-color: transparent;
+    height: 110px;
+    width: 110px;
+    background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-nav .owl-next:hover, .owl-carousel .owl-nav .owl-prev:hover {
+    background-color: transparent;
+    background-image: url(../svg/slide-arrow.svg);
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    background-image: url(../svg/slide-arrow.svg);
+    background-color: transparent;
+    transform: rotate(180deg);
+    height: 110px;
+    width: 110px;
+    background-repeat: no-repeat;
+}
+
+/*------------ end Examples-slider---------------*/
+
+/*------------ To-order ---------------------*/
+
+.to-order {
+    background-color: #e47b39;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+/*------------ End To-order -----------------*/
+
+/*------------ block-complectation-----------*/
+
+.block-complectation {
+    background: radial-gradient(circle, #048163,#048163, #43704f, #43704f);
+    padding: 25px 0 55px 0;
+}
+
+.block-complectation .title{
+    font-family: amonumentotitul_bold;
+    color: #e47b39;
+    font-size: 3em;
+}
+
+.block-complectation .radial-cell {
+    width: 245px;
+    height: 245px;
+    float: right;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.block-complectation .radial-cell img {
+    max-width: 100%;
+}
+
+.block-complectation .fixing-examples {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block-complectation .fixing-examples .radial-cell {
+    width: 181px;
+    height: 181px;
+    background: #fff;
+    display: flex;
+    margin: 15px 8px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.block-complectation .fixing-examples .radial-cell img {
+    max-width: 100%;
+}
+
+.block-complectation h3 {
+    color: #fff;
+    font-family: amonumentotitul_bold;
+    font-size: 1.8em;
+    padding: 20px 0;
+}
+
+.block-complectation p {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+/*------------end block-complectation-----------*/
+
+/*------------gates-and-wickets-----------*/
+
+.gates-and-wickets {
+    padding: 25px 0 100px 0;
+}
+
+.gates-and-wickets .title {
+    font-family: amonumentotitul_bold;
+    color: #008263;
+    font-size: 3em;
+}
+
+.gates-and-wickets .content {
+    background-image: url(../images/system/gates-and-wickets-bg.jpg);
+    max-height: 612px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    display: table;
+    width: 100%;
+    max-width: 1062px;
+    margin: 30px auto;
+    background-size: contain;
+}
+
+.gates-and-wickets .content .table-row, .gates-and-wickets .content .table-row-bottom {
+    display: table-row;
+}
+
+.gates-and-wickets .content .table-row div, .gates-and-wickets .content .table-row-bottom div {
+    display: table-cell;
+}
+
+.gates-and-wickets .content .table-row div {
+    padding-top: 30px;
+}
+
+.gates-and-wickets .content .table-row-bottom div {
+    vertical-align: bottom;
+}
+
+.gates-and-wickets .content p span {
+    color: #010101;
+}
+
+
+/*------------end gates-and-wickets-----------*/
+
+
+/*------------fences-----------*/
+
+.fences {
+    background-image: url("../images/system/wires.jpg");
+    background-size: cover;
+}
+
+.fences .block-title {
+    background-image: linear-gradient(to bottom, #fff, #fff, transparent);
+}
+
+.fences .content {
+    display: flex;
+    justify-content: center;
+    padding: 238px 0 58px 0;
+    flex-wrap: wrap;
+}
+
+.fences .title {
+    font-family: amonumentotitul_bold;
+    color: #008263;
+    font-size: 3em;
+}
+
+.fences span {
+    color: #000;
+}
+
+.fences .radial-cell {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    background-color: #fff;
+    margin: 20px;
+}
+
+/*------------end fences-----------*/
+
+
+/*------------ Footer -------------*/
+
+.footer {
+    background-image: radial-gradient(circle, #048163,#048163, #43704f, #43704f);
+    min-height: 80px;
+    padding: 10px;
+}
+
+.footer .text-orange {
+    color: #e37c39;
+}
+
+.footer .list {
+    list-style-type: square;
+}
+
+.footer p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.footer i {
+    font-size: 6px;
+    vertical-align: middle;
+    padding: 0 5px 4px 5px;
+    color: #fff;
+}
+
+/*---------- End Footer -----------*/

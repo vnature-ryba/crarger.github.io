@@ -1,0 +1,137 @@
+@media (min-width: 1620px) {
+    .container {
+        width: 1600px;
+    }
+}
+
+@media (max-width: 362px) {
+    .block-production .title {
+        font-size: 2.2em;
+    }
+    .block-start .cell .radial-cell {
+        height: inherit;
+        width: inherit;
+    }
+}
+
+@media (max-width: 475px) {
+    .block-complectation .title {
+        font-size: 2.2em;
+    }
+
+    .block-complectation h3 {
+        font-size: 1.3em;
+    }
+
+    .btn-white {
+        font-size: 1.8em;
+    }
+
+    .examples-slider .title {
+        font-size: 2.2em;
+    }
+
+    .block-bended-panels .subtitle {
+        font-size: 1.7em;
+    }
+
+    .block-bended-panels .title {
+        font-size: 2.2em;
+    }
+
+    .fences .title {
+        font-size: 2.2em;
+    }
+
+    .block-start .title h1 {
+        padding: 15px 0 46px 0;
+    }
+
+
+    .examples .image {
+        width: 100%;
+        max-height: 460px;
+    }
+
+    .examples .image:hover {
+        width: 100%;
+    }
+
+    .examples .mask {
+        padding: 15px;
+    }
+
+
+}
+
+@media (min-width: 475px) and (max-width: 768px){
+    .examples .image {
+        width: 50%;
+        max-height: 475px;
+    }
+
+    .examples .image:hover {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1300px){
+    .examples .image {
+        width: 25%;
+        max-height: 395px;
+    }
+
+    .examples .image:hover {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-orange {
+        font-size: 1.8em;
+    }
+
+    .block-start .title h1 {
+        font-size: 3em;
+    }
+
+    .block-start {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        height: inherit;
+    }
+
+    .block-complectation .radial-cell {
+        float: none;
+        margin: auto;
+    }
+
+    .examples-slider .left-image, .examples-slider .right-image {
+        width: 100%;
+    }
+
+    .mask p {
+        font-size: 25px;
+    }
+
+    .fences {
+        background-attachment: fixed;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .block-production .image {
+        margin: auto;
+    }
+}
+
+@media (max-width: 1300px) {
+    .examples {
+        max-height: inherit;
+        flex-wrap: wrap;
+    }
+}
