@@ -18,7 +18,8 @@ $(".owl-carousel").owlCarousel({
         responsive : {
 
         768 : {
-            nav : true
+            nav : true,
+            items: 2,
 }
 }
 });

@@ -1,0 +1,781 @@
+<html>
+<head>
+    <title>Спец. технология</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=utf-8">
+    <meta property="og:image" content="images/content">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="block-start">
+    <div class="container">
+        <div class="header">
+            <div class="row">
+                <div class="navbar-brand">
+                    <a href="/">
+                        <div class="logo">
+                            <div class="row">
+                                <img src="images/system/logo.png">
+                                <span>
+                                    СпецТехнология
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="navbar-right">
+                    <a href="tel: +78202596696">
+                        <div class="call-number">
+                            <p>+7(8202) <span>59-66-96</span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <div class="title">
+                <h1>
+                    Сварные 3D-панели<br>системы ограждений
+                </h1>
+            </div>
+            <button class="btn-orange">Заказать 3D-панели</button>
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="areas-of-use">
+                        <p class="title">Применяются для ограждения и защиты территорий любойзначимости:</p>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-sport.svg">
+                            </div>
+                            <p>Спортплощадки и сооружения</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-parking.svg">
+                            </div>
+                            <p>Стоянки и парковки</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-roads.svg">
+                            </div>
+                            <p>Авто и ЖД трассы,<br>вокзалы</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-recreation.svg">
+                            </div>
+                            <p>Парки и<br>зоны отдыха</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-airplane.svg">
+                            </div>
+                            <p>Аэропорты</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-warehouse.svg">
+                            </div>
+                            <p>Склады и терминалы</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-house.svg">
+                            </div>
+                            <p>Коттеджные поселки<br>и придомовые территории</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-factory.svg">
+                            </div>
+                            <p>Опасные производственные объекты</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-school.svg">
+                            </div>
+                            <p>Школы и<br>детские<br>сады</p>
+                        </div>
+                        <div class="cell">
+                            <div class="radial-cell">
+                                <img src="svg/icon-building.svg">
+                            </div>
+                            <p>Временные ограждения строящихся объектов</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<section class="examples">
+    <div class="image img-1">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+    <div class="image img-2">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+    <div class="image img-3">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+    <div class="image img-4">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+    <div class="image img-5">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+    <div class="image img-6">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+    <div class="image img-7">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+    <div class="image img-8">
+        <div class="mask">
+            <p>Спортивные площидки и сооружения</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="block-production">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="title">
+                    Как производятся 3D-панели
+                </h2>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="col-lg-3">
+                    <div class="image">
+                        <img src="images/content/block-production/gitter+.png">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <p>
+                        Для изготовления сетчатых сварных панелей применяется <span>низкоуглеродистая проволока термически
+                    необработанная горячеоцинкованная</span> по ГОСТ 3282-74 «<span>Проволока стальная низкоуглеродистая общего назначения</span>».
+                    </p>
+                    <p>
+                        Специальная подготовка поверхности панелей перед покраской с применением т.н.
+                        <span>нанокерамики</span>
+                        позволяют достичь прочного сцепления слоёв покрытий цинка и полиэфирных красок, что является
+                        залогом
+                        привлекательного внешнего вида и повышенной стойкости в условиях неблагоприятного атмосферного
+                        воздействия.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="col-lg-4">
+                    <p>
+                        Панель проходит последовательно через тоннель спрейной ОБРАБОТКИ <span>НЕСКОЛЬКО СТАДИЙ ПОДГОТОВКИ ПОВЕРХНОСТИ.</span>
+                    </p>
+                    <p>
+                        После подготовки поверхности заготовки по конвейеру проходят стадию сушки и затем поступают на
+                        автоматическую установку нанесения порошковых покрытий.
+                    </p>
+                    <p>
+                        Нанесение порошкового материала на поверхность изделий осуществляется при помощи <span>12 автоматическиз распылителей.</span>
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="image img-2">
+                        <img src="images/content/block-production/welding.jpg">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <p>
+                        Краска для получения атмосферостойких защитно-декоративных покрытий соответствует ТУ
+                        2329-002-73039694-2007
+                        «<span>Краски порошковые полиэфирные торговых марок Interpon, Syntha Pulvin</span>», имеет
+                        паспорт безопасности и санитарно-эпидемиологического заключения.
+                    </p>
+                    <p>
+                        Цветовая гамма согласно <span>каталогу RAL.</span> Гарантия на защитно-декоративное покрытие не
+                        менее 20 лет.
+                    </p>
+                    <p>
+                        После нанесения полимерного покрытия изделия по конвейеру поступают в печь полимеризации, где
+                        покрытие запекается образуя <span>защитный слой.</span>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section class="block-bended-panels">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 text-center block-title">
+                <h2 class="title">
+                    3D-ВАРНЫЕ ПАНЕЛИ с V-ОБРАЗНЫМ ИЗГИБОМ
+                </h2>
+                <p>
+                    ТУ 5262-001-97495310-2011 <span>«Системы ограждений металлические сетчатые»</span>
+                </p>
+            </div>
+            <div class="col-md-7">
+                <img src="svg/gitter-scheme.svg" alt="">
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-xs-12 text-area">
+                        <p>
+                            Диаметр используемой проволоки — <span>от 4,0 до 5,0 мм</span><br>
+                            Высота панелей — <span>от 530 до 2930 мм</span><br>
+                            Ширина панелей — <span>до 3000 мм</span><br>
+                            Ход вертикальных стержней — <span>кратно 50 мм</span><br>
+                            Шаг горизонтальных стержней — <span>бесступенчато от 25 мм</span>
+                        </p>
+                        <p>
+                            3D - изгиб — <span>от 2 до 4 изгибов</span> по высоте карты. Количество изгибов
+                            определяется размерами карты и желанием заказчика. Изгибы увеличивают
+                            жесткость панели, а также могут служить местом для укладки электрических кабелей и пр.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <img src="svg/gitter-scheme-a.svg" alt="">
+                                </div>
+
+                            </div>
+                            <img src="svg/gitter-scheme-c.svg" alt="">
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <img src="svg/gitter-scheme-b.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="diagramm-sezes">
+        <p>
+            Что означают цифры и буквы в маркировке панелей?
+        </p>
+        <p class="subtitle">
+            П-ЦП-50/50-200-4,0-2030Х2500-4Р
+        </p>
+        <p>
+            панель ограждения высотой 2030 мм, длиной 2500<br>
+            оцинкованная покрытая полиэфирной краской,<br>
+            размер ячейки 50&times200 мм,<br>
+            диаметр проволоки Ø 4,0 мм,<br>
+            с 4-мя изгибами (ребрами жесткости).
+        </p>
+    </div>
+</section>
+
+
+<section class="examples-slider">
+    <div class="container text-center">
+        <h2 class="title">
+            ПРИМЕРЫ ОГРАЖДЕНИЙ, ВЫПОЛНЕННЫЕ С ПОМОЩЬЮ НАШИХ ПАНЕЛЕЙ
+        </h2>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+                <div>
+                    <div class="img-1 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-2 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-3 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-4 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-5 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-6 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-7 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-8 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-9 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-10 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-11 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-12 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-13 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-14 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-15 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-16 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-16 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-17 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-18 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-19 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-20 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-21 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-22 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-23 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-24 img-xs">
+                        <div class="mask">
+                            <p>
+                                Аквапарк «Радужный» г. Череповец
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-25 img-xs">
+                        <div class="mask">
+                            <p>
+                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
+                                ограждением)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="to-order">
+    <div class="container text-center">
+        <button class="btn-white">Заказать 3D-панели</button>
+    </div>
+</section>
+
+
+<section class="block-complectation">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="title">
+                    ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ ИЗДЕЛИЙ
+                </h2>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="row">
+
+                    <div class="col-md-5">
+                        <div class="radial-cell">
+                            <img src="images/system/post.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>
+                            СТОЛБЫ МЕТАЛЛИЧЕСКИЕ<br>ДЛЯ КРЕПЛЕНИЯСВАРОЧНЫХ ПАНЕЛЕЙ
+                        </h3>
+                        <p>
+                            Изготовливаются из оцинкованного профиля длиной от 1,00 до 5,00 м.<br>
+                            Столб — квадрат в сечении 60&times60 или 80&times80 мм с толщиной стенки 1,5-2,0 мм.
+                        </p>
+                        <p>
+                            Столб может быть дополнительно окрашен в цвета сварных панелей по той же технологии.
+                            Издение поставляется с заглушками верха столба и комплектом креплений панели.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 text-center">
+
+
+                <h3>КРЕПЛЕНИЯ «ХОМУТ» И «СКОБА»</h3>
+
+                <div class="fixing-examples">
+                    <div class="radial-cell">
+                        <img src="images/content/block-complectation/1.jpg">
+                    </div>
+                    <div class="radial-cell">
+                        <img src="images/content/block-complectation/2.jpg">
+                    </div>
+                    <div class="radial-cell">
+                        <img src="images/content/block-complectation/3.jpg">
+                    </div>
+                    <div class="radial-cell">
+                        <img src="images/content/block-complectation/4.jpg">
+                    </div>
+                    <div class="radial-cell">
+                        <img src="images/content/block-complectation/5.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="gates-and-wickets">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="title">
+                    ВОРОТА И КАЛИТКИ
+                </h2>
+            </div>
+            <div class="col-xs-12">
+                <div class="content">
+                    <div class="table-row">
+                        <div>
+                            <p>Возможно производство ворот общей длиной <span>до 5,8м.</span></p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row-bottom">
+                        <div>
+                            <p>С замком поставляются</p>
+                            <p>только <span>калитки</span>,</p>
+                            <p>на <span>ворота</span> привариваются петли</p>
+                            <p>под навесной замок.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="fences">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="title">
+                    КОЗЫРЬКОВЫЕ ОГРАЖДЕНИЯ (НАВЕРШИ)
+                </h2>
+                <p>
+                    Возможна комплектация <span>Y-образными</span> и <span>Г-образными навершами</span> для монтажа
+                    колючей
+                    проволоки и/или дополнительных плоских секций панелей.<br>
+                    Наклонные части создают дополнительное припятствие при ограждении объектов с повышенными
+                    требованиями
+                    к безопасности
+                </p>
+            </div>
+            <div class="col-xs-12">
+                <div class="content">
+                    <div class="radial-cell">
+                        <img src="images/content/fences/1.jpg" alt="">
+                    </div>
+                    <div class="radial-cell">
+                        <img src="images/content/fences/2.jpg" alt="">
+                    </div>
+                    <div class="radial-cell">
+                        <img src="images/content/fences/3.jpg" alt="">
+                    </div>
+                    <div class="radial-cell">
+                        <img src="images/content/fences/4.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="to-order">
+    <div class="container text-center">
+        <button class="btn-white">Заказать 3D-панели</button>
+    </div>
+</section>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <p>
+                © 2017
+                <a href="/">
+                    <span class="text-orange">ООО «Спецтехнология»</span>
+                </a>
+                <span>
+                    <i class="fa fa-circle" aria-hidden="true"></i> г. Череповец, ул. Западная, дом 12, офис 10
+                </span>
+                <a href="tel:+78202596696">
+                <span class="text-orange">
+                    <i class="fa fa-circle" aria-hidden="true"></i> +7 (8202) 59-66-96
+                </span>
+                </a>
+                <a href="mailto:spectechnologia@mail.ru">
+                     <span class="text-orange">
+                    <i class="fa fa-circle" aria-hidden="true"></i> spectechnologia@mail.ru
+                </span>
+                </a>
+                <br>
+                Разработано в
+                <a href="http://novecs.ru/" target="_blank">
+                    <span class="text-orange">компании «НОВЕКС»</span>
+                </a>
+            </p>
+        </div>
+    </div>
+
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

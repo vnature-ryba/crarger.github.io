@@ -1,10 +1,10 @@
-@media (min-width: 1620px) {
+@media screen and (min-width: 1620px) {
     .container {
         width: 1600px;
     }
 }
 
-@media (max-width: 362px) {
+@media screen and (max-width: 362px) {
     .block-production .title {
         font-size: 2.2em;
     }
@@ -14,7 +14,7 @@
     }
 }
 
-@media (max-width: 475px) {
+@media screen and (max-width: 475px) {
     .block-complectation .title {
         font-size: 2.2em;
     }
@@ -64,7 +64,16 @@
 
 }
 
-@media (min-width: 475px) and (max-width: 768px){
+@media screen and (max-width: 630px) {
+    .call-number, .navbar-brand {
+        float: none;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width: 475px) and (max-width: 768px){
     .examples .image {
         width: 50%;
         max-height: 475px;
@@ -76,7 +85,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1300px){
+@media screen and (min-width: 768px) and (max-width: 1300px){
     .examples .image {
         width: 25%;
         max-height: 395px;
@@ -87,7 +96,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .btn-orange {
         font-size: 1.8em;
     }
@@ -123,13 +132,13 @@
 
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .block-production .image {
         margin: auto;
     }
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     .examples {
         max-height: inherit;
         flex-wrap: wrap;
