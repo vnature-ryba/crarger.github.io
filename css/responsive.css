@@ -82,6 +82,11 @@
         text-align: left;
     }
 
+    .block-complectation .fixing-examples .radial-cell {
+        width: 120px;
+        height: 120px;
+    }
+
 }
 
 @media screen and (max-width: 630px) {
@@ -116,6 +121,14 @@
     }
 }
 
+@media screen and (max-width: 560px) {
+    .fences .radial-cell {
+        width: 120px;
+        height: 120px;
+        margin: 20px auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .btn-orange {
         font-size: 1.8em;
@@ -145,16 +158,16 @@
     .mask p {
         font-size: 25px;
     }
-
-    .fences {
-        background-attachment: fixed;
-    }
+    
 
 }
 
 @media screen and (max-width: 1200px) {
     .block-production .image {
         margin: auto;
+    }
+    .fences .content {
+        padding: 35px 0 58px 0;
     }
 }
 

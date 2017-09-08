@@ -568,6 +568,10 @@ p {
     margin: 20px;
 }
 
+.fences .radial-cell img {
+    max-width: 100%;
+}
+
 /*------------end fences-----------*/
 
 
