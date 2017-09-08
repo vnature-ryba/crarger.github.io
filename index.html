@@ -63,7 +63,7 @@
                     Сварные 3D-панели<br>системы ограждений
                 </h1>
             </div>
-            <button class="btn-orange">Заказать 3D-панели</button>
+            <button class="btn-orange" data-toggle="modal" data-target="#modalOrder">Заказать 3D-панели</button>
             <div class="col-xs-12">
                 <div class="row">
                     <div class="areas-of-use">
@@ -597,7 +597,7 @@
 
 <section class="to-order">
     <div class="container text-center">
-        <button class="btn-white">Заказать 3D-панели</button>
+        <button class="btn-white" data-toggle="modal" data-target="#modalOrder">Заказать 3D-панели</button>
     </div>
 </section>
 
@@ -739,7 +739,7 @@
 
 <section class="to-order">
     <div class="container text-center">
-        <button class="btn-white">Заказать 3D-панели</button>
+        <button class="btn-white" data-toggle="modal" data-target="#modalOrder">Заказать 3D-панели</button>
     </div>
 </section>
 
@@ -772,6 +772,29 @@
             </p>
         </div>
     </div>
+    <!-- ------- Модалки ------- -->
+
+    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------- End Модалки ------- -->
 
 </div>
 <script src="bower_components/jquery/dist/jquery.js"></script>

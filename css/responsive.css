@@ -103,6 +103,10 @@
         vertical-align: middle;
     }
 
+    .mask p {
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (min-width: 568px) and (max-width: 736px) {
@@ -128,6 +132,10 @@
 
     .examples .image:hover {
         width: 50%;
+    }
+
+    .mask p {
+        font-size: 25px;
     }
 
 }
@@ -179,10 +187,6 @@
 
     .examples-slider .left-image, .examples-slider .right-image {
         width: 100%;
-    }
-
-    .mask p {
-        font-size: 25px;
     }
 
 
