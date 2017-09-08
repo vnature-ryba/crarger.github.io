@@ -705,6 +705,11 @@ p {
     margin-bottom: 20px;
 }
 
+.modal-body input[type=text]:focus::-webkit-input-placeholder, .modal-body input[type=tel]:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: 0.2s;
+}
+
 .modal-body p {
     color: #666666;
     padding-bottom: 30px;
