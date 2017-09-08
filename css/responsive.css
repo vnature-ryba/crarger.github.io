@@ -61,6 +61,26 @@
         padding: 15px;
     }
 
+    .block-start .cell {
+        display: flex;
+        width: 100%;
+    }
+
+    .block-start .cell .radial-cell {
+        height: 55px;
+        width: 55px;
+        display: flex;
+        margin: 0;
+    }
+
+    .block-start .cell p {
+        font-size: 1.35em;
+        color: #fff;
+        padding: 0 15px;
+        display: flex;
+        max-width: 190px;
+        text-align: left;
+    }
 
 }
 
