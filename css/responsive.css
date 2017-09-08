@@ -87,6 +87,22 @@
         height: 120px;
     }
 
+    .gates-and-wickets .content {
+        max-height: 480px;
+        margin: 0 auto;
+    }
+
+    .gates-and-wickets .content .table-row div {
+        padding: 0;
+        vertical-align: middle;
+    }
+
+}
+
+@media screen and (min-width: 568px) and (max-width: 736px) {
+    .gates-and-wickets .content {
+        height: 539px;
+    }
 }
 
 @media screen and (max-width: 630px) {
