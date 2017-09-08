@@ -678,6 +678,7 @@ p {
     vertical-align: middle;
     padding: 0 5px 4px 5px;
     color: #fff;
+    display: inline;
 }
 
 /*---------- End Footer -----------*/
