@@ -140,6 +140,19 @@
 
 }
 
+@media screen and (min-width: 768px) {
+    .block-start {
+        box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.58);
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 790px) {
+    .navbar-right {
+        margin-right: -9px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1300px){
     .examples .image {
         width: 25%;
