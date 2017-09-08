@@ -230,6 +230,12 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    .gates-and-wickets .content .table-row-bottom div p {
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .block-production .image {
         margin: auto;
