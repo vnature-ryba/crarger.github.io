@@ -8,6 +8,7 @@
     .block-production .title {
         font-size: 2.2em;
     }
+
     .block-start .cell .radial-cell {
         height: inherit;
         width: inherit;
@@ -52,7 +53,6 @@
     .block-start .title h1 {
         padding: 15px 0 35px 0;
     }
-
 
     .examples .image {
         width: 100%;
@@ -122,9 +122,7 @@
     }
 }
 
-
-
-@media screen and (min-width: 475px) and (max-width: 768px){
+@media screen and (min-width: 475px) and (max-width: 768px) {
     .examples .image {
         width: 50%;
         max-height: 475px;
@@ -160,7 +158,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1300px){
+@media screen and (min-width: 768px) and (max-width: 1300px) {
     .examples .image {
         width: 25%;
         max-height: 395px;
@@ -209,13 +207,34 @@
         width: 100%;
     }
 
+    .modal-body p {
+        font-size: 0.8em;
+    }
 
+    .modal-body input[type=text], .modal-body input[type=tel] {
+        font-size: 1.8em;
+        height: 55px;
+    }
+
+    .modal-body .btn-orange {
+        height: 55px;
+    }
+
+    .modal-header .modal-title {
+        font-size: 1.8em;
+    }
+
+    .modal-header .close {
+        position: relative;
+        bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .block-production .image {
         margin: auto;
     }
+
     .fences .content {
         padding: 35px 0 58px 0;
     }

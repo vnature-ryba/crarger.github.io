@@ -1,4 +1,3 @@
-
 /* font-family: "amonumentotitul_bold"; */
 
 @font-face {
@@ -7,7 +6,6 @@
     font-style: normal;
     font-weight: normal;
 }
-
 
 /* font-family: "OxygenRegular"; */
 
@@ -21,7 +19,7 @@
 /*--------------Смежные классы------*/
 
 body {
-    font-family: OxygenRegular,-apple-system,BlinkMacSystemFont,Helvetica Neue,sans-serif;
+    font-family: OxygenRegular, -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
 }
 
 button, input {
@@ -44,7 +42,6 @@ button, input {
     box-shadow: 0 0 19px rgba(0, 0, 0, 0.20);
     transition: 0.2s;
 }
-
 
 a:hover, a:focus {
     text-decoration: none;
@@ -188,24 +185,31 @@ p {
 .examples .img-1 {
     background-image: url("../images/content/examples/1.jpg");
 }
+
 .examples .img-2 {
     background-image: url("../images/content/examples/2.jpg");
 }
+
 .examples .img-3 {
     background-image: url("../images/content/examples/3.jpg");
 }
+
 .examples .img-4 {
     background-image: url("../images/content/examples/4.jpg");
 }
+
 .examples .img-5 {
     background-image: url("../images/content/examples/5.jpg");
 }
+
 .examples .img-6 {
     background-image: url("../images/content/examples/6.jpg");
 }
+
 .examples .img-7 {
     background-image: url("../images/content/examples/7.jpg");
 }
+
 .examples .img-8 {
     background-image: url("../images/content/examples/8.jpg");
 }
@@ -226,10 +230,9 @@ p {
 }
 
 .examples .image:hover .mask {
-  opacity: 1;
+    opacity: 1;
     transition: 0.5s;
 }
-
 
 /*------------end block-examples-----------*/
 
@@ -338,33 +341,109 @@ p {
     align-items: flex-end;
 }
 
-.examples-slider .img-1 {background-image: url(../images/content/slider/1.jpg);}
-.examples-slider .img-2 {background-image: url(../images/content/slider/2.jpg);}
-.examples-slider .img-3 {background-image: url(../images/content/slider/3.jpg);}
-.examples-slider .img-4 {background-image: url(../images/content/slider/4.jpg);}
-.examples-slider .img-5 {background-image: url(../images/content/slider/5.jpg);}
-.examples-slider .img-6 {background-image: url(../images/content/slider/6.jpg);}
-.examples-slider .img-7 {background-image: url(../images/content/slider/7.jpg);}
-.examples-slider .img-8 {background-image: url(../images/content/slider/8.jpg);}
-.examples-slider .img-9 {background-image: url(../images/content/slider/9.jpg);}
-.examples-slider .img-10 {background-image: url(../images/content/slider/10.jpg);}
-.examples-slider .img-11 {background-image: url(../images/content/slider/11.jpg);}
-.examples-slider .img-12 {background-image: url(../images/content/slider/12.jpg);}
-.examples-slider .img-13 {background-image: url(../images/content/slider/13.jpg);}
-.examples-slider .img-14 {background-image: url(../images/content/slider/14.jpg);}
-.examples-slider .img-15 {background-image: url(../images/content/slider/15.jpg);}
-.examples-slider .img-16 {background-image: url(../images/content/slider/16.jpg);}
-.examples-slider .img-17 {background-image: url(../images/content/slider/17.jpg);}
-.examples-slider .img-18 {background-image: url(../images/content/slider/18.jpg);}
-.examples-slider .img-19 {background-image: url(../images/content/slider/19.jpg);}
-.examples-slider .img-20 {background-image: url(../images/content/slider/20.jpg);}
-.examples-slider .img-21 {background-image: url(../images/content/slider/21.jpg);}
-.examples-slider .img-22 {background-image: url(../images/content/slider/22.jpg);}
-.examples-slider .img-23 {background-image: url(../images/content/slider/23.jpg);}
-.examples-slider .img-24 {background-image: url(../images/content/slider/24.jpg);}
-.examples-slider .img-25 {background-image: url(../images/content/slider/25.jpg);}
-.examples-slider .img-26 {background-image: url(../images/content/slider/26.jpg);}
+.examples-slider .img-1 {
+    background-image: url(../images/content/slider/1.jpg);
+}
 
+.examples-slider .img-2 {
+    background-image: url(../images/content/slider/2.jpg);
+}
+
+.examples-slider .img-3 {
+    background-image: url(../images/content/slider/3.jpg);
+}
+
+.examples-slider .img-4 {
+    background-image: url(../images/content/slider/4.jpg);
+}
+
+.examples-slider .img-5 {
+    background-image: url(../images/content/slider/5.jpg);
+}
+
+.examples-slider .img-6 {
+    background-image: url(../images/content/slider/6.jpg);
+}
+
+.examples-slider .img-7 {
+    background-image: url(../images/content/slider/7.jpg);
+}
+
+.examples-slider .img-8 {
+    background-image: url(../images/content/slider/8.jpg);
+}
+
+.examples-slider .img-9 {
+    background-image: url(../images/content/slider/9.jpg);
+}
+
+.examples-slider .img-10 {
+    background-image: url(../images/content/slider/10.jpg);
+}
+
+.examples-slider .img-11 {
+    background-image: url(../images/content/slider/11.jpg);
+}
+
+.examples-slider .img-12 {
+    background-image: url(../images/content/slider/12.jpg);
+}
+
+.examples-slider .img-13 {
+    background-image: url(../images/content/slider/13.jpg);
+}
+
+.examples-slider .img-14 {
+    background-image: url(../images/content/slider/14.jpg);
+}
+
+.examples-slider .img-15 {
+    background-image: url(../images/content/slider/15.jpg);
+}
+
+.examples-slider .img-16 {
+    background-image: url(../images/content/slider/16.jpg);
+}
+
+.examples-slider .img-17 {
+    background-image: url(../images/content/slider/17.jpg);
+}
+
+.examples-slider .img-18 {
+    background-image: url(../images/content/slider/18.jpg);
+}
+
+.examples-slider .img-19 {
+    background-image: url(../images/content/slider/19.jpg);
+}
+
+.examples-slider .img-20 {
+    background-image: url(../images/content/slider/20.jpg);
+}
+
+.examples-slider .img-21 {
+    background-image: url(../images/content/slider/21.jpg);
+}
+
+.examples-slider .img-22 {
+    background-image: url(../images/content/slider/22.jpg);
+}
+
+.examples-slider .img-23 {
+    background-image: url(../images/content/slider/23.jpg);
+}
+
+.examples-slider .img-24 {
+    background-image: url(../images/content/slider/24.jpg);
+}
+
+.examples-slider .img-25 {
+    background-image: url(../images/content/slider/25.jpg);
+}
+
+.examples-slider .img-26 {
+    background-image: url(../images/content/slider/26.jpg);
+}
 
 .examples-slider .mask {
     padding: 85px 35px 15px 35px;
@@ -425,11 +504,11 @@ p {
 /*------------ block-complectation-----------*/
 
 .block-complectation {
-    background: radial-gradient(circle, #048163,#048163, #43704f, #43704f);
+    background: radial-gradient(circle, #048163, #048163, #43704f, #43704f);
     padding: 25px 0 55px 0;
 }
 
-.block-complectation .title{
+.block-complectation .title {
     font-family: amonumentotitul_bold;
     color: #e47b39;
     font-size: 3em;
@@ -528,14 +607,12 @@ p {
     color: #010101;
 }
 
-
 /*------------end gates-and-wickets-----------*/
-
 
 /*------------fences-----------*/
 
 .fences {
-    background-image: linear-gradient(to bottom, #fff, #fff 15%, rgba(255, 0, 0, 0)),url(../images/system/wires.jpg);
+    background-image: linear-gradient(to bottom, #fff, #fff 15%, rgba(255, 0, 0, 0)), url(../images/system/wires.jpg);
     background-size: cover;
 }
 
@@ -574,11 +651,10 @@ p {
 
 /*------------end fences-----------*/
 
-
 /*------------ Footer -------------*/
 
 .footer {
-    background-image: radial-gradient(circle, #048163,#048163, #43704f, #43704f);
+    background-image: radial-gradient(circle, #048163, #048163, #43704f, #43704f);
     min-height: 80px;
     padding: 10px;
 }
@@ -605,3 +681,54 @@ p {
 }
 
 /*---------- End Footer -----------*/
+
+/*----------- Модалки ------------*/
+
+.modal-content {
+    padding: 15px 20px 0 20px;
+}
+
+.modal-body {
+    padding-top: 0;
+}
+
+.modal-body input[type=text], .modal-body input[type=tel] {
+    display: block;
+    margin: auto;
+    max-width: 460px;
+    width: 100%;
+    height: 74px;
+    border: 2px solid #666666;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.modal-body p {
+    color: #666666;
+    padding-bottom: 30px;
+    font-size: 1.3em;
+}
+
+.modal-header .modal-title {
+    color: #e47b39;
+    font-size: 2.8em;
+    font-family: amonumentotitul_bold;
+}
+
+.modal-header .close {
+    color: #e47b39;
+    opacity: 1;
+    font-size: 2.8em;
+}
+
+::-webkit-input-placeholder {
+    color: #676767;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+/*---------- End Модалки -----------*/
