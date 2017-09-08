@@ -19,7 +19,6 @@
 
     .block-start {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.22)), url(../images/system/block-start-bg.jpg);
-        background-attachment: fixed;
     }
 
     .block-complectation .title {
