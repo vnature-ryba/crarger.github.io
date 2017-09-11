@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -822,9 +820,11 @@
                         Ваши данные не будут использоваться в рекламных целях<br>
                         или передаваться третьим лицам.
                     </p>
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="tel" placeholder="Номер телефона">
-                    <button class="btn-orange">Отправить</button>
+                    <form>
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" class="bfh-phone" placeholder="Номер телефона" name="phoneNumber" data-format="+7 (ddd) ddd-dddd" required>
+                        <button class="btn-orange">Отправить</button>
+                    </form>
                 </div>
                 <div class="modal-footer">
 
@@ -841,6 +841,7 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
+<script src="bower_components/bootstrap-formhelpers/js/bootstrap-formhelpers-phone.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
