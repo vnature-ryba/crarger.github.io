@@ -1,849 +1,689 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="СпецТехнология">
-    <meta property="og:title" content="Сварные 3D-панели системы ограждений">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="http://example.com/page.html">
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:image" content="images/content/og.jpg" />
-    <meta property="og:image:width" content="968">
-    <meta property="og:image:height" content="504">
-
-    <title>Спец. технология</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta property="og:image" content="images/content">
-    <meta name="theme-color" content="#175550">
-    <meta name="msapplication-navbutton-color" content="#175550">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#175550">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <title>Дом не дорого</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
 </head>
 <body>
+<header class="navbar-fixed-top nav-default">
+    <div class="main-content">
 
-<!-- - block-start - -->
-<div class="block-start">
-    <div class="container">
-        <div class="header">
-            <div class="row">
-                <div class="navbar-brand">
-                    <a href="/">
-                        <div class="logo">
-                            <div class="row">
-                                <img src="images/system/logo.png" alt="logotype site">
-                                <span>
-                                    СпецТехнология
-                                </span>
-                            </div>
+        <div class="navbar-header">
+            <div class="logo">
+                <a href="#screen-one">
+                    <img src="svg/logo-light.svg" alt="">
+                </a>
+            </div>
 
-                        </div>
-                    </a>
 
-                </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Меню</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
 
-                <div class="navbar-right">
-                    <a href="tel: +78202596696">
-                        <div class="call-number">
-                            <p>+7(8202) <span>59-66-96</span></p>
-                        </div>
-                    </a>
-                </div>
+        </div>
+        <div class="call-number">
+            <p><a href="tel:+78202626642">+7 (8202) 62-66-42</a></p>
+            <p><a href="tel:+79998459885">+7 999 845-98-85</a></p>
+        </div>
+
+        <div class="city">
+            <label for="">Ваш годод</label>
+            <div class="dropdown">
+                <button class="select dropdown-toggle" type="button" data-toggle="dropdown">Красноярск
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Рязань</a></li>
+                    <li><a href="#">Ржев</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="collapse navbar-collapse" id="menu-collapse">
+
+
+                <ul class="nav navbar-nav">
+                    <li class="navbar-hide"><a href="#catalog">Услуги<span class="caret"></span></a></li>
+                    <li class="navbar-hide"><a href="#working">Проекты<span class="caret"></span></a></li>
+                    <li class="navbar-hide"><a href="#news">Производство<span class="caret"></span></a></li>
+                    <li class="navbar-hide"><a href="#news">Компания<span class="caret"></span></a></li>
+                    <li class="navbar-hide dropdown-submenu active"><a href="#company">Франшиза</a>
+                        <ul class="dropdown-menu">
+                            <li class="navbar-hide"><a href="#">Команда</a></li>
+                            <li class="navbar-hide"><a href="#">Виды услуг</a></li>
+                            <li class="navbar-hide"><a href="#">История и миссия</a></li>
+                            <li class="navbar-hide"><a href="#">Новости компании</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
             </div>
         </div>
 
-        <div class="text-center">
-            <div class="title">
-                <h1>
-                    Сварные 3D-панели<br>системы ограждений
-                </h1>
-            </div>
-            <button class="btn-orange" data-toggle="modal" data-target="#modalOrder">Заказать 3D-панели</button>
-            <div class="col-xs-12">
-                <div class="row">
-                    <div class="areas-of-use">
-                        <p class="title">Применяются для ограждения и защиты территорий любойзначимости:</p>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-sport.svg" alt="svg icon sport">
-                            </div>
-                            <p>Спортплощадки и сооружения</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-parking.svg" alt="svg icon parking">
-                            </div>
-                            <p>Стоянки и парковки</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-roads.svg" alt="svg icon roads">
-                            </div>
-                            <p>Авто и ЖД трассы,<br>вокзалы</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-recreation.svg" alt="svg icon recreation">
-                            </div>
-                            <p>Парки и<br>зоны отдыха</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-airplane.svg" alt="svg icon airplane">
-                            </div>
-                            <p>Аэропорты</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-warehouse.svg" alt="svg icon warehouse">
-                            </div>
-                            <p>Склады и терминалы</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-house.svg" alt="svg icon house">
-                            </div>
-                            <p>Коттеджные поселки<br>и придомовые территории</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-factory.svg" alt="svg icon factory">
-                            </div>
-                            <p>Опасные производственные объекты</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-school.svg" alt="svg icon school">
-                            </div>
-                            <p>Школы и<br>детские<br>сады</p>
-                        </div>
-                        <div class="cell">
-                            <div class="radial-cell">
-                                <img src="svg/icon-building.svg" alt="svg icon building">
-                            </div>
-                            <p>Временные ограждения строящихся объектов</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
     </div>
+
+</header>
+
+<div class="left-menu">
+    <ul>
+        <a href="">
+            <li>Мы делаем</li>
+        </a>
+        <a href="">
+            <li>Почему нужно<br>
+                работать с нами
+            </li>
+        </a>
+        <a href="#screen-three">
+            <li>Как мы работаем</li>
+        </a>
+        <a href="#screen-fourth">
+            <li>Деловые<br>
+                партнёры
+            </li>
+        </a>
+        <a href="#screen-five">
+            <li>Наша работа
+                в цифрах
+            </li>
+        </a>
+        <a href="">
+            <li>Специальное<br>
+                предложение
+            </li>
+        </a>
+        <div class="social-network">
+            <div class="vk">
+
+            </div>
+            <div class="insta">
+
+            </div>
+        </div>
+    </ul>
+
 </div>
-<!-- - End block-start - -->
+
+<section class="screen-one example-classname">
+
+    <div class="owl-carousel owl-theme">
+
+        <div class="item">
+            <img src="img/system/start-page-bg.jpg" alt="">
+            <div class="main-content">
+                <p>Тёплый, надежный загородный дом <br>
+                    <span>«под ключ»</span> по цене квартиры</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/system/slide-2.jpg" alt="">
+            <div class="main-content">
+                <p>Тёплый, надежный загородный дом <br>
+                    <span>«под ключ»</span> по цене квартиры</p>
+            </div>
+        </div>
+    </div>
 
 
-<!-- - examples - -->
-<section class="examples hidden-xs">
-    <div class="image img-1">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
+    <div class="block-content">
+        <div class="main-content">
+
         </div>
     </div>
-    <div class="image img-2">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
+
+    <div class="slide-progress"></div>
+</section>
+
+<section class="screen-three example-classname">
+    <div class="main-content">
+
+        <div class="content">
+            <div class="cell">
+                <div class="image">
+                    <img src="img/system/1.png" alt="">
+                </div>
+                <p class="title">Сфера деятельности</p>
+                <p class="description">Проектирование и строительство
+                    загородных домов</p>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <img src="img/system/2.png" alt="">
+                </div>
+                <p class="title">Опыт более 7&nbspлет</p>
+                <p class="description">Построено 114
+                    загородных&nbspдомов</p>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <img src="img/system/1.png" alt="">
+                </div>
+                <p class="title">Штат сотрудников</p>
+                <p class="description">Только штатные сотрудники
+                    с&nbspгражданством&nbspРФ и&nbspопытом&nbspв&nbspсреднем&nbsp10&nbspлет</p>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <img src="img/system/1.png" alt="">
+                </div>
+                <p class="title">Реальная гарантия</p>
+                <p class="description">Все работы производяться
+                    с&nbspсоблюдением&nbspСНиП</p>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <img src="img/system/5.png" alt="">
+                </div>
+                <p class="title">Все работы под ключ</p>
+                <p class="description">Проектирование, фундамент,
+                    строительство,&nbspотделка&nbspи&nbspт.д.</p>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <img src="img/system/6.png" alt="">
+                </div>
+                <p class="title">Поэтапная оплата</p>
+                <p class="description">Оплата поэтапная наличным
+                    и&nbspбезналичным&nbspрассчётом</p>
+            </div>
         </div>
-    </div>
-    <div class="image img-3">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
-        </div>
-    </div>
-    <div class="image img-4">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
-        </div>
-    </div>
-    <div class="image img-5">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
-        </div>
-    </div>
-    <div class="image img-6">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
-        </div>
-    </div>
-    <div class="image img-7">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
-        </div>
-    </div>
-    <div class="image img-8">
-        <div class="mask">
-            <p>Спортивные площидки и сооружения</p>
-        </div>
+
     </div>
 </section>
-<!-- - End examples - -->
 
+<section class="section screen-fourth example-classname" data-anchor="screen-fourth">
 
-<!-- - block-production - -->
-<section class="block-production">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h2 class="title">
-                    Как производятся 3D-панели
-                </h2>
+    <div class="main-content">
+
+        <h2 class="text-center title">Мы работаем с компаниями:</h2>
+
+        <div class="content">
+            <div class="image">
+                <img src="img/content/1.png" alt="">
             </div>
-
-            <div class="col-xs-12">
-                <div class="col-lg-3">
-                    <div class="image">
-                        <img src="images/content/block-production/gitter+.png" alt="wire">
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Для изготовления сетчатых сварных панелей применяется <span>низкоуглеродистая проволока термически
-                    необработанная горячеоцинкованная</span> по ГОСТ 3282-74 «<span>Проволока стальная низкоуглеродистая общего назначения</span>».
-                    </p>
-                    <p>
-                        Специальная подготовка поверхности панелей перед покраской с применением т.н.
-                        <span>нанокерамики</span>
-                        позволяют достичь прочного сцепления слоёв покрытий цинка и полиэфирных красок, что является
-                        залогом
-                        привлекательного внешнего вида и повышенной стойкости в условиях неблагоприятного атмосферного
-                        воздействия.
-                    </p>
-                </div>
+            <div class="image">
+                <img src="img/content/2.png" alt="">
             </div>
-
-            <div class="col-xs-12">
-                <div class="col-lg-4">
-                    <p>
-                        Панель проходит последовательно через тоннель спрейной ОБРАБОТКИ <span>НЕСКОЛЬКО СТАДИЙ ПОДГОТОВКИ ПОВЕРХНОСТИ.</span>
-                    </p>
-                    <p>
-                        После подготовки поверхности заготовки по конвейеру проходят стадию сушки и затем поступают на
-                        автоматическую установку нанесения порошковых покрытий.
-                    </p>
-                    <p>
-                        Нанесение порошкового материала на поверхность изделий осуществляется при помощи <span>12 автоматических распылителей.</span>
-                    </p>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="image img-2">
-                        <img src="images/content/block-production/welding.jpg" alt="welding">
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <p>
-                        Краска для получения атмосферостойких защитно-декоративных покрытий соответствует ТУ
-                        2329-002-73039694-2007
-                        «<span>Краски порошковые полиэфирные торговых марок Interpon, Syntha Pulvin</span>», имеет
-                        паспорт безопасности и санитарно-эпидемиологического заключения.
-                    </p>
-                    <p>
-                        Цветовая гамма согласно <span>каталогу RAL.</span> Гарантия на защитно-декоративное покрытие не
-                        менее 20 лет.
-                    </p>
-                    <p>
-                        После нанесения полимерного покрытия изделия по конвейеру поступают в печь полимеризации, где
-                        покрытие запекается образуя <span>защитный слой.</span>
-                    </p>
-                </div>
+            <div class="image">
+                <img src="img/content/3.png" alt="">
             </div>
-
-
-        </div>
-    </div>
-</section>
-<!-- - End block-production - -->
-
-
-<!-- - block-bended-panels - -->
-<section class="block-bended-panels">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-xs-12 text-center block-title">
-                <h2 class="title">
-                    3D-ВАРНЫЕ ПАНЕЛИ с V-ОБРАЗНЫМ ИЗГИБОМ
-                </h2>
-                <p>
-                    ТУ 5262-001-97495310-2011 <span>«Системы ограждений металлические сетчатые»</span>
-                </p>
+            <div class="image">
+                <img src="img/content/4.png" alt="">
             </div>
-            <div class="col-md-7">
-                <img src="svg/gitter-scheme.svg" alt="scheme">
+            <div class="image">
+                <img src="img/content/5.png" alt="">
             </div>
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="col-xs-12 text-area">
-                        <p>
-                            Диаметр используемой проволоки — <span>от 4,0 до 5,0 мм</span><br>
-                            Высота панелей — <span>от 530 до 2930 мм</span><br>
-                            Ширина панелей — <span>до 3000 мм</span><br>
-                            Ход вертикальных стержней — <span>кратно 50 мм</span><br>
-                            Шаг горизонтальных стержней — <span>бесступенчато от 25 мм</span>
-                        </p>
-                        <p>
-                            3D - изгиб — <span>от 2 до 4 изгибов</span> по высоте карты. Количество изгибов
-                            определяется размерами карты и желанием заказчика. Изгибы увеличивают
-                            жесткость панели, а также могут служить местом для укладки электрических кабелей и пр.
-                        </p>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="row">
-                                    <img src="svg/gitter-scheme-a.svg" alt="scheme-a">
-                                </div>
-
-                            </div>
-                            <img src="svg/gitter-scheme-c.svg" alt="scheme-c">
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-5">
-                        <div class="row">
-                            <img src="svg/gitter-scheme-b.svg" alt="scheme-b">
-                        </div>
-
-                    </div>
-                </div>
+            <div class="image">
+                <img src="img/content/6.png" alt="">
             </div>
-        </div>
-
-    </div>
-
-    <div class="diagramm-sezes">
-        <p>
-            Что означают цифры и буквы в маркировке панелей?
-        </p>
-        <p class="subtitle">
-            П-ЦП-50/50-200-4,0-2030Х2500-4Р
-        </p>
-        <p>
-            панель ограждения высотой 2030 мм, длиной 2500<br>
-            оцинкованная покрытая полиэфирной краской,<br>
-            размер ячейки 50&times200 мм,<br>
-            диаметр проволоки Ø 4,0 мм,<br>
-            с 4-мя изгибами (ребрами жесткости).
-        </p>
-    </div>
-</section>
-<!-- - End block-bended-panels - -->
-
-
-<!-- - examples-slider - -->
-<section class="examples-slider">
-    <div class="container text-center">
-        <h2 class="title">
-            ПРИМЕРЫ ОГРАЖДЕНИЙ, ВЫПОЛНЕННЫЕ С ПОМОЩЬЮ НАШИХ ПАНЕЛЕЙ
-        </h2>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="owl-carousel owl-theme">
-                <div>
-                    <div class="img-1 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-2 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-3 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-4 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-5 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-6 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-7 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-8 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-9 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-10 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-11 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-12 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-13 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-14 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-15 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-16 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-16 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-17 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-18 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-19 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-20 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-21 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-22 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-23 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-24 img-xs">
-                        <div class="mask">
-                            <p>
-                                Аквапарк «Радужный» г. Череповец
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="img-25 img-xs">
-                        <div class="mask">
-                            <p>
-                                Дорога Вологда - Лоста, Вологодская обл., 2012 год (совмещенная с дорожным
-                                ограждением)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="image">
+                <img src="img/content/7.png" alt="">
             </div>
-        </div>
-    </div>
-
-
-</section>
-<!-- - End examples-slider - -->
-
-
-<!-- - to-order - -->
-<section class="to-order">
-    <div class="container text-center">
-        <button class="btn-white" data-toggle="modal" data-target="#modalOrder">Заказать 3D-панели</button>
-    </div>
-</section>
-<!-- - End to-order - -->
-
-
-<!-- - block-complectation - -->
-<section class="block-complectation">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h2 class="title">
-                    ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ ИЗДЕЛИЙ
-                </h2>
-            </div>
-
-            <div class="col-xs-12">
-                <div class="row">
-
-                    <div class="col-md-5">
-                        <div class="radial-cell">
-                            <img src="images/system/post.jpg" alt="pillar">
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <h3>
-                            СТОЛБЫ МЕТАЛЛИЧЕСКИЕ<br>ДЛЯ КРЕПЛЕНИЯСВАРОЧНЫХ ПАНЕЛЕЙ
-                        </h3>
-                        <p>
-                            Изготовливаются из оцинкованного профиля длиной от 1,00 до 5,00 м.<br>
-                            Столб — квадрат в сечении 60&times60 или 80&times80 мм с толщиной стенки 1,5-2,0 мм.
-                        </p>
-                        <p>
-                            Столб может быть дополнительно окрашен в цвета сварных панелей по той же технологии.
-                            Издение поставляется с заглушками верха столба и комплектом креплений панели.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 text-center">
-
-
-                <h3>КРЕПЛЕНИЯ «ХОМУТ» И «СКОБА»</h3>
-
-                <div class="fixing-examples">
-                    <div class="radial-cell">
-                        <img src="images/content/block-complectation/1.jpg" alt="clamp">
-                    </div>
-                    <div class="radial-cell">
-                        <img src="images/content/block-complectation/2.jpg" alt="clamp">
-                    </div>
-                    <div class="radial-cell">
-                        <img src="images/content/block-complectation/3.jpg" alt="clamp">
-                    </div>
-                    <div class="radial-cell">
-                        <img src="images/content/block-complectation/4.jpg" alt="clamp">
-                    </div>
-                    <div class="radial-cell">
-                        <img src="images/content/block-complectation/5.jpg" alt="clamp">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- - End block-complectation - -->
-
-
-<!-- - gates-and-wickets - -->
-<section class="gates-and-wickets">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h2 class="title">
-                    ВОРОТА И КАЛИТКИ
-                </h2>
-            </div>
-            <div class="col-xs-12">
-                <div class="content">
-                    <div class="table-row">
-                        <div>
-                            <p>Возможно производство ворот общей длиной <span>до 5,8м.</span></p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="table-row-bottom">
-                        <div>
-                            <p>С замком поставляются</p>
-                            <p>только <span>калитки</span>,</p>
-                            <p>на <span>ворота</span> привариваются петли</p>
-                            <p>под навесной замок.</p>
-                        </div>
-
-                    </div>
-
-                </div>
+            <div class="image">
+                <img src="img/content/8.png" alt="">
             </div>
         </div>
     </div>
 </section>
-<!-- - End gates-and-wickets - -->
+
+<section class="section screen-five example-classname" data-anchor="screen-five">
+
+    <div class="main-content">
+        <div class="yars">
+            <ul class="nav nav-tabs">
+                <li class="all-time active">
+                    <p>За всё время</p>
+
+                    <a href="#tab-1" data-toggle="tab"><i></i></a>
+
+                </li>
+                <li>
+                    2010
+                    <a href="#tab-2" data-toggle="tab"><i></i></a>
+                </li>
+                <li>
+                    2011
+                    <a href="#tab-3" data-toggle="tab"><i></i></a>
+                </li>
+                <li>
+                    2012
+                    <a href="#tab-4" data-toggle="tab"><i></i></a>
+                </li>
+                <li>
+                    2013
+                    <a href="#tab-5" data-toggle="tab"><i></i></a>
+                </li>
+                <li>
+                    2014
+                    <a href="#tab-6" data-toggle="tab"><i></i></a>
+                </li>
+                <li>
+                    2015
+                    <a href="#tab-7" data-toggle="tab"><i></i></a>
+                </li>
+                <li>
+                    2016
+                    <a href="#tab-8" data-toggle="tab"><i></i></a>
+                </li>
+                <li>
+                    2017
+                    <a href="#tab-9" data-toggle="tab"><i></i></a>
+                </li>
+            </ul>
+        </div>
 
 
-<!-- - fences - -->
-<section class="fences">
+        <div class="tabs">
+            <div class="tab-content">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h2 class="title">
-                    КОЗЫРЬКОВЫЕ ОГРАЖДЕНИЯ (НАВЕРШИ)
-                </h2>
-                <p>
-                    Возможна комплектация <span>Y-образными</span> и <span>Г-образными навершами</span> для монтажа
-                    колючей
-                    проволоки и/или дополнительных плоских секций панелей.<br>
-                    Наклонные части создают дополнительное припятствие при ограждении объектов с повышенными
-                    требованиями
-                    к безопасности
-                </p>
-            </div>
-            <div class="col-xs-12">
-                <div class="content">
-                    <div class="radial-cell">
-                        <img src="images/content/fences/1.jpg" alt="top of a fence">
+                <div class="tab-pane fade in active" id="tab-1">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в время работы мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="127" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="14" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="7" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="2" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="5" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
                     </div>
-                    <div class="radial-cell">
-                        <img src="images/content/fences/2.jpg" alt="top of a fence">
-                    </div>
-                    <div class="radial-cell">
-                        <img src="images/content/fences/3.jpg" alt="barbed wire">
-                    </div>
-                    <div class="radial-cell">
-                        <img src="images/content/fences/4.jpg" alt="barbed wire">
-                    </div>
+
                 </div>
+                <div class="tab-pane fade" id="tab-2">
 
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в 2010 году мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-3">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в 2011 году мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-4">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в 2012 году мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-5">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в 2013 году мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-6">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в 2014 году мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-7">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в 2015 году мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-8">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в 2016 году мы:</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="tab-9">
+
+                    <div class="content">
+                        <div class="text-center col-xs-12 subject">в этом году мы</div>
+                        <div class="cell">
+                            <p class="description">построили</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="256" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">каркасных домов</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">сделали</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="71" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">пристроек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">возвели</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="999" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">дополнительных
+                                построек</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">освоили ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="855" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">города</p>
+                        </div>
+                        <div class="cell">
+                            <p class="description">открыли ещё</p>
+                            <p class="value"><span class="timer" data-from="0" data-to="152" data-speed="5000"
+                                                   data-refresh-interval="50"></span></p>
+                            <p class="subject">офисов</p>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
+
+
     </div>
+
 </section>
-<!-- - end fences - -->
 
 
-<!-- - to-order - -->
-<section class="to-order">
-    <div class="container text-center">
-        <button class="btn-white" data-toggle="modal" data-target="#modalOrder">Заказать 3D-панели</button>
-    </div>
-</section>
-<!-- - End to-order - -->
-
-<!-- - footer - -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
+<div class="footer navbar-fixed-bottom">
+    <div class="main-content">
+        <div class="copiright">
             <p>
-                © 2017
-                <a href="/">
-                    <span class="text-orange">ООО&nbsp«Спецтехнология»</span>
-                </a>
-                <span>
-                    <i class="fa fa-circle" aria-hidden="true"></i>&nbspг.&nbspЧереповец, ул.&nbspЗападная, дом&nbsp12, офис&nbsp10
-                </span>
-                <a href="tel:+78202596696">
-                <span class="text-orange">
-                    <i class="fa fa-circle" aria-hidden="true"></i>&nbsp+7&nbsp(8202)&nbsp59-66-96
-                </span>
-                </a>
-                <a href="mailto:spectechnologia@mail.ru">
-                     <span class="text-orange">
-                    <i class="fa fa-circle" aria-hidden="true"></i>&nbspspectechnologia@mail.ru
-                </span>
-                </a>
-                <br>
-                Разработано в
-                <a href="http://novecs.ru/" target="_blank">
-                    <span class="text-orange">компании «НОВЕКС»</span>
-                </a>
+                © ДомНедорого | 2017 год
             </p>
         </div>
-    </div>
-    <!-- ------- Модалки ------- -->
-
-    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content text-center">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">Заказать</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Отправьте ваше имя и номер телефона.<br>
-                        Мы перезвоним вам в ближайшее времядля обсуждения<br>
-                        деталей заказа или консультации.<br>
-                        Ваши данные не будут использоваться в рекламных целях<br>
-                        или передаваться третьим лицам.
-                    </p>
-                    <form>
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="tel" class="bfh-phone" placeholder="Номер телефона" name="phoneNumber" data-format="+7 (ddd) ddd-dddd" required>
-                        <button class="btn-orange">Отправить</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-
-                </div>
-            </div>
+        <div class="zamanuha">
+            <p>
+                Оставьте ваши вопросы о строительстве нового дома <br>
+                и мы будем рады рассказать вам еще больше!
+            </p>
+        </div>
+        <div class="want-a-discount">
+            <button class="">Хочу скидку</button>
+        </div>
+        <div class="forma">
+            <input type="text">
+            <input type="text" placeholder="Ваше имя *">
+            <input type="text" placeholder="Номер телефона *">
+            <button class="application">Оставить заявку</button>
         </div>
     </div>
 
-    <!-- ------- End Модалки ------- -->
-
 </div>
-<!-- - End footer - -->
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
-<script src="bower_components/bootstrap-formhelpers/js/bootstrap-formhelpers-phone.js"></script>
-<script src="js/script.js"></script>
+<script src="bower_components/jquery-scrollify/jquery.scrollify.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/jquery.easings.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    $('.timer').countTo();
+</script>
 </body>
 </html>
-
-
