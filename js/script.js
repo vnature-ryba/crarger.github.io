@@ -81,7 +81,7 @@ $(".screen-two .owl-carousel").owlCarousel({
     mouseDrag: false,
     touchDrag: true,
     pullDrag: false,
-    freeDrag: false,
+    freeDrag: false
 });
 
 //Делегируем события кнопок next prev по умолчанию нашим кнопкам, которые могут находится ыне контейнера слайдера
