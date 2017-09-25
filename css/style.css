@@ -45,6 +45,14 @@ body {
   height: 100vh;
   max-height: 1080px;
   overflow: hidden; }
+  .screen-one #first-slider .item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center; }
+  .screen-one #first-slider .slide-one {
+    background-image: url("../img/system/slide-1.jpg"); }
+  .screen-one #first-slider .slide-two {
+    background-image: url("../img/system/slide-2.jpg"); }
   .screen-one .owl-dots {
     position: absolute;
     top: 95px;
@@ -52,13 +60,11 @@ body {
   .screen-one .item .main-content {
     right: 5px;
     position: absolute;
-    z-index: 1;
     text-align: right;
-    font-family: "GothamProRegular";
     font-size: 22pt;
     padding-right: 70px;
     color: #FFFFFF;
-    top: 82vh; }
+    bottom: 35px; }
     .screen-one .item .main-content span {
       color: #FF9600; }
   .screen-one .owl-carousel {
@@ -117,8 +123,6 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap; }
-    header .main-content .menu .dropdown:hover > .dropdown-menu {
-      display: block; }
     header .main-content .menu ul li:hover:after {
       display: block;
       content: '';
@@ -127,25 +131,42 @@ header {
       margin: auto;
       position: absolute;
       background-color: #FF9600; }
-    header .main-content .menu ul li:hover .custom-caret {
-      transform: rotate(-180deg);
-      transition: 0.2s; }
-    header .main-content .menu ul li a {
-      padding-bottom: 20px; }
-    header .main-content .menu ul li ul {
+    header .main-content .menu ul li:hover a {
+      padding-bottom: 15px; }
+    header .main-content .menu ul li:hover ul {
       background-color: rgba(206, 206, 206, 0.55);
       border: none;
       box-shadow: 0 3px 11px -1px rgba(0, 0, 0, 0.175); }
-      header .main-content .menu ul li ul li {
+      header .main-content .menu ul li:hover ul li {
         padding: 15px 0 0 0;
         margin: 0;
         transition: 0.2s; }
-        header .main-content .menu ul li ul li a, header .main-content .menu ul li ul li a:hover {
+        header .main-content .menu ul li:hover ul li a, header .main-content .menu ul li:hover ul li a:hover {
           color: #FFFFFF;
           font-family: GothamProRegular; }
-        header .main-content .menu ul li ul li:hover {
+        header .main-content .menu ul li:hover ul li:hover {
           background-color: rgba(131, 81, 127, 0.77); }
-          header .main-content .menu ul li ul li:hover:after {
+          header .main-content .menu ul li:hover ul li:hover:after {
+            display: none; }
+    header .main-content .menu ul .open .custom-caret {
+      transform: rotate(-180deg);
+      transition: 0.2s; }
+    header .main-content .menu ul .open a {
+      padding-bottom: 15px; }
+    header .main-content .menu ul .open ul {
+      background-color: rgba(206, 206, 206, 0.55);
+      border: none;
+      box-shadow: 0 3px 11px -1px rgba(0, 0, 0, 0.175); }
+      header .main-content .menu ul .open ul li {
+        padding: 15px 0 0 0;
+        margin: 0;
+        transition: 0.2s; }
+        header .main-content .menu ul .open ul li a, header .main-content .menu ul .open ul li a:hover {
+          color: #FFFFFF;
+          font-family: GothamProRegular; }
+        header .main-content .menu ul .open ul li:hover {
+          background-color: rgba(131, 81, 127, 0.77); }
+          header .main-content .menu ul .open ul li:hover:after {
             display: none; }
     header .main-content .menu a {
       font-family: "IntroRustG";
@@ -351,7 +372,8 @@ header {
   .screen-two .item {
     height: 100vh;
     padding-top: 135px;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     .screen-two .item .title {
       font-family: IntroRustG;
       color: #ffb74f;
@@ -424,6 +446,7 @@ header {
     align-items: center;
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     transition: 0.2s; }
     .screen-fourth .image.img-1 {
       background-image: url("../img/content/partners/1.png"); }
@@ -840,8 +863,3 @@ header {
   .calc .radio-img-block .radio:checked ~ span {
     color: #FF9600;
     transition: 0.2s; }
-
-#first-slider .item img {
-  display: block;
-  width: 100%;
-  height: auto; }

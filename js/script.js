@@ -139,54 +139,60 @@ $('#hide-discount').on('click', function (e) {
 });
 
 
-//Добавление класса при спуске до опредененной позиции
-$(document).on("scroll", function () {
+if ( $(window).width() > 1280 ) {
+
+    //Добавление класса при спуске до опредененной позиции
+    $(document).on("scroll", function () {
 
 
-    if (jQuery(window).scrollTop() + jQuery(window).height() >= jQuery(document).height()) {
-        content.slideDown();
-        footer.css("opacity", "0");
-        footer.hide();
+        if (jQuery(window).scrollTop() + jQuery(window).height() >= jQuery(document).height()) {
+            content.slideDown();
+            footer.css("opacity", "0");
+            footer.hide();
 
-    }
-    if ($(document).scrollTop() > 1350) {
-        $(".footer").addClass("light-footer");
-    }
-    else {
-        $(".footer").removeClass("light-footer");
-    }
-    if ($(document).scrollTop() > 1850) {
-        $(".navbar-fixed-top").addClass("navbar-setting").removeClass("nav-default");
-    }
-    else {
-        $(".navbar-fixed-top").removeClass("navbar-setting").addClass("nav-default");
-    }
-    if ($(document).scrollTop() > 3100) {
-        $(".footer").removeClass("light-footer").addClass("dark-footer");
-    }
-    else {
-        $(".footer").removeClass("dark-footer");
-    }
-    if ($(document).scrollTop() > 500) {
-        $(".left-menu").addClass("gray-color");
-    }
-    else
-        $(".left-menu").removeClass("gray-color");
-    if ($(document).scrollTop() > 1700) {
-        $(".left-menu").addClass("dark-color").removeClass("gray-color");
-    }
-    else
-        $(".left-menu").removeClass("dark-color");
-    if ($(document).scrollTop() > 70) {
-        $(".footer").css("opacity", "1");
-        $(".footer").css("z-index", "5");
-    }
-    else
-        $(".footer").css("opacity", "0");
-    if ($(document).scrollTop() < 10) {
-        $(".footer").css("z-index", "-500");
-    }
-});
+        }
+        if ($(document).scrollTop() > 1350) {
+            $(".footer").addClass("light-footer");
+        }
+        else {
+            $(".footer").removeClass("light-footer");
+        }
+        if ($(document).scrollTop() > 1850) {
+            $(".navbar-fixed-top").addClass("navbar-setting").removeClass("nav-default");
+        }
+        else {
+            $(".navbar-fixed-top").removeClass("navbar-setting").addClass("nav-default");
+        }
+        if ($(document).scrollTop() > 3100) {
+            $(".footer").removeClass("light-footer").addClass("dark-footer");
+        }
+        else {
+            $(".footer").removeClass("dark-footer");
+        }
+        if ($(document).scrollTop() > 500) {
+            $(".left-menu").addClass("gray-color");
+        }
+        else
+            $(".left-menu").removeClass("gray-color");
+        if ($(document).scrollTop() > 1700) {
+            $(".left-menu").addClass("dark-color").removeClass("gray-color");
+        }
+        else
+            $(".left-menu").removeClass("dark-color");
+        if ($(document).scrollTop() > 70) {
+            $(".footer").css("opacity", "1");
+            $(".footer").css("z-index", "5");
+        }
+        else
+            $(".footer").css("opacity", "0");
+        if ($(document).scrollTop() < 10) {
+            $(".footer").css("z-index", "-500");
+        }
+    });
+
+}
+
+
 
 //подсвечивание активного пункта лемого меню
 var menu_selector = ".left-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.

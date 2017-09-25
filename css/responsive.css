@@ -1,9 +1,23 @@
 @media (max-width: 1300px) {
-  header, .footer {
-    position: relative !important; }
+  header {
+    position: absolute !important; }
+  .footer {
+    position: relative !important;
+    opacity: 1;
+    background-color: #232323;
+    padding: 15px 15px 0; }
+    .footer .forma {
+      margin: auto; }
+    .footer .want-a-discount, .footer .zamanuha, .footer .copiright {
+      margin: auto;
+      text-align: center; }
   .screen-three, .screen-fourth, .screen-five {
     height: 100% !important;
     padding: 15px 0; } }
+
+@media (min-width: 1280px) {
+  .menu .dropdown:hover > .dropdown-menu {
+    display: block; } }
 
 @media (max-width: 1260px) {
   .calc {
@@ -19,7 +33,14 @@
     width: 100%;
     max-width: 100% !important; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .screen-one .item .main-content {
+    font-size: 18pt;
+    line-height: 25px;
+    padding-right: 15px;
+    bottom: 20px; }
+  .nav-default {
+    background-color: rgba(35, 35, 35, 0.8); }
   .screen-two .item {
     padding-top: 0; }
     .screen-two .item p {
@@ -30,23 +51,34 @@
       width: 100%;
       text-align: center; }
   .screen-fourth .image {
-    margin: 0 50px; }
-  .navbar-toggle {
+    margin: 0 30px; }
+  header .main-content .navbar-toggle {
     margin-right: 0; }
-  .navbar-toggle .icon-bar {
+  header .main-content .navbar-toggle .icon-bar {
     background: #ff9600; }
-  .navbar-header {
+  header .main-content .navbar-header {
     width: 100%;
     padding: 0 0 15px 25px; }
-  .logo {
+  header .main-content .logo {
     float: left; }
-  .menu {
+  header .main-content .menu {
     width: 100%;
     padding: 0 15px; }
-    .menu .custom-caret {
+    header .main-content .menu .custom-caret {
       float: right; }
-    .menu .navbar-hide {
-      border-bottom: 1px solid #d7d7d7; } }
+    header .main-content .menu .navbar-hide {
+      border-bottom: 1px solid rgba(215, 215, 215, 0.1); }
+    header .main-content .menu ul .open ul {
+      background-color: transparent !important; }
+      header .main-content .menu ul .open ul li {
+        border-top: 1px solid #ff9600;
+        background-image: linear-gradient(to top, transparent, transparent, rgba(255, 255, 255, 0.22)); }
+    header .main-content .menu ul li:hover a {
+      padding-bottom: 10px; } }
+
+@media (max-width: 667px) {
+  .screen-five .content .cell {
+    width: 250px; } }
 
 @media (max-width: 610px) {
   .screen-two .item .title {
@@ -56,6 +88,12 @@
 @media (max-width: 586px) {
   .footer .main-content .forma .your-discount, .calc .main-content .forma .your-discount {
     text-align: center; } }
+
+@media (max-width: 507px) {
+  .screen-fourth .image {
+    border-bottom: 1px solid #d3ceca;
+    width: 100%;
+    max-width: 100%; } }
 
 @media (max-width: 484px) {
   .calc .foundation, .calc .walls, .calc .roof {
@@ -67,4 +105,7 @@
   .bottom-stat .value {
     font-size: 17pt; }
   .bottom-stat .subject {
-    font-size: 15pt; } }
+    font-size: 15pt; }
+  .call-number, .city {
+    width: 100%;
+    text-align: center; } }
