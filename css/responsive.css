@@ -1,0 +1,70 @@
+@media (max-width: 1300px) {
+  header, .footer {
+    position: relative !important; }
+  .screen-three, .screen-fourth, .screen-five {
+    height: 100% !important;
+    padding: 15px 0; } }
+
+@media (max-width: 1260px) {
+  .calc {
+    position: relative !important;
+    max-height: inherit;
+    padding: 25px !important; }
+  header .main-content {
+    justify-content: center; } }
+
+@media (max-width: 982px) {
+  .forma {
+    justify-content: center;
+    width: 100%;
+    max-width: 100% !important; } }
+
+@media (max-width: 768px) {
+  .screen-two .item {
+    padding-top: 0; }
+    .screen-two .item p {
+      font-size: 13px; }
+    .screen-two .item .more-info {
+      padding: 25px 0; }
+    .screen-two .item .menu {
+      width: 100%;
+      text-align: center; }
+  .screen-fourth .image {
+    margin: 0 50px; }
+  .navbar-toggle {
+    margin-right: 0; }
+  .navbar-toggle .icon-bar {
+    background: #ff9600; }
+  .navbar-header {
+    width: 100%;
+    padding: 0 0 15px 25px; }
+  .logo {
+    float: left; }
+  .menu {
+    width: 100%;
+    padding: 0 15px; }
+    .menu .custom-caret {
+      float: right; }
+    .menu .navbar-hide {
+      border-bottom: 1px solid #d7d7d7; } }
+
+@media (max-width: 610px) {
+  .screen-two .item .title {
+    font-size: 20pt;
+    padding: 10px 0 0; } }
+
+@media (max-width: 586px) {
+  .footer .main-content .forma .your-discount, .calc .main-content .forma .your-discount {
+    text-align: center; } }
+
+@media (max-width: 484px) {
+  .calc .foundation, .calc .walls, .calc .roof {
+    text-align: center !important; } }
+
+@media (max-width: 414px) {
+  .bottom-stat .description {
+    font-size: 15pt; }
+  .bottom-stat .value {
+    font-size: 17pt; }
+  .bottom-stat .subject {
+    font-size: 15pt; } }

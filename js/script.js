@@ -1,5 +1,68 @@
-//настройка Owl Carousel
-$(".owl-carousel").owlCarousel({
+
+//progressbar owl
+$(document).ready(function() {
+    //Init the carousel
+    initSlider();
+
+    function initSlider() {
+        $("#first-slider").owlCarousel({
+            loop: true,
+            margin: 0,
+            stagePadding: 0,
+            nav: false,
+            autoplaySpeed: 4000,
+            dotsSpeed: 4000,
+            navText: "",
+            dots: false,
+            paginationNumbers: true,
+            items: 1,
+            lazyLoad: true,
+            autoplay: true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            autoplayTimeout: 6000,
+            mouseDrag: false,
+            touchDrag: true,
+            pullDrag: false,
+            freeDrag: false,
+            onInitialized: startProgressBar,
+            onTranslate: resetProgressBar,
+            onTranslated: startProgressBar,
+            navigation: true,
+            navigationText: ['&lsaquo;','&rsaquo;'],
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+            afterInit: makePages,
+            afterUpdate: makePages
+        });
+
+    }
+
+    function startProgressBar() {
+        // apply keyframe animation
+        $('.slide-progress').css({
+            'width': '100%',
+            'transition': 'width 5000ms'
+        });
+    }
+    function makePages() {
+        $.each(this.owl.userItems, function(i) {
+            $('.owl-controls .owl-page').eq(i)
+                .text($(this).find('p').text());
+        });
+    }
+
+    function resetProgressBar() {
+        $('.slide-progress').css({
+            'width': 0,
+            'transition': 'width 0s'
+        });
+    }
+});
+
+//инициализация owl для screen-two
+$(".screen-two .owl-carousel").owlCarousel({
     loop: true,
     margin: 0,
     stagePadding: 0,
@@ -18,119 +81,174 @@ $(".owl-carousel").owlCarousel({
     mouseDrag: false,
     touchDrag: true,
     pullDrag: false,
-    freeDrag: false
+    freeDrag: false,
+});
 
+//Делегируем события кнопок next prev по умолчанию нашим кнопкам, которые могут находится ыне контейнера слайдера
+var owl = $(".slider2");
+owl.owlCarousel();
+//$(".next") - находим нашу кнопку
+$(".btn-next").click(function () {
+    owl.trigger("next.owl.carousel");
+});
+$(".btn-prev").click(function () {
+    owl.trigger("prev.owl.carousel");
 });
 
 //инициализация постраничного скролла
 $.scrollify({
-    section : ".example-classname",
-    sectionName : "section-name",
-    interstitialSection : "",
+    section: ".example-classname",
+    sectionName: "section-name",
+    interstitialSection: "",
     easing: "easeOutExpo",
     scrollSpeed: 1100,
-    offset : 0,
+    offset: 0,
     scrollbars: true,
     standardScrollElements: "",
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
-    touchScroll:true,
-    before:function() {},
-    after:function() {},
-    afterResize:function() {},
-    afterRender:function() {}
+    touchScroll: true,
+    before: function () {
+    },
+    after: function () {
+    },
+    afterResize: function () {
+    },
+    afterRender: function () {
+    }
+});
+
+// открытие/закрытие блока калькулятора при клике на кнопки
+var
+    $this = $(this),
+    content = $('#calc'),
+    footer = $('.footer');
+
+$('#show-discount').on('click', function (e) {
+    e.preventDefault();
+    content.slideDown();
+    footer.toggle();
+});
+
+
+$('#hide-discount').on('click', function (e) {
+    e.preventDefault();
+    content.slideUp();
+    footer.show('fast');
 });
 
 
 //Добавление класса при спуске до опредененной позиции
-$(document).on("scroll",function(){
-    if($(document).scrollTop()>950){
-        $(".navbar-fixed-top").addClass("navbar-setting") .removeClass("nav-default");
+$(document).on("scroll", function () {
+
+
+    if (jQuery(window).scrollTop() + jQuery(window).height() >= jQuery(document).height()) {
+        content.slideDown();
+        footer.css("opacity", "0");
+        footer.hide();
+
     }
-    else{
-        $(".navbar-fixed-top").removeClass("navbar-setting") .addClass("nav-default");
+    if ($(document).scrollTop() > 1350) {
+        $(".footer").addClass("light-footer");
     }
-    if($(document).scrollTop()>700){
-        $(".left-menu").addClass("dark-color");
+    else {
+        $(".footer").removeClass("light-footer");
+    }
+    if ($(document).scrollTop() > 1850) {
+        $(".navbar-fixed-top").addClass("navbar-setting").removeClass("nav-default");
+    }
+    else {
+        $(".navbar-fixed-top").removeClass("navbar-setting").addClass("nav-default");
+    }
+    if ($(document).scrollTop() > 3100) {
+        $(".footer").removeClass("light-footer").addClass("dark-footer");
+    }
+    else {
+        $(".footer").removeClass("dark-footer");
+    }
+    if ($(document).scrollTop() > 500) {
+        $(".left-menu").addClass("gray-color");
+    }
+    else
+        $(".left-menu").removeClass("gray-color");
+    if ($(document).scrollTop() > 1700) {
+        $(".left-menu").addClass("dark-color").removeClass("gray-color");
     }
     else
         $(".left-menu").removeClass("dark-color");
-    if($(document).scrollTop()>70){
+    if ($(document).scrollTop() > 70) {
         $(".footer").css("opacity", "1");
+        $(".footer").css("z-index", "5");
     }
     else
         $(".footer").css("opacity", "0");
-});
-
-//настройка спуска по меню bootstrap
-$('body').scrollspy({target: ".left-menu", offset: 100});
-$(".left-menu a").on('click', function (event) {
-    if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 91
-        }, 800, function () {
-            window.location.hash = hash;
-        });
+    if ($(document).scrollTop() < 10) {
+        $(".footer").css("z-index", "-500");
     }
 });
 
+//подсвечивание активного пункта лемого меню
+var menu_selector = ".left-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
+
+function onScroll(){
+    var scroll_top = $(document).scrollTop();
+    $(menu_selector + " li").each(function(){
+        var hash = $(this).children('a').attr("href");
+        var target = $(hash);
+        if (target.position().top-500 <= scroll_top && target.position().top + target.outerHeight()-500 > scroll_top) {
+            $(menu_selector + " li.active").removeClass("active");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+}
+
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    $("a[href^=#]").click(function(e){
+        e.preventDefault();
+        $(document).off("scroll");
+        $(menu_selector + " li.active").removeClass("active");
+        $(this).addClass("active");
+        var hash = $(this).children('a').attr("href");
+        var target = $(hash);
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 500, function(){
+            window.location.hash = hash;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
 
 
 //настройка набегания цифр
 let marker = true;
-
-$(document).on("scroll",function(){
+$(document).on("scroll", function () {
     let block1 = $(".screen-five").offset().top;
     let block3 = $(window).height();
-
-    if($(document).scrollTop() > block1 - block3 && marker){
+    if ($(document).scrollTop() > block1 - block3 && marker) {
         $('.timer').countTo();
         marker = false;
     }
 });
 
 
-$(document).ready(function() {
-    //Init the carousel
-    initSlider();
-
-    function initSlider() {
-        $('.owl-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            onInitialized: startProgressBar,
-            onTranslate: resetProgressBar,
-            onTranslated: startProgressBar
-        });
-    }
-
-    function startProgressBar() {
-        // apply keyframe animation
-        $('.slide-progress').css({
-            'width': '100%',
-            'transition': 'width 5000ms'
-        });
-    }
-
-    function resetProgressBar() {
-        $('.slide-progress').css({
-            'width': 0,
-            'transition': 'width 0s'
-        });
-    }
+//анимация перехода по якорям
+$(document).ready(function () {
+    $('a[href^="#jack"]').click(function () {
+        var el = $(this).attr('href');
+        $('body').animate({
+            scrollTop: $(el).offset().top
+        }, 800);
+        return false;
+    });
 });
 
-//
-// //анимация перехода по якорям
-// $(document).ready(function() {
-//     $('a[href^="#"]').click(function(){
-//         var el = $(this).attr('href');
-//         $('body').animate({
-//             scrollTop: $(el).offset().top}, 800);
-//         return false;
-//     });
-// });
+
+//иницавлизация всплывающих подсказок
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});

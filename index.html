@@ -6,22 +6,19 @@
     <title>Дом не дорого</title>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Подключаем CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
 </head>
 <body>
 <header class="navbar-fixed-top nav-default">
     <div class="main-content">
 
         <div class="navbar-header">
-            <div class="logo">
-                <a href="#screen-one">
-                    <img src="svg/logo-light.svg" alt="">
-                </a>
-            </div>
-
+            <a href="#jack-screen-one">
+                <div class="logo"></div>
+            </a>
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar">
@@ -38,36 +35,75 @@
         </div>
 
         <div class="city">
-            <label for="">Ваш годод</label>
-            <div class="dropdown">
-                <button class="select dropdown-toggle" type="button" data-toggle="dropdown">Красноярск
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Москва</a></li>
-                    <li><a href="#">Рязань</a></li>
-                    <li><a href="#">Ржев</a></li>
-                </ul>
+            <img src="svg/geo-header.svg" alt="" class="point">
+            <div>
+                <label for="">Ваш годод</label>
+                <div class="dropdown">
+                    <button class="select dropdown-toggle" type="button" data-toggle="dropdown">Красноярск
+                        <img class="custom-caret" src="img/system/caret-1.png"></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Москва</a></li>
+                        <li><a href="#">Рязань</a></li>
+                        <li><a href="#">Ржев</a></li>
+                    </ul>
+                </div>
             </div>
+
         </div>
         <div class="menu">
             <div class="collapse navbar-collapse" id="menu-collapse">
 
 
                 <ul class="nav navbar-nav">
-                    <li class="navbar-hide"><a href="#catalog">Услуги<span class="caret"></span></a></li>
-                    <li class="navbar-hide"><a href="#working">Проекты<span class="caret"></span></a></li>
-                    <li class="navbar-hide"><a href="#news">Производство<span class="caret"></span></a></li>
-                    <li class="navbar-hide"><a href="#news">Компания<span class="caret"></span></a></li>
-                    <li class="navbar-hide dropdown-submenu active"><a href="#company">Франшиза</a>
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Услуги<img class="custom-caret"
+                                                                                              src="img/system/caret-2.png"
+                                                                                              alt="caret">
+                        </a>
                         <ul class="dropdown-menu">
-                            <li class="navbar-hide"><a href="#">Команда</a></li>
-                            <li class="navbar-hide"><a href="#">Виды услуг</a></li>
-                            <li class="navbar-hide"><a href="#">История и миссия</a></li>
-                            <li class="navbar-hide"><a href="#">Новости компании</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Проекты<img class="custom-caret"
+                                                                                               src="img/system/caret-2.png"
+                                                                                               alt="caret">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Производство<img class="custom-caret"
+                                                                                                    src="img/system/caret-2.png"
+                                                                                                    alt="caret">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
                         </ul>
                     </li>
 
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Компания<img class="custom-caret"
+                                                                                                src="img/system/caret-2.png"
+                                                                                                alt="caret">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Каталог проектов</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-hide dropdown active"><a href="#company">Франшиза</a></li>
+
                 </ul>
+
 
             </div>
         </div>
@@ -76,34 +112,16 @@
 
 </header>
 
-<div class="left-menu">
+
+<nav class="left-menu visible-lg">
     <ul>
-        <a href="">
-            <li>Мы делаем</li>
-        </a>
-        <a href="">
-            <li>Почему нужно<br>
-                работать с нами
-            </li>
-        </a>
-        <a href="#screen-three">
-            <li>Как мы работаем</li>
-        </a>
-        <a href="#screen-fourth">
-            <li>Деловые<br>
-                партнёры
-            </li>
-        </a>
-        <a href="#screen-five">
-            <li>Наша работа
-                в цифрах
-            </li>
-        </a>
-        <a href="">
-            <li>Специальное<br>
-                предложение
-            </li>
-        </a>
+
+        <li><a href="#jack-screen-one">Мы делаем</a></li>
+        <li><a href="#jack-screen-two">Почему нужно<br> работать с нами</a></li>
+        <li><a href="#jack-screen-three">Как мы работаем</a></li>
+        <li><a href="#jack-screen-fourth">Деловые партнеры</a></li>
+        <li><a href="#jack-screen-five">Наша работа в цифрах</a></li>
+        <li><a href="">Специальное<br>предложение</a></li>
         <div class="social-network">
             <div class="vk">
 
@@ -114,39 +132,101 @@
         </div>
     </ul>
 
-</div>
+</nav>
 
-<section class="screen-one example-classname">
 
-    <div class="owl-carousel owl-theme">
+<section class="screen-one example-classname" id="jack-screen-one">
 
-        <div class="item">
-            <img src="img/system/start-page-bg.jpg" alt="">
-            <div class="main-content">
-                <p>Тёплый, надежный загородный дом <br>
-                    <span>«под ключ»</span> по цене квартиры</p>
+
+    <div class="owl-demo">
+        <div class="slide-progress"></div>
+
+        <div class="owl-carousel owl-theme" id="first-slider">
+            <div class="item">
+                <img src="img/system/start-page-bg.jpg" alt="">
+                <div class="main-content">
+                    <p>Тёплый, надежный загородный дом <br>
+                        <span>«под ключ»</span> по цене квартиры</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/system/slide-2.jpg" alt="">
+                <div class="main-content">
+                    <p>Тёплый, надежный загородный дом <br>
+                        <span>«под ключ»</span> по цене квартиры</p>
+                </div>
             </div>
         </div>
-        <div class="item">
-            <img src="img/system/slide-2.jpg" alt="">
-            <div class="main-content">
-                <p>Тёплый, надежный загородный дом <br>
-                    <span>«под ключ»</span> по цене квартиры</p>
-            </div>
-        </div>
+
     </div>
-
 
     <div class="block-content">
         <div class="main-content">
 
         </div>
     </div>
-
-    <div class="slide-progress"></div>
 </section>
 
-<section class="screen-three example-classname">
+<section class="screen-two example-classname" id="jack-screen-two">
+    <div class="controlls hidden-xs">
+        <div class="navs">
+            <button class="btn-prev"></button>
+            <button class="btn-next"></button>
+        </div>
+    </div>
+
+    <div class="owl-carousel owl-theme slider2">
+        <div class="item item1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="content">
+                            <h2 class="title">Строительство каркасных домов</h2>
+                            <p>Мы профессионально занимаемся строительством каркасных домов по России. На сегодняшний
+                                день<br>
+                                каркасные дома – это самые доступные, тёплые, долговечные и быстровозводимые дома. Мы
+                                производим<br>
+                                строительство каркасных домов с контролем качества СНиП и ГОСТ.<br>
+                                Строительство дома занимает от 1 до 3 месяцев.<br>
+                                Строительство дома – это процесс, который состоит из множества шагов. Если вы знаете,
+                                что делать дальше,<br>
+                                после окончания очередного этапа работа идет гораздо быстрей.</p>
+                            <div class="more-info">
+                                <a href="">Вся информация об услугах</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="content">
+                            <h2 class="title">Строительство каркасных домов</h2>
+                            <p>Мы профессионально занимаемся строительством каркасных домов по России. На сегодняшний
+                                день<br>
+                                каркасные дома – это самые доступные, тёплые, долговечные и быстровозводимые дома. Мы
+                                производим<br>
+                                строительство каркасных домов с контролем качества СНиП и ГОСТ.<br>
+                                Строительство дома занимает от 1 до 3 месяцев.<br>
+                                Строительство дома – это процесс, который состоит из множества шагов. Если вы знаете,
+                                что делать дальше,<br>
+                                после окончания очередного этапа работа идет гораздо быстрей.</p>
+                            <div class="more-info">
+                                <a href="">Вся информация об услугах</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="screen-three example-classname" id="jack-screen-three">
     <div class="main-content">
 
         <div class="content">
@@ -203,45 +283,45 @@
     </div>
 </section>
 
-<section class="section screen-fourth example-classname" data-anchor="screen-fourth">
+<section class="section screen-fourth example-classname" id="jack-screen-fourth">
 
     <div class="main-content">
 
         <h2 class="text-center title">Мы работаем с компаниями:</h2>
 
         <div class="content">
-            <div class="image">
-                <img src="img/content/1.png" alt="">
+            <div class="image img-1">
+
             </div>
-            <div class="image">
-                <img src="img/content/2.png" alt="">
+            <div class="image img-2">
+
             </div>
-            <div class="image">
-                <img src="img/content/3.png" alt="">
+            <div class="image img-3">
+
             </div>
-            <div class="image">
-                <img src="img/content/4.png" alt="">
+            <div class="image img-4">
+
             </div>
-            <div class="image">
-                <img src="img/content/5.png" alt="">
+            <div class="image img-5">
+
             </div>
-            <div class="image">
-                <img src="img/content/6.png" alt="">
+            <div class="image img-6">
+
             </div>
-            <div class="image">
-                <img src="img/content/7.png" alt="">
+            <div class="image img-7">
+
             </div>
-            <div class="image">
-                <img src="img/content/8.png" alt="">
+            <div class="image img-8">
+
             </div>
         </div>
     </div>
 </section>
 
-<section class="section screen-five example-classname" data-anchor="screen-five">
+<section class="section screen-five example-classname" id="jack-screen-five">
 
     <div class="main-content">
-        <div class="yars">
+        <div class="yars visible-lg">
             <ul class="nav nav-tabs">
                 <li class="all-time active">
                     <p>За всё время</p>
@@ -281,7 +361,12 @@
                     2017
                     <a href="#tab-9" data-toggle="tab"><i></i></a>
                 </li>
+                <li class="not-end">
+                    продолжение
+                    следует ;)
+                </li>
             </ul>
+
         </div>
 
 
@@ -291,7 +376,7 @@
                 <div class="tab-pane fade in active" id="tab-1">
 
                     <div class="content">
-                        <div class="text-center col-xs-12 subject">в время работы мы:</div>
+                        <div class="text-center col-xs-12 subject">за время работы мы:</div>
                         <div class="cell">
                             <p class="description">построили</p>
                             <p class="value"><span class="timer" data-from="0" data-to="127" data-speed="5000"
@@ -323,7 +408,16 @@
                                                    data-refresh-interval="50"></span></p>
                             <p class="subject">офисов</p>
                         </div>
-
+                        <div class="bottom-stat col-xs-12 text-center">
+                            <p class="description"><span class="value">10</span> <span class="subject">контрактов</span>
+                                подписали с партнёрами</p>
+                            <p class="description"><span class="value">2</span> <span class="subject">машины</span>
+                                вытащили из трясины</p>
+                            <p class="description"><span class="value">1</span> <span class="subject">кота</span> сняли
+                                с дерева</p>
+                            <p class="description"><span class="value">0</span> <span class="subject">птичек</span>
+                                сбили</p>
+                        </div>
                     </div>
 
                 </div>
@@ -647,8 +741,224 @@
 
 </section>
 
+<section class="calc navbar-fixed-bottom" id="calc">
+    <div class="calc-container main-content">
+        <div class="col-xs-12 text-center">
+            <h2 class="title">Чем больше пунктов вы заполните, тем больше будет ваша скидка
+                <button class="hide-discount hidden-xs" id="hide-discount">не хочу скидку <span><img
+                        src="img/system/close-orange.png" alt=""></span></button>
+            </h2>
+            <h3 class="subtitle">Мы рассчитаем стоимость дома и перезвоним вам</h3>
+        </div>
+        <div class="foundation">
+            <h4 class="calc-block-title">
+                Фундамент
+            </h4>
+            <div class="calc-input">
+                <label>Ширина, м</label>
+                <input type="text" value="32">
+            </div>
+            <img class="calc-delimiter hidden-xs" src="img/system/cross.png" alt="крест разделитель">
+            <div class="calc-input">
+                <label>Длина, м</label>
+                <input type="text" value="32">
+            </div>
+
+            <div class="radio-block">
+                <p class="radio-block-title">Тип фундамента<img class="info" data-toggle="tooltip"
+                                                                data-placement="right" title="Tooltip on right"
+                                                                src="img/system/info.png" alt="подробнее"></p>
+                <label>
+                    <input class="radio" type="radio" value="1" name="foundation">
+                    <span class="radio-custom"></span><span>ленточный</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="2" name="foundation">
+                    <span class="radio-custom"></span><span>монолитная плита</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="3" name="foundation">
+                    <span class="radio-custom"></span><span>ленточный</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="4" name="foundation">
+                    <span class="radio-custom"></span><span>ленточный</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="5" name="foundation">
+                    <span class="radio-custom"></span><span>свайно-забивной</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="6" name="foundation">
+                    <span class="radio-custom"></span><span>свайно-винтовой</span>
+                </label>
+            </div>
+
+        </div>
+        <div class="walls">
+            <h4 class="calc-block-title">
+                Стены
+            </h4>
+            <div class="calc-input">
+                <label>Высота 1 этажа, м</label>
+                <input type="text" value="32">
+            </div>
+            <img class="calc-delimiter hidden-xs" src="img/system/plus.png" alt="крест разделитель">
+            <div class="calc-input">
+                <label>Высота 2 этажа, м</label>
+                <input type="text" value="32">
+            </div>
+
+            <div class="radio-block">
+                <p class="radio-block-title">Материал стен<img class="info" data-toggle="tooltip" data-placement="right"
+                                                               title="Tooltip on right" src="img/system/info.png"
+                                                               alt="подробнее"></p>
+                <label>
+                    <input class="radio" type="radio" value="1" name="foundation">
+                    <span class="radio-custom"></span><span>каркас</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="2" name="foundation">
+                    <span class="radio-custom"></span><span>брус</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="3" name="foundation">
+                    <span class="radio-custom"></span><span>арбалит</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="4" name="foundation">
+                    <span class="radio-custom"></span><span>газобетон</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="5" name="foundation">
+                    <span class="radio-custom"></span><span>арбалит</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="6" name="foundation">
+                    <span class="radio-custom"></span><span>газобетон</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="7" name="foundation">
+                    <span class="radio-custom"></span><span>кирпич</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="8" name="foundation">
+                    <span class="radio-custom"></span><span>профилированный</span>
+                </label>
+            </div>
+        </div>
+        <div class="roof">
+            <h4 class="calc-block-title">
+                Кровля
+            </h4>
+            <div class="radio-img-block">
+                <p class="radio-block-title">Тип кровли<img class="info" data-toggle="tooltip" data-placement="right"
+                                                            title="Tooltip on right" src="img/system/info.png"
+                                                            alt="подробнее"></p>
+                <label>
+                    <input class="radio" type="radio" value="1" name="foundation">
+                    <span class="radio-custom radio-custom-1"></span><span>односкатная</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="2" name="foundation">
+                    <span class="radio-custom radio-custom-2"></span><span>двухскатная</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="1" name="foundation">
+                    <span class="radio-custom radio-custom-3"></span><span>вальмовая</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="2" name="foundation">
+                    <span class="radio-custom radio-custom-4"></span><span>полувальмовая</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="1" name="foundation">
+                    <span class="radio-custom radio-custom-5"></span><span>шатровая</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="2" name="foundation">
+                    <span class="radio-custom radio-custom-6"></span><span>со скосом</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="1" name="foundation">
+                    <span class="radio-custom radio-custom-7"></span><span>мансардная</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="2" name="foundation">
+                    <span class="radio-custom radio-custom-8"></span><span>многоскатная</span>
+                </label>
+            </div>
+            <div class="radio-block">
+                <p class="radio-block-title">Материал кровли<img class="info" data-toggle="tooltip"
+                                                                 data-placement="right" title="Tooltip on right"
+                                                                 src="img/system/info.png" alt="подробнее"></p>
+                <label>
+                    <input class="radio" type="radio" value="1" name="foundation">
+                    <span class="radio-custom"></span><span>профлист</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="2" name="foundation">
+                    <span class="radio-custom"></span><span>металлочерепица</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="3" name="foundation">
+                    <span class="radio-custom"></span><span>одулин</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="4" name="foundation">
+                    <span class="radio-custom"></span><span>профлист</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="5" name="foundation">
+                    <span class="radio-custom"></span><span>одулин</span>
+                </label>
+                <label>
+                    <input class="radio" type="radio" value="6" name="foundation">
+                    <span class="radio-custom"></span><span>мягкая черепица</span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-content form-content">
+        <div class="copiright">
+            <p>
+                © ДомНедорого | 2017 год
+            </p>
+        </div>
+        <form class="forma">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="title-mounth">Ориентировочный месяц<br>
+                            начала строительства</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="your-discount">Ваша скидка <span>10<span>%</span></span></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dropdown">
+                <input class="select dropdown-toggle" type="text" data-toggle="dropdown"
+                       placeholder="Категория вопроса">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Рязань</a></li>
+                    <li><a href="#">Ржев</a></li>
+                </ul>
+            </div>
+            <input type="text" placeholder="Ваше имя *">
+            <input type="text" placeholder="Номер телефона *">
+            <button class="application">Оставить заявку</button>
+        </form>
+    </div>
+
+</section>
 
 <div class="footer navbar-fixed-bottom">
+
     <div class="main-content">
         <div class="copiright">
             <p>
@@ -662,14 +972,22 @@
             </p>
         </div>
         <div class="want-a-discount">
-            <button class="">Хочу скидку</button>
+            <button id="show-discount">Хочу скидку</button>
         </div>
-        <div class="forma">
-            <input type="text">
+        <form class="forma">
+            <div class="dropdown">
+                <input class="select dropdown-toggle" type="text" data-toggle="dropdown"
+                       placeholder="Категория вопроса">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Рязань</a></li>
+                    <li><a href="#">Ржев</a></li>
+                </ul>
+            </div>
             <input type="text" placeholder="Ваше имя *">
             <input type="text" placeholder="Номер телефона *">
             <button class="application">Оставить заявку</button>
-        </div>
+        </form>
     </div>
 
 </div>
@@ -677,12 +995,14 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
-<script src="bower_components/jquery-scrollify/jquery.scrollify.js"></script>
+<script>
+    if ( $(window).width() > 1280 ) {
+        document.write('<script src="bower_components/jquery-scrollify/jquery.scrollify.js">');
+    }
+</script>
 <script src="js/jquery.countTo.js"></script>
-<script src="js/jquery.easings.min.js"></script>
-<script src="js/jquery.fullPage.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript">
+<script src="js/script.js"></script>
+<script>
     $('.timer').countTo();
 </script>
 </body>
