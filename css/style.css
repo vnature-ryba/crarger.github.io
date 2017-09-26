@@ -84,7 +84,7 @@ body {
     background-color: #FF9600;
     position: absolute;
     z-index: 2;
-    bottom: 0vh; }
+    top: 100vh; }
 
 .nav-default {
   background-color: rgba(35, 35, 35, 0.2);
