@@ -84,7 +84,7 @@ body {
     background-color: #FF9600;
     position: absolute;
     z-index: 2;
-    bottom: 0px; }
+    bottom: 0vh; }
 
 .nav-default {
   background-color: rgba(35, 35, 35, 0.2);
@@ -689,7 +689,6 @@ header {
       background-color: rgba(255, 255, 255, 0.5);
       border: none;
       -webkit-border-radius: 2px;
-      margin: 0 10px;
       padding: 0 5px 0 15px;
       font-size: 12px;
       margin: 0 10px 10px 10px; }
