@@ -18,6 +18,12 @@
     .calc .roof
       max-width: 456px
 
+@media screen and (max-width: 1206px)
+    .calc .foundation, .calc .walls, .calc .roof
+      margin-bottom: 30px !important
+    .calc
+      background-image: radial-gradient(ellipse, #232323, #232323, #585b58)
+
 @media screen and (min-width: 920px) and (max-width: 1100px)
     .calc .foundation
       max-width: 440px
@@ -28,9 +34,21 @@
     .calc .foundation
       margin: auto
       text-align: center
+    .foundation:after
+        height: 2px
+        width: 100%
+        content: ''
+        display: block
+        background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.20), transparent);
     .calc .walls
       margin: auto
       text-align: center
+    .walls:after
+        height: 2px
+        width: 100%
+        content: ''
+        display: block
+        background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.20), transparent);
     .calc .roof
       margin: auto
       text-align: center
@@ -61,10 +79,16 @@
     .calc
       display: flex
       flex-wrap: wrap
+      .main-content
+        .copiright
+          display: none
+      .forma
+        margin: auto
     .hide-discount
       display: none
     .want-a-discount
       display: none !important
+
 
 @media screen and (max-width: 1260px)
     .calc
