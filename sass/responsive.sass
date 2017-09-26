@@ -1,4 +1,41 @@
-@media (max-width: 1300px)
+@media screen and (max-width: 1760px)
+    .left-menu
+      display: none !important
+
+@media screen and (min-width: 1360px) and (max-width: 1629px)
+    .calc .foundation
+      max-width: 410px
+    .calc .walls
+      max-width: 430px
+    .calc .roof
+      max-width: 460px
+
+@media screen and (min-width: 1206px) and (max-width: 1359px)
+    .calc .foundation
+      max-width: 369px
+    .calc .walls
+      max-width: 331px
+    .calc .roof
+      max-width: 456px
+
+@media screen and (min-width: 920px) and (max-width: 1100px)
+    .calc .foundation
+      max-width: 440px
+    .calc .walls
+      max-width: 430px
+
+@media (max-width: 919px)
+    .calc .foundation
+      margin: auto
+      text-align: center
+    .calc .walls
+      margin: auto
+      text-align: center
+    .calc .roof
+      margin: auto
+      text-align: center
+
+@media screen and (max-width: 1300px)
     header
         position: absolute !important
     .footer
@@ -15,13 +52,21 @@
         height: 100% !important
         padding: 15px 0
 
-@media (min-width: 1280px)
+@media screen and (min-width: 1280px)
   .menu
     .dropdown:hover > .dropdown-menu
       display: block
 
+@media screen and (max-width: 1280px)
+    .calc
+      display: flex
+      flex-wrap: wrap
+    .hide-discount
+      display: none
+    .want-a-discount
+      display: none !important
 
-@media (max-width: 1260px)
+@media screen and (max-width: 1260px)
     .calc
         position: relative !important
         max-height: inherit
@@ -30,13 +75,12 @@
         .main-content
             justify-content: center
 
-@media (max-width: 982px)
+@media screen and (max-width: 982px)
     .forma
         justify-content: center
-        width: 100%
-        max-width: 100% !important
+        margin: auto
 
-@media (min-width: 769px)
+@media screen and (min-width: 769px)
     .menu
       ul
         li:hover
@@ -44,12 +88,12 @@
             transform: rotate(-180deg)
             transition: 0.2s
 
-@media (max-width: 767px)
+@media screen and (max-width: 767px)
     .screen-one .item .main-content
       font-size: 18pt
       line-height: 25px
       padding-right: 15px
-      bottom: 20px
+      bottom: 49px
     .nav-default
       background-color: rgba(35, 35, 35, 0.8)
     .screen-two .item
@@ -61,6 +105,11 @@
         .menu
             width: 100%
             text-align: center
+            ul
+              li
+                &:hover
+                  &:after
+                    display: none !important
     .screen-fourth
         .image
             margin: 0 30px
@@ -76,10 +125,6 @@
           padding: 0 0 15px 25px
         .logo
           float: left
-
-
-
-
 
         .menu
           width: 100%
@@ -101,35 +146,31 @@
                 a
                   padding-bottom: 10px
 
-@media (max-width: 667px)
+@media screen and (max-width: 667px)
   .screen-five
     .content
       .cell
         width: 250px
 
-@media (max-width: 610px)
+@media screen and (max-width: 610px)
     .screen-two
         .item
             .title
                 font-size: 20pt
                 padding: 10px 0 0
 
-@media (max-width: 586px)
+@media screen and (max-width: 586px)
     .footer .main-content .forma .your-discount, .calc .main-content .forma .your-discount
         text-align: center
 
-@media (max-width: 507px)
+@media screen and (max-width: 507px)
   .screen-fourth
     .image
       border-bottom: 1px solid #d3ceca
       width: 100%
       max-width: 100%
 
-@media (max-width: 484px)
-    .calc .foundation, .calc .walls, .calc .roof
-        text-align: center !important
-
-@media (max-width: 414px)
+@media screen and (max-width: 414px)
     .bottom-stat
         .description
            font-size: 15pt
