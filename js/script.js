@@ -84,6 +84,41 @@ $(".screen-two .owl-carousel").owlCarousel({
     freeDrag: false
 });
 
+//инициализация owl для третьего экрана
+$(".screen-stages .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    stagePadding: 0,
+    nav: false,
+    autoplaySpeed: 4000,
+    dotsSpeed: 4000,
+    navText: "",
+    dots: true,
+    paginationNumbers: true,
+    items: 4,
+    lazyLoad: true,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    freeDrag: false,
+    responsive: {
+        320: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        1200: {
+            items: 3
+        },
+        1500: {
+            items: 4
+        }
+    }
+});
+
 //Делегируем события кнопок next prev по умолчанию нашим кнопкам, которые могут находится ыне контейнера слайдера
 var owl = $(".slider2");
 owl.owlCarousel();

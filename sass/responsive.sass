@@ -1,3 +1,11 @@
+@media screen and (min-width: 1760px)
+    .screen-stages
+      .main-content
+        float: right
+        .content
+          margin: auto auto auto 235px
+
+
 @media screen and (max-width: 1760px)
     .left-menu
       display: none !important
@@ -194,10 +202,15 @@
 
 @media screen and (max-width: 507px)
   .screen-fourth
-    .image
-      border-bottom: 1px solid #d3ceca
-      width: 100%
-      max-width: 100%
+    .content
+      .image:after
+        content: ''
+        display: block
+        height: 1px
+        width: 100%
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2), transparent)
+        position: relative
+        top: 43px
 
 @media screen and (max-width: 414px)
     .bottom-stat
