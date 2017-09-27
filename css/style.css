@@ -438,7 +438,8 @@ header {
   padding-top: 80px; }
 
 .screen-stages {
-  padding-top: 80px; }
+  padding-top: 80px;
+  height: 100vh; }
   .screen-stages .main-content .owl-theme .owl-dots .owl-dot span {
     background-color: #ffb74f;
     transition: 0.2s;
@@ -467,7 +468,8 @@ header {
       height: 1px;
       width: 100%;
       position: relative;
-      background-color: #810C74;
+      background-color: rgba(129, 12, 116, 0.4);
+      box-shadow: 0 0 2px 0 rgba(129, 12, 116, 0.8);
       top: 173px; }
 
 .screen-fourth {

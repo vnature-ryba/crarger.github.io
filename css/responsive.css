@@ -109,7 +109,9 @@
 @media screen and (min-width: 769px) {
   .menu ul li:hover .custom-caret {
     transform: rotate(-180deg);
-    transition: 0.2s; } }
+    transition: 0.2s; }
+  .screen-stages {
+    padding-top: 150px; } }
 
 @media screen and (max-width: 767px) {
   .screen-one .item .main-content {
