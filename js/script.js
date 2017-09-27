@@ -1,4 +1,17 @@
 
+//скрипт для закрытия меню бутстрап при клике вне него
+$(document).bind( "mouseup touchend", function(e){
+    var container = $('.navbar-collapse');
+
+    if (!container.is(e.target)
+        && container.has(e.target).length === 0)
+    {
+        container.collapse('hide');
+    }
+});
+
+
+
 //progressbar owl
 $(document).ready(function() {
     //Init the carousel
@@ -293,3 +306,4 @@ $(document).ready(function () {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
+
