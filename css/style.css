@@ -737,7 +737,8 @@ header {
 
 .footer .well, .calc .well {
   background-color: transparent;
-  border: none; }
+  border: none;
+  margin: 0; }
 
 .calc {
   max-height: 500px;
