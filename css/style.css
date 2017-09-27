@@ -483,6 +483,7 @@ header {
     width: 100%;
     margin: 30px 50px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     filter: grayscale(100%);
     transition: 0.2s; }
@@ -656,6 +657,8 @@ header {
       color: #EBEDEB !important; }
   .footer div {
     align-items: center; }
+  .footer .in {
+    margin: auto; }
 
 .footer .main-content, .calc .main-content {
   display: flex;
@@ -732,8 +735,12 @@ header {
       color: #FFFFFF;
       transition: 0.2s; }
 
+.footer .well, .calc .well {
+  background-color: transparent;
+  border: none; }
+
 .calc {
-  max-height: 465px;
+  max-height: 500px;
   background-image: url("../img/system/calc-bg.png");
   background-color: black;
   background-size: 100% 100%;
@@ -743,11 +750,12 @@ header {
   .calc .form-content {
     align-items: flex-end; }
   .calc .forma {
-    max-width: 720px; }
+    max-width: 720px;
+    align-items: flex-end; }
     .calc .forma .title-mounth {
       color: #ffb74f;
       font-size: 11px;
-      padding-top: 15px; }
+      display: block; }
   .calc .tooltip-inner {
     background-color: #FFFFFF;
     color: #232323; }

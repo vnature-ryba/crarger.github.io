@@ -542,6 +542,7 @@ header
     width: 100%
     margin: 30px 50px
     display: flex
+    flex-wrap: wrap
     align-items: center
     filter: grayscale(100%)
     transition: 0.2s
@@ -725,6 +726,8 @@ header
         color: #EBEDEB !important
   div
     align-items: center
+  .in
+    margin: auto
 .footer, .calc
   .main-content
     display: flex
@@ -812,11 +815,12 @@ header
       ::-webkit-input-placeholder
         color: $white
         transition: 0.2s
-
-
+  .well
+    background-color: transparent
+    border: none
 
 .calc
-  max-height: 465px
+  max-height: 500px
   background-image: url("../img/system/calc-bg.png")
   background-color: black
   background-size: 100% 100%
@@ -827,10 +831,11 @@ header
     align-items: flex-end
   .forma
     max-width: 720px
+    align-items: flex-end
     .title-mounth
       color: $light-orange
       font-size: 11px
-      padding-top: 15px
+      display: block
   .tooltip-inner
     background-color: $white
     color: #232323

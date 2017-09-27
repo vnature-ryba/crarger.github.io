@@ -1020,8 +1020,7 @@
             <div class="col-xs-12">
                 <div class="row">
                     <div class="col-sm-6">
-                        <p class="title-mounth">Ориентировочный месяц<br>
-                            начала строительства</p>
+
                     </div>
                     <div class="col-sm-6">
                         <p class="your-discount">Ваша скидка <span>10<span>%</span></span></p>
@@ -1029,7 +1028,8 @@
                 </div>
 
             </div>
-            <div class="dropdown">
+            <div class="dropdown"><label class="title-mounth">Ориентировочный месяц<br>
+                начала строительства</label>
                 <input class="select dropdown-toggle" type="text" data-toggle="dropdown"
                        placeholder="Категория вопроса">
                 <ul class="dropdown-menu">
@@ -1054,16 +1054,41 @@
                 © ДомНедорого | 2017 год
             </p>
         </div>
-        <div class="zamanuha">
+        <div class="zamanuha zamanuha-desc">
             <p>
                 Оставьте ваши вопросы о строительстве нового дома <br>
                 и мы будем рады рассказать вам еще больше!
             </p>
         </div>
+
+        <div class="zamanuha zamanuha-mobile">
+            <p>
+                Оставьте ваши вопросы о строительстве нового дома <br>
+                и мы будем рады рассказать вам еще <a href="#spoiler-1" data-toggle="collapse">больше!</a>
+            </p>
+        </div>
         <div class="want-a-discount">
             <button id="show-discount">Хочу скидку</button>
         </div>
-        <form class="forma">
+        <div class="collapse" id="spoiler-1">
+            <div class="well">
+                <form class="forma">
+                    <div class="dropdown">
+                        <input class="select dropdown-toggle" type="text" data-toggle="dropdown"
+                               placeholder="Категория вопроса">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Рязань</a></li>
+                            <li><a href="#">Ржев</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" placeholder="Ваше имя *">
+                    <input type="text" placeholder="Номер телефона *">
+                    <button class="application">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+        <form class="forma forma-desc">
             <div class="dropdown">
                 <input class="select dropdown-toggle" type="text" data-toggle="dropdown"
                        placeholder="Категория вопроса">

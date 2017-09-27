@@ -91,7 +91,13 @@
   .hide-discount {
     display: none; }
   .want-a-discount {
-    display: none !important; } }
+    display: none !important; }
+  .footer .zamanuha-desc {
+    display: none !important; }
+  .footer .forma-desc {
+    display: none !important; }
+  .footer .zamanuha-mobile {
+    display: flex !important; } }
 
 @media screen and (max-width: 1260px) {
   .calc {
@@ -170,9 +176,21 @@
     font-size: 20pt;
     padding: 10px 0 0; } }
 
+@media screen and (min-width: 587px) {
+  .your-discount {
+    top: 43px;
+    position: relative; } }
+
 @media screen and (max-width: 586px) {
   .footer .main-content .forma .your-discount, .calc .main-content .forma .your-discount {
-    text-align: center; } }
+    text-align: center; }
+  .your-discount-fixed {
+    background-color: #232323;
+    position: fixed;
+    margin-bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; } }
 
 @media screen and (max-width: 507px) {
   .screen-fourth .content .image:after {
@@ -181,8 +199,7 @@
     height: 1px;
     width: 100%;
     background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2), transparent);
-    position: relative;
-    top: 43px; } }
+    position: relative; } }
 
 @media screen and (max-width: 414px) {
   .bottom-stat .description {
