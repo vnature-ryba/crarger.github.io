@@ -532,7 +532,7 @@ header
 
 
 .screen-fourth
-  height: 100vh
+  min-height: 100vh
   padding-top: 107px
   .content
     max-width: 1100px
@@ -543,31 +543,10 @@ header
     margin: 30px 50px
     display: flex
     align-items: center
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    background-image: url("../img/content/partners/partners-logos.png")
+    filter: grayscale(100%)
     transition: 0.2s
-    &.img-1
-      background-position: -17px 0
-      &:hover
-        background-image: url("../img/content/partners/partners-logos-active.png")
-    &.img-2
-      background-position: -238px 0
-      &:hover
-        background-image: url("../img/content/partners/partners-logos-active.png")
-    &.img-3
-      background-position: -464px 0
-      &:hover
-        background-image: url("../img/content/partners/partners-logos-active.png")
-    &.img-4
-      background-position: -684px 0
-      &:hover
-        background-image: url("../img/content/partners/partners-logos-active.png")
-    &.img-5
-      background-position: -907px 0
-      &:hover
-        background-image: url("../img/content/partners/partners-logos-active.png")
+    &:hover
+      filter: grayscale(0)
 
   .title
     font-size: 18pt
