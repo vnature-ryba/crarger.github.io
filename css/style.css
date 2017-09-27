@@ -439,7 +439,7 @@ header {
 
 .screen-stages {
   padding-top: 80px;
-  height: 100vh; }
+  min-height: 100vh; }
   .screen-stages .main-content .owl-theme .owl-dots .owl-dot span {
     background-color: #ffb74f;
     transition: 0.2s;
