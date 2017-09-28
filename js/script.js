@@ -1,19 +1,16 @@
-
 //скрипт для закрытия меню бутстрап при клике вне него
-$(document).bind( "mouseup touchend", function(e){
+$(document).bind("mouseup touchend", function (e) {
     var container = $('.navbar-collapse');
 
     if (!container.is(e.target)
-        && container.has(e.target).length === 0)
-    {
+        && container.has(e.target).length === 0) {
         container.collapse('hide');
     }
 });
 
 
-
 //progressbar owl
-$(document).ready(function() {
+$(document).ready(function () {
     //Init the carousel
     initSlider();
 
@@ -42,7 +39,7 @@ $(document).ready(function() {
             onTranslate: resetProgressBar,
             onTranslated: startProgressBar,
             navigation: true,
-            navigationText: ['&lsaquo;','&rsaquo;'],
+            navigationText: ['&lsaquo;', '&rsaquo;'],
             slideSpeed: 300,
             paginationSpeed: 400,
             singleItem: true,
@@ -59,8 +56,9 @@ $(document).ready(function() {
             'transition': 'width 5000ms'
         });
     }
+
     function makePages() {
-        $.each(this.owl.userItems, function(i) {
+        $.each(this.owl.userItems, function (i) {
             $('.owl-controls .owl-page').eq(i)
                 .text($(this).find('p').text());
         });
@@ -187,7 +185,7 @@ $('#hide-discount').on('click', function (e) {
 });
 
 
-if ( $(window).width() > 1280 ) {
+if ($(window).width() > 1280) {
 
     //Добавление класса при спуске до опредененной позиции
     $(document).on("scroll", function () {
@@ -241,16 +239,15 @@ if ( $(window).width() > 1280 ) {
 }
 
 
-
 //подсвечивание активного пункта лемого меню
 var menu_selector = ".left-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
 
-function onScroll(){
+function onScroll() {
     var scroll_top = $(document).scrollTop();
-    $(menu_selector + " li").each(function(){
+    $(menu_selector + " li").each(function () {
         var hash = $(this).children('a').attr("href");
         var target = $(hash);
-        if (target.position().top-500 <= scroll_top && target.position().top + target.outerHeight()-500 > scroll_top) {
+        if (target.position().top - 500 <= scroll_top && target.position().top + target.outerHeight() - 500 > scroll_top) {
             $(menu_selector + " li.active").removeClass("active");
             $(this).addClass("active");
         } else {
@@ -261,7 +258,7 @@ function onScroll(){
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
-    $("a[href^=#]").click(function(e){
+    $("a[href^=#]").click(function (e) {
         e.preventDefault();
         $(document).off("scroll");
         $(menu_selector + " li.active").removeClass("active");
@@ -270,7 +267,7 @@ $(document).ready(function () {
         var target = $(hash);
         $("html, body").animate({
             scrollTop: target.offset().top
-        }, 500, function(){
+        }, 500, function () {
             window.location.hash = hash;
             $(document).on("scroll", onScroll);
         });
@@ -291,15 +288,19 @@ $(document).on("scroll", function () {
 
 
 //анимация перехода по якорям
-$(document).ready(function () {
-    $('a[href^="#jack"]').click(function () {
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top
-        }, 800);
-        return false;
+$(document).ready(function(){
+    $("#jackar,#logo").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
 
 
 //иницавлизация всплывающих подсказок

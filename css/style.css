@@ -61,10 +61,10 @@ body {
     right: 5px;
     position: absolute;
     text-align: right;
-    font-size: 22pt;
+    font-size: 26pt;
     padding-right: 70px;
     color: #FFFFFF;
-    bottom: 35px; }
+    bottom: 62px; }
     .screen-one .item .main-content span {
       color: #FF9600; }
   .screen-one .owl-carousel {
@@ -115,7 +115,8 @@ header {
   header .logo {
     width: 180px;
     height: 52px;
-    background-image: url("../svg/logo-light.svg");
+    background-image: url("../img/system/logo-light.png");
+    background-size: 100%;
     background-repeat: no-repeat; }
   header .main-content {
     max-width: 1770px;
@@ -233,7 +234,7 @@ header {
   .navbar-setting .main-content .menu .active a {
     color: #810C74; }
   .navbar-setting .main-content .logo {
-    background-image: url("../svg/logo-dark.svg"); }
+    background-image: url("../img/system/logo-dark.png"); }
   .navbar-setting .main-content .city label {
     color: #B3B8B3; }
   .navbar-setting .main-content .city .select {
@@ -256,10 +257,10 @@ header {
   font-family: "GothamProBold"; }
 
 .dark-color ul .vk {
-  background-image: url("../svg/icon-vk-dark.svg") !important; }
+  background-image: url("../img/system/icon-vk-dark.png") !important; }
 
 .dark-color ul .insta {
-  background-image: url("../svg/icon-insta-dark.svg") !important; }
+  background-image: url("../img/system/icon-insta-dark.png") !important; }
 
 .gray-color ul .active a {
   color: #FFFFFF !important;
@@ -322,11 +323,13 @@ header {
       height: 23px;
       width: 23px;
       margin-right: 15px;
-      background-image: url("../svg/icon-vk.svg"); }
+      background-image: url("../img/system/icon-vk.png");
+      background-size: 100%; }
     .left-menu .social-network .insta {
-      background-image: url("../svg/icon-insta.svg");
+      background-image: url("../img/system/icon-insta.png");
       height: 13px;
-      width: 13px; }
+      width: 13px;
+      background-size: 100%; }
 
 .screen-two {
   height: 100vh;
