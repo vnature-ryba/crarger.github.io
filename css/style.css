@@ -864,7 +864,7 @@ header {
   .calc .radio-img-block .radio {
     display: none; }
   .calc .radio-img-block .radio-custom {
-    width: 103px;
+    width: 45px;
     height: 32px;
     margin-right: 5px;
     position: relative;
@@ -876,23 +876,24 @@ header {
     margin: auto;
     transition: 0.2s;
     background-size: 54px;
-    filter: grayscale(100%); }
+    filter: grayscale(100%);
+    background-size: contain; }
   .calc .radio-img-block .radio-custom-1 {
-    background-image: url(../svg/roof-1.svg); }
+    background-image: url(../img/system/calc/roof-1.png); }
   .calc .radio-img-block .radio-custom-2 {
-    background-image: url(../svg/roof-2.svg); }
+    background-image: url(../img/system/calc/roof-2.png); }
   .calc .radio-img-block .radio-custom-3 {
-    background-image: url(../svg/roof-3.svg); }
+    background-image: url(../img/system/calc/roof-3.png); }
   .calc .radio-img-block .radio-custom-4 {
-    background-image: url(../svg/roof-4.svg); }
+    background-image: url(../img/system/calc/roof-4.png); }
   .calc .radio-img-block .radio-custom-5 {
-    background-image: url(../svg/roof-5.svg); }
+    background-image: url(../img/system/calc/roof-5.png); }
   .calc .radio-img-block .radio-custom-6 {
-    background-image: url(../svg/roof-6.svg); }
+    background-image: url(../img/system/calc/roof-6.png); }
   .calc .radio-img-block .radio-custom-7 {
-    background-image: url(../svg/roof-7.svg); }
+    background-image: url(../img/system/calc/roof-7.png); }
   .calc .radio-img-block .radio-custom-8 {
-    background-image: url(../svg/roof-8.svg); }
+    background-image: url(../img/system/calc/roof-8.png); }
   .calc .radio-img-block .radio:checked ~ span {
     color: #FF9600;
     transition: 0.2s;
