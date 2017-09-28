@@ -684,6 +684,8 @@ header {
     font-family: "Gotham Pro";
     font-size: 1.3rem;
     transition: 0.2s; }
+  .footer .main-content .zamanuha-mobile, .calc .main-content .zamanuha-mobile {
+    display: none; }
   .footer .main-content .forma .application, .calc .main-content .forma .application {
     background-color: #33042F;
     border: none;
@@ -853,7 +855,9 @@ header {
   .calc .radio-img-block label {
     text-align: center;
     color: #FFFFFF;
-    font-weight: 400; }
+    font-weight: 400;
+    max-width: 125px;
+    width: 100%; }
   .calc .radio-img-block .radio {
     display: none; }
   .calc .radio-img-block .radio-custom {
@@ -868,7 +872,8 @@ header {
     background-position: center !important;
     margin: auto;
     transition: 0.2s;
-    background-size: 54px; }
+    background-size: 54px;
+    filter: grayscale(100%); }
   .calc .radio-img-block .radio-custom-1 {
     background-image: url(../svg/roof-1.svg); }
   .calc .radio-img-block .radio-custom-2 {
@@ -885,22 +890,7 @@ header {
     background-image: url(../svg/roof-7.svg); }
   .calc .radio-img-block .radio-custom-8 {
     background-image: url(../svg/roof-8.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-1 {
-    background-image: url(../svg/roof-1-active.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-2 {
-    background-image: url(../svg/roof-2-active.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-3 {
-    background-image: url(../svg/roof-3-active.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-4 {
-    background-image: url(../svg/roof-4-active.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-5 {
-    background-image: url(../svg/roof-5-active.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-6 {
-    background-image: url(../svg/roof-6-active.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-7 {
-    background-image: url(../svg/roof-7-active.svg); }
-  .calc .radio-img-block .radio:checked + .radio-custom-8 {
-    background-image: url(../svg/roof-8-active.svg); }
   .calc .radio-img-block .radio:checked ~ span {
     color: #FF9600;
-    transition: 0.2s; }
+    transition: 0.2s;
+    filter: grayscale(0%); }

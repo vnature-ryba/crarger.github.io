@@ -757,6 +757,8 @@ header
       font-family: "Gotham Pro"
       font-size: 1.3rem
       transition: 0.2s
+    .zamanuha-mobile
+      display: none
 
     .forma
       .application
@@ -940,6 +942,8 @@ header
       text-align: center
       color: $white
       font-weight: 400
+      max-width: 125px
+      width: 100%
     .radio
       display: none
 
@@ -956,6 +960,7 @@ header
       margin: auto
       transition: 0.2s
       background-size: 54px
+      filter: grayscale(100%)
 
     .radio-custom-1
       background-image: url(../svg/roof-1.svg)
@@ -974,24 +979,8 @@ header
     .radio-custom-8
       background-image: url(../svg/roof-8.svg)
 
-    .radio:checked + .radio-custom-1
-      background-image: url(../svg/roof-1-active.svg)
-    .radio:checked + .radio-custom-2
-      background-image: url(../svg/roof-2-active.svg)
-    .radio:checked + .radio-custom-3
-      background-image: url(../svg/roof-3-active.svg)
-    .radio:checked + .radio-custom-4
-      background-image: url(../svg/roof-4-active.svg)
-    .radio:checked + .radio-custom-5
-      background-image: url(../svg/roof-5-active.svg)
-    .radio:checked + .radio-custom-6
-      background-image: url(../svg/roof-6-active.svg)
-    .radio:checked + .radio-custom-7
-      background-image: url(../svg/roof-7-active.svg)
-    .radio:checked + .radio-custom-8
-      background-image: url(../svg/roof-8-active.svg)
     .radio:checked ~ span
       color: $orange
       transition: 0.2s
-
+      filter: grayscale(0%)
 
