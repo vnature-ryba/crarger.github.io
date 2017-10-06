@@ -154,6 +154,9 @@ header {
   .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0);
   }
+  .main-content {
+    justify-content: space-between;
+  }
 }
 
 .logo {
@@ -270,14 +273,6 @@ header {
       left: 3px;
     }
   }
-  .call-number {
-    display: block;
-    margin: auto;
-    font-size: 1.8rem;
-    font-weight: 800;
-    padding-bottom: 6px;
-  }
-
   p {
     margin: 0;
   }
@@ -286,42 +281,70 @@ header {
     color: $light-orange;
     font-family: "GothamProRegular";
   }
-  .city {
-    margin: auto;
-    padding-bottom: 10px;
+  .decor-line {
     width: 150px;
-    .point {
-      height: 30px;
-      float: left;
-      position: relative;
-      top: 5px;
-      right: 10px;
-    }
-    .custom-caret {
-      max-width: 10px;
-      transition: 0.2s;
-    }
-    label {
-      margin: 0;
-      color: $white;
+    height: 718px;
+    background-color: transparentize($orange,.33);
+    position: absolute;
+    top: 0;
+    left: 297px;
+  }
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-between;
+    left: 50px;
+    position: relative;
+    .call-number {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.8rem;
+      font-weight: 800;
+      padding-bottom: 6px;
+      max-width: 200px;
+      justify-content: flex-end;
     }
 
-    .select {
-      background-color: transparent;
-      border: none;
-      font-family: "IntroRustG";
-      padding: 0;
-      color: $white;
-    }
-    .open {
+    .city {
+      padding-bottom: 10px;
+      padding-left: 13px;
+      width: 150px;
+      .point {
+        height: 30px;
+        float: left;
+        position: relative;
+        top: 5px;
+        right: 10px;
+      }
+      .custom-caret {
+        max-width: 10px;
+        transition: 0.2s;
+      }
+      label {
+        margin: 0;
+        color: $white;
+      }
+
       .select {
-        .custom-caret {
-          transform: rotate(-180deg);
-          transition: 0.2s;
+        background-color: transparent;
+        border: none;
+        font-family: "IntroRustG";
+        padding: 0;
+        color: $white;
+      }
+      .open {
+        .select {
+          .custom-caret {
+            transform: rotate(-180deg);
+            transition: 0.2s;
+          }
         }
       }
     }
   }
+
 }
 
 /*---------- block-start ----------*/
@@ -838,6 +861,116 @@ header {
 
 /*-------- block-franchise-will-work -------------*/
 .franchise-will-work {
+  .types-consumers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 100px;
+    .left-column {
+      position: relative;
+      z-index: 2;
+      padding: 39px 0 0;
+      .title {
+        padding: 0 0 55px;
+        position: relative;
+        left: 178px;
+      }
+      .navs {
+        .nav-tabs {
+          display: flex;
+          flex-direction: column;
+          border: none;
+          li {
+            display: flex;
+            align-items: center;
+            a {
+              font-family: "GothamProBold";
+              font-size: 22px;
+              color: $dark-purple;
+              padding: 10px 0;
+              border: none;
+            }
+            &:hover {
+              a {
+                background-color: transparent;
+                border: none;
+              }
+            }
+            &:before {
+              display: block;
+              content: '';
+              height: 15px;
+              position: relative;
+              right: 10px;
+              width: 165px;
+              margin: 0 10px 0 0;
+              background-position: right center;
+              background-image: url("../svg/list-img.svg");
+              background-repeat: no-repeat;
+              transition: 0.2s;
+              background-size: 5px;
+            }
+            &:hover:before {
+              background-size: 7px;
+            }
+
+          }
+          .active {
+            a {
+              border: none;
+              color: $orange;
+              background-color: transparent;
+            }
+            &:before {
+              background-image: url("../svg/list-img-active.svg");
+              background-repeat: no-repeat;
+              background-size: 200px;
+            }
+            &:hover:before {
+              background-size: 200px;
+            }
+          }
+        }
+      }
+    }
+    .right-column {
+      max-width: 1288px;
+      width: 100%;
+      max-height: 430px;
+      height: 100vh;
+
+      .tabs {
+        .tab-content {
+          .tab-pane {
+            padding: 205px 40px 0;
+            height: -webkit-fill-available;
+            p {
+              font-size: 19px;
+              color: $white;
+            }
+          }
+          #Beginner-Entrepreneur {
+            background-color: $orange;
+            background-image: linear-gradient(to right, $light-orange, transparent), url('../img/content/types-consumers/1.jpg');
+            background-position: right;
+            background-repeat: no-repeat;
+          }
+          #Construction-team {
+            background-color: $orange;
+            background-image: linear-gradient(to right, $light-orange, transparent), url('../img/content/types-consumers/1.jpg');
+            background-position: right;
+            background-repeat: no-repeat;
+          }
+          #Interested-investing {
+            background-color: $orange;
+            background-image: linear-gradient(to right, $light-orange, transparent), url('../img/content/types-consumers/1.jpg');
+            background-position: right;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
   .opening-plan {
     display: flex;justify-content: space-between;
     .left-column {
@@ -858,7 +991,6 @@ header {
           font-family: "GothamProBolditalic";
         }
       }
-
     }
     .right-column {
       width: 50%;
@@ -902,6 +1034,14 @@ header {
         }
       }
     }
+  }
+
+  .grafic {
+    margin: auto;
+    display: block;
+    max-width: 1620px;
+    width: 100%;
+    padding: 81px 15px 125px 15px;
   }
 }
 /*-------- block-franchise-will-work -------------*/

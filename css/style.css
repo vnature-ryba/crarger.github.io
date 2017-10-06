@@ -113,6 +113,8 @@ header {
     opacity: 1; }
   header .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0); }
+  header .main-content {
+    justify-content: space-between; }
 
 .logo {
   width: 180px;
@@ -192,42 +194,59 @@ header {
     padding: 6px 0;
     position: relative;
     left: 3px; }
-  .main-content .call-number {
-    display: block;
-    margin: auto;
-    font-size: 1.8rem;
-    font-weight: 800;
-    padding-bottom: 6px; }
   .main-content p {
     margin: 0; }
   .main-content a {
     color: #ffb74f;
     font-family: "GothamProRegular"; }
-  .main-content .city {
-    margin: auto;
-    padding-bottom: 10px;
-    width: 150px; }
-    .main-content .city .point {
-      height: 30px;
-      float: left;
-      position: relative;
-      top: 5px;
-      right: 10px; }
-    .main-content .city .custom-caret {
-      max-width: 10px;
-      transition: 0.2s; }
-    .main-content .city label {
-      margin: 0;
-      color: #FFFFFF; }
-    .main-content .city .select {
-      background-color: transparent;
-      border: none;
-      font-family: "IntroRustG";
-      padding: 0;
-      color: #FFFFFF; }
-    .main-content .city .open .select .custom-caret {
-      transform: rotate(-180deg);
-      transition: 0.2s; }
+  .main-content .decor-line {
+    width: 150px;
+    height: 718px;
+    background-color: rgba(255, 150, 0, 0.67);
+    position: absolute;
+    top: 0;
+    left: 297px; }
+  .main-content .group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-between;
+    left: 50px;
+    position: relative; }
+    .main-content .group .call-number {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.8rem;
+      font-weight: 800;
+      padding-bottom: 6px;
+      max-width: 200px;
+      justify-content: flex-end; }
+    .main-content .group .city {
+      padding-bottom: 10px;
+      padding-left: 13px;
+      width: 150px; }
+      .main-content .group .city .point {
+        height: 30px;
+        float: left;
+        position: relative;
+        top: 5px;
+        right: 10px; }
+      .main-content .group .city .custom-caret {
+        max-width: 10px;
+        transition: 0.2s; }
+      .main-content .group .city label {
+        margin: 0;
+        color: #FFFFFF; }
+      .main-content .group .city .select {
+        background-color: transparent;
+        border: none;
+        font-family: "IntroRustG";
+        padding: 0;
+        color: #FFFFFF; }
+      .main-content .group .city .open .select .custom-caret {
+        transform: rotate(-180deg);
+        transition: 0.2s; }
 
 /*---------- block-start ----------*/
 .first-screen {
@@ -628,6 +647,87 @@ header {
 
 /*-------- end block-partnership ---------*/
 /*-------- block-franchise-will-work -------------*/
+.franchise-will-work .types-consumers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0 100px; }
+  .franchise-will-work .types-consumers .left-column {
+    position: relative;
+    z-index: 2;
+    padding: 39px 0 0; }
+    .franchise-will-work .types-consumers .left-column .title {
+      padding: 0 0 55px;
+      position: relative;
+      left: 178px; }
+    .franchise-will-work .types-consumers .left-column .navs .nav-tabs {
+      display: flex;
+      flex-direction: column;
+      border: none; }
+      .franchise-will-work .types-consumers .left-column .navs .nav-tabs li {
+        display: flex;
+        align-items: center; }
+        .franchise-will-work .types-consumers .left-column .navs .nav-tabs li a {
+          font-family: "GothamProBold";
+          font-size: 22px;
+          color: #3c0336;
+          padding: 10px 0;
+          border: none; }
+        .franchise-will-work .types-consumers .left-column .navs .nav-tabs li:hover a {
+          background-color: transparent;
+          border: none; }
+        .franchise-will-work .types-consumers .left-column .navs .nav-tabs li:before {
+          display: block;
+          content: '';
+          height: 15px;
+          position: relative;
+          right: 10px;
+          width: 165px;
+          margin: 0 10px 0 0;
+          background-position: right center;
+          background-image: url("../svg/list-img.svg");
+          background-repeat: no-repeat;
+          transition: 0.2s;
+          background-size: 5px; }
+        .franchise-will-work .types-consumers .left-column .navs .nav-tabs li:hover:before {
+          background-size: 7px; }
+      .franchise-will-work .types-consumers .left-column .navs .nav-tabs .active a {
+        border: none;
+        color: #FF9600;
+        background-color: transparent; }
+      .franchise-will-work .types-consumers .left-column .navs .nav-tabs .active:before {
+        background-image: url("../svg/list-img-active.svg");
+        background-repeat: no-repeat;
+        background-size: 200px; }
+      .franchise-will-work .types-consumers .left-column .navs .nav-tabs .active:hover:before {
+        background-size: 200px; }
+  .franchise-will-work .types-consumers .right-column {
+    max-width: 1288px;
+    width: 100%;
+    max-height: 430px;
+    height: 100vh; }
+    .franchise-will-work .types-consumers .right-column .tabs .tab-content .tab-pane {
+      padding: 205px 40px 0;
+      height: -webkit-fill-available; }
+      .franchise-will-work .types-consumers .right-column .tabs .tab-content .tab-pane p {
+        font-size: 19px;
+        color: #FFFFFF; }
+    .franchise-will-work .types-consumers .right-column .tabs .tab-content #Beginner-Entrepreneur {
+      background-color: #FF9600;
+      background-image: linear-gradient(to right, #ffb74f, transparent), url("../img/content/types-consumers/1.jpg");
+      background-position: right;
+      background-repeat: no-repeat; }
+    .franchise-will-work .types-consumers .right-column .tabs .tab-content #Construction-team {
+      background-color: #FF9600;
+      background-image: linear-gradient(to right, #ffb74f, transparent), url("../img/content/types-consumers/1.jpg");
+      background-position: right;
+      background-repeat: no-repeat; }
+    .franchise-will-work .types-consumers .right-column .tabs .tab-content #Interested-investing {
+      background-color: #FF9600;
+      background-image: linear-gradient(to right, #ffb74f, transparent), url("../img/content/types-consumers/1.jpg");
+      background-position: right;
+      background-repeat: no-repeat; }
+
 .franchise-will-work .opening-plan {
   display: flex;
   justify-content: space-between; }
@@ -680,6 +780,13 @@ header {
           font-family: "GothamProBolditalic";
           float: left;
           padding: 0 35px 0 0; }
+
+.franchise-will-work .grafic {
+  margin: auto;
+  display: block;
+  max-width: 1620px;
+  width: 100%;
+  padding: 81px 15px 125px 15px; }
 
 /*-------- block-franchise-will-work -------------*/
 /*-------------- block-faq ----------------*/
