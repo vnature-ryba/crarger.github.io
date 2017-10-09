@@ -336,6 +336,9 @@
   }
 
   .main-content {
+    .group {
+      max-width: inherit;
+    }
     .menu {
       ul {
         li {
@@ -350,6 +353,12 @@
           }
         }
       }
+    }
+  }
+
+  .first-screen {
+    .block-start {
+      max-height: 900px;
     }
   }
 
