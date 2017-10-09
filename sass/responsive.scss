@@ -399,6 +399,10 @@
       }
     }
   }
+
+  .block-history {
+    padding: 45px 15px;
+  }
 }
 
 @media screen and (max-width: 767px){
@@ -435,6 +439,7 @@
         }
         .text {
           font-size: 24px;
+          color: #989B98;
         }
       }
     }
@@ -725,6 +730,32 @@
       .right-column {
         ol {
           padding: 0 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 394px){
+  .block-faq {
+    .title {
+      p {
+        a {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .block-partnership {
+    .package-composition {
+      .send-application {
+        top: 18px;
+        position: relative;
+        .btn-send-application {
+          max-width: 215px;
+          font-size: 20px;
         }
       }
     }

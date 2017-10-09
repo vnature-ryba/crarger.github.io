@@ -1063,7 +1063,7 @@ header {
 /*------------ end 8-Reasons --------------*/
 /*---------- block history ----------*/
 .block-history {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.9)), url(../img/system/history-bg.png);
+  background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.8), white), url(../img/system/history-bg.png);
   padding: 0 15px; }
   .block-history p {
     font-size: 18px;
@@ -1096,7 +1096,7 @@ header {
 /*---------- end block history ----------*/
 /*---------- block reviews ----------*/
 .block-reviews {
-  background-image: linear-gradient(to bottom, #FFFFFF, transparent), url("../img/system/block-reviews-bg.png");
+  background-image: linear-gradient(to bottom, #FFFFFF, rgba(255, 255, 255, 0.64), transparent), url(../img/system/block-reviews-bg.png);
   overflow: hidden;
   padding: 0 0 150px 0;
   background-position: bottom; }

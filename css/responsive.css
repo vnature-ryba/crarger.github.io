@@ -189,7 +189,9 @@
     .header .menu {
       width: 100%; }
       .header .menu .custom-caret {
-        float: right; } }
+        float: right; }
+  .block-history {
+    padding: 45px 15px; } }
 
 @media screen and (max-width: 767px) {
   .block-result .content .figures-container {
@@ -207,7 +209,8 @@
       .eight-reasons .desk .title h2 .figure {
         font-size: 80px; }
     .eight-reasons .desk .title .text {
-      font-size: 24px; }
+      font-size: 24px;
+      color: #989B98; }
   .form-position-block .forma form .btn-purple {
     margin-top: 22px;
     margin-bottom: 15px;
@@ -314,6 +317,16 @@
     justify-content: center; }
   .franchise-will-work .opening-plan .right-column ol {
     padding: 0 25px; } }
+
+@media screen and (max-width: 394px) {
+  .block-faq .title p a:after {
+    display: none; }
+  .block-partnership .package-composition .send-application {
+    top: 18px;
+    position: relative; }
+    .block-partnership .package-composition .send-application .btn-send-application {
+      max-width: 215px;
+      font-size: 20px; } }
 
 @media screen and (max-width: 375px) {
   .block-result .content .sub-block-advantages .cell .cell-title {
