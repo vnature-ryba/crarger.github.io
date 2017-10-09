@@ -548,15 +548,20 @@ header {
       .block-guarantee .main-content .block-mobile a {
         color: #FFFFFF;
         display: block;
-        padding: 5px 0; }
+        padding: 10px 0;
+        font-size: 20px;
+        text-shadow: 0 0 1px white;
+        transition: 0.2s; }
         .block-guarantee .main-content .block-mobile a:hover, .block-guarantee .main-content .block-mobile a:focus {
           text-decoration: none; }
         .block-guarantee .main-content .block-mobile a .caret {
           margin: 0 10px 0 0;
           transform: rotate(-180deg);
           transition: 0.2s; }
-      .block-guarantee .main-content .block-mobile .collapsed .caret {
-        transform: rotate(0deg); }
+      .block-guarantee .main-content .block-mobile .collapsed {
+        text-shadow: none; }
+        .block-guarantee .main-content .block-mobile .collapsed .caret {
+          transform: rotate(0deg); }
 
 /*-------- end why-choose -----------*/
 /*-------- block-partnership -------------*/
