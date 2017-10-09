@@ -1,5 +1,640 @@
+@media screen and (min-width: 1840px){
+  .header{
+    .main-content {
+      .decor-line {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1728px){
+  .block-faq {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 1600px){
   .block-guarantee {
     min-height: 692px;
+  }
+}
+
+@media screen and (max-width: 1596px){
+  .first-screen {
+    .block-start-description {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1580px){
+  .main-content {
+    .group {
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1488px){
+  .block-guarantee {
+    &:after {
+      display: none;
+    }
+  }
+  .eight-reasons {
+    .desk {
+      flex-direction: row;
+      .title {
+        bottom: 0;
+        right: 0;
+        padding: 15px 0 15px 0;
+        h2 {
+          line-height: normal;
+        }
+      }
+      .first-column {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1459px) {
+  .menu {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .eight-reasons {
+    .desk {
+      .column {
+        max-width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .first-screen {
+    .title {
+      bottom: 0;
+    }
+    .block-start-description {
+      padding: 0 15px;
+      &:before {
+        display: none;
+      }
+      p {
+        padding: 0;
+        bottom: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .eight-reasons {
+    .desk {
+      .title {
+        width: 100%;
+      }
+      .column {
+        max-width: 50%;
+      }
+    }
+  }
+  .block-reviews {
+    .main-content {
+      .tabs {
+        .desk {
+          background-image: none;
+          .tab-pane {
+            padding: 40px 15px 15px 160px;
+          }
+          .reviewer {
+            left: 0;
+            flex-direction: row;
+          }
+        }
+        .nav-tabs {
+          right: inherit;
+          padding: 0 0 0 10px;
+          top: 172px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1235px){
+  .franchise-will-work {
+    .opening-plan {
+      .left-column {
+        width: 100%;
+        .gradient-text {
+          margin: 20px 0;
+          padding: 0 15px;
+        }
+      }
+      .right-column {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .block-faq {
+    .desk{
+      background-image: none;
+      .navs {
+        .nav-tabs{
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .block-guarantee{
+    .main-content {
+      .navs {
+        background-image: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  .form-position-block {
+    .forma {
+      position: relative;
+      top: 0;
+    }
+  }
+  .footer {
+    min-height: 50px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 910px){
+  .block-guarantee {
+    .main-content {
+      .navs {
+        .nav-tabs {
+          max-width: 615px;
+          flex-wrap: wrap;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .block-result {
+    .content {
+      .figures-container {
+        .figures {
+          .btn-send-application {
+            margin: 0 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 840px) and (max-width: 925px) {
+  .form-position-block {
+    .forma {
+      form {
+        textarea {
+          max-width: 525px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 840px) {
+  .form-position-block {
+    .forma {
+      form {
+        textarea {
+          max-width: 451px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .block-result {
+    padding: 0 0 100px;
+    .content {
+      .figures-container {
+        padding: 65px 0 0 0;
+        .figures {
+          .btn-send-application {
+            margin-top: 21px;
+          }
+        }
+      }
+      .sub-block-advantages {
+        .cell {
+          text-align: center;
+          margin: auto;
+          &:before {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .franchise-will-work {
+    .types-consumers {
+      .left-column {
+        .title {
+          left: 0;
+          padding: 0 15px 0;
+        }
+      }
+    }
+    .opening-plan {
+      .right-column {
+        ol {
+          li {
+            p {
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+    .grafic {
+      padding: 20px 15px 25px 15px;
+    }
+  }
+
+  .block-faq {
+    .title {
+      padding: 0 15px
+    }
+    .desk {
+      padding: 0 15px 15px;
+      height: auto;
+    }
+  }
+
+  .eight-reasons {
+    padding: 0;
+  }
+
+
+  .block-partnership {
+    padding: 0;
+    .info {
+      .packages {
+        .nav-packages {
+          flex-direction: column;
+          padding: 0;
+          li {
+            padding: 0 15px;
+          }
+        }
+      }
+      .description {
+        .left-column {
+          .string {
+            padding: 0;
+          }
+        }
+        .right-column {
+          padding: 15px;
+          &:after {
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+  .block-reviews {
+    padding: 0;
+    .main-content {
+      .title {
+        line-height: initial;
+        padding: 0 15px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .block-result {
+    .content {
+      .figures-container {
+        background-image: none;
+        padding: 65px 0 0 0;
+      }
+    }
+  }
+  .form-position-block {
+    .forma {
+      form {
+        .inputs {
+          max-width: 646px;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 684px) {
+  .eight-reasons {
+    .desk {
+      padding: 0 15px;
+      .title {
+        h2 {
+          font-size: 47px;
+          .figure {
+            font-size: 80px;
+          }
+        }
+        .text {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .form-position-block {
+    .forma {
+      form {
+        .btn-purple {
+          margin-top: 22px;
+          margin-bottom: 15px;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  .block-reviews {
+    .main-content {
+      .tabs {
+        .nav-tabs {
+          display: none;
+        }
+        .desk {
+          .tab-pane {
+            padding: 0 15px;
+          }
+          .reviewer {
+            .reviewer-info {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .block-faq {
+    .title {
+      h2 {
+        font-size: 35px;
+        line-height: 48px;
+        span {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .form-position-block {
+    .forma {
+      form {
+        .inputs {
+          justify-content: center;
+          margin-bottom: 15px;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .first-screen {
+    .title {
+      font-size: 27px;
+      line-height: 37px;
+    }
+    .block-start-description {
+      p {
+        font-size: 20px;
+        span {
+          line-height: 45px;
+          font-size: 38px;
+        }
+      }
+    }
+  }
+
+  .block-guarantee {
+    .main-content {
+      .title {
+        font-size: 32px;
+      }
+    }
+  }
+  .franchise-will-work {
+    .types-consumers {
+      padding: 0 0 15px;
+    }
+    .opening-plan {
+      .left-column {
+        .gradient-text {
+          font-size: 23px;
+          margin: 0;
+        }
+      }
+      .right-column {
+        ol {
+          li {
+            &:before {
+              float: none;
+            }
+            h5 {
+              &:after {
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .eight-reasons {
+    .desk {
+      .column {
+        ol {
+          li {
+            &:before {
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .franchise-will-work {
+    .types-consumers {
+      padding: 0 0 15px;
+    }
+
+    .opening-plan {
+      .left-column {
+        .gradient-text {
+          font-size: 23px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .block-partnership {
+    .block-header {
+      .title {
+        font-size: 36px;
+      }
+    }
+  }
+  .franchise-will-work {
+    .types-consumers {
+      .left-column {
+        .navs {
+          .nav-tabs {
+            li{
+              padding: 0 15px;
+              &:before {
+                display: none;
+                padding: 0 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .opening-plan {
+      .left-column {
+        .gradient-text {
+          line-height: 35px;
+        }
+      }
+    }
+  }
+
+  .block-faq {
+    .desk {
+      .navs {
+        .nav-tabs {
+          li {
+            width: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  .block-reviews {
+    .main-content {
+      .title {
+        font-size: 46px;
+        line-height: 48px;
+      }
+      .tabs {
+        .desk {
+          .reviewer {
+            .photo-reviewer {
+              margin: auto;
+            }
+            .reviewer-info {
+              margin: auto;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .main-content {
+    .group {
+      justify-content: center;
+    }
+  }
+  .franchise-will-work {
+    .opening-plan {
+      .right-column {
+        ol {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  .block-result {
+    .content {
+      .sub-block-advantages {
+        .cell {
+          .cell-title {
+            font-size: 27px;
+          }
+        }
+      }
+    }
+  }
+  .block-faq {
+    .title {
+      padding: 0;
+      h2 {
+        font-size: 31px;
+        line-height: 32px;
+        &:before {
+          top: 65px;
+        }
+        span {
+          font-size: 46px;
+        }
+      }
+    }
+    .desk {
+      .question {
+        font-size: 20px;
+      }
+    }
   }
 }

@@ -205,7 +205,8 @@ header {
     background-color: rgba(255, 150, 0, 0.67);
     position: absolute;
     top: 0;
-    left: 297px; }
+    left: 297px;
+    display: none; }
   .main-content .group {
     display: flex;
     flex-wrap: wrap;
@@ -324,7 +325,8 @@ header {
   .block-result .content {
     display: block;
     margin: auto;
-    max-width: 1630px; }
+    max-width: 1630px;
+    padding: 0 15px; }
     .block-result .content .figures-container {
       background-image: url(../svg/ramka.svg);
       max-width: 923px;
@@ -351,14 +353,18 @@ header {
             color: #FF9600;
             font-size: 100px;
             line-height: 100px; }
-        .block-result .content .figures-container .figures b {
-          width: 450px;
-          text-align: center;
-          padding: 62px 0 0 0;
-          margin-bottom: 0;
-          color: #3F2400;
+        .block-result .content .figures-container .figures .btn-send-application {
+          height: 61px;
+          max-width: 374px;
+          width: 100%;
+          display: block;
+          margin: auto;
+          background-color: transparent;
+          border: none;
           font-size: 29px;
-          font-family: "GothamProBold"; }
+          color: #3F2400;
+          font-family: "GothamProBold";
+          margin-top: 52px; }
     .block-result .content > p {
       max-width: 957px;
       margin: auto;
@@ -431,7 +437,8 @@ header {
   .block-guarantee .main-content {
     max-width: 1570px;
     margin: auto;
-    display: block; }
+    display: block;
+    padding: 0 15px; }
     .block-guarantee .main-content h3 {
       font-size: 22px;
       font-family: "GothamProBold";
@@ -730,7 +737,8 @@ header {
 
 .franchise-will-work .opening-plan {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .franchise-will-work .opening-plan .left-column {
     width: 50%; }
     .franchise-will-work .opening-plan .left-column .gradient-text {
@@ -792,7 +800,9 @@ header {
 /*-------------- block-faq ----------------*/
 .block-faq {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
   .block-faq .desk {
     max-width: 1118px;
     width: 100%;
@@ -891,10 +901,12 @@ header {
 /*-------------- 8-Reasons ----------------*/
 .eight-reasons {
   background-image: linear-gradient(to bottom, #FFFFFF, transparent, transparent, #FFFFFF), url("../img/system/8-Reasons-bg.jpg");
+  background-size: cover;
   padding: 100px 0 45px;
   overflow: hidden; }
   .eight-reasons .desk {
     background-image: url("../img/system/reasons-desk-bg.png");
+    background-size: cover;
     max-width: 1370px;
     margin: auto;
     display: flex;
@@ -1103,6 +1115,7 @@ header {
       background-position: 40px 150px; }
       .block-reviews .main-content .tabs .desk .reviewer {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row-reverse;
         align-items: center;
         position: relative;
@@ -1222,7 +1235,7 @@ header {
 /*---------- footer ----------*/
 .footer {
   background-color: #3c0336;
-  padding: 15px 0;
+  padding: 15px;
   max-height: 275px;
   height: 100vh;
   display: flex;

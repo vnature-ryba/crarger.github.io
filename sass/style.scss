@@ -288,6 +288,7 @@ header {
     position: absolute;
     top: 0;
     left: 297px;
+    display: none;
   }
   .group {
     display: flex;
@@ -435,7 +436,7 @@ header {
     display: block;
     margin: auto;
     max-width: 1630px;
-
+    padding: 0 15px;
     .figures-container {
       background-image: url(../svg/ramka.svg);
       max-width: 923px;
@@ -464,18 +465,19 @@ header {
             font-size: 100px;
             line-height: 100px;
           }
-          .subject {
-
-          }
         }
-        b {
-          width: 450px;
-          text-align: center;
-          padding: 62px 0 0 0;
-          margin-bottom: 0;
-          color: #3F2400;
+        .btn-send-application {
+          height: 61px;
+          max-width: 374px;
+          width: 100%;
+          display: block;
+          margin: auto;
+          background-color: transparent;
+          border: none;
           font-size: 29px;
+          color: #3F2400;
           font-family: "GothamProBold";
+          margin-top: 52px;
         }
 
       }
@@ -569,6 +571,7 @@ header {
     max-width: 1570px;
     margin: auto;
     display: block;
+    padding: 0 15px;
     h3 {
       font-size: 22px;
       font-family: "GothamProBold";
@@ -972,7 +975,9 @@ header {
     }
   }
   .opening-plan {
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     .left-column {
       width: 50%;
       .gradient-text {
@@ -1051,6 +1056,8 @@ header {
 .block-faq {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
   .desk {
     max-width: 1118px;
     width: 100%;
@@ -1172,10 +1179,12 @@ header {
 /*-------------- 8-Reasons ----------------*/
 .eight-reasons {
   background-image: linear-gradient(to bottom, $white, transparent, transparent, $white), url("../img/system/8-Reasons-bg.jpg");
+  background-size: cover;
   padding: 100px 0 45px;
   overflow: hidden;
   .desk {
     background-image: url("../img/system/reasons-desk-bg.png");
+    background-size: cover;
     max-width: 1370px;
     margin: auto;
     display: flex;
@@ -1432,6 +1441,7 @@ header {
         background-position: 40px 150px;
         .reviewer {
           display: flex;
+          flex-wrap: wrap;
           flex-direction: row-reverse;
           align-items: center;
           position: relative;
@@ -1583,7 +1593,7 @@ header {
 /*---------- footer ----------*/
 .footer {
   background-color: $dark-purple;
-  padding: 15px 0;
+  padding: 15px;
   max-height: 275px;
   height: 100vh;
   display: flex;
