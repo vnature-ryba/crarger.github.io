@@ -235,23 +235,18 @@
 }
 
 @media screen and (max-width: 768px){
+  .breadcrumd {
+    display: none;
+  }
   .block-result {
-    padding: 0 0 100px;
+    padding: 0 0 45px;
     .content {
       .figures-container {
         padding: 65px 0 0 0;
+        margin-bottom: 40px;
         .figures {
           .btn-send-application {
             margin-top: 21px;
-          }
-        }
-      }
-      .sub-block-advantages {
-        .cell {
-          text-align: center;
-          margin: auto;
-          &:before {
-            margin: auto;
           }
         }
       }
@@ -260,6 +255,7 @@
 
   .franchise-will-work {
     .types-consumers {
+      padding: 0 0 10px;
       .left-column {
         .title {
           left: 0;
@@ -300,6 +296,14 @@
 
   .block-partnership {
     padding: 0;
+    .package-composition {
+      .block-desctop {
+        display: none;
+      }
+      .block-mobile {
+        display: block;
+      }
+    }
     .info {
       .packages {
         .nav-packages {
@@ -355,7 +359,24 @@
       }
     }
   }
-
+  .block-guarantee {
+    padding: 10px 0;
+    .main-content {
+      .block-desctop {
+        display: none;
+      }
+      .block-mobile {
+        display: block;
+        .well {
+          background-color: transparent;
+          border: none;
+        }
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+  }
   .first-screen {
     .block-start {
       max-height: 900px;
@@ -437,7 +458,18 @@
     .main-content {
       .tabs {
         .nav-tabs {
-          display: none;
+          flex-direction: row;
+          top: auto;
+          bottom: 15px;
+          width: auto;
+          position: relative;
+          li {
+            width: 39px;
+            margin: auto;
+            p {
+              display: none;
+            }
+          }
         }
         .desk {
           .tab-pane {
@@ -564,6 +596,21 @@
   }
 }
 
+@media screen and (max-width: 485px) {
+  .block-partnership {
+    .package-composition {
+      .package-composition-row {
+        .cell {
+          width: 152px;
+          .description {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 416px) {
   .franchise-will-work {
     .types-consumers {
@@ -601,6 +648,17 @@
             }
           }
         }
+      }
+      .right-column {
+        max-height: 280px;
+        .tabs {
+          .tab-content {
+            .tab-pane {
+              padding: 30px 40px 0;
+            }
+          }
+        }
+
       }
     }
     .opening-plan {
@@ -641,6 +699,15 @@
               text-align: center;
             }
           }
+        }
+      }
+    }
+  }
+  .form-position-block {
+    .forma {
+      form {
+        textarea {
+          max-height: 85px;
         }
       }
     }

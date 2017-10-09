@@ -8,7 +8,6 @@ $(document).bind("mouseup touchend", function (e) {
     }
 });
 
-
 //кнопки для переключения nav-tabs
 $('.btn-next').click(function(){
     $('.nav-tabs > .active').next('li').find('a').trigger('click');
@@ -21,3 +20,21 @@ $('.btn-prev').click(function(){
 
 //вызов функции набегания цифр
 $('.timer').countTo();
+
+
+//анимация перехода по якорям
+$("body").on("click","a[href^='#jack']", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top-0}, 800);
+});
+
+
+
+$(document).on("scroll", function () {
+    if ($(document).scrollTop() > 500) {
+        $(".btn-scroll-to-top").css({'display' : 'block','opacity' : '1'});
+    }
+    else $(".btn-scroll-to-top").css({'opacity' : '0', 'display': 'none'});
+});

@@ -147,6 +147,14 @@ header {
     max-width: 100%;
     max-height: 100%; }
 
+.breadcrumd {
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 25px;
+  font-size: 12px;
+  padding: 0 30px; }
+  .breadcrumd .you-here {
+    color: #FFFFFF; }
+
 .main-content {
   max-width: 1770px;
   width: 100%;
@@ -535,8 +543,22 @@ header {
       text-align: center;
       font-size: 20px;
       color: #33042F; }
+    .block-guarantee .main-content .block-mobile {
+      display: none; }
+      .block-guarantee .main-content .block-mobile a {
+        color: #FFFFFF;
+        display: block;
+        padding: 5px 0; }
+        .block-guarantee .main-content .block-mobile a:hover, .block-guarantee .main-content .block-mobile a:focus {
+          text-decoration: none; }
+        .block-guarantee .main-content .block-mobile a .caret {
+          margin: 0 10px 0 0;
+          transform: rotate(-180deg);
+          transition: 0.2s; }
+      .block-guarantee .main-content .block-mobile .collapsed .caret {
+        transform: rotate(0deg); }
 
-/*-------- end block-guarantee -----------*/
+/*-------- end why-choose -----------*/
 /*-------- block-partnership -------------*/
 .block-partnership {
   padding: 90px 0; }
@@ -638,8 +660,8 @@ header {
       width: 234px;
       text-align: center; }
       .block-partnership .package-composition .package-composition-row .cell .image {
-        width: 70px;
-        height: 66px;
+        width: 45px;
+        height: 45px;
         margin: 15px auto; }
         .block-partnership .package-composition .package-composition-row .cell .image img {
           max-height: 100%; }
@@ -655,8 +677,23 @@ header {
       width: 100%;
       position: relative;
       top: 25px; }
+  .block-partnership .package-composition .block-mobile {
+    display: none; }
+    .block-partnership .package-composition .block-mobile .btn-show-more {
+      background-color: #810C74;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-family: "GothamProBold";
+      width: 210px;
+      height: 40px;
+      position: relative;
+      border-radius: 2px;
+      margin: auto;
+      display: block;
+      padding: 7px 0;
+      text-align: center; }
   .block-partnership .package-composition .row-passive .cell {
-    opacity: 0.25; }
+    opacity: 0.4; }
   .block-partnership .package-composition .row-last:after {
     display: none; }
   .block-partnership .package-composition .send-application {
@@ -1121,18 +1158,21 @@ header {
           opacity: 0;
           cursor: default;
           transition: 0.4s;
-          color: #810C74;
+          color: #B3B8B3;
           font-size: 16px;
           transform: rotateY(90deg);
           transform-origin: left; }
+        .block-reviews .main-content .tabs .nav-tabs li:hover p {
+          opacity: .5;
+          transform: rotateY(0deg); }
       .block-reviews .main-content .tabs .nav-tabs .active a div {
         background-color: #810C74;
         width: 15px;
         height: 15px; }
       .block-reviews .main-content .tabs .nav-tabs .active p {
-        opacity: 1;
+        opacity: 1 !important;
         cursor: text;
-        transform: rotateY(0deg); }
+        color: #810C74; }
     .block-reviews .main-content .tabs .desk {
       background-image: url("../svg/quotes.svg");
       background-repeat: no-repeat;
@@ -1254,7 +1294,7 @@ header {
       height: 34px;
       font-size: 18px;
       line-height: 18px;
-      color: #EBEDEB; }
+      color: #b9b9b9; }
 
 /*---------- end forma ----------*/
 /*---------- footer ----------*/
@@ -1274,5 +1314,23 @@ header {
       color: #FFFFFF; }
       .footer .main-content .company-development span {
         color: #FF9600; }
+    .footer .main-content .btn-scroll-to-top {
+      height: 50px;
+      width: 50px;
+      border: none;
+      border-radius: 100%;
+      background-color: #fff;
+      position: fixed;
+      display: none;
+      right: 15px;
+      bottom: 7%;
+      background-image: url(../svg/btn-scroll-to-top.svg);
+      background-size: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: rotate(-90deg);
+      transition: 0.2s;
+      opacity: 0;
+      z-index: 5; }
 
 /*---------- end footer ----------*/

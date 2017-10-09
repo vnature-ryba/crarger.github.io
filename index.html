@@ -9,6 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#33042f">
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/responsive.css"> <!-- Подключаем CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
@@ -19,7 +20,7 @@
 <!-- first-screen -->
 <section class="first-screen">
     <div class="block-start">
-        <header class="header">
+        <header class="header" id="jack-header">
             <div class="main-content">
 
                 <div class="navbar-header" id="logo">
@@ -128,6 +129,16 @@
             </div>
 
         </header>
+        <div class="breadcrumd">
+            <div class="main-content">
+                <p>
+                    <span>Главная</span>
+                    <span class="delimiter"> » </span>
+                    <span class="you-here">Франшиза</span>
+                </p>
+            </div>
+
+        </div>
     </div>
     <div class="block-start-description">
         <div class="content">
@@ -229,151 +240,267 @@
     <div class="main-content">
         <h3>Почему стоит выбрать<br>
             франшизу «Дом Недорого»?</h3>
+        <div class="block-desctop">
+            <div class="navs">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab-1" data-toggle="tab"><i>
+                            Гарантия<br>
+                            прибыльного<br>
+                            запуска
+                        </i></a>
+                    </li>
+                    <li>
+                        <a href="#tab-2" data-toggle="tab"><i>
+                            Мощнейшая<br>
+                            система<br>
+                            маркетинга
+                        </i></a>
+                    </li>
+                    <li>
+                        <a href="#tab-3" data-toggle="tab"><i>
+                            Многоступенчатый<br>
+                            процесс запуска<br>
+                            в вашем регионе
+                        </i></a>
+                    </li>
+                    <li>
+                        <a href="#tab-4" data-toggle="tab"><i>
+                            Уникальный<br>
+                            конкурентный<br>
+                            продукт
+                        </i></a>
+                    </li>
+                    <li>
+                        <a href="#tab-5" data-toggle="tab"><i>
+                            Тотальная<br>
+                            всесторонняя<br>
+                            поддержка
+                        </i></a>
+                    </li>
+                    <li>
+                        <a href="#tab-6" data-toggle="tab"><i>
+                            Превосходное<br>
+                            качество<br>
+                            услуг
+                        </i></a>
+                    </li>
 
-        <div class="navs">
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a href="#tab-1" data-toggle="tab"><i>
-                        Гарантия<br>
-                        прибыльного<br>
-                        запуска
-                    </i></a>
-                </li>
-                <li>
-                    <a href="#tab-2" data-toggle="tab"><i>
-                        Мощнейшая<br>
-                        система<br>
-                        маркетинга
-                    </i></a>
-                </li>
-                <li>
-                    <a href="#tab-3" data-toggle="tab"><i>
-                        Многоступенчатый<br>
-                        процесс запуска<br>
-                        в вашем регионе
-                    </i></a>
-                </li>
-                <li>
-                    <a href="#tab-4" data-toggle="tab"><i>
-                        Уникальный<br>
-                        конкурентный<br>
-                        продукт
-                    </i></a>
-                </li>
-                <li>
-                    <a href="#tab-5" data-toggle="tab"><i>
-                        Тотальная<br>
-                        всесторонняя<br>
-                        поддержка
-                    </i></a>
-                </li>
-                <li>
-                    <a href="#tab-6" data-toggle="tab"><i>
-                        Превосходное<br>
-                        качество<br>
-                        услуг
-                    </i></a>
-                </li>
+
+                </ul>
+                <div class="nav-btns">
+                    <button class="btn-prev"></button>
+                    <button class="btn-next"></button>
+                </div>
+            </div>
 
 
-            </ul>
-            <div class="nav-btns">
-                <button class="btn-prev"></button>
-                <button class="btn-next"></button>
+            <div class="tabs">
+                <div class="tab-content">
+
+                    <div class="tab-pane fade in active" id="tab-1">
+                        <h2 class="title">
+                            Гарантия прибыльного запуска
+                        </h2>
+
+                        <p>
+                            Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
+                            Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                            вопросы.<br>
+                            Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
+                            от инструкции по открытию юридического лица<br>
+                            до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-2">
+                        <h2 class="title">
+                            Мощнейшая система маркетинга
+                        </h2>
+
+                        <p>
+                            Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
+                            Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                            вопросы.<br>
+                            Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
+                            от инструкции по открытию юридического лица<br>
+                            до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-3">
+                        <h2 class="title">
+                            Многоступенчатый процесс запуска в вашем регионе
+                        </h2>
+
+                        <p>
+                            Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
+                            Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                            вопросы.<br>
+                            Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
+                            от инструкции по открытию юридического лица<br>
+                            до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-4">
+                        <h2 class="title">
+                            Уникальный конкурентный продукт
+                        </h2>
+
+                        <p>
+                            Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
+                            Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                            вопросы.<br>
+                            Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
+                            от инструкции по открытию юридического лица<br>
+                            до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-5">
+                        <h2 class="title">
+                            Тотальная всесторонняя поддержка
+                        </h2>
+
+                        <p>
+                            Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
+                            Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                            вопросы.<br>
+                            Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
+                            от инструкции по открытию юридического лица<br>
+                            до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-6">
+                        <h2 class="title">
+                            Превосходное качество услуг
+                        </h2>
+
+                        <p>
+                            Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
+                            Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                            вопросы.<br>
+                            Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
+                            от инструкции по открытию юридического лица<br>
+                            до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-
-        <div class="tabs">
-            <div class="tab-content">
-
-                <div class="tab-pane fade in active" id="tab-1">
+        <div class="block-mobile">
+            <a href="#spoiler-1" data-toggle="collapse" class="spoiler collapsed"><span class="caret"></span> Гарантия прибыльного запуска</a>
+            <div class="collapse" id="spoiler-1">
+                <div class="well">
                     <h2 class="title">
                         Гарантия прибыльного запуска
                     </h2>
 
                     <p>
                         Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
-                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на вопросы.<br>
+                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                        вопросы.<br>
                         Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
                         от инструкции по открытию юридического лица<br>
                         до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
                     </p>
                 </div>
+            </div>
 
-                <div class="tab-pane fade" id="tab-2">
+            <a href="#spoiler-2" data-toggle="collapse" class="spoiler collapsed"><span class="caret"></span> Мощнейшая система маркетинга</a>
+            <div class="collapse" id="spoiler-2">
+                <div class="well">
                     <h2 class="title">
-                        Мощнейшая система маркетинга
+                        Гарантия прибыльного запуска
                     </h2>
 
                     <p>
                         Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
-                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на вопросы.<br>
+                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                        вопросы.<br>
                         Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
                         от инструкции по открытию юридического лица<br>
                         до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
                     </p>
                 </div>
+            </div>
 
-                <div class="tab-pane fade" id="tab-3">
+            <a href="#spoiler-3" data-toggle="collapse" class="spoiler collapsed"><span class="caret"></span> Многоступенчатый процесс запуска в вашем регионе</a>
+            <div class="collapse" id="spoiler-3">
+                <div class="well">
                     <h2 class="title">
-                        Многоступенчатый процесс запуска в вашем регионе
+                        Гарантия прибыльного запуска
                     </h2>
 
                     <p>
                         Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
-                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на вопросы.<br>
+                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                        вопросы.<br>
                         Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
                         от инструкции по открытию юридического лица<br>
                         до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
                     </p>
                 </div>
+            </div>
 
-                <div class="tab-pane fade" id="tab-4">
+            <a href="#spoiler-4" data-toggle="collapse" class="spoiler collapsed"><span class="caret"></span> Уникальный конкурентный продукт</a>
+            <div class="collapse" id="spoiler-4">
+                <div class="well">
                     <h2 class="title">
-                        Уникальный конкурентный продукт
+                        Гарантия прибыльного запуска
                     </h2>
 
                     <p>
                         Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
-                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на вопросы.<br>
+                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                        вопросы.<br>
                         Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
                         от инструкции по открытию юридического лица<br>
                         до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
                     </p>
                 </div>
+            </div>
 
-                <div class="tab-pane fade" id="tab-5">
+            <a href="#spoiler-5" data-toggle="collapse" class="spoiler collapsed"><span class="caret"></span> Тотальная всесторонняя поддержка</a>
+            <div class="collapse" id="spoiler-5">
+                <div class="well">
                     <h2 class="title">
-                        Тотальная всесторонняя поддержка
+                        Гарантия прибыльного запуска
                     </h2>
 
                     <p>
                         Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
-                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на вопросы.<br>
+                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                        вопросы.<br>
                         Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
                         от инструкции по открытию юридического лица<br>
                         до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
                     </p>
                 </div>
+            </div>
 
-                <div class="tab-pane fade" id="tab-6">
+            <a href="#spoiler-6" data-toggle="collapse" class="spoiler collapsed"><span class="caret"></span> Превосходное качество услуг</a>
+            <div class="collapse" id="spoiler-6">
+                <div class="well">
                     <h2 class="title">
-                        Превосходное качество услуг
+                        Гарантия прибыльного запуска
                     </h2>
 
                     <p>
                         Мы доведем Вас до результата, и Вы не останетесь со своими трудностями один на один.<br>
-                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на вопросы.<br>
+                        Отдел франчайзинга поможет Вам в решении задач, а Ваш личный менеджер всегда ответит на
+                        вопросы.<br>
                         Кроме того, у Вас в распоряжении будут сотни страниц франчайзингово пакета:<br>
                         от инструкции по открытию юридического лица<br>
                         до стандартов контроля качества (ГОСТ и СНИП) строительства на всех этапах.
                     </p>
                 </div>
-
             </div>
         </div>
-
 
     </div>
 
@@ -437,7 +564,6 @@
                         <div class="col-sm-6 money"><span><b>250</b> тыс. руб.</span></div>
                     </div>
 
-                    <!--<p>Прибыль в месяц от:<span><b>250</b> тыс. руб.</span></p>-->
                 </div>
                 <div class="right-column">
                     <p>
@@ -500,214 +626,431 @@
                 </div>
             </div>
 
-            <div class="package-composition-row row-passive">
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/6.svg" alt="">
+            <div class="block-desctop">
+                <div class="package-composition-row row-passive">
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/6.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Юридический пакет
+                            документов
+                            для работы
+                            с клиентами
+                            и работниками
+                        </div>
                     </div>
-                    <div class="description">
-                        Юридический пакет
-                        документов
-                        для работы
-                        с клиентами
-                        и работниками
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/7.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Поиск поставщиков
+                            в вашем регионе
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/8.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Добавление сайта
+                            во все справочники
+                            города с привязкой
+                            к вашему офису
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/9.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Подключение
+                            обратного звонка
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/10.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Визитки
+                            (отправим 1000 шт.)
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/11.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Макет баннера
+                            + макет на входную
+                            дверь офиса
+                            + макет вывески
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/12.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Анализ рынка
+                            и конкурентов
+                            в вашем городе
+                        </div>
                     </div>
                 </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/7.svg" alt="">
+
+                <div class="package-composition-row row-passive">
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/13.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Обучаем вас пользоваться
+                            CRM-системой,
+                            сайтом,
+                            обратным звонком
+                        </div>
                     </div>
-                    <div class="description">
-                        Поиск поставщиков
-                        в вашем регионе
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/14.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Фотографии
+                            построенных
+                            нами домов,
+                            а также
+                            типовые проекты
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/6.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Юридический пакет
+                            документов
+                            для работы
+                            с клиентами
+                            и работниками
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/7.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Поиск поставщиков
+                            в вашем регионе
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/8.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Добавление сайта
+                            во все справочники
+                            города с привязкой
+                            к вашему офису
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/9.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Подключение
+                            обратного звонка
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/10.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Визитки
+                            (отправим 1000 шт.)
+                        </div>
                     </div>
                 </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/8.svg" alt="">
+
+                <div class="package-composition-row row-passive row-last">
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/10.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Визитки
+                            (отправим 1000 шт.)
+                        </div>
                     </div>
-                    <div class="description">
-                        Добавление сайта
-                        во все справочники
-                        города с привязкой
-                        к вашему офису
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/11.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Макет баннера
+                            + макет на входную
+                            дверь офиса
+                            + макет вывески
+                        </div>
                     </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/9.svg" alt="">
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/12.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Анализ рынка
+                            и конкурентов
+                            в вашем городе
+                        </div>
                     </div>
-                    <div class="description">
-                        Подключение
-                        обратного звонка
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/15.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Проекты домов
+                        </div>
                     </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/10.svg" alt="">
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/12.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Анализ рынка
+                            и конкурентов
+                            в вашем городе
+                        </div>
                     </div>
-                    <div class="description">
-                        Визитки
-                        (отправим 1000 шт.)
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/11.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Макет баннера
-                        + макет на входную
-                        дверь офиса
-                        + макет вывески
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/12.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Анализ рынка
-                        и конкурентов
-                        в вашем городе
+                    <div class="cell">
+                        <div class="image">
+                            <img src="svg/franchise-package/15.svg" alt="">
+                        </div>
+                        <div class="description">
+                            Проекты домов
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="package-composition-row row-passive">
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/13.svg" alt="">
+            <div class="block-mobile">
+                <a href="#spoiler-package-composition" class="btn-show-more" data-toggle="collapse" onclick="this.style.display='none';">Показать больше</a>
+                <div class="collapse" id="spoiler-package-composition">
+                    <div class="package-composition-row row-passive">
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/6.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Юридический пакет
+                                документов
+                                для работы
+                                с клиентами
+                                и работниками
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/7.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Поиск поставщиков
+                                в вашем регионе
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/8.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Добавление сайта
+                                во все справочники
+                                города с привязкой
+                                к вашему офису
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/9.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Подключение
+                                обратного звонка
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/10.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Визитки
+                                (отправим 1000 шт.)
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/11.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Макет баннера
+                                + макет на входную
+                                дверь офиса
+                                + макет вывески
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/12.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Анализ рынка
+                                и конкурентов
+                                в вашем городе
+                            </div>
+                        </div>
                     </div>
-                    <div class="description">
-                        Обучаем вас пользоваться
-                        CRM-системой,
-                        сайтом,
-                        обратным звонком
+
+                    <div class="package-composition-row row-passive">
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/13.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Обучаем вас пользоваться
+                                CRM-системой,
+                                сайтом,
+                                обратным звонком
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/14.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Фотографии
+                                построенных
+                                нами домов,
+                                а также
+                                типовые проекты
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/6.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Юридический пакет
+                                документов
+                                для работы
+                                с клиентами
+                                и работниками
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/7.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Поиск поставщиков
+                                в вашем регионе
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/8.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Добавление сайта
+                                во все справочники
+                                города с привязкой
+                                к вашему офису
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/9.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Подключение
+                                обратного звонка
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/10.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Визитки
+                                (отправим 1000 шт.)
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/14.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Фотографии
-                        построенных
-                        нами домов,
-                        а также
-                        типовые проекты
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/6.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Юридический пакет
-                        документов
-                        для работы
-                        с клиентами
-                        и работниками
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/7.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Поиск поставщиков
-                        в вашем регионе
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/8.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Добавление сайта
-                        во все справочники
-                        города с привязкой
-                        к вашему офису
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/9.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Подключение
-                        обратного звонка
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/10.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Визитки
-                        (отправим 1000 шт.)
+
+                    <div class="package-composition-row row-passive row-last">
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/10.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Визитки
+                                (отправим 1000 шт.)
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/11.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Макет баннера
+                                + макет на входную
+                                дверь офиса
+                                + макет вывески
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/12.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Анализ рынка
+                                и конкурентов
+                                в вашем городе
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/15.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Проекты домов
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/12.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Анализ рынка
+                                и конкурентов
+                                в вашем городе
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="image">
+                                <img src="svg/franchise-package/15.svg" alt="">
+                            </div>
+                            <div class="description">
+                                Проекты домов
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="package-composition-row row-passive row-last">
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/10.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Визитки
-                        (отправим 1000 шт.)
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/11.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Макет баннера
-                        + макет на входную
-                        дверь офиса
-                        + макет вывески
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/12.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Анализ рынка
-                        и конкурентов
-                        в вашем городе
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/15.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Проекты домов
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/12.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Анализ рынка
-                        и конкурентов
-                        в вашем городе
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="image">
-                        <img src="svg/franchise-package/15.svg" alt="">
-                    </div>
-                    <div class="description">
-                        Проекты домов
-                    </div>
-                </div>
-            </div>
             <div class="send-application">
                 <input class="btn-send-application" type="button" value="Оставить заявку">
             </div>
@@ -803,7 +1146,7 @@
             </ol>
         </div>
     </div>
-    
+
     <div class="grafic">
         <img src="svg/grafic.svg" alt="Этапы">
     </div>
@@ -878,25 +1221,35 @@
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="question-1">
                         <p class="answer">
-                            Мы оказываем полную поддержку нашим франчайзи: это и переговоры с вашими первыми потенциальными клиентами,
-                            расчет проектов, юридическая поддержка, полное обучение всем маркетинговым технологиям и продажам,
+                            Мы оказываем полную поддержку нашим франчайзи: это и переговоры с вашими первыми
+                            потенциальными клиентами,
+                            расчет проектов, юридическая поддержка, полное обучение всем маркетинговым технологиям и
+                            продажам,
                             бухгалтерские
-                            консультации, «доведение» до первого клиента, скайп консультации по любым вопросам с руководителем компании
+                            консультации, «доведение» до первого клиента, скайп консультации по любым вопросам с
+                            руководителем компании
                             и
-                            многое другое. У каждого франчайзи есть свои вопросы и пожелания по поддержке, с каждым мы работаем
-                            индивидуально и перед заключением договора франшизы мы полностью проговариваем эти нюансы и вносим их пункты
+                            многое другое. У каждого франчайзи есть свои вопросы и пожелания по поддержке, с каждым мы
+                            работаем
+                            индивидуально и перед заключением договора франшизы мы полностью проговариваем эти нюансы и
+                            вносим их пункты
                             договора.Поддержка в продажах оказывается все время, пока франчайзи работает на рынке.
                         </p>
                     </div>
                     <div class="tab-pane" id="question-2">
                         <p class="answer">
-                            Мы оказываем полную поддержку нашим франчайзи: это и переговоры с вашими первыми потенциальными клиентами,
-                            расчет проектов, юридическая поддержка, полное обучение всем маркетинговым технологиям и продажам,
+                            Мы оказываем полную поддержку нашим франчайзи: это и переговоры с вашими первыми
+                            потенциальными клиентами,
+                            расчет проектов, юридическая поддержка, полное обучение всем маркетинговым технологиям и
+                            продажам,
                             бухгалтерские
-                            консультации, «доведение» до первого клиента, скайп консультации по любым вопросам с руководителем компании
+                            консультации, «доведение» до первого клиента, скайп консультации по любым вопросам с
+                            руководителем компании
                             и
-                            многое другое. У каждого франчайзи есть свои вопросы и пожелания по поддержке, с каждым мы работаем
-                            индивидуально и перед заключением договора франшизы мы полностью проговариваем эти нюансы и вносим их пункты
+                            многое другое. У каждого франчайзи есть свои вопросы и пожелания по поддержке, с каждым мы
+                            работаем
+                            индивидуально и перед заключением договора франшизы мы полностью проговариваем эти нюансы и
+                            вносим их пункты
                             договора.Поддержка в продажах оказывается все время, пока франчайзи работает на рынке.
                         </p>
                     </div>
@@ -917,11 +1270,11 @@
             <h2>
                 <span class="figure">8</span> причин,
             </h2>
-                <p class="text">по которым с нами<br>
+            <p class="text">по которым с нами<br>
                 понравится работать<br>
                 как <strong>новичкам</strong>, так и<br>
                 <strong>опытным строителям</strong>
-                </p>
+            </p>
         </div>
         <div class="column first-column">
             <ol class="first-list">
@@ -1012,14 +1365,38 @@
         </h2>
         <div class="tabs">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#tabb-1" data-toggle="tab"><div></div></a><p>Москва</p></li>
-                <li><a href="#tabb-2" data-toggle="tab"><div></div></a><p>Москва</p></li>
-                <li><a href="#tabb-3" data-toggle="tab"><div></div></a><p>Москва</p></li>
-                <li><a href="#tabb-4" data-toggle="tab"><div></div></a><p>Москва</p></li>
-                <li><a href="#tabb-5" data-toggle="tab"><div></div></a><p>Москва</p></li>
-                <li><a href="#tabb-6" data-toggle="tab"><div></div></a><p>Москва</p></li>
-                <li><a href="#tabb-7" data-toggle="tab"><div></div></a><p>Москва</p></li>
-                <li><a href="#tabb-8" data-toggle="tab"><div></div></a><p>Москва</p></li>
+                <li class="active"><a href="#tabb-1" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
+                <li><a href="#tabb-2" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
+                <li><a href="#tabb-3" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
+                <li><a href="#tabb-4" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
+                <li><a href="#tabb-5" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
+                <li><a href="#tabb-6" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
+                <li><a href="#tabb-7" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
+                <li><a href="#tabb-8" data-toggle="tab">
+                    <div></div>
+                </a>
+                    <p>Москва</p></li>
             </ul>
             <div class="tab-content desk">
 
@@ -1035,7 +1412,10 @@
                     </div>
                     <p>
                         Команда работает - супер! <br>
-                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
+                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих
+                        друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь
+                        процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней
+                        вместе с “Дом Недорого”.<br>
                         Сомневался в начале, но после первой недели работы понял, это работает!
                     </p>
                 </div>
@@ -1051,7 +1431,10 @@
                     </div>
                     <p>
                         Команда работает - супер! <br>
-                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
+                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих
+                        друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь
+                        процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней
+                        вместе с “Дом Недорого”.<br>
 
                     </p>
                 </div>
@@ -1067,7 +1450,9 @@
                     </div>
                     <p>
                         Команда работает - супер! <br>
-                        Так проса до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
+                        Так проса до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю
+                        три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на
+                        объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
                         Сомневался в начале, но после первой недели работы понял, это работает!
                     </p>
                 </div>
@@ -1083,7 +1468,9 @@
                     </div>
                     <p>
                         Команда работает - супер! <br>
-                        Так да сидели от заказа до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
+                        Так да сидели от заказа до заказа, теперь всех своих друзей устроил к себе на работу и процесс
+                        пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы
+                        ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
                         Сомневался в начале, но после первой недели работы понял, это работает!
                     </p>
                 </div>
@@ -1099,7 +1486,10 @@
                     </div>
                     <p>
                         Команда работает - супер! <br>
-                        Так проо и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
+                        Так проо и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих
+                        друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь
+                        процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней
+                        вместе с “Дом Недорого”.<br>
                         Сомневался в начале, но после первой недели рет!
                     </p>
                 </div>
@@ -1115,7 +1505,10 @@
                     </div>
                     <p>
                         Команда работает - супер! <br>
-                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
+                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих
+                        друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь
+                        процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней
+                        вместе с “Дом Недорого”.<br>
                         Сомневался в начале, но после первой неднял, это работает!
                     </p>
                 </div>
@@ -1146,7 +1539,10 @@
                     </div>
                     <p>
                         Команда работает - супер! <br>
-                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней вместе с “Дом Недорого”.<br>
+                        Так просто и легко работать стало, до этого 2 года сидели от заказа до заказа, теперь всех своих
+                        друзей устроил к себе на работу и процесс пошел. Строю три дома разом и могу контролировать весь
+                        процесс по видеонаблюдению которые мы ставим на объекты! Цель поставлена, теперь идем к ней
+                        вместе с “Дом Недорого”.<br>
                         Сомневался в начале, но ервой недели работы понял, это работает!
                     </p>
                 </div>
@@ -1199,6 +1595,8 @@
                 Сайт разработан компанией <span>«Novecs»</span>
             </p>
         </div>
+        <a href="#jack-header" class="btn-scroll-to-top"></a>
+
     </div>
 </footer>
 <!-- end footer -->

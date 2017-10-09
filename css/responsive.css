@@ -112,20 +112,20 @@
     max-width: 451px; } }
 
 @media screen and (max-width: 768px) {
+  .breadcrumd {
+    display: none; }
   .block-result {
-    padding: 0 0 100px; }
+    padding: 0 0 45px; }
     .block-result .content .figures-container {
-      padding: 65px 0 0 0; }
+      padding: 65px 0 0 0;
+      margin-bottom: 40px; }
       .block-result .content .figures-container .figures .btn-send-application {
         margin-top: 21px; }
-    .block-result .content .sub-block-advantages .cell {
-      text-align: center;
-      margin: auto; }
-      .block-result .content .sub-block-advantages .cell:before {
-        margin: auto; }
-  .franchise-will-work .types-consumers .left-column .title {
-    left: 0;
-    padding: 0 15px 0; }
+  .franchise-will-work .types-consumers {
+    padding: 0 0 10px; }
+    .franchise-will-work .types-consumers .left-column .title {
+      left: 0;
+      padding: 0 15px 0; }
   .franchise-will-work .opening-plan .right-column ol li p {
     padding: 0 15px; }
   .franchise-will-work .grafic {
@@ -139,6 +139,10 @@
     padding: 0; }
   .block-partnership {
     padding: 0; }
+    .block-partnership .package-composition .block-desctop {
+      display: none; }
+    .block-partnership .package-composition .block-mobile {
+      display: block; }
     .block-partnership .info .packages .nav-packages {
       flex-direction: column;
       padding: 0; }
@@ -162,6 +166,17 @@
   .main-content .menu ul li:hover ul {
     background-color: rgba(206, 206, 206, 0.3);
     border-radius: 0; }
+  .block-guarantee {
+    padding: 10px 0; }
+    .block-guarantee .main-content .block-desctop {
+      display: none; }
+    .block-guarantee .main-content .block-mobile {
+      display: block; }
+      .block-guarantee .main-content .block-mobile .well {
+        background-color: transparent;
+        border: none; }
+    .block-guarantee .main-content p {
+      font-size: 17px; }
   .first-screen .block-start {
     max-height: 900px; }
   .header {
@@ -200,7 +215,16 @@
 
 @media screen and (max-width: 640px) {
   .block-reviews .main-content .tabs .nav-tabs {
-    display: none; }
+    flex-direction: row;
+    top: auto;
+    bottom: 15px;
+    width: auto;
+    position: relative; }
+    .block-reviews .main-content .tabs .nav-tabs li {
+      width: 39px;
+      margin: auto; }
+      .block-reviews .main-content .tabs .nav-tabs li p {
+        display: none; }
   .block-reviews .main-content .tabs .desk .tab-pane {
     padding: 0 15px; }
   .block-reviews .main-content .tabs .desk .reviewer .reviewer-info {
@@ -247,6 +271,12 @@
     .block-partnership .info .description .left-column .string .money {
       padding: 0 15px 15px; } }
 
+@media screen and (max-width: 485px) {
+  .block-partnership .package-composition .package-composition-row .cell {
+    width: 152px; }
+    .block-partnership .package-composition .package-composition-row .cell .description {
+      font-size: 13px; } }
+
 @media screen and (max-width: 416px) {
   .franchise-will-work .types-consumers {
     padding: 0 0 15px; }
@@ -260,6 +290,10 @@
     .franchise-will-work .types-consumers .left-column .navs .nav-tabs li:before {
       display: none;
       padding: 0 15px; }
+  .franchise-will-work .types-consumers .right-column {
+    max-height: 280px; }
+    .franchise-will-work .types-consumers .right-column .tabs .tab-content .tab-pane {
+      padding: 30px 40px 0; }
   .franchise-will-work .opening-plan .left-column .gradient-text {
     line-height: 35px; }
   .block-faq .desk .navs .nav-tabs li {
@@ -271,7 +305,9 @@
     margin: auto; }
   .block-reviews .main-content .tabs .desk .reviewer .reviewer-info {
     margin: auto;
-    text-align: center; } }
+    text-align: center; }
+  .form-position-block .forma form textarea {
+    max-height: 85px; } }
 
 @media screen and (max-width: 400px) {
   .main-content .group {
