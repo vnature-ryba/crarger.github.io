@@ -115,6 +115,29 @@ header {
     transform: rotate(0); }
   header .main-content {
     justify-content: space-between; }
+  header .navbar-toggle {
+    margin-right: 0; }
+  header .navbar-toggle .icon-bar {
+    background: #ff9600; }
+  header .navbar-toggle:hover {
+    background: transparent !important; }
+  header .navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s; }
+  header .navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%; }
+  header .navbar-toggle .middle-bar {
+    opacity: 0; }
+  header .navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%; }
+  header .navbar-toggle.collapsed .top-bar {
+    transform: rotate(0); }
+  header .navbar-toggle.collapsed .middle-bar {
+    opacity: 1; }
+  header .navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0); }
 
 .logo {
   width: 180px;
@@ -574,6 +597,7 @@ header {
       width: 100%; }
       .block-partnership .info .description .left-column .string {
         display: flex;
+        flex-wrap: wrap;
         align-items: flex-end;
         padding: 0 0 0 110px; }
         .block-partnership .info .description .left-column .string span {
@@ -1002,7 +1026,8 @@ header {
 /*------------ end 8-Reasons --------------*/
 /*---------- block history ----------*/
 .block-history {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.9)), url(../img/system/history-bg.png); }
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.9)), url(../img/system/history-bg.png);
+  padding: 0 15px; }
   .block-history p {
     font-size: 18px;
     color: #3c0336; }

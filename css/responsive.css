@@ -154,7 +154,23 @@
     padding: 0; }
     .block-reviews .main-content .title {
       line-height: initial;
-      padding: 0 15px; } }
+      padding: 0 15px; }
+  .main-content .menu ul li:hover a {
+    padding-bottom: 10px; }
+  .main-content .menu ul li:hover ul {
+    background-color: rgba(206, 206, 206, 0.3);
+    border-radius: 0; }
+  .header {
+    background-color: rgba(35, 35, 35, 0.56); }
+    .header .navbar-header {
+      width: 100%;
+      padding-bottom: 15px; }
+      .header .navbar-header .logo {
+        float: left; }
+    .header .menu {
+      width: 100%; }
+      .header .menu .custom-caret {
+        float: right; } }
 
 @media screen and (max-width: 767px) {
   .block-result .content .figures-container {
@@ -219,7 +235,13 @@
   .franchise-will-work .opening-plan .right-column ol li h5:after {
     left: 0; }
   .eight-reasons .desk .column ol li:before {
-    top: 0; } }
+    top: 0; }
+  .block-partnership .info .description .left-column .string {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 25px; }
+    .block-partnership .info .description .left-column .string .money {
+      padding: 0 15px 15px; } }
 
 @media screen and (max-width: 416px) {
   .franchise-will-work .types-consumers {
