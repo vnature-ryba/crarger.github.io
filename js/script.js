@@ -31,10 +31,19 @@ $("body").on("click","a[href^='#jack']", function (event) {
 });
 
 
-
 $(document).on("scroll", function () {
     if ($(document).scrollTop() > 500) {
         $(".btn-scroll-to-top").css({'display' : 'block','opacity' : '1'});
     }
     else $(".btn-scroll-to-top").css({'opacity' : '0', 'display': 'none'});
 });
+
+
+// $(document).bind('scroll',function(e){
+//     parallaxScroll();
+// });
+//
+// function parallaxScroll(){
+//     var scrolled = window.pageYOffset;
+//     document.getElementById('line1').style.top = (0-(scrolled*0.25)) + 'px';
+// }

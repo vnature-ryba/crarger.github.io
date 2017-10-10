@@ -203,7 +203,7 @@
 
 @media screen and (max-width: 684px) {
   .eight-reasons .desk {
-    padding: 0 15px; }
+    padding: 0 15px 25px; }
     .eight-reasons .desk .title h2 {
       font-size: 47px; }
       .eight-reasons .desk .title h2 .figure {

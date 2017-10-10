@@ -1102,6 +1102,8 @@ header {
 /*---------- block reviews ----------*/
 .block-reviews {
   background-image: linear-gradient(to bottom, #FFFFFF, rgba(255, 255, 255, 0.64), transparent), url(../img/system/block-reviews-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
   padding: 0 0 150px 0;
   background-position: bottom; }
