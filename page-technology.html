@@ -8,7 +8,12 @@
     <meta name="msapplication-navbutton-color" content="#33042f">
     <meta name="apple-mobile-web-app-status-bar-style" content="#33042f">
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="css/libs.min.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
 
@@ -139,80 +144,85 @@
 
 
 <div class="block-page-container page-technology">
-    <div class="left-sidebar">
-        <ul>
-            <li>А
-                <ul>
-                    <li><a href="#">Абсолютное доминирование</a></li>
-                    <li><a href="#">Алюминиевый каркас</a></li>
-                    <li><a href="#">Арболит</a></li>
-                </ul>
-            </li>
-            <li>Б
-                <ul>
-                    <li><a href="#">Балки</a></li>
-                    <li><a href="#">Балкон</a></li>
-                    <li><a href="#">Битум</a></li>
-                </ul>
-            </li>
-            <li>Г
-                <ul>
-                    <li><a href="#">Галуши</a></li>
-                </ul>
-            </li>
-            <li>Ж
-                <ul>
-                    <li><a href="#">Железные перекладины</a></li>
-                    <li><a href="#">Жернова</a></li>
-                    <li><a href="#">Жердочки</a></li>
-                </ul>
-            </li>
-            <li>К
-                <ul>
-                    <li><a href="#">Каркасный дом</a></li>
-                </ul>
-            </li>
-            <li>Л
-                <ul>
-                    <li><a href="#">Литой фундамент</a></li>
-                </ul>
-            </li>
-            <li>М
-                <ul>
-                    <li><a href="#">Мансарда</a></li>
-                    <li><a href="#">Москитная сетка</a></li>
-                </ul>
-            </li>
-            <li>О
-                <ul>
-                    <li><a href="#">Обмундирование</a></li>
-                    <li><a href="#">Ограда</a></li>
-                    <li><a href="#">Опа, приехали</a></li>
-                </ul>
-            </li>
-            <li>Р
-                <ul>
-                    <li><a href="#">Рубильник</a></li>
-                </ul>
-            </li>
-            <li>С
-                <ul>
-                    <li><a href="#">Септик</a></li>
-                    <li><a href="#">Скотч малярный</a></li>
-                    <li><a href="#">Смола</a></li>
-                    <li><a href="#">Строительство</a></li>
-                </ul>
-            </li>
-            <li>Ф
-                <ul>
-                    <li><a href="#">Фасад</a></li>
-                    <li><a href="#">Фундамент</a></li>
-                    <li><a href="#">Фур-фур</a></li>
-                </ul>
-            </li>
-        </ul>
+    <div class="left-sidebar-container">
+        <input type="checkbox" id="toggle-left-menu" hidden>
+        <label for="toggle-left-menu" class="nav-toggle left-sidebar-button" onclick>
+         <i class="glyphicon glyphicon-menu-right"></i>
+        </label>
+        <div class="left-sidebar">
+            <ul>
+                <li>А
+                    <ul>
+                        <li><a href="#">Абсолютное доминирование</a></li>
+                        <li><a href="#">Алюминиевый каркас</a></li>
+                        <li><a href="#">Арболит</a></li>
+                    </ul>
+                </li>
+                <li>Б
+                    <ul>
+                        <li><a href="#">Балки</a></li>
+                        <li><a href="#">Балкон</a></li>
+                        <li><a href="#">Битум</a></li>
+                    </ul>
+                </li>
+                <li>Г
+                    <ul>
+                        <li><a href="#">Галуши</a></li>
+                    </ul>
+                </li>
+                <li>Ж
+                    <ul>
+                        <li><a href="#">Железные перекладины</a></li>
+                        <li><a href="#">Жернова</a></li>
+                        <li><a href="#">Жердочки</a></li>
+                    </ul>
+                </li>
+                <li>К
+                    <ul>
+                        <li><a href="#">Каркасный дом</a></li>
+                    </ul>
+                </li>
+                <li>Л
+                    <ul>
+                        <li><a href="#">Литой фундамент</a></li>
+                    </ul>
+                </li>
+                <li>М
+                    <ul>
+                        <li><a href="#">Мансарда</a></li>
+                        <li><a href="#">Москитная сетка</a></li>
+                    </ul>
+                </li>
+                <li>О
+                    <ul>
+                        <li><a href="#">Обмундирование</a></li>
+                        <li><a href="#">Ограда</a></li>
+                        <li><a href="#">Опа, приехали</a></li>
+                    </ul>
+                </li>
+                <li>Р
+                    <ul>
+                        <li><a href="#">Рубильник</a></li>
+                    </ul>
+                </li>
+                <li>С
+                    <ul>
+                        <li><a href="#">Септик</a></li>
+                        <li><a href="#">Скотч малярный</a></li>
+                        <li><a href="#">Смола</a></li>
+                        <li><a href="#">Строительство</a></li>
+                    </ul>
+                </li>
+                <li>Ф
+                    <ul>
+                        <li><a href="#">Фасад</a></li>
+                        <li><a href="#">Фундамент</a></li>
+                        <li><a href="#">Фур-фур</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-
     <div class="content-block">
         <h2 class="page-title">
             Технология производства
@@ -341,7 +351,12 @@
 </footer>
 <!-- end footer -->
 
-<script src="js/libs.min.js"></script>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/script.js"></script>
 <script>
     function textItemHeader(object) {
         faq_tab_item = object;

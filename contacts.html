@@ -8,119 +8,139 @@
     <meta name="msapplication-navbutton-color" content="#33042f">
     <meta name="apple-mobile-web-app-status-bar-style" content="#33042f">
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="css/libs.min.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT7bL4xb7HN1IviJp3H9JVvDjtiySlIFo"></script>
 </head>
 <body>
 
-<header class="header" id="jack-header">
-    <div class="main-content">
+<header class="navbar-fixed-top">
+    <div class="header" id="jack-header">
+        <div class="main-content">
 
-        <div class="navbar-header" id="logo">
-            <a href="#jack-screen-one">
-                <div class="logo">
-                    <img src="img/system/logo.png" alt="">
-                </div>
-            </a>
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Меню</span>
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-            </button>
-
-        </div>
-        <div class="decor-line"></div>
-        <div class="group">
-            <div class="call-number">
-                <p><a href="tel:+78202626642">+7 (8202) 62-66-42</a></p>
-                <p><a href="tel:+79998459885">+7 999 845-98-85</a></p>
-            </div>
-
-            <div class="city">
-                <img src="img/system/geo-header.png" alt="" class="point">
-                <div>
-                    <label for="">Ваш годод</label>
-                    <div class="dropdown">
-                        <button class="select dropdown-toggle" type="button" data-toggle="dropdown">Красноярск
-                            <img class="custom-caret" src="img/system/caret-1.png"></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Москва</a></li>
-                            <li><a href="#">Рязань</a></li>
-                            <li><a href="#">Ржев</a></li>
-                        </ul>
+            <div class="navbar-header" id="logo">
+                <a href="#jack-screen-one">
+                    <div class="logo">
+                        <img src="img/system/logo.png" alt="">
                     </div>
+                </a>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Меню</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+            </div>
+            <div class="decor-line"></div>
+            <div class="group">
+                <div class="call-number">
+                    <p><a href="tel:+78202626642">+7 (8202) 62-66-42</a></p>
+                    <p><a href="tel:+79998459885">+7 999 845-98-85</a></p>
                 </div>
 
+                <div class="city">
+                    <img src="img/system/geo-header.png" alt="" class="point">
+                    <div>
+                        <label for="">Ваш годод</label>
+                        <div class="dropdown">
+                            <button class="select dropdown-toggle" type="button" data-toggle="dropdown">Красноярск
+                                <img class="custom-caret" src="img/system/caret-1.png"></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Москва</a></li>
+                                <li><a href="#">Рязань</a></li>
+                                <li><a href="#">Ржев</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
 
-        <div class="menu">
-            <div class="collapse navbar-collapse" id="menu-collapse">
-
-
-                <ul class="nav navbar-nav">
-                    <li class="dropdown navbar-hide">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Услуги<img
-                                class="custom-caret"
-                                src="img/system/caret-2.png"
-                                alt="caret">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Текст подпункта</a></li>
-                            <li><a href="#">Текст подпункта</a></li>
-                            <li><a href="#">Текст подпункта</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown navbar-hide">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Проекты<img
-                                class="custom-caret"
-                                src="img/system/caret-2.png"
-                                alt="caret">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Текст подпункта</a></li>
-                            <li><a href="#">Текст подпункта</a></li>
-                            <li><a href="#">Текст подпункта</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown navbar-hide">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Производство<img
-                                class="custom-caret"
-                                src="img/system/caret-2.png"
-                                alt="caret">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Текст подпункта</a></li>
-                            <li><a href="#">Текст подпункта</a></li>
-                            <li><a href="#">Текст подпункта</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown navbar-hide">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Компания<img
-                                class="custom-caret"
-                                src="img/system/caret-2.png"
-                                alt="caret">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Каталог проектов</a></li>
-                        </ul>
-                    </li>
-                    <li class="navbar-hide dropdown active"><a href="#company">Франшиза</a></li>
-
-                </ul>
+            <div class="menu">
+                <div class="collapse navbar-collapse" id="menu-collapse">
 
 
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown navbar-hide">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Услуги<img
+                                    class="custom-caret"
+                                    src="img/system/caret-2.png"
+                                    alt="caret">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Текст подпункта</a></li>
+                                <li><a href="#">Текст подпункта</a></li>
+                                <li><a href="#">Текст подпункта</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navbar-hide">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Проекты<img
+                                    class="custom-caret"
+                                    src="img/system/caret-2.png"
+                                    alt="caret">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Текст подпункта</a></li>
+                                <li><a href="#">Текст подпункта</a></li>
+                                <li><a href="#">Текст подпункта</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navbar-hide">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Производство<img
+                                    class="custom-caret"
+                                    src="img/system/caret-2.png"
+                                    alt="caret">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Текст подпункта</a></li>
+                                <li><a href="#">Текст подпункта</a></li>
+                                <li><a href="#">Текст подпункта</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown navbar-hide">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Компания<img
+                                    class="custom-caret"
+                                    src="img/system/caret-2.png"
+                                    alt="caret">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Каталог проектов</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-hide dropdown active"><a href="#company">Франшиза</a></li>
+
+                    </ul>
+
+
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-
+    <div class="breadcrumd">
+        <div class="main-content">
+            <p>
+                <span><a href="#">Главная</a></span>
+                <span class="delimiter"> » </span>
+                <span class="you-here">Технология производства</span>
+            </p>
+        </div>
+    </div>
+    <div class="search-block">
+        <div class="main-content">
+            <input type="text" class="search">
+        </div>
+    </div>
 </header>
 <div class="breadcrumd">
     <div class="main-content">
@@ -200,7 +220,12 @@
 <!-- end footer -->
 
 
-<script src="js/libs.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/script.js"></script>
+<script src="js/map.js"></script>
 <script>
     function textItemHeader(object) {
         faq_tab_item = object;
