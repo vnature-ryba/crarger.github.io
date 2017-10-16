@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <meta name="theme-color" content="#33042f">
+    <meta name="msapplication-navbutton-color" content="#33042f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#33042f">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css"> <!-- Подключаем CSS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT7bL4xb7HN1IviJp3H9JVvDjtiySlIFo"></script>
+</head>
+<body>
+
+<header class="header" id="jack-header">
+    <div class="main-content">
+
+        <div class="navbar-header" id="logo">
+            <a href="#jack-screen-one">
+                <div class="logo">
+                    <img src="img/system/logo.png" alt="">
+                </div>
+            </a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Меню</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+
+        </div>
+        <div class="decor-line"></div>
+        <div class="group">
+            <div class="call-number">
+                <p><a href="tel:+78202626642">+7 (8202) 62-66-42</a></p>
+                <p><a href="tel:+79998459885">+7 999 845-98-85</a></p>
+            </div>
+
+            <div class="city">
+                <img src="img/system/geo-header.png" alt="" class="point">
+                <div>
+                    <label for="">Ваш годод</label>
+                    <div class="dropdown">
+                        <button class="select dropdown-toggle" type="button" data-toggle="dropdown">Красноярск
+                            <img class="custom-caret" src="img/system/caret-1.png"></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Рязань</a></li>
+                            <li><a href="#">Ржев</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="collapse navbar-collapse" id="menu-collapse">
+
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Услуги<img
+                                class="custom-caret"
+                                src="img/system/caret-2.png"
+                                alt="caret">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Проекты<img
+                                class="custom-caret"
+                                src="img/system/caret-2.png"
+                                alt="caret">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Производство<img
+                                class="custom-caret"
+                                src="img/system/caret-2.png"
+                                alt="caret">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                            <li><a href="#">Текст подпункта</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown navbar-hide">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Компания<img
+                                class="custom-caret"
+                                src="img/system/caret-2.png"
+                                alt="caret">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Каталог проектов</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-hide dropdown active"><a href="#company">Франшиза</a></li>
+
+                </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</header>
+<div class="breadcrumd">
+    <div class="main-content">
+        <p>
+            <span>Главная</span>
+            <span class="delimiter"> » </span>
+            <span class="you-here">Контакты</span>
+        </p>
+    </div>
+</div>
+
+<div class="block-page-container page-contacts">
+
+<div class="map-content">
+    <div class="map" id="map">
+
+    </div>
+    <div class="contacts">
+        <h2 class="title">Контакты</h2>
+        <div class="social-networks">
+            <a href="#" class="network"><img class="vk" src="img/system/icon-vk-dark.png" alt="vk"></a>
+            <a href="#" class="network"><img class="insta" src="img/system/icon-insta-dark.png" alt="instagram"></a>
+        </div>
+        <p>Связаться с нами можно в любой будний день с 9:00 до 18:00 (по местному времени)
+            – мы всегда рады новым знакомствам, сотрудничеству и партнерству.</p>
+        <div class="cells">
+            <div class="cell">
+                <div class="cell-title"><span class="city">Череповец</span> <span class="belt">UTC+3</span></div>
+                <div class="info">Вологодская обл., г. Череповец
+                    ул. Проезжая 6, офис 311
+                    +7 (8202) 62-66-42
+                    domnedorogo35@yandex.ru</div>
+            </div>
+            <div class="cell">
+                <div class="cell-title"><span class="city">Череповец</span> <span class="belt">UTC+3</span></div>
+                <div class="info">Вологодская обл., г. Череповец
+                    ул. Проезжая 6, офис 311
+                    +7 (8202) 62-66-42
+                    domnedorogo35@yandex.ru</div>
+            </div>
+            <div class="cell">
+                <div class="cell-title"><span class="city">Череповец</span> <span class="belt">UTC+3</span></div>
+                <div class="info">Вологодская обл., г. Череповец
+                    ул. Проезжая 6, офис 311
+                    +7 (8202) 62-66-42
+                    domnedorogo35@yandex.ru</div>
+            </div>
+        </div>
+
+        <p class="copiright">
+            Данный сайт носит исключительно рекламный характер.<br>
+            Не публичная оферта, все дела. Права защищены.
+        </p>
+    </div>
+</div>
+
+</div>
+
+
+<!-- footer -->
+<footer class="footer navbar-fixed-bottom">
+    <div class="main-content">
+        <div class="copiright">
+            <p>
+                © ДомНедорого | 2017 год
+            </p>
+        </div>
+        <div class="company-development">
+            <p>
+                Сайт разработан компанией <span><a href="http://novecs.ru/" target="_blank">«Novecs»</a></span>
+            </p>
+        </div>
+        <a href="#jack-header" class="btn-scroll-to-top"></a>
+
+    </div>
+</footer>
+<!-- end footer -->
+
+
+<script src="js/libs.min.js"></script>
+<script>
+    function textItemHeader(object) {
+        faq_tab_item = object;
+        question_content = document.getElementsByClassName('question')[0];
+        question_content.innerHTML = faq_tab_item.getAttribute('text-header');
+    }
+</script>
+</body>
+</html>
