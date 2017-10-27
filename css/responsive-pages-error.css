@@ -1,0 +1,41 @@
+@media screen and (max-width: 1850px) {
+  .pages .container-404 .parallax .home-1, .pages .container-404 .parallax .home-2, .pages .container-404 .parallax .home-3, .pages .container-404 .parallax .home-4, .pages .container-404 .parallax .planet, .pages .container-404 .parallax .light {
+    display: none; } }
+
+@media screen and (max-width: 1280px) {
+  .pages .container-404 .error-text {
+    bottom: 151px;
+    position: relative;
+    text-align: center;
+    width: 335px;
+    margin: auto; } }
+
+@media screen and (max-width: 600px) {
+  .pages .container-404 .header span {
+    display: none; }
+  .pages .container-403 {
+    padding: 0 15px; } }
+
+@media screen and (max-width: 600px) and (max-width: 475px) {
+  .pages .container-404 {
+    padding: 0 15px; }
+    .pages .container-404 .link-to-home a {
+      font-size: 20px; }
+    .pages .container-404 .parallax .error-code {
+      top: 21%; }
+      .pages .container-404 .parallax .error-code p {
+        font-size: 115px; }
+    .pages .container-404 .error-text {
+      width: 290px; }
+      .pages .container-404 .error-text p {
+        font-size: 35px; }
+      .pages .container-404 .error-text .comet {
+        left: -66px; } }
+
+@media screen and (max-width: 500px) {
+  .pages .container-403 .error-text p {
+    font-size: 35px; }
+  .pages .container-403 .error-text .error-code {
+    height: 35px; }
+    .pages .container-403 .error-text .error-code p {
+      font-size: 140px; } }

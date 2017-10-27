@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <meta name="theme-color" content="#33042f">
+    <meta name="msapplication-navbutton-color" content="#33042f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#33042f">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/slick/slick.css"/>
+    <link rel="stylesheet" href="bower_components/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+</head>
+<body class="pages">
+<div class="page-catalog">
+    <header class="navbar-fixed-top">
+        <div class="header" id="jack-header">
+            <div class="main-content">
+
+                <div class="navbar-header" id="logo">
+                    <a href="#jack-screen-one">
+                        <div class="logo">
+                            <img src="img/system/logo-dark.png" alt="Логотип">
+                        </div>
+                    </a>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Меню</span>
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+
+                </div>
+                <div class="decor-line"></div>
+                <div class="group">
+                    <div class="call-number">
+                        <p><a href="tel:+78202626642">+7 (8202) 62-66-42</a></p>
+                        <p><a href="tel:+79998459885">+7 999 845-98-85</a></p>
+                    </div>
+
+                    <div class="city">
+                        <img src="img/system/geo-header.png" alt="" class="point">
+                        <div>
+                            <label for="">Ваш город</label>
+                            <div class="dropdown">
+                                <button class="select dropdown-toggle" type="button" data-toggle="dropdown">
+                                    Красноярск
+                                    <img class="custom-caret" src="img/system/caret-1.png"></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Москва</a></li>
+                                    <li><a href="#">Рязань</a></li>
+                                    <li><a href="#">Ржев</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div class="collapse navbar-collapse" id="menu-collapse">
+
+
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown navbar-hide">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Услуги<img
+                                        class="custom-caret"
+                                        src="img/system/caret-2.png"
+                                        alt="caret">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Текст подпункта</a></li>
+                                    <li><a href="#">Текст подпункта</a></li>
+                                    <li><a href="#">Текст подпункта</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown navbar-hide">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Проекты<img
+                                        class="custom-caret"
+                                        src="img/system/caret-2.png"
+                                        alt="caret">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Текст подпункта</a></li>
+                                    <li><a href="#">Текст подпункта</a></li>
+                                    <li><a href="#">Текст подпункта</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown navbar-hide">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Производство<img
+                                        class="custom-caret"
+                                        src="img/system/caret-2.png"
+                                        alt="caret">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Текст подпункта</a></li>
+                                    <li><a href="#">Текст подпункта</a></li>
+                                    <li><a href="#">Текст подпункта</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown navbar-hide">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Компания<img
+                                        class="custom-caret"
+                                        src="img/system/caret-2.png"
+                                        alt="caret">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">О компании</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Каталог проектов</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-hide dropdown active"><a href="#company">Франшиза</a></li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="breadcrumd">
+            <div class="main-content">
+                <p>
+                    <span><a href="#">Главная</a></span>
+                    <span class="delimiter"> » </span>
+                    <span class="you-here">Наши работы</span>
+                </p>
+            </div>
+        </div>
+        <div class="search-block">
+            <div class="main-content">
+                <input type="text" class="search">
+            </div>
+        </div>
+    </header>
+
+    <div class="text-center">
+        <h2 class="title">
+            Каталог проектов
+        </h2>
+        <h3 class="subtitle">Найди дом своей мечты!</h3>
+    </div>
+    <div class="left-sidebar-container">
+        <input type="checkbox" id="toggle-left-menu" hidden>
+        <label for="toggle-left-menu" class="nav-toggle left-sidebar-button" onclick>
+            <i class="glyphicon glyphicon-menu-right"></i>
+        </label>
+        <div class="left-sidebar">
+            <p class="title">Фильтр</p>
+            <div class="block-filter">
+                <p class="title">Стоимость, руб.</p>
+                <p>(базовая)</p>
+                <div id="slider" class="noUi-target noUi-ltr noUi-horizontal"></div>
+                <div class="form-group">
+                    <label for="">От</label>
+                    <input type="text" value="350 000">
+                </div>
+                <img src="svg/defis.svg" alt="дефис">
+                <div class="form-group">
+                    <label for="">До</label>
+                    <input type="text" value="2 870 000">
+                </div>
+            </div>
+            <div class="block-filter area">
+                <p class="title">Площадь, м2</p>
+                <p>(общая)</p>
+                <div id="slider2" class="noUi-target noUi-ltr noUi-horizontal"></div>
+                <div class="form-group">
+                    <label for="">От</label>
+                    <input type="text" value="60">
+                </div>
+                <img src="svg/defis.svg" alt="дефис">
+                <div class="form-group">
+                    <label for="">До</label>
+                    <input type="text" value="250">
+                </div>
+            </div>
+            <div class="block-filter floors">
+                <p class="title">Этажи</p>
+                <div class="form-group">
+                    <div>
+                        <label>
+                            <input class="radio" type="radio" name="typeRepair" value="overhaul" checked>
+                            <span class="list">
+                                <div></div>
+                            </span>
+                            <span class="radio-name">1 этаж</span>
+                        </label>
+                        <label>
+                            <input class="radio" type="radio" name="typeRepair" value="overhaul">
+                            <span class="list">
+                                <div></div>
+                            </span>
+                            <span class="radio-name">2 этаж</span>
+                        </label>
+                        <label>
+                            <input class="radio" type="radio" name="typeRepair" value="overhaul">
+                            <span class="list">
+                                <div></div>
+                            </span>
+                            <span class="radio-name">3 этаж</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="block-filter sort">
+                <p class="title">Сортировать по</p>
+
+                <div class="dropdown">
+                    <button class="select dropdown-toggle" type="button" data-toggle="dropdown">
+                        Возрастанию цены
+                        <img class="custom-caret" src="svg/select-caret-left-filter.svg"></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Возрастанию цены</a></li>
+                        <li><a href="#">Убыванию цены</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block-filter planir">
+                <p class="title">Планировка</p>
+                <div class="form-group">
+                    <div>
+                        <label class="label-checkbox">
+                            <input class="checkbox" type="checkbox" name="warmFloor">гараж
+                            <span></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label-checkbox">
+                            <input class="checkbox" type="checkbox" name="warmFloor">открытая терраса
+                            <span></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label-checkbox">
+                            <input class="checkbox" type="checkbox" name="warmFloor">2-й этаж мансардный
+                            <span></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label-checkbox">
+                            <input class="checkbox" type="checkbox" name="warmFloor">кабинет
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-content">
+        <div class="catalog-cells">
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/1.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Квинс»
+                    </p>
+                    <p class="description">
+                        Красивый дом в американском стиле с большой террасой.
+                    </p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/2.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Модерн»
+                    </p>
+                    <p class="description">
+                        Современный двухэтажный дом в стиле Хай-Тек с гаражом.
+                    </p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/3.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Франция»
+                    </p>
+                    <p class="description">
+                        Симпатичный двухэтажный дом с французскими окнами.
+                    </p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/4.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Квинс»
+                    </p>
+                    <p class="description">
+                        Красивый дом в американском стиле с большой террасой.
+                    </p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/5.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Модерн»
+                    </p>
+                    <p class="description">
+                        Современный двухэтажный дом в стиле Хай-Тек с гаражом.
+                    </p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/6.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Франция»
+                    </p>
+                    <p class="description">
+                        Симпатичный двухэтажный дом с французскими окнами.
+                    </p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/7.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Модерн»
+                    </p>
+                    <p class="description">
+                        Современный двухэтажный дом в стиле Хай-Тек с гаражом.
+                    </p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="image">
+                    <div>
+                        <p>Посмотреть проект</p>
+                    </div>
+                    <img src="img/content/catalog/8.jpg" alt="">
+                </div>
+                <div class="info-block">
+                    <div class="icons">
+                        <div><img src="svg/catalog-inf-icons/1.svg" alt=""><span>148 м2</span></div>
+                        <div><img src="svg/catalog-inf-icons/2.svg" alt="">× 7</div>
+                        <div><img src="svg/catalog-inf-icons/3.svg" alt="">× 1</div>
+                        <div><img src="svg/catalog-inf-icons/4.svg" alt="">× 2</div>
+                    </div>
+                    <p class="title">
+                        Дом «Модерн»
+                    </p>
+                    <p class="description">
+                        Современный двухэтажный дом в стиле Хай-Тек с гаражом.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/nouislider.js"></script>
+<script src="js/script-range.js"></script>
+</body>
+</html>

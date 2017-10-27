@@ -1,0 +1,187 @@
+/* font-family: "IntroRustG"; */
+@font-face {
+  font-family: "IntroRustG";
+  src: url("../fonts/IntroRustG-Base.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "GothamProItalic"; */
+@font-face {
+  font-family: "GothamProItalic";
+  src: url("../fonts/GothamProItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "GothamProLightItalic"; */
+@font-face {
+  font-family: "GothamProLightItalic";
+  src: url("../fonts/GothamProLightItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "GothamProRegular"; */
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "GothamProMediumItalic"; */
+@font-face {
+  font-family: "GothamProMediumItalic";
+  src: url("../fonts/GothamProMediumItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "GothamProBold"; */
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "GothamProBoldItalic"; */
+@font-face {
+  font-family: "GothamProBolditalic";
+  src: url("../fonts/GothamProBoldItalic.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+.pages {
+  margin: 0; }
+  .pages .page-about {
+    font-family: "GothamProRegular"; }
+    .pages .page-about .block-one {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-height: 650px;
+      height: 100vh;
+      background-position: center;
+      background-image: linear-gradient(to top, rgba(51, 4, 47, 0.41), rgba(51, 4, 47, 0.41)), url("../img/system/about-block-one-bg.jpg"); }
+      .pages .page-about .block-one .page-title {
+        font-size: 50px;
+        color: #FFFFFF;
+        font-family: "IntroRustG"; }
+    .pages .page-about .block-two {
+      padding: 65px 195px; }
+      .pages .page-about .block-two p {
+        color: #232323;
+        font-size: 22px; }
+    .pages .page-about .block-three {
+      background-color: rgba(255, 204, 136, 0.25);
+      min-height: 330px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .pages .page-about .block-three p {
+        font-size: 24px;
+        position: relative;
+        width: 900px;
+        text-align: left; }
+        .pages .page-about .block-three p span {
+          font-family: "GothamProBolditalic";
+          font-size: 32px; }
+        .pages .page-about .block-three p:before {
+          height: 78px;
+          position: absolute;
+          width: 0;
+          display: block;
+          content: '';
+          box-shadow: 0 0 0 7px #FF9600;
+          top: 15px;
+          left: -50px; }
+    .pages .page-about .block-fourth {
+      padding: 80px 190px; }
+      .pages .page-about .block-fourth p {
+        font-size: 22px; }
+    .pages .page-about .block-five {
+      background-image: linear-gradient(to top, rgba(163, 78, 154, 0.5), rgba(163, 78, 154, 0.5)), url("../img/system/about-block-five-bg.jpg");
+      height: 294px;
+      background-position: center -352px; }
+    .pages .page-about .block-six {
+      background-image: linear-gradient(to top, #FFFFFF, transparent, #FFFFFF), url("../img/system/about-block-six-bg.png");
+      background-size: cover;
+      background-position: center -130px;
+      padding: 0 15px; }
+      .pages .page-about .block-six .desk {
+        max-width: 1403px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+        padding: 150px 0 30px; }
+        .pages .page-about .block-six .desk .left-column {
+          padding-top: 7px; }
+          .pages .page-about .block-six .desk .left-column .radial-cell {
+            max-width: 300px;
+            margin: auto;
+            text-align: center; }
+            .pages .page-about .block-six .desk .left-column .radial-cell .title {
+              font-family: "GothamProBold";
+              color: #3c0336;
+              font-size: 25px;
+              padding: 10px 0 15px; }
+            .pages .page-about .block-six .desk .left-column .radial-cell .image {
+              height: 180px;
+              width: 180px;
+              border-radius: 100%;
+              overflow: hidden;
+              margin: auto;
+              display: flex;
+              align-items: flex-start;
+              justify-content: center; }
+            .pages .page-about .block-six .desk .left-column .radial-cell .description {
+              color: #585B58;
+              font-size: 16px; }
+        .pages .page-about .block-six .desk .right-column {
+          max-width: 844px;
+          position: relative; }
+          .pages .page-about .block-six .desk .right-column:before {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 350px;
+            box-shadow: 0 0 0 6px #FF9600;
+            left: -55px;
+            top: 15px; }
+          .pages .page-about .block-six .desk .right-column p {
+            font-size: 22px;
+            text-align: justify; }
+      .pages .page-about .block-six .about-franchise-container {
+        background-image: url(../svg/ramka.svg);
+        max-width: 923px;
+        max-height: 365px;
+        width: 100%;
+        margin: 130px auto 90px;
+        background-size: 100%;
+        background-repeat: no-repeat; }
+        .pages .page-about .block-six .about-franchise-container .about-franchise {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          min-height: 359px;
+          padding: 95px 0; }
+          .pages .page-about .block-six .about-franchise-container .about-franchise p {
+            font-size: 35px;
+            text-align: center; }
+            .pages .page-about .block-six .about-franchise-container .about-franchise p span {
+              font-size: 43px;
+              color: #FF9600;
+              font-family: "GothamProBold"; }
+          .pages .page-about .block-six .about-franchise-container .about-franchise .btn-send-application {
+            height: 61px;
+            max-width: 374px;
+            width: 100%;
+            display: block;
+            margin: auto;
+            background-color: transparent;
+            border: none;
+            font-size: 29px;
+            color: #3F2400;
+            font-family: "GothamProBold";
+            margin-top: 52px; }
