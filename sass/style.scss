@@ -13,6 +13,7 @@ body {
   text-align: center;
   color: #2A353B;
   text-transform: uppercase;
+  width: 100%;
 }
 
 input, button, textarea {
@@ -53,6 +54,168 @@ input, button, textarea {
 }
 
 /* end Смежные классы */
+
+/* первый экран */
+.block-first-screen {
+  background-image: url("../img/system/pattern.png"), linear-gradient(to top, rgba(42, 53, 59, 0.35), rgba(42, 53, 59, 0.35)), url("../img/system/first-screen-bg.jpg");
+  background-position: bottom;
+  max-height: 840px;
+  height: 100vh;
+  header {
+    min-height: 98px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1770px;
+    margin: 0 auto 45px;
+    .call-number {
+      font-family: "GothamProBold";
+      a {
+        color: $white;
+        display: block;
+      }
+    }
+    .menu {
+      font-family: "GothamProMedium";
+      ul {
+        li {
+          a {
+            color: $white;
+            &:after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 0;
+              box-shadow: 0 0 0 0 transparent;
+              position: relative;
+              top: 20px;
+              transition: 0.2s;
+              margin: auto;
+            }
+            &:focus {
+              background-color: transparent;
+            }
+          }
+          &:hover {
+            a {
+              background-color: transparent;
+              &:after {
+                width: 100%;
+                box-shadow: 0 0 0 2px #4A91F9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .site-name {
+    color: $white;
+    .logo {
+      max-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-height: 100%;
+        max-width: 126px;
+      }
+      h1 {
+        padding: 0 30px;
+        font-family: "GothamProBlack";
+        font-size: 57px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+      }
+    }
+    .block-title {
+      color: $white;
+      font-family: "GothamProLight";
+      font-size: 47px;
+      padding: 25px 0;
+      strong {
+        font-family: "GothamProBlack";
+      }
+    }
+  }
+}
+
+/* end первый экран */
+
+/* описание */
+.block-descroption {
+  height: 0;
+  position: relative;
+  .description-desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 1170px;
+    max-height: 690px;
+    padding: 60px 0 15px;
+    margin: auto;
+    background-color: #106CF2;
+    height: 100vh;
+    display: flex;
+    color: $white;
+    .left-column {
+      font-size: 35px;
+      font-family: "GothamProBlack";
+      text-align: right;
+      text-transform: uppercase;
+      max-width: 50%;
+      padding: 15px;
+    }
+    .right-column {
+      font-size: 20px;
+      max-width: 505px;
+      padding: 15px;
+      font-family: "GothamProMedium";
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-end;
+      p {
+        margin: 0 0 25px;
+      }
+    }
+  }
+}
+
+/* описание */
+
+/* мы предоставляем услуги */
+.block-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 415px;
+  ul {
+    font-size: 25px;
+    font-family: "GothamProMedium";
+    max-width: 684px;
+    li {
+      list-style: none;
+      padding: 15px 0;
+      line-height: 30px;
+      a {
+        color: #2A353B;
+      }
+      &:hover {
+        a {
+          color: #366AB5;
+          font-family: "GothamProBlack";
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/* end мы предоставляем услуги */
 
 /* преимущества */
 .block-advantages {
@@ -263,7 +426,7 @@ input, button, textarea {
       }
 
       ::-webkit-scrollbar-track {
-        background-image: linear-gradient(to left, transparent,transparent, #DADFDF, transparent, transparent);
+        background-image: linear-gradient(to left, transparent, transparent, #DADFDF, transparent, transparent);
       }
 
       ::-webkit-scrollbar-thumb {
@@ -354,7 +517,40 @@ input, button, textarea {
   }
 }
 
-/* end наши леоа */
+/* end наши дела */
+
+/* скачать прайс */
+.block-download-price {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  max-height: 550px;
+  height: 100vh;
+  padding: 0 180px;
+  background-repeat: repeat, no-repeat;
+  background-image: url("../img/system/pattern.png"), linear-gradient(to right, transparent, #106cf2, #106cf2), url("../img/system/block-download-price-1.png");
+  .content {
+    .block-title {
+      font-size: 43px;
+      color: $white;
+      text-align: center;
+      a {
+        color: #05439D;
+        text-decoration: underline;
+      }
+    }
+    p {
+      text-align: center;
+      width: 100%;
+      color: #E9F7FF;
+      font-size: 18px;
+      font-family: "GothamProLightItalic";
+    }
+  }
+}
+
+/* end скачать прайс */
 
 /* Новости компании */
 .news {
@@ -409,6 +605,45 @@ input, button, textarea {
 }
 
 /* end Новости компании */
+
+/* наш основной клиент */
+.block-primary-customer {
+  text-align: center;
+  max-height: 720px;
+  height: 100vh;
+  background-image: url("../img/system/pattern.png");
+  position: relative;
+  padding: 130px 0 45px;
+  .block-bg {
+    background-color: #79ACF9;
+    max-width: 500px;
+    max-height: 500px;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 40px;
+    z-index: -1;
+  }
+  .logotype {
+    width: 137px;
+    height: 30px;
+    margin: auto;
+  }
+  .block-title {
+    font-size: 26px;
+  }
+  p {
+    font-size: 21px;
+    max-width: 1198px;
+    margin: 35px auto;
+  }
+}
+
+/* end наш основной клиент */
 
 /* контакты */
 .contacts {

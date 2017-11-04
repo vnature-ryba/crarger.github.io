@@ -67,6 +67,20 @@ $(".news .owl-carousel").owlCarousel({
     freeDrag: false
 });
 
+// //Делегируем события кнопок next prev по умолчанию нашим кнопкам, которые могут находится ыне контейнера слайдера
+// var owl = $(".slider-news");
+// var owl1 = $(".slider-about");
+// owl.owlCarousel();
+// owl1.owlCarousel();
+// //$(".next") - находим нашу кнопку
+// $(".btn-next").click(function () {
+//     owl.trigger("next.owl.carousel");
+//     owl1.trigger("next.owl.carousel");
+// });
+// $(".btn-prev").click(function () {
+//     owl.trigger("prev.owl.carousel");
+//     owl1.trigger("prev.owl.carousel");
+// });
 
 // //скрипт для закрытия меню бутстрап при клике вне него
 // $(document).bind("mouseup touchend", function (e) {
