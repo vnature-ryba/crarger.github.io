@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-input, button, textarea {
+input, button, textarea, a {
   outline: none;
 }
 
@@ -69,6 +69,7 @@ input, button, textarea {
     align-items: center;
     max-width: 1770px;
     margin: 0 auto 45px;
+    padding: 0 15px;
     .call-number {
       font-family: "GothamProBold";
       a {
@@ -147,6 +148,7 @@ input, button, textarea {
 .block-descroption {
   height: 0;
   position: relative;
+  margin: 0 27px;
   .description-desc {
     position: absolute;
     top: 0;
@@ -161,6 +163,7 @@ input, button, textarea {
     height: 100vh;
     display: flex;
     color: $white;
+    flex-wrap: wrap;
     .left-column {
       font-size: 35px;
       font-family: "GothamProBlack";
@@ -175,11 +178,10 @@ input, button, textarea {
       padding: 15px;
       font-family: "GothamProMedium";
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
       justify-content: flex-end;
       p {
-        margin: 0 0 25px;
+        margin: 0 0 20px;
       }
     }
   }
@@ -220,7 +222,7 @@ input, button, textarea {
 /* преимущества */
 .block-advantages {
   width: 100%;
-  padding: 75px 0 150px;
+  padding: 75px 25px 150px;
   background-image: linear-gradient(to top, $white, transparent, $white), url("../img/system/pattern.png");
   .desk-container {
     margin: auto;
@@ -289,6 +291,7 @@ input, button, textarea {
       position: relative;
       display: flex;
       justify-content: center;
+      margin: auto;
       img {
         position: absolute;
         width: auto;
@@ -477,7 +480,7 @@ input, button, textarea {
     height: 100vh;
     max-width: 1168px;
     width: 100%;
-    background-color: rgba(218, 223, 223, 0.22);
+    background-image: linear-gradient(to top, transparent, rgba(218, 223, 223, 0.22), rgba(218, 223, 223, 0.22));
     padding: 25px 0;
     top: 40px;
     position: relative;
@@ -613,7 +616,7 @@ input, button, textarea {
   height: 100vh;
   background-image: url("../img/system/pattern.png");
   position: relative;
-  padding: 130px 0 45px;
+  padding: 130px 15px 45px;
   .block-bg {
     background-color: #79ACF9;
     max-width: 500px;

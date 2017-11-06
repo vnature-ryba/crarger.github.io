@@ -9,7 +9,6 @@ $(".block-about .owl-carousel").owlCarousel({
     navText: "",
     dots: true,
     paginationNumbers: true,
-    items: 5,
     lazyLoad: true,
     autoplay: false,
     animateOut: 'fadeOut',
@@ -18,7 +17,24 @@ $(".block-about .owl-carousel").owlCarousel({
     mouseDrag: false,
     touchDrag: true,
     pullDrag: false,
-    freeDrag: false
+    freeDrag: false,
+    responsive: {
+        320: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        1148: {
+            items: 3
+        },
+        1533: {
+            items: 4
+        },
+        1800: {
+            items: 5
+        }
+    }
 });
 
 //инициализация owl
@@ -41,7 +57,12 @@ $(".block-advantages .owl-carousel").owlCarousel({
     mouseDrag: false,
     touchDrag: true,
     pullDrag: false,
-    freeDrag: false
+    freeDrag: false,
+    responsive: {
+        320: {
+            items: 1
+        }
+    }
 });
 
 //инициализация owl
@@ -85,35 +106,31 @@ $(".news .owl-carousel").owlCarousel({
 // //скрипт для закрытия меню бутстрап при клике вне него
 // $(document).bind("mouseup touchend", function (e) {
 //     var container = $('.navbar-collapse');
-//
 //     if (!container.is(e.target)
 //         && container.has(e.target).length === 0) {
 //         container.collapse('hide');
 //     }
 // });
-//
+
 // //кнопки для переключения nav-tabs
 // $('.btn-next').click(function(){
 //     $('.nav-tabs > .active').next('li').find('a').trigger('click');
 // });
-//
+
 // $('.btn-prev').click(function(){
 //     $('.nav-tabs > .active').prev('li').find('a').trigger('click');
 // });
 //
-//
-// //вызов функции набегания цифр
-// $('.timer').countTo();
-//
-//
-// //анимация перехода по якорям
-// $("body").on("click","a[href^='#jack']", function (event) {
-//     event.preventDefault();
-//     var id  = $(this).attr('href'),
-//         top = $(id).offset().top;
-//     $('body,html').animate({scrollTop: top-0}, 800);
-// });
-//
+
+//анимация перехода по якорям
+$("body").on("click","a[href^='#jack']", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top-0}, 800);
+});
+
+
 // //отображение и скрытие кнопки прокрутки вверх
 //  $(document).on("scroll", function () {
 //     if ($(document).scrollTop() > 500) {

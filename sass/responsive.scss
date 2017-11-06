@@ -1,0 +1,121 @@
+@media screen and (min-width: 1280px) and (max-width: 1799px) {
+  .contacts {
+    .desk {
+      form {
+        input {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .contacts {
+    flex-direction: column;
+    .desk, .map {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .block-primary-customer {
+    .logotype {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1063px) {
+  .block-descroption {
+    .description-desc {
+      padding: 45px 50px;
+      .left-column, .right-column {
+        max-width: 100%;
+        text-align: left;
+      }
+      .right-column {
+        justify-content: flex-start;
+      }
+    }
+  }
+  .block-advantages {
+    padding: 45px 25px 45px;
+    .desk-container {
+      .desk {
+        margin: 0 55px;
+        padding: 25px 40px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1063px) {
+  .block-descroption {
+    .description-desc {
+      .left-column {
+        font-size: 26px;
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 779px) {
+  .block-descroption {
+    .description-desc {
+      .right-column {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .block-our-affairs {
+    flex-wrap: wrap;
+  }
+  .block-download-price {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .block-download-price {
+    padding: 15px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .contacts {
+    .desk {
+      max-height: inherit;
+      padding: 25px 15px;
+      form {
+        input {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 741px) {
+  .block-advantages {
+    .desk-container {
+      border: none;
+      .desk {
+        margin: 0;
+        max-height: none;
+        height: auto;
+        .title {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
