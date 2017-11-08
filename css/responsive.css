@@ -87,6 +87,8 @@
         .block-first-screen .header-container header .menu ul li {
           width: 50%;
           text-align: center; }
+      .block-first-screen .header-container header .menu .social-networks {
+        display: block; }
   .block-first-screen .header-container .fixed-top-menu {
     padding-bottom: 22px; }
   .block-our-affairs .to-do-list .scrollbar {
@@ -240,9 +242,9 @@
     font-size: 26px; } }
 
 @media screen and (max-width: 475px) {
-  .block-first-screen header .menu .call-number-mobile {
+  .block-first-screen .header-container .fixed-top-menu .menu .call-number-mobile {
     display: block; }
-  .block-first-screen header .header .fixed-menu-logo {
+  .block-first-screen .header-container .fixed-top-menu .header .fixed-menu-logo {
     margin: auto; }
   .block-first-screen .fixed-top-menu .fixed-menu-logo {
     width: 145px; }

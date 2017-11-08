@@ -140,6 +140,13 @@ input, button, textarea, a {
           .block-first-screen .header-container header .menu ul li:hover a:after {
             width: 100%;
             box-shadow: 0 0 0 2px #4A91F9; }
+        .block-first-screen .header-container header .menu .social-networks {
+          text-align: center;
+          padding: 15px 0 25px;
+          display: none; }
+          .block-first-screen .header-container header .menu .social-networks img {
+            width: 22px;
+            height: 13px; }
     .block-first-screen .header-container .fixed-menu-logo {
       display: none; }
     .block-first-screen .header-container .fixed-top-menu {
@@ -247,7 +254,8 @@ input, button, textarea, a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 415px 15px 0; }
+  padding: 415px 15px 0;
+  background-image: url("../img/system/services-bg.jpg"); }
   .block-services .block-title {
     padding-bottom: 35px; }
   .block-services .item {
@@ -306,6 +314,10 @@ input, button, textarea, a {
         font-size: 35px;
         font-family: "GothamProBold";
         padding: 0 115px; }
+
+@-moz-document url-prefix() {
+  .block-advantages .desk-container .desk .owl-carousel {
+    flex-direction: row !important; } }
       .block-advantages .desk-container .desk .owl-carousel {
         display: flex;
         flex-wrap: wrap;

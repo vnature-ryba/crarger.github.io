@@ -119,7 +119,6 @@ input, button, textarea, a {
     margin: 0 auto 45px;
     display: flex;
     header {
-
       font-size: 18px;
       display: flex;
       justify-content: space-between;
@@ -183,6 +182,15 @@ input, button, textarea, a {
                 }
               }
             }
+          }
+        }
+        .social-networks {
+          text-align: center;
+          padding: 15px 0 25px;
+          display: none;
+          img {
+            width: 22px;
+            height: 13px;
           }
         }
       }
@@ -326,6 +334,7 @@ input, button, textarea, a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 415px 15px 0;
+  background-image: url("../img/system/services-bg.jpg");
   .block-title {
     padding-bottom: 35px;
   }
@@ -396,6 +405,9 @@ input, button, textarea, a {
         font-size: 35px;
         font-family: "GothamProBold";
         padding: 0 115px;
+      }
+      @-moz-document url-prefix() {
+        .owl-carousel {flex-direction: row !important;}
       }
       .owl-carousel {
         display: flex;

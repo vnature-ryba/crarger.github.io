@@ -158,6 +158,9 @@
               text-align: center;
             }
           }
+          .social-networks {
+            display: block;
+          }
         }
       }
       .fixed-top-menu {
@@ -461,15 +464,17 @@
 
 @media screen and (max-width: 475px) {
   .block-first-screen {
-    header {
-      .menu {
-        .call-number-mobile {
-          display: block;
+    .header-container {
+      .fixed-top-menu {
+        .menu {
+          .call-number-mobile {
+            display: block;
+          }
         }
-      }
-      .header {
-        .fixed-menu-logo {
-          margin: auto;
+        .header {
+          .fixed-menu-logo {
+            margin: auto;
+          }
         }
       }
     }
