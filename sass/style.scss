@@ -20,6 +20,39 @@ input, button, textarea, a {
   outline: none;
 }
 
+.navbar-toggle {
+  &:hover {
+    background: transparent !important;
+  }
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+    background: #fff;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+  &.collapsed {
+    .top-bar {
+      transform: rotate(0);
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+}
+
 .btn-blue {
   border: none;
   background-color: #106CF2;
@@ -53,6 +86,26 @@ input, button, textarea, a {
   }
 }
 
+.owl-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .owl-dots {
+    margin: 15px 0;
+    .owl-dot {
+      span {
+        background-color: rgba(16, 108, 242, 0.4);
+        transition: 0.2s;
+      }
+    }
+    .active {
+      span {
+        background-color: #106CF2 !important;
+      }
+    }
+  }
+}
+
 /* end Смежные классы */
 
 /* первый экран */
@@ -61,55 +114,133 @@ input, button, textarea, a {
   background-position: bottom;
   max-height: 840px;
   height: 100vh;
-  header {
+  .header-container {
     min-height: 98px;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1770px;
     margin: 0 auto 45px;
-    padding: 0 15px;
-    .call-number {
-      font-family: "GothamProBold";
-      a {
-        color: $white;
-        display: block;
-      }
-    }
-    .menu {
-      font-family: "GothamProMedium";
-      ul {
-        li {
+    display: flex;
+    header {
+
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1770px;
+      margin: 0 auto 0;
+      flex-wrap: wrap;
+      transition: 0.2s;
+      width: 100%;
+      .header {
+        display: flex;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+        .call-number {
+          font-family: "GothamProBold";
           a {
             color: $white;
-            &:after {
-              content: '';
-              display: block;
-              width: 0;
-              height: 0;
-              box-shadow: 0 0 0 0 transparent;
-              position: relative;
-              top: 20px;
-              transition: 0.2s;
-              margin: auto;
-            }
-            &:focus {
-              background-color: transparent;
-            }
+            display: block;
           }
-          &:hover {
+        }
+      }
+
+      .menu {
+        font-family: "GothamProMedium";
+        .call-number-mobile {
+          display: none;
+          margin: auto;
+          text-align: center;
+          width: 100%;
+          a {
+            display: block;
+            color: $white;
+          }
+        }
+        ul {
+          li {
             a {
-              background-color: transparent;
+              color: $white;
               &:after {
-                width: 100%;
-                box-shadow: 0 0 0 2px #4A91F9;
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                box-shadow: 0 0 0 0 transparent;
+                position: relative;
+                top: 20px;
+                transition: 0.2s;
+                margin: auto;
+              }
+              &:focus {
+                background-color: transparent;
+              }
+            }
+            &:hover {
+              a {
+                background-color: transparent;
+                &:after {
+                  width: 100%;
+                  box-shadow: 0 0 0 2px #4A91F9;
+                }
               }
             }
           }
         }
       }
     }
+
+    .fixed-menu-logo {
+      display: none;
+    }
+
+    .fixed-top-menu {
+      background-color: #2A353B;
+      position: fixed;
+      min-width: 100%;
+      transition: 0.1s;
+      box-shadow: 0 0 10px 0 #2A353B;
+      z-index: 15;
+      a {
+        text-decoration: none;
+      }
+      .fixed-menu-logo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 187px;
+        img {
+          max-width: 56px;
+          max-height: 40px;
+        }
+        h1 {
+          color: #0069AB;
+          font-size: 26px;
+          font-family: "GothamProBlack";
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          margin: 0;
+          line-height: 22px;
+        }
+        p {
+          font-size: 8px;
+          font-family: "GothamProMedium";
+          color: #009AD7;
+          margin: 0;
+          padding-left: 1px;
+          line-height: 6px;
+        }
+      }
+      .menu {
+        ul {
+          li {
+            font-size: 14px;
+            a {
+              padding: 10px 12px;
+            }
+          }
+        }
+      }
+    }
+
   }
   .site-name {
     color: $white;
@@ -194,27 +325,43 @@ input, button, textarea, a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 415px;
-  ul {
-    font-size: 25px;
-    font-family: "GothamProMedium";
-    max-width: 684px;
-    li {
-      list-style: none;
-      padding: 15px 0;
-      line-height: 30px;
-      a {
-        color: #2A353B;
-      }
-      &:hover {
+  padding: 415px 15px 0;
+  .block-title {
+    padding-bottom: 35px;
+  }
+  .item {
+    margin: auto;
+    max-width: 675px;
+    ul {
+      font-size: 25px;
+      font-family: "GothamProMedium";
+      max-width: 684px;
+      padding: 0;
+      li {
+        list-style: none;
+        padding: 15px 0;
+        line-height: 30px;
         a {
-          color: #366AB5;
-          font-family: "GothamProBlack";
-          text-decoration: none;
+          color: #2A353B;
+          display: flex;
+          transition: 0.2s;
+          align-items: center;
+          i {
+            margin: 0 60px 0 0;
+            width: 18px;
+          }
+        }
+        &:hover {
+          a {
+            color: #366AB5;
+            font-weight: 800;
+            text-decoration: none;
+          }
         }
       }
     }
   }
+
 }
 
 /* end мы предоставляем услуги */
@@ -412,6 +559,8 @@ input, button, textarea, a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    max-width: 730px;
     .title {
       font-size: 35px;
       font-family: "GothamProBlack";
@@ -752,3 +901,54 @@ footer {
 }
 
 /* end футер */
+
+/* модалки */
+.modal-dialog {
+  max-width: 1300px;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: auto;
+  .modal-content {
+    border-radius: 0;
+    width: 100%;
+    .modal-header {
+      padding: 17px 0 0 2px;
+      border: 0;
+      min-height: 115px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .modal-title {
+        padding: 0 110px;
+        font-family: "gothampromedium";
+        font-size: 30px;
+        width: 100%;
+      }
+      .close {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        color: #007af4;
+        font-size: 50px;
+        font-weight: 100;
+        opacity: 1;
+      }
+      &:after {
+        display: block;
+        content: '';
+        height: 0;
+        width: 58%;
+        box-shadow: 0 0 0 2px #79ACF9;
+      }
+    }
+    .modal-body {
+      padding: 25px 112px;
+      font-size: 20px;
+    }
+  }
+}
+/* end модалки */

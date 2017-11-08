@@ -1,3 +1,60 @@
+@media screen and (min-width: 1747px) {
+  .block-first-screen {
+    .fixed-top-menu {
+      .header {
+        width: 55.5%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .block-our-affairs {
+    .to-do-desk {
+      height: auto;
+      max-height: inherit;
+      table {
+        .itog {
+          position: relative;
+          border-top: 1px solid rgba(42, 53, 59, 0.4);
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1569px) and (max-width: 1747px) {
+  .block-first-screen {
+    .fixed-top-menu {
+      .header {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1568px) {
+  .block-first-screen {
+    .fixed-top-menu {
+      .header {
+        width: 100%;
+      }
+      .menu {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .fixed-top-menu {
+    padding: 0 65px;
+  }
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1799px) {
   .contacts {
     .desk {
@@ -17,6 +74,10 @@
     .desk, .map {
       width: 100%;
     }
+    .desk {
+      padding: 25px;
+      height: auto;
+    }
   }
 }
 
@@ -31,7 +92,7 @@
 @media screen and (max-width: 1063px) {
   .block-descroption {
     .description-desc {
-      padding: 45px 50px;
+      display: block;
       .left-column, .right-column {
         max-width: 100%;
         text-align: left;
@@ -52,13 +113,192 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .block-our-affairs {
+    .to-do-list {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-first-screen {
+    .fixed-top-menu {
+      min-height: 65px;
+      .header {
+        .navbar-header {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-first-screen {
+    .header-container {
+      header {
+        align-items: flex-start;
+        padding-top: 25px;
+        .header {
+          width: 100%;
+        }
+        .menu {
+          width: 100%;
+          background-image: url("../img/system/pattern.png"), linear-gradient(to top, #106CF2, #106CF2);
+          top: 97px;
+          position: absolute;
+          z-index: 15;
+          box-shadow: 0 0 7px 0;
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              width: 50%;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .fixed-top-menu {
+        padding-bottom: 22px;
+      }
+    }
+
+  }
+  .block-our-affairs {
+    .to-do-list {
+      .scrollbar {
+        padding-left: 15px;
+      }
+      .nav-tabs {
+        max-height: 167px;
+      }
+    }
+    .to-do-desk {
+      table {
+        tr {
+          td:nth-child(odd) {
+            padding-left: 15px;
+            min-width: inherit;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+  .block-primary-customer {
+    .block-bg {
+      display: none;
+    }
+  }
+  .block-descroption {
+    position: relative;
+    height: auto;
+    .description-desc {
+      padding: 10px 15px;
+      position: relative;
+      top: auto;
+      bottom: 56px;
+      max-height: inherit;
+      height: auto;
+    }
+  }
+  .block-services {
+    padding-top: 0;
+  }
+  .block-about {
+    .owl-theme {
+      .item {
+        .desk {
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .news {
+    .owl-carousel {
+      padding: 0 15px;
+    }
+  }
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          padding: 0 75px 0 15px;
+          font-size: 30px;
+        }
+      }
+      .modal-body {
+        padding: 25px 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1568px) {
+  .block-first-screen {
+    .header-container {
+      .fixed-top-menu {
+        .header {
+          display: flex;
+          flex-direction: row-reverse;
+          padding: 15px 65px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  .block-first-screen {
+    .header-container {
+      header {
+        .header {
+            margin: auto;
+        }
+        .menu {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 767px) and (max-width: 1063px) {
   .block-descroption {
     .description-desc {
+      padding: 45px 50px;
       .left-column {
         font-size: 26px;
-
       }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .block-our-affairs {
+    .to-do-list {
+      .nav-tabs {
+        max-height: 203px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 925px){
+  .navbar-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-height: 850px) {
+  .block-primary-customer {
+    p {
+      font-size: 17px;
     }
   }
 }
@@ -68,6 +308,30 @@
     .description-desc {
       .right-column {
         font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-primary-customer {
+    max-height: inherit;
+    height: auto;
+    background-color: #79ACF9;
+    color: #fff;
+    padding: 35px 15px 10px;
+    font-size: 13px;
+    .block-title {
+      color: #fff;
+    }
+  }
+  .block-descroption {
+    .description-desc {
+      .left-column {
+        font-size: 14px;
+      }
+      .right-column {
+        font-size: 11px;
       }
     }
   }
@@ -114,6 +378,162 @@
         height: auto;
         .title {
           padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 666px) and (max-width: 769px) {
+  .block-first-screen {
+    .site-name {
+      .logo {
+        img {
+          max-width: 75px;
+        }
+        h1 {
+          font-size: 34px;
+          padding: 0 15px;
+        }
+      }
+      .block-title {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .block-first-screen {
+    .site-name {
+      .logo {
+        img {
+          max-width: 37px;
+        }
+        h1 {
+          font-size: 17px;
+          padding: 0 15px;
+        }
+      }
+      .block-title {
+        font-size: 22px;
+        padding: 0;
+        margin-top: 10px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .block-our-affairs {
+    .to-do-list {
+      .title {
+        font-size: 16px;
+      }
+      .nav-tabs {
+        li {
+          font-size: 12px;
+          a {
+            padding: 3px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 475px) and (max-width: 768px) {
+  .block-services {
+    .item {
+      ul {
+        font-size: 16px;
+        li {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  .block-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .block-first-screen {
+    header {
+      .menu {
+        .call-number-mobile {
+          display: block;
+        }
+      }
+      .header {
+        .fixed-menu-logo {
+          margin: auto;
+        }
+      }
+    }
+    .fixed-top-menu {
+      .fixed-menu-logo {
+        width: 145px;
+        img {
+          max-width: 38px;
+          max-height: 27px;
+        }
+        h1 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 5px;
+        }
+      }
+      .call-number {
+        display: none;
+      }
+    }
+  }
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          font-size: 21px;
+        }
+      }
+      .modal-body {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .block-title {
+    font-size: 16px;
+  }
+  .block-advantages {
+    .desk-container {
+      .desk {
+        .title {
+          font-size: 16px;
+          font-family: "GothamProBlack";
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .block-services {
+    .item {
+      ul {
+        font-size: 12px;
+        li {
+          padding: 5px 0;
+          a {
+            i {
+              margin: 0 25px 0 0;
+            }
+          }
         }
       }
     }
