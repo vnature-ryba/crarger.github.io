@@ -121,125 +121,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .block-first-screen {
-    .fixed-top-menu {
-      min-height: 65px;
-      .header {
-        .navbar-header {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .block-first-screen {
-    .header-container {
-      header {
-        align-items: flex-start;
-        padding-top: 25px;
-        .header {
-          width: 100%;
-        }
-        .menu {
-          width: 100%;
-          background-image: url("../img/system/pattern.png"), linear-gradient(to top, #106CF2, #106CF2);
-          top: 97px;
-          position: absolute;
-          z-index: 15;
-          box-shadow: 0 0 7px 0;
-          ul {
-            display: flex;
-            flex-wrap: wrap;
-            li {
-              width: 50%;
-              text-align: center;
-            }
-          }
-          .social-networks {
-            display: block;
-          }
-        }
-      }
-      .fixed-top-menu {
-        padding-bottom: 22px;
-      }
-    }
-
-  }
-  .block-our-affairs {
-    .to-do-list {
-      .scrollbar {
-        padding-left: 15px;
-      }
-      .nav-tabs {
-        max-height: 167px;
-      }
-    }
-    .to-do-desk {
-      table {
-        tr {
-          td:nth-child(odd) {
-            padding-left: 15px;
-            min-width: inherit;
-            vertical-align: top;
-          }
-        }
-      }
-    }
-  }
-  .block-primary-customer {
-    .block-bg {
-      display: none;
-    }
-  }
-  .block-descroption {
-    position: relative;
-    height: auto;
-    .description-desc {
-      padding: 10px 15px;
-      position: relative;
-      top: auto;
-      bottom: 56px;
-      max-height: inherit;
-      height: auto;
-    }
-  }
-  .block-services {
-    padding-top: 0;
-  }
-  .block-about {
-    .owl-theme {
-      .item {
-        .desk {
-          max-width: 100%;
-          margin: 0;
-        }
-      }
-    }
-  }
-  .news {
-    .owl-carousel {
-      padding: 0 15px;
-    }
-  }
-  .modal-dialog {
-    .modal-content {
-      .modal-header {
-        .modal-title {
-          padding: 0 75px 0 15px;
-          font-size: 30px;
-        }
-      }
-      .modal-body {
-        padding: 25px 15px;
-      }
-    }
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1568px) {
   .block-first-screen {
     .header-container {
@@ -259,7 +140,7 @@
     .header-container {
       header {
         .header {
-            margin: auto;
+          margin: auto;
         }
         .menu {
           margin: auto;
@@ -290,8 +171,8 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 925px){
-  .navbar-right{
+@media screen and (min-width: 768px) and (max-width: 925px) {
+  .navbar-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -311,30 +192,6 @@
     .description-desc {
       .right-column {
         font-size: 18px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .block-primary-customer {
-    max-height: inherit;
-    height: auto;
-    background-color: #79ACF9;
-    color: #fff;
-    padding: 35px 15px 10px;
-    font-size: 13px;
-    .block-title {
-      color: #fff;
-    }
-  }
-  .block-descroption {
-    .description-desc {
-      .left-column {
-        font-size: 14px;
-      }
-      .right-column {
-        font-size: 11px;
       }
     }
   }
@@ -366,6 +223,167 @@
           max-width: 100%;
           text-align: center;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-first-screen {
+    .fixed-top-menu {
+      min-height: 65px;
+      .header {
+        .navbar-header {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-first-screen {
+    .header-container {
+      header {
+        align-items: flex-start;
+        padding-top: 6px;
+        .header {
+          width: 100%;
+        }
+        .menu {
+          width: 100%;
+          background-image: url("../img/system/pattern.png"), linear-gradient(to top, #106CF2, #106CF2);
+          top: 60px;
+          position: absolute;
+          z-index: 15;
+          box-shadow: 0 0 7px 0;
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              width: 50%;
+              text-align: center;
+            }
+          }
+          .social-networks {
+            display: block;
+          }
+        }
+      }
+      .fixed-top-menu {
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+    }
+
+  }
+  .block-our-affairs {
+    padding: 0 0 40px;
+    .to-do-list {
+      .scrollbar {
+        padding-left: 15px;
+      }
+      .nav-tabs {
+        max-height: 167px;
+      }
+    }
+    .to-do-desk {
+      table {
+        tr {
+          td:nth-child(odd) {
+            padding-left: 15px;
+            min-width: inherit;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+  .block-primary-customer {
+    padding: 10px 15px 10px;
+    max-height: inherit;
+    height: auto;
+    background-color: #79ACF9;
+    color: #fff;
+    font-size: 13px;
+    .block-title {
+      font-size: 16px;
+      line-height: 25px;
+      color: #fff;
+    }
+    p {
+      font-size: 13px;
+      margin: 10px auto;
+    }
+    .block-bg {
+      display: none;
+    }
+  }
+  .block-descroption {
+    position: relative;
+    height: auto;
+    .description-desc {
+      padding: 10px 15px;
+      position: relative;
+      top: auto;
+      bottom: 56px;
+      max-height: inherit;
+      height: auto;
+      .left-column {
+        font-size: 14px;
+      }
+      .right-column {
+        font-size: 11px;
+      }
+    }
+  }
+  .block-services {
+    padding-top: 0;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position: bottom;
+    .block-title {
+      padding-bottom: 10px;
+    }
+  }
+  .block-about {
+    .owl-theme {
+      .item {
+        .desk {
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .block-advantages {
+    padding: 0 25px 0;
+    .desk-container {
+      height: auto;
+      display: block;
+      .desk {
+        position: relative;
+      }
+    }
+  }
+  .news {
+    .owl-carousel {
+      padding: 0 15px;
+    }
+  }
+  .block-download-price {
+    background-image: url(../img/system/pattern.png), linear-gradient(to right, #106cf2, #106cf2);
+  }
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          padding: 0 75px 0 15px;
+          font-size: 30px;
+        }
+      }
+      .modal-body {
+        padding: 25px 15px;
       }
     }
   }

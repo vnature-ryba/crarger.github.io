@@ -20,7 +20,17 @@ input, button, textarea, a {
   outline: none;
 }
 
+input, textarea {
+  ::-webkit-input-placeholder {
+    transition: 0.2s;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+}
+
 .navbar-toggle {
+  margin-right: 0;
   &:hover {
     background: transparent !important;
   }
@@ -407,7 +417,9 @@ input, button, textarea, a {
         padding: 0 115px;
       }
       @-moz-document url-prefix() {
-        .owl-carousel {flex-direction: row !important;}
+        .owl-carousel {
+          flex-direction: row !important;
+        }
       }
       .owl-carousel {
         display: flex;
