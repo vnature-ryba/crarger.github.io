@@ -20,8 +20,6 @@ $(".block-about .owl-carousel").owlCarousel({
     paginationNumbers: true,
     lazyLoad: true,
     autoplay: false,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
     autoplayTimeout: 6000,
     mouseDrag: false,
     touchDrag: true,
@@ -59,8 +57,6 @@ $(".block-services .owl-carousel").owlCarousel({
     paginationNumbers: true,
     lazyLoad: true,
     autoplay: false,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
     autoplayTimeout: 6000,
     mouseDrag: false,
     touchDrag: true,
@@ -90,8 +86,6 @@ $(".block-advantages .owl-carousel").owlCarousel({
     items: 1,
     lazyLoad: true,
     autoplay: false,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
     autoplayTimeout: 6000,
     mouseDrag: false,
     touchDrag: true,
@@ -117,8 +111,6 @@ $(".news .owl-carousel").owlCarousel({
     paginationNumbers: true,
     lazyLoad: true,
     autoplay: false,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
     autoplayTimeout: 6000,
     mouseDrag: false,
     touchDrag: true,
@@ -137,23 +129,23 @@ $(".news .owl-carousel").owlCarousel({
     }
 });
 
-// //Делегируем события кнопок next prev по умолчанию нашим кнопкам, которые могут находится ыне контейнера слайдера
-// var owl = $(".slider-news");
-// var owl1 = $(".slider-about");
-// owl.owlCarousel();
-// owl1.owlCarousel();
-// //$(".next") - находим нашу кнопку
-// $(".btn-next").click(function () {
-//     owl.trigger("next.owl.carousel");
-//     owl1.trigger("next.owl.carousel");
-// });
-// $(".btn-prev").click(function () {
-//     owl.trigger("prev.owl.carousel");
-//     owl1.trigger("prev.owl.carousel");
-// });
+//Делегируем события кнопок next prev по умолчанию нашим кнопкам, которые могут находится ыне контейнера слайдера
+var owl = $(".slider-news");
+var owl1 = $(".slider-about");
+owl.owlCarousel();
+owl1.owlCarousel();
+//$(".next") - находим нашу кнопку
+$(".btn-next").click(function () {
+    owl.trigger("next.owl.carousel");
+    owl1.trigger("next.owl.carousel");
+});
+$(".btn-prev").click(function () {
+    owl.trigger("prev.owl.carousel");
+    owl1.trigger("prev.owl.carousel");
+});
 
 
-//Добавление класса при спуске до опредененной позиции
+//Добавление класса фиксированного меню при спуске
 $(document).on("scroll", function () {
 
     if ($(document).scrollTop() > 90) {
@@ -165,13 +157,46 @@ $(document).on("scroll", function () {
     }
 });
 
+//подсвечивание активного пункта лемого меню
+var menu_selector = ".menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
 
+function onScroll() {
+    var scroll_top = $(document).scrollTop();
+    $(menu_selector + " li").each(function () {
+        var hash = $(this).children('a').attr("href");
+        var target = $(hash);
+        if (target.position().top -70 <= scroll_top && target.position().top + target.outerHeight() -70 > scroll_top) {
+            $(menu_selector + " li.active").removeClass("active");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+}
+
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    $("a[href=#jack]").click(function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        $(menu_selector + " li.active").removeClass("active");
+        $(this).addClass("active");
+        var hash = $(this).children('a').attr("href");
+        var target = $(hash);
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, function () {
+            window.location.hash = hash;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
 
 //анимация перехода по якорям
 $("body").on("click","a[href^='#jack']", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
-        top = $(id).offset().top;
+        top = $(id).offset().top-65;
     $('body,html').animate({scrollTop: top-0}, 800);
 });
 

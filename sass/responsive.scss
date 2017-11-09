@@ -263,6 +263,10 @@
             li {
               width: 50%;
               text-align: center;
+              font-size: 14px;
+              .li-bg {
+                display: none;
+              }
             }
           }
           .social-networks {
@@ -275,7 +279,6 @@
         padding-top: 5px;
       }
     }
-
   }
   .block-our-affairs {
     padding: 0 0 40px;

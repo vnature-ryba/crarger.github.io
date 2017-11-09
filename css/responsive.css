@@ -141,7 +141,10 @@
         flex-wrap: wrap; }
         .block-first-screen .header-container header .menu ul li {
           width: 50%;
-          text-align: center; }
+          text-align: center;
+          font-size: 14px; }
+          .block-first-screen .header-container header .menu ul li .li-bg {
+            display: none; }
       .block-first-screen .header-container header .menu .social-networks {
         display: block; }
   .block-first-screen .header-container .fixed-top-menu {
