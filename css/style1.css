@@ -40,12 +40,6 @@ body {
   font-family: "GothamProRegular", "Helvetica Neue", "Helvetica,Arial,sans-serif" !important;
   letter-spacing: 1px; }
 
-.page-index .search-block {
-  display: none; }
-
-.page-index .breadcrumd {
-  display: none; }
-
 .page-index .screen-one {
   background-size: cover;
   height: 100vh;
@@ -165,90 +159,41 @@ body {
   background-color: rgba(35, 35, 35, 0.2);
   -webkit-transition: all 0.25s; }
 
-.page-index .header {
+.page-index header {
   padding: 10px 25px 0; }
-  .page-index .header .navbar-toggle:hover {
+  .page-index header .navbar-toggle:hover {
     background: transparent !important; }
-  .page-index .header .navbar-toggle .icon-bar {
+  .page-index header .navbar-toggle .icon-bar {
     width: 22px;
     transition: all 0.2s; }
-  .page-index .header .navbar-toggle .top-bar {
+  .page-index header .navbar-toggle .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%; }
-  .page-index .header .navbar-toggle .middle-bar {
+  .page-index header .navbar-toggle .middle-bar {
     opacity: 0; }
-  .page-index .header .navbar-toggle .bottom-bar {
+  .page-index header .navbar-toggle .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%; }
-  .page-index .header .navbar-toggle.collapsed .top-bar {
+  .page-index header .navbar-toggle.collapsed .top-bar {
     transform: rotate(0); }
-  .page-index .header .navbar-toggle.collapsed .middle-bar {
+  .page-index header .navbar-toggle.collapsed .middle-bar {
     opacity: 1; }
-  .page-index .header .navbar-toggle.collapsed .bottom-bar {
+  .page-index header .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0); }
-  .page-index .header .logo {
+  .page-index header .logo {
     width: 180px;
     height: 52px;
     background-image: url("../img/system/logo-light.png");
     background-size: 100%;
     background-repeat: no-repeat; }
-  .page-index .header .main-content {
+  .page-index header .main-content {
     max-width: 1770px;
     width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .page-index .header .main-content .group {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: 500px;
-      justify-content: space-between;
-      left: 50px;
-      position: relative; }
-      .page-index .header .main-content .group .call-number {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.8rem;
-        font-weight: 800;
-        padding-bottom: 6px;
-        max-width: 200px;
-        justify-content: flex-end; }
-        .page-index .header .main-content .group .call-number a {
-          transition: 0.2s; }
-          .page-index .header .main-content .group .call-number a:hover, .page-index .header .main-content .group .call-number a:focus {
-            color: #ffb74f;
-            text-decoration: none;
-            text-shadow: 0 0 1px #FF9600; }
-    .page-index .header .main-content .city {
-      padding-bottom: 10px;
-      padding-left: 13px;
-      width: 150px; }
-      .page-index .header .main-content .city .point {
-        height: 30px;
-        float: left;
-        position: relative;
-        top: 5px;
-        right: 10px; }
-      .page-index .header .main-content .city .custom-caret {
-        max-width: 10px;
-        transition: 0.2s; }
-      .page-index .header .main-content .city label {
-        margin: 0;
-        color: #B3B8B3; }
-      .page-index .header .main-content .city .select {
-        background-color: transparent;
-        border: none;
-        font-family: "IntroRustG";
-        padding: 0;
-        color: #FFFFFF;
-        color: #FF9600; }
-      .page-index .header .main-content .city .open .select .custom-caret {
-        transform: rotate(-180deg);
-        transition: 0.2s; }
-    .page-index .header .main-content .menu ul li:hover:after {
+    flex-wrap: wrap; }
+    .page-index header .main-content .menu ul li:hover:after {
       display: block;
       content: '';
       height: 2px;
@@ -256,95 +201,95 @@ body {
       margin: auto;
       position: absolute;
       background-color: #FF9600; }
-    .page-index .header .main-content .menu ul li:hover a {
+    .page-index header .main-content .menu ul li:hover a {
       padding-bottom: 15px; }
-    .page-index .header .main-content .menu ul li:hover ul {
+    .page-index header .main-content .menu ul li:hover ul {
       background-color: rgba(206, 206, 206, 0.55);
       border: none;
       box-shadow: 0 3px 11px -1px rgba(0, 0, 0, 0.175); }
-      .page-index .header .main-content .menu ul li:hover ul li {
+      .page-index header .main-content .menu ul li:hover ul li {
         padding: 15px 0 0 0;
         margin: 0;
         transition: 0.2s; }
-        .page-index .header .main-content .menu ul li:hover ul li a, .page-index .header .main-content .menu ul li:hover ul li a:hover {
+        .page-index header .main-content .menu ul li:hover ul li a, .page-index header .main-content .menu ul li:hover ul li a:hover {
           color: #FFFFFF;
           font-family: GothamProRegular; }
-        .page-index .header .main-content .menu ul li:hover ul li:hover {
+        .page-index header .main-content .menu ul li:hover ul li:hover {
           background-color: rgba(131, 81, 127, 0.77); }
-          .page-index .header .main-content .menu ul li:hover ul li:hover:after {
+          .page-index header .main-content .menu ul li:hover ul li:hover:after {
             display: none; }
-    .page-index .header .main-content .menu ul .open .custom-caret {
+    .page-index header .main-content .menu ul .open .custom-caret {
       transform: rotate(-180deg);
       transition: 0.2s; }
-    .page-index .header .main-content .menu ul .open a {
+    .page-index header .main-content .menu ul .open a {
       padding-bottom: 15px; }
-    .page-index .header .main-content .menu ul .open ul {
+    .page-index header .main-content .menu ul .open ul {
       background-color: rgba(206, 206, 206, 0.55);
       border: none;
       box-shadow: 0 3px 11px -1px rgba(0, 0, 0, 0.175); }
-      .page-index .header .main-content .menu ul .open ul li {
+      .page-index header .main-content .menu ul .open ul li {
         padding: 15px 0 0 0;
         margin: 0;
         transition: 0.2s; }
-        .page-index .header .main-content .menu ul .open ul li a, .page-index .header .main-content .menu ul .open ul li a:hover {
+        .page-index header .main-content .menu ul .open ul li a, .page-index header .main-content .menu ul .open ul li a:hover {
           color: #FFFFFF;
           font-family: GothamProRegular; }
-        .page-index .header .main-content .menu ul .open ul li:hover {
+        .page-index header .main-content .menu ul .open ul li:hover {
           background-color: rgba(131, 81, 127, 0.77); }
-          .page-index .header .main-content .menu ul .open ul li:hover:after {
+          .page-index header .main-content .menu ul .open ul li:hover:after {
             display: none; }
-    .page-index .header .main-content .menu a {
+    .page-index header .main-content .menu a {
       font-family: "IntroRustG";
       font-size: 1.55rem;
       color: #FFFFFF;
       transition: 0.2s; }
-    .page-index .header .main-content .menu a:hover, .page-index .header .main-content .menu a:focus {
+    .page-index header .main-content .menu a:hover, .page-index header .main-content .menu a:focus {
       color: #ffb74f;
       transition: 0.2s;
       background-color: transparent; }
-    .page-index .header .main-content .menu .active a {
+    .page-index header .main-content .menu .active a {
       color: #FF9600; }
-    .page-index .header .main-content .menu .custom-caret {
+    .page-index header .main-content .menu .custom-caret {
       transition: 0.2s;
       max-width: 12px;
       vertical-align: middle;
       padding: 6px 0;
       position: relative;
       left: 3px; }
-    .page-index .header .main-content .call-number {
+    .page-index header .main-content .call-number {
       display: block;
       margin: auto;
       font-size: 1.8rem;
       font-weight: 800;
       padding-bottom: 6px; }
-      .page-index .header .main-content .call-number p {
+      .page-index header .main-content .call-number p {
         margin: 0; }
-      .page-index .header .main-content .call-number a {
+      .page-index header .main-content .call-number a {
         color: #ffb74f;
         font-family: "GothamProRegular"; }
-    .page-index .header .main-content .city {
+    .page-index header .main-content .city {
       margin: auto;
       padding-bottom: 10px;
       width: 150px; }
-      .page-index .header .main-content .city .point {
+      .page-index header .main-content .city .point {
         height: 30px;
         float: left;
         position: relative;
         top: 5px;
         right: 10px; }
-      .page-index .header .main-content .city .custom-caret {
+      .page-index header .main-content .city .custom-caret {
         max-width: 10px;
         transition: 0.2s; }
-      .page-index .header .main-content .city label {
+      .page-index header .main-content .city label {
         margin: 0;
         color: #FFFFFF; }
-      .page-index .header .main-content .city .select {
+      .page-index header .main-content .city .select {
         background-color: transparent;
         border: none;
         font-family: "IntroRustG";
         padding: 0;
         color: #FFFFFF; }
-      .page-index .header .main-content .city .open .select .custom-caret {
+      .page-index header .main-content .city .open .select .custom-caret {
         transform: rotate(-180deg);
         transition: 0.2s; }
 
@@ -628,7 +573,8 @@ body {
       height: 1px;
       width: 100%;
       position: relative;
-      background-color: rgba(255, 190, 87, 0.35);
+      background-color: rgba(129, 12, 116, 0.4);
+      box-shadow: 0 0 2px 0 rgba(129, 12, 116, 0.8);
       top: 173px; }
 
 .page-index .screen-fourth {
@@ -749,7 +695,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 35px 15px 10px; }
+    margin: 35px 15px; }
     .page-index .screen-five .cell .description {
       margin-bottom: 10px; }
     .page-index .screen-five .cell .value {
