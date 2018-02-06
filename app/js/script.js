@@ -195,7 +195,6 @@ if ($(window).width() > 1280) {
             content.slideDown();
             footer.css("opacity", "0");
             footer.hide();
-
         }
         if ($(document).scrollTop() > 1350) {
             $(".footer").addClass("light-footer");
@@ -276,32 +275,29 @@ $(document).ready(function () {
 
 
 //настройка набегания цифр
-let marker = true;
 $(document).on("scroll", function () {
     let block1 = $(".screen-five").offset().top;
     let block3 = $(window).height();
-    if ($(document).scrollTop() > block1 - block3 && marker) {
+    if ($(document).scrollTop() > block1 - block3) {
         $('.timer').countTo();
-        marker = false;
     }
 });
 
 
-//анимация перехода по якорям
-$(document).ready(function(){
-    $("#jackar,#logo").on("click","a", function (event) {
+
+// анимация перехода по якорям
+$(document).ready(function () {
+    $("body").on("click", "a[href^='#jack']", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
         //забираем идентификатор бока с атрибута href
-        var id  = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-        top = $(id).offset().top;
+        var id = $(this).attr('href'),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
         //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: top}, 1800);
     });
 });
-
-
 
 //иницавлизация всплывающих подсказок
 $(function () {

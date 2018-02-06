@@ -48,14 +48,14 @@ var path = {
         libs: 'app/libs/**/*',
         js: 'app/js/bundle.js',
         json: 'app/json/**/*.json',
-        scss: 'app/sass/**/*.scss',
+        scss: 'app/sass/**/*.sass',
         style: 'app/css/**/*.css',
         img: 'app/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'app/fonts/**/*.*',
         svg: 'app/svg/**/*.svg'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
-        sass: 'app/sass/**/*.scss',
+        sass: 'app/sass/**/*.sass',
         html: 'app/*.html',
         includehtml: 'app/include/*html',
         svg: 'app/svg/**/*.svg',
@@ -93,7 +93,7 @@ gulp.task('img-min', function () {
 
 //преобразуем scss в css
 gulp.task('sass', function () { // Создаем таск Sass
-    return gulp.src("app/sass/bundle.scss") // Берем источник
+    return gulp.src("app/sass/bundle.sass") // Берем источник
         .pipe(plumber())
         .pipe(rigger())
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
