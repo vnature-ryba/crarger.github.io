@@ -141,30 +141,6 @@ $(".btn-prev").click(function () {
     owl.trigger("prev.owl.carousel");
 });
 
-//инициализация постраничного скролла
-$.scrollify({
-    section: ".example-classname",
-    sectionName: "section-name",
-    interstitialSection: "",
-    easing: "easeOutExpo",
-    scrollSpeed: 1100,
-    offset: 0,
-    scrollbars: true,
-    standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll: true,
-    before: function () {
-    },
-    after: function () {
-    },
-    afterResize: function () {
-    },
-    afterRender: function () {
-    }
-});
-
 // открытие/закрытие блока калькулятора при клике на кнопки
 var
     $this = $(this),
@@ -237,7 +213,6 @@ if ($(window).width() > 1280) {
 
 }
 
-
 //подсвечивание активного пункта лемого меню
 var menu_selector = ".left-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
 
@@ -246,7 +221,7 @@ function onScroll() {
     $(menu_selector + " li").each(function () {
         var hash = $(this).children('a').attr("href");
         var target = $(hash);
-        if (target.position().top - 500 <= scroll_top && target.position().top + target.outerHeight() - 500 > scroll_top) {
+        if (target.position().top - 500 <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
             $(menu_selector + " li.active").removeClass("active");
             $(this).addClass("active");
         } else {
@@ -273,7 +248,6 @@ $(document).ready(function () {
     });
 });
 
-
 //настройка набегания цифр
 $(document).on("scroll", function () {
     let block1 = $(".screen-five").offset().top;
@@ -282,7 +256,6 @@ $(document).on("scroll", function () {
         $('.timer').countTo();
     }
 });
-
 
 
 // анимация перехода по якорям

@@ -6,6 +6,4 @@
 
 //= ../libs/jquery-countTo/jquery.countTo.js
 
-//= ../libs/jquery-scrollify/jquery.scrollify.min.js
-
 //= script.js
