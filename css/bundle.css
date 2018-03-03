@@ -11,6 +11,12 @@
   font-weight: normal; }
 
 @font-face {
+  font-family: "GothamProItalic";
+  src: url("../fonts/GothamProItalic.woff");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
   font-family: "GothamProLightItalic";
   src: url("../fonts/GothamProLightItalic.woff");
   font-style: normal;
