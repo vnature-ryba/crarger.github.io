@@ -6541,16 +6541,16 @@ input:focus::-webkit-input-placeholder {
             font-size: 22px;
             color: #33042F;
             list-style: none;
-            letter-spacing: 0; }
+            letter-spacing: 0;
+            display: table; }
             .franchise .eight-reasons .desk .column ol li p {
               font-size: 12px;
-              font-family: "GothamProRegular";
-              padding-left: 60px; }
+              font-family: "GothamProRegular"; }
             .franchise .eight-reasons .desk .column ol li:before {
               font-family: "IntroRustG";
               font-size: 55px;
               color: #FF9600;
-              display: inline-block;
+              display: table-cell;
               text-align: center;
               margin: 5px 10px;
               line-height: 40px;
@@ -6629,41 +6629,6 @@ input:focus::-webkit-input-placeholder {
 footer {
   background-color: #f8f8f8; }
 
-@media screen and (max-width: 759px) {
-  .franchise .block-about {
-    padding: 0; }
-    .franchise .block-about .photo {
-      bottom: 96px;
-      right: -37px;
-      max-height: 295px; }
-    .franchise .block-about .text-content {
-      padding: 15px; }
-      .franchise .block-about .text-content p {
-        font-size: 14px;
-        padding-bottom: 15px; }
-    .franchise .block-about .partner-info {
-      background-color: #E4E6E4; }
-    .franchise .block-about .signature-block-container {
-      padding: 0 0 145px; }
-      .franchise .block-about .signature-block-container .signature-block {
-        max-width: 175px;
-        padding: 15px; }
-        .franchise .block-about .signature-block-container .signature-block .name {
-          font-size: 16px; }
-        .franchise .block-about .signature-block-container .signature-block .position {
-          font-size: 10px; }
-        .franchise .block-about .signature-block-container .signature-block img {
-          bottom: -8px;
-          left: 35px;
-          width: 259px; }
-    .franchise .block-about .partner-info {
-      padding: 15px;
-      height: 96px; }
-      .franchise .block-about .partner-info .name {
-        font-size: 10px; }
-      .franchise .block-about .partner-info div {
-        font-size: 10px; } }
-
 @media screen and (min-width: 1525px) {
   .franchise .why-franchise .right-column {
     width: calc(100% - 880px); } }
@@ -6738,6 +6703,16 @@ footer {
   .franchise .block-about .signature-block-container .signature-block {
     float: left; } }
 
+@media screen and (max-width: 1199px) {
+  .franchise .start-screen .sub-block-advantages {
+    padding-bottom: 0; }
+    .franchise .start-screen .sub-block-advantages .cell {
+      padding-bottom: 30px; }
+      .franchise .start-screen .sub-block-advantages .cell:before {
+        display: none; }
+  .franchise .block-result {
+    padding: 60px 0 0 0; } }
+
 @media screen and (max-width: 1166px) {
   .franchise .start-screen {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.38)), color-stop(white), color-stop(rgba(128, 12, 116, 0.69)), to(rgba(128, 12, 116, 0.69))), url(../img/system/franch-start-page-bg.jpg);
@@ -6806,7 +6781,8 @@ footer {
 
 @media screen and (max-width: 933px) {
   .franchise .open-offices {
-    max-width: 471px; } }
+    max-width: 471px;
+    text-align: center; } }
 
 @media screen and (min-width: 911px) and (max-width: 954px) {
   .franchise .block-result .content .figures-container {
@@ -6832,6 +6808,23 @@ footer {
   .franchise .eight-reasons {
     padding: 0; } }
 
+@media screen and (max-width: 767px) {
+  .franchise .block-result .content .figures-container {
+    background-image: none;
+    padding: 65px 0 0 0; }
+    .franchise .block-result .content .figures-container .figures .btn-send-application-block {
+      width: 100%;
+      display: block; }
+      .franchise .block-result .content .figures-container .figures .btn-send-application-block .btn-send-application {
+        display: block;
+        margin: auto;
+        color: white;
+        background-color: #ff8f00; }
+  .franchise .block-result .content > p {
+    text-align: center; }
+  .franchise .why-franchise .right-column {
+    padding: 10px 15px; } }
+
 @media screen and (min-width: 760px) and (max-width: 1239px) {
   .franchise .block-about {
     padding: 0 60px 0 60px; }
@@ -6839,13 +6832,48 @@ footer {
       max-height: 560px; }
     .franchise .block-about .text-content {
       max-width: 80%;
-      padding-bottom: 100px; }
+      padding-bottom: 110px; }
     .franchise .block-about .signature-block-container {
       padding: 0 0 200px; }
     .franchise .block-about .partner-info div .info {
       max-width: 145px;
       display: inline-block;
       vertical-align: top; } }
+
+@media screen and (max-width: 759px) {
+  .franchise .block-about {
+    padding: 0; }
+    .franchise .block-about .photo {
+      bottom: 80px;
+      right: -37px;
+      max-height: 295px; }
+    .franchise .block-about .text-content {
+      padding: 15px; }
+      .franchise .block-about .text-content p {
+        font-size: 14px;
+        padding-bottom: 15px; }
+    .franchise .block-about .partner-info {
+      background-color: #E4E6E4; }
+    .franchise .block-about .signature-block-container {
+      padding: 15px 0 145px; }
+      .franchise .block-about .signature-block-container .signature-block {
+        max-width: 175px;
+        padding: 15px; }
+        .franchise .block-about .signature-block-container .signature-block .name {
+          font-size: 16px; }
+        .franchise .block-about .signature-block-container .signature-block .position {
+          font-size: 10px; }
+        .franchise .block-about .signature-block-container .signature-block img {
+          bottom: -8px;
+          left: 35px;
+          width: 259px; }
+    .franchise .block-about .partner-info {
+      padding: 15px;
+      height: 80px; }
+      .franchise .block-about .partner-info .name {
+        font-size: 10px; }
+      .franchise .block-about .partner-info div {
+        font-size: 10px; } }
 
 @media screen and (min-width: 740px) and (max-width: 768px) {
   .franchise .opening-plan {
@@ -6863,23 +6891,6 @@ footer {
       background-color: white; }
     .franchise .opening-plan .sub-title {
       padding: 15px; } }
-
-@media screen and (max-width: 767px) {
-  .franchise .block-result .content .figures-container {
-    background-image: none;
-    padding: 65px 0 0 0; }
-    .franchise .block-result .content .figures-container .figures .btn-send-application-block {
-      width: 100%;
-      display: block; }
-      .franchise .block-result .content .figures-container .figures .btn-send-application-block .btn-send-application {
-        display: block;
-        margin: auto;
-        color: white;
-        background-color: #ff8f00; }
-  .franchise .block-result .content > p {
-    text-align: center; }
-  .franchise .why-franchise .right-column {
-    padding: 10px 15px; } }
 
 @media screen and (min-width: 729px) and (max-width: 1278px) {
   .franchise .why-franchise .left-column {
@@ -6923,6 +6934,10 @@ footer {
     .franchise .eight-reasons .desk .title .text {
       font-size: 24px;
       color: #989B98; } }
+
+@media screen and (max-width: 659px) {
+  .franchise .block-title {
+    font-size: 30px; } }
 
 @media screen and (min-width: 650px) and (max-width: 1278px) {
   .franchise .start-screen .title .left-column h1 {
@@ -6978,10 +6993,6 @@ footer {
   .franchise .start-screen .sub-block-advantages .title {
     font-size: 30px; } }
 
-@media screen and (max-width: 509px) {
-  .franchise .eight-reasons .desk .column ol li:before {
-    top: 0; } }
-
 @media screen and (max-width: 475px) {
   .franchise .questions .right-column textarea {
     margin: auto; }
@@ -6992,10 +7003,6 @@ footer {
   .franchise .questions .right-column .btn-purple {
     margin: 15px auto;
     display: block; } }
-
-@media screen and (max-width: 659px) {
-  .franchise .block-title {
-    font-size: 30px; } }
 
 @media screen and (max-width: 455px) {
   .franchise .open-offices .cell {
