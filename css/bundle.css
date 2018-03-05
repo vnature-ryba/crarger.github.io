@@ -1,1194 +1,4 @@
-@font-face {
-  font-family: "GothamProBold";
-  src: url("../fonts/GothamProBold.woff");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProBoldItalic";
-  src: url("../fonts/GothamProBoldItalic.woff");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProItalic";
-  src: url("../fonts/GothamProItalic.woff");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProLightItalic";
-  src: url("../fonts/GothamProLightItalic.woff");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "IntroRustG";
-  src: url("../fonts/IntroRustG-Base.otf");
-  font-style: normal;
-  font-weight: normal; }
-
-/* font-family: "GothamProRegular"; */
-@font-face {
-  font-family: "GothamProRegular";
-  src: url("../fonts/GothamProRegular.woff");
-  font-style: normal;
-  font-weight: normal; }
-
-.header {
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3); }
-  .header .navbar-toggle {
-    border-color: rgba(221, 221, 221, 0) !important;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
-    .header .navbar-toggle .icon-bar {
-      background: #ff9600;
-      width: 22px;
-      -webkit-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      transition: all 0.2s; }
-    .header .navbar-toggle .top-bar {
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      -webkit-transform-origin: 10% 10%;
-      -ms-transform-origin: 10% 10%;
-      transform-origin: 10% 10%; }
-    .header .navbar-toggle .middle-bar {
-      opacity: 0; }
-    .header .navbar-toggle .bottom-bar {
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      -webkit-transform-origin: 10% 90%;
-      -ms-transform-origin: 10% 90%;
-      transform-origin: 10% 90%; }
-    .header .navbar-toggle:hover {
-      background: transparent !important; }
-  .header .navbar-toggle.collapsed {
-    border-color: #dddddd !important;
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
-    .header .navbar-toggle.collapsed .top-bar {
-      -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-      transform: rotate(0); }
-    .header .navbar-toggle.collapsed .middle-bar {
-      opacity: 1; }
-    .header .navbar-toggle.collapsed .bottom-bar {
-      -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-      transform: rotate(0); }
-
-a, input, button, textarea {
-  outline: none;
-  padding: 0 5px; }
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s; }
-
-input:focus::-webkit-input-placeholder {
-  opacity: 0; }
-
-.franchise {
-  /*---------- start-screen ------------ */
-  /*---------- end start-screen ------------ */
-  /*---------- block-result ------------ */
-  /*-------- end block-result -----------*/
-  /*---------- block-partnership ------------ */
-  /*---------- end block-partnership ------------ */
-  /*---------- for-whom-franchise ------------ */
-  /*----------end for-whom-franchise ------------ */
-  /*---------- open-offices ------------ */
-  /*---------- end open-offices ------------ */
-  /*---------- why-franchise ------------ */
-  /*---------- end why-franchise ------------ */
-  /*---------- opening-plan ------------ */
-  /*---------- end opening-plan ------------ */
-  /*---------- questions ------------ */
-  /*---------- end questions ------------ */
-  /*---------- all-thought-out ------------ */
-  /*-------- end all-thought-out -----------*/
-  /*-------------- 8-Reasons ----------------*/
-  /*------------ end 8-Reasons --------------*/
-  /*-------------- block-about ----------------*/
-  /*-------------- end block-about ----------------*/ }
-  .franchise a:focus, .franchise a:hover {
-    text-decoration: none;
-    outline: none; }
-  .franchise p {
-    font-size: 14px;
-    font-family: "GothamProRegular"; }
-  .franchise .block-title {
-    font-size: 45px;
-    font-family: "IntroRustG";
-    color: #232323;
-    text-align: center;
-    padding: 15px; }
-  .franchise .sub-title {
-    font-family: "GothamProRegular";
-    font-size: 16px;
-    text-align: center;
-    padding-bottom: 15px; }
-    .franchise .sub-title span {
-      font-family: "GothamProBold";
-      font-size: 16px;
-      color: #ff8f00; }
-  .franchise .btn-purple {
-    max-width: 231px;
-    width: 100%;
-    height: 40px;
-    color: white;
-    font-size: 18px;
-    font-family: "GothamProBold";
-    background-color: #800C74;
-    border: none;
-    border-radius: 2px; }
-  .franchise input {
-    max-width: 191px;
-    height: 40px;
-    width: 100%;
-    border: solid 1px #919491;
-    border-radius: 2px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
-    .franchise input:focus {
-      border-color: #FF9600; }
-  .franchise .panel-question {
-    border-bottom: 1px solid #E4E6E4; }
-    .franchise .panel-question .panel-heading {
-      padding: 15px 7px; }
-      .franchise .panel-question .panel-heading .panel-title a {
-        display: table;
-        -webkit-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s; }
-        .franchise .panel-question .panel-heading .panel-title a:before {
-          display: table-cell;
-          content: '';
-          width: 14px;
-          height: 14px;
-          background-image: url("../svg/question-caret.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-          position: relative;
-          right: 12px;
-          -webkit-transition: 0.2s;
-          -o-transition: 0.2s;
-          transition: 0.2s; }
-        .franchise .panel-question .panel-heading .panel-title a[aria-expanded="true"] {
-          color: #640657; }
-          .franchise .panel-question .panel-heading .panel-title a[aria-expanded="true"]:before {
-            -webkit-transform: rotate(-180deg);
-            -ms-transform: rotate(-180deg);
-            transform: rotate(-180deg); }
-    .franchise .panel-question .panel-body {
-      border: none;
-      padding-bottom: 5px; }
-      .franchise .panel-question .panel-body p {
-        color: #919491;
-        padding: 0 10px; }
-  .franchise textarea::-webkit-input-placeholder, .franchise input::-webkit-input-placeholder {
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-    color: #919491;
-    font-family: "GothamProRegular"; }
-  .franchise textarea:focus::-webkit-input-placeholder, .franchise input:focus::-webkit-input-placeholder {
-    opacity: 0; }
-  .franchise .start-screen {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(128, 12, 116, 0.69)), to(rgba(128, 12, 116, 0.69))), url("../img/system/franch-start-page-bg.jpg");
-    background-image: -webkit-linear-gradient(bottom, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url("../img/system/franch-start-page-bg.jpg");
-    background-image: -o-linear-gradient(bottom, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url("../img/system/franch-start-page-bg.jpg");
-    background-image: linear-gradient(to top, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url("../img/system/franch-start-page-bg.jpg");
-    background-position: center top; }
-    .franchise .start-screen .call-back {
-      padding: 15px 60px;
-      text-align: right; }
-      .franchise .start-screen .call-back .tel-number {
-        font-size: 30px;
-        font-family: "GothamProBold";
-        color: #FFC581; }
-      .franchise .start-screen .call-back .order-call-back {
-        color: white;
-        font-family: "GothamProBold";
-        font-size: 18px;
-        text-decoration: underline; }
-    .franchise .start-screen .btn-download-container {
-      background-color: rgba(255, 255, 255, 0.45);
-      padding: 20px 70px;
-      max-width: 700px;
-      margin: 40px 0 50px;
-      text-align: right; }
-      .franchise .start-screen .btn-download-container .btn-download {
-        padding-left: 43px;
-        max-width: 260px;
-        background-color: transparent;
-        border: none;
-        text-align: left;
-        background-image: url(../svg/btn-download.svg);
-        background-size: 25px;
-        background-position-y: center;
-        background-repeat: no-repeat;
-        height: 69px;
-        font-size: 30px;
-        line-height: 30px;
-        font-family: "GothamProBold";
-        text-decoration: underline; }
-    .franchise .start-screen .title {
-      color: white;
-      max-width: 1325px;
-      margin: auto; }
-      .franchise .start-screen .title .left-column {
-        max-width: 750px;
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0 15px; }
-        .franchise .start-screen .title .left-column h1 {
-          font-family: "GothamProBold";
-          font-size: 70px;
-          margin: 0;
-          text-transform: uppercase; }
-        .franchise .start-screen .title .left-column .name {
-          position: relative; }
-        .franchise .start-screen .title .left-column p {
-          font-family: "GothamProRegular";
-          font-size: 35px; }
-      .franchise .start-screen .title .right-column {
-        max-width: 585px;
-        display: inline-block;
-        vertical-align: middle;
-        font-family: "GothamProBold";
-        padding: 15px;
-        position: relative;
-        bottom: 15px; }
-        .franchise .start-screen .title .right-column .text {
-          font-size: 43px;
-          display: inline-block;
-          max-width: 210px;
-          line-height: 43px;
-          vertical-align: middle;
-          text-align: left; }
-        .franchise .start-screen .title .right-column .amount {
-          font-size: 147px;
-          display: inline-block;
-          line-height: 120px;
-          vertical-align: middle;
-          padding: 0 15px 0 0; }
-    .franchise .start-screen .sub-block-advantages {
-      display: block;
-      padding-bottom: 120px;
-      -webkit-box-shadow: 0 50px 107px 86px rgba(255, 255, 255, 0.4);
-      box-shadow: 0 50px 107px 86px rgba(255, 255, 255, 0.4);
-      background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(white), color-stop(rgba(255, 255, 255, 0.98)), color-stop(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.35)));
-      background-image: -webkit-linear-gradient(bottom, white, white, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.35));
-      background-image: -o-linear-gradient(bottom, white, white, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.35));
-      background-image: linear-gradient(to top, white, white, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.35)); }
-      .franchise .start-screen .sub-block-advantages .title {
-        font-size: 38px;
-        font-family: "GothamProBold";
-        color: #232323;
-        padding-bottom: 25px; }
-      .franchise .start-screen .sub-block-advantages .cell {
-        max-width: 405px;
-        width: 100%;
-        padding: 11px 0 0 3px;
-        display: inline-block;
-        vertical-align: top;
-        position: relative; }
-        .franchise .start-screen .sub-block-advantages .cell .cell-title {
-          color: #FF9600;
-          font-size: 32px;
-          font-family: "GothamProBold";
-          padding-bottom: 15px;
-          padding: 0 30px; }
-        .franchise .start-screen .sub-block-advantages .cell .info {
-          font-size: 24px;
-          color: #919591; }
-          .franchise .start-screen .sub-block-advantages .cell .info strong {
-            font-family: "GothamProBold"; }
-        .franchise .start-screen .sub-block-advantages .cell:before {
-          content: '';
-          display: block;
-          height: 86px;
-          width: 6px;
-          background-color: #E4E6E4;
-          position: absolute;
-          -webkit-transition: 0.2s;
-          -o-transition: 0.2s;
-          transition: 0.2s; }
-        .franchise .start-screen .sub-block-advantages .cell:hover:before {
-          background-color: #FF9600; }
-  .franchise .block-result {
-    padding: 60px 0 100px 0;
-    background-image: url(../img/system/block-result-bg.jpg);
-    background-position: center;
-    background-size: cover; }
-    .franchise .block-result .content {
-      display: block;
-      margin: auto;
-      max-width: 1630px;
-      padding: 0 15px; }
-      .franchise .block-result .content .figures-container {
-        background-image: url(../svg/ramka.svg);
-        max-width: 923px;
-        width: 100%;
-        margin: 0 auto 100px auto;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        padding: 92px 0 0 0; }
-        .franchise .block-result .content .figures-container .figures {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-          justify-content: space-around;
-          -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-          .franchise .block-result .content .figures-container .figures .cell {
-            max-width: 250px;
-            width: 100%;
-            text-align: center;
-            display: inline-block;
-            margin: auto; }
-            .franchise .block-result .content .figures-container .figures .cell .description {
-              color: #B3B8B3;
-              font-size: 18px; }
-            .franchise .block-result .content .figures-container .figures .cell .value {
-              font-family: "IntroRustG";
-              color: #FF9600;
-              font-size: 100px;
-              line-height: 100px; }
-          .franchise .block-result .content .figures-container .figures .btn-send-application {
-            height: 61px;
-            max-width: 374px;
-            width: 100%;
-            display: block;
-            margin: auto;
-            background-color: transparent;
-            border: none;
-            font-size: 29px;
-            color: #3F2400;
-            font-family: "GothamProBold";
-            margin-top: 52px; }
-      .franchise .block-result .content > p {
-        max-width: 957px;
-        margin: auto;
-        font-size: 21px;
-        color: #3c0336; }
-        .franchise .block-result .content > p:after {
-          content: '';
-          display: block;
-          height: 78px;
-          width: 13px;
-          background-color: #FF9600;
-          position: relative;
-          right: 55px;
-          bottom: 161px; }
-        .franchise .block-result .content > p strong {
-          font-family: "GothamProBold";
-          font-size: 32px; }
-  .franchise .block-partnership .sub-title {
-    font-size: 18px;
-    max-width: 460px;
-    margin: auto; }
-  .franchise .block-partnership p {
-    text-align: center; }
-  .franchise .block-partnership .column .title .name {
-    font-family: "GothamProBold";
-    font-size: 40px; }
-  .franchise .block-partnership .column .title .description {
-    font-family: "GothamProRegular";
-    font-size: 28px;
-    line-height: 28px;
-    margin: 0; }
-  .franchise .block-partnership .column .title p {
-    font-family: "GothamProItalic";
-    font-size: 20px; }
-  .franchise .block-partnership .center-column .title {
-    color: #FF8F00; }
-  .franchise .for-whom-franchise .cell {
-    display: inline-block;
-    max-width: 460px;
-    vertical-align: top; }
-    .franchise .for-whom-franchise .cell .image img {
-      max-width: 100%; }
-    .franchise .for-whom-franchise .cell .title {
-      font-family: "GothamProBold";
-      color: #FF9600;
-      font-size: 22px;
-      padding: 15px 0; }
-    .franchise .for-whom-franchise .cell .description {
-      text-align: left;
-      font-family: "GothamProRegular";
-      font-size: 19px;
-      color: #232323;
-      padding-left: 25px; }
-      .franchise .for-whom-franchise .cell .description li {
-        list-style: none;
-        display: table; }
-        .franchise .for-whom-franchise .cell .description li:before {
-          display: table-cell;
-          content: '';
-          background-image: url(../svg/check-mark.svg);
-          background-repeat: no-repeat;
-          width: 18px;
-          height: 18px;
-          vertical-align: middle;
-          margin-right: 15px;
-          position: relative;
-          top: 5px;
-          right: 10px; }
-  .franchise .open-offices {
-    padding: 5px;
-    max-width: 1400px;
-    margin: auto; }
-    .franchise .open-offices a {
-      padding: 0; }
-    .franchise .open-offices .cell {
-      display: inline-block;
-      max-width: 440px;
-      width: 100%;
-      max-height: 268px;
-      overflow: hidden;
-      position: relative;
-      border-radius: 3px; }
-      .franchise .open-offices .cell .title {
-        position: absolute;
-        padding: 15px;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        height: 67px;
-        color: white;
-        z-index: 1;
-        font-size: 38px;
-        font-family: "GothamProBold";
-        -webkit-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s;
-        text-align: center; }
-      .franchise .open-offices .cell .substrate {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(100, 6, 87, 0.3); }
-      .franchise .open-offices .cell .mask {
-        background-color: rgba(100, 6, 87, 0.7);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 2;
-        -webkit-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s;
-        opacity: 0; }
-        .franchise .open-offices .cell .mask .description {
-          color: white;
-          text-align: left;
-          padding: 15px;
-          font-family: "GothamProRegular"; }
-          .franchise .open-offices .cell .mask .description span {
-            font-family: "GothamProBold";
-            display: block;
-            padding-bottom: 15px; }
-      .franchise .open-offices .cell:hover .mask {
-        opacity: 1; }
-      .franchise .open-offices .cell:hover .title {
-        opacity: 0; }
-    .franchise .open-offices .cell-add {
-      text-align: center;
-      color: #919491;
-      font-family: "GothamProRegular";
-      height: 100%;
-      border: 2px dashed rgba(172, 177, 172, 0.55);
-      padding: 81px 0; }
-      .franchise .open-offices .cell-add .plus {
-        font-size: 93px;
-        font-weight: 800;
-        line-height: 60px; }
-      .franchise .open-offices .cell-add p {
-        color: #919491;
-        font-size: 16px;
-        opacity: 0.7;
-        -webkit-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s; }
-      .franchise .open-offices .cell-add:hover p {
-        opacity: 1; }
-  .franchise .why-franchise {
-    padding: 25px 0; }
-    .franchise .why-franchise .left-column {
-      width: 872px;
-      position: relative;
-      display: inline-block;
-      vertical-align: top;
-      overflow: hidden; }
-      .franchise .why-franchise .left-column .content {
-        background-color: #ff8f00;
-        padding: 154px 0 289px 76px; }
-        .franchise .why-franchise .left-column .content img {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          max-width: 389px; }
-        .franchise .why-franchise .left-column .content .title {
-          background-color: rgba(255, 255, 255, 0.3);
-          font-family: "GothamProBold";
-          color: white;
-          max-width: 796px;
-          padding: 83px 25px; }
-          .franchise .why-franchise .left-column .content .title h3 {
-            font-size: 38px; }
-    .franchise .why-franchise .right-column {
-      max-width: 885px;
-      width: 100%;
-      display: inline-block;
-      vertical-align: top; }
-      .franchise .why-franchise .right-column ul {
-        padding-left: 75px; }
-        .franchise .why-franchise .right-column ul li {
-          font-family: "GothamProBold";
-          font-size: 23px;
-          line-height: 19px;
-          list-style: none;
-          position: relative; }
-          .franchise .why-franchise .right-column ul li:before {
-            display: inline-block;
-            content: '';
-            width: 30px;
-            height: 30px;
-            background-image: url("../svg/check-mark.svg");
-            background-repeat: no-repeat;
-            position: absolute;
-            left: -50px;
-            top: -6px; }
-          .franchise .why-franchise .right-column ul li p {
-            font-family: "GothamProRegular";
-            color: #919491;
-            font-size: 16px;
-            line-height: 21px;
-            padding: 7px 0; }
-      .franchise .why-franchise .right-column .panel-question .panel-heading {
-        padding: 15px 0; }
-        .franchise .why-franchise .right-column .panel-question .panel-heading .panel-title a {
-          font-family: "GothamProBold";
-          font-size: 20px; }
-  .franchise .opening-plan {
-    background-image: url("../img/system/plan.jpg");
-    padding: 15px 0;
-    background-size: 1920px;
-    position: relative; }
-    .franchise .opening-plan .image {
-      display: block;
-      max-width: 708px;
-      max-height: 528px;
-      width: 100%;
-      height: 100%;
-      margin: auto; }
-    .franchise .opening-plan .zoom-image {
-      margin: auto;
-      display: block;
-      width: 215px;
-      font-size: 18px;
-      font-family: "GothamProBold";
-      color: #800C74;
-      position: absolute;
-      bottom: 35px;
-      left: 0;
-      right: 0; }
-      .franchise .opening-plan .zoom-image .image {
-        width: 50px;
-        height: 50px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 15px; }
-      .franchise .opening-plan .zoom-image span {
-        display: inline-block;
-        max-width: 130px;
-        vertical-align: middle; }
-  .franchise .questions .title {
-    color: #640657;
-    font-family: "GothamProRegular";
-    font-size: 35px; }
-  .franchise .questions .left-column {
-    max-width: 758px; }
-    .franchise .questions .left-column .panel-question .panel-heading .panel-title a {
-      font-family: "gothamProRegular";
-      font-size: 16px;
-      text-decoration: underline; }
-  .franchise .questions .right-column {
-    max-width: 477px;
-    width: 100%; }
-    .franchise .questions .right-column textarea {
-      display: block;
-      resize: none;
-      height: 200px;
-      max-width: 436px;
-      width: 100%;
-      border: 1px solid #919491;
-      border-radius: 2px;
-      margin: 0 5px;
-      padding: 5px; }
-    .franchise .questions .right-column .btn-purple {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 5px; }
-    .franchise .questions .right-column input {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 5px; }
-  .franchise .all-thought-out {
-    max-width: 1200px;
-    margin: auto; }
-    .franchise .all-thought-out .cell {
-      display: inline-block;
-      max-width: 240px;
-      width: 100%;
-      margin: 15px 10px;
-      vertical-align: top; }
-      .franchise .all-thought-out .cell .image {
-        width: inherit;
-        overflow: hidden;
-        display: block;
-        border-radius: 5px;
-        height: 190px; }
-        .franchise .all-thought-out .cell .image img {
-          max-width: 100%; }
-      .franchise .all-thought-out .cell .title {
-        font-family: "GothamProRegular";
-        font-size: 16px;
-        color: #232323; }
-  .franchise .eight-reasons {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(transparent), color-stop(transparent), to(#FFFFFF)), url("../img/system/8-Reasons-bg.jpg");
-    background-image: -webkit-linear-gradient(top, #FFFFFF, transparent, transparent, #FFFFFF), url("../img/system/8-Reasons-bg.jpg");
-    background-image: -o-linear-gradient(top, #FFFFFF, transparent, transparent, #FFFFFF), url("../img/system/8-Reasons-bg.jpg");
-    background-image: linear-gradient(to bottom, #FFFFFF, transparent, transparent, #FFFFFF), url("../img/system/8-Reasons-bg.jpg");
-    background-size: cover;
-    padding: 100px 0 45px;
-    overflow: hidden; }
-    .franchise .eight-reasons .desk {
-      background-image: url("../img/system/reasons-desk-bg.png");
-      background-size: cover;
-      max-width: 1370px;
-      margin: auto;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      padding: 0 75px 60px 75px; }
-      .franchise .eight-reasons .desk:before {
-        content: '';
-        display: block;
-        height: 1px;
-        background-color: #FF9600;
-        -webkit-box-shadow: 0 0 0 6px #FF9600;
-        box-shadow: 0 0 0 6px #FF9600;
-        width: 100%;
-        left: 950px;
-        position: relative; }
-      .franchise .eight-reasons .desk:after {
-        content: '';
-        display: block;
-        height: 1px;
-        background-color: #FF9600;
-        -webkit-box-shadow: 0 0 0 6px #FF9600;
-        box-shadow: 0 0 0 6px #FF9600;
-        width: 100%;
-        right: 1203px;
-        top: 60px;
-        position: relative; }
-      .franchise .eight-reasons .desk .title {
-        position: relative;
-        bottom: 63px;
-        right: 202px;
-        padding: 0 600px 0 0; }
-        .franchise .eight-reasons .desk .title h2 {
-          color: #FF9600;
-          font-family: "IntroRustG";
-          line-height: 58px;
-          margin: 0;
-          font-weight: 400;
-          font-size: 91px;
-          text-shadow: 4px 4px 0 #3F2400;
-          position: relative;
-          top: 19px;
-          z-index: 1; }
-          .franchise .eight-reasons .desk .title h2 .figure {
-            font-size: 133px; }
-        .franchise .eight-reasons .desk .title .text {
-          color: #FFFFFF;
-          font-size: 40px;
-          line-height: 40px;
-          font-family: "GothamProRegular";
-          position: relative;
-          z-index: 2; }
-      .franchise .eight-reasons .desk .column {
-        max-width: 46%;
-        position: relative; }
-        .franchise .eight-reasons .desk .column ol {
-          padding: 0; }
-          .franchise .eight-reasons .desk .column ol li {
-            font-family: "GothamProBolditalic";
-            font-size: 22px;
-            color: #33042F;
-            list-style: none;
-            letter-spacing: 0; }
-            .franchise .eight-reasons .desk .column ol li p {
-              font-size: 12px;
-              font-family: "GothamProRegular";
-              padding-left: 60px; }
-            .franchise .eight-reasons .desk .column ol li:before {
-              font-family: "IntroRustG";
-              font-size: 55px;
-              color: #FF9600;
-              display: inline-block;
-              text-align: center;
-              margin: 5px 10px;
-              line-height: 40px;
-              width: 40px;
-              height: 40px;
-              top: 22px;
-              right: 5px;
-              position: relative; }
-        .franchise .eight-reasons .desk .column .first-list {
-          counter-reset: myCounter-1; }
-          .franchise .eight-reasons .desk .column .first-list li:before {
-            counter-increment: myCounter-1;
-            content: counter(myCounter-1); }
-        .franchise .eight-reasons .desk .column .second-list {
-          counter-reset: myCounter-2 4; }
-          .franchise .eight-reasons .desk .column .second-list li:before {
-            counter-increment: myCounter-2;
-            content: counter(myCounter-2); }
-      .franchise .eight-reasons .desk .first-column {
-        bottom: 112px; }
-  .franchise .block-about {
-    padding: 85px 15px 0 15px;
-    max-width: 1630px;
-    position: relative;
-    margin: auto;
-    overflow: hidden; }
-    .franchise .block-about .photo {
-      vertical-align: middle;
-      position: absolute;
-      right: 0;
-      max-height: 795px;
-      z-index: 1;
-      bottom: 0; }
-    .franchise .block-about .text-content {
-      max-width: 1000px;
-      font-family: "GothamProRegular";
-      padding: 15px 0; }
-      .franchise .block-about .text-content p {
-        padding-bottom: 35px;
-        font-size: 31px; }
-    .franchise .block-about .signature-block-container {
-      max-width: 885px;
-      position: relative;
-      display: table;
-      width: 100%;
-      padding: 25px 0 35px; }
-      .franchise .block-about .signature-block-container .signature-block {
-        max-width: 245px;
-        position: relative;
-        float: right;
-        color: #585B58; }
-        .franchise .block-about .signature-block-container .signature-block .name {
-          font-family: "GothamProBold";
-          font-size: 25px;
-          margin: 0; }
-        .franchise .block-about .signature-block-container .signature-block .position {
-          font-family: "GothamProLightItalic";
-          font-size: 18px; }
-        .franchise .block-about .signature-block-container .signature-block img {
-          position: absolute;
-          bottom: -25px;
-          left: 105px;
-          width: 400px; }
-    .franchise .block-about .partner-info {
-      padding: 15px 0; }
-      .franchise .block-about .partner-info .name {
-        font-family: "GothamProBold";
-        font-size: 14px; }
-      .franchise .block-about .partner-info div {
-        font-family: "GothamProRegular";
-        font-size: 14px; }
-        .franchise .block-about .partner-info div .parametr {
-          width: 72px;
-          display: inline-block; }
-
-footer {
-  background-color: #f8f8f8; }
-
-@media screen and (max-width: 759px) {
-  .franchise .block-about {
-    padding: 0; }
-    .franchise .block-about .photo {
-      bottom: 96px;
-      right: -37px;
-      max-height: 295px; }
-    .franchise .block-about .text-content {
-      padding: 15px; }
-      .franchise .block-about .text-content p {
-        font-size: 14px;
-        padding-bottom: 15px; }
-    .franchise .block-about .partner-info {
-      background-color: #E4E6E4; }
-    .franchise .block-about .signature-block-container {
-      padding: 0 0 145px; }
-      .franchise .block-about .signature-block-container .signature-block {
-        max-width: 175px;
-        padding: 15px; }
-        .franchise .block-about .signature-block-container .signature-block .name {
-          font-size: 16px; }
-        .franchise .block-about .signature-block-container .signature-block .position {
-          font-size: 10px; }
-        .franchise .block-about .signature-block-container .signature-block img {
-          bottom: -8px;
-          left: 35px;
-          width: 259px; }
-    .franchise .block-about .partner-info {
-      padding: 15px;
-      height: 96px; }
-      .franchise .block-about .partner-info .name {
-        font-size: 10px; }
-      .franchise .block-about .partner-info div {
-        font-size: 10px; } }
-
-@media screen and (min-width: 1525px) {
-  .franchise .why-franchise .right-column {
-    width: calc(100% - 880px); } }
-
-@media screen and (max-width: 1488px) {
-  .franchise .eight-reasons .desk {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-    .franchise .eight-reasons .desk .title {
-      bottom: 0;
-      right: 0;
-      padding: 15px 0 15px 0; }
-      .franchise .eight-reasons .desk .title h2 {
-        line-height: normal; }
-    .franchise .eight-reasons .desk .first-column {
-      bottom: 0; } }
-
-@media screen and (min-width: 1400px) {
-  .franchise .start-screen .title .left-column .name {
-    right: 42px; } }
-
-@media screen and (min-width: 1400px) and (max-width: 1524px) {
-  .franchise .why-franchise .left-column {
-    width: 791px; }
-  .franchise .why-franchise .right-column {
-    width: calc(100% - 800px); } }
-
-@media screen and (max-width: 1280px) {
-  .franchise .eight-reasons .desk .title {
-    width: 100%; }
-  .franchise .eight-reasons .desk .column {
-    max-width: 50%; } }
-
-@media screen and (min-width: 1279px) and (max-width: 1399px) {
-  .franchise .why-franchise .left-column {
-    width: 725px; }
-    .franchise .why-franchise .left-column .content {
-      padding: 154px 0 289px 0; }
-  .franchise .why-franchise .right-column {
-    width: calc(100% - 735px); } }
-
-@media screen and (min-width: 1279px) and (max-width: 1319px) {
-  .franchise .start-screen .title {
-    max-width: 1190px; }
-    .franchise .start-screen .title .left-column h1 {
-      font-size: 65px; }
-    .franchise .start-screen .title .right-column .amount {
-      font-size: 110px; } }
-
-@media screen and (max-width: 1278px) {
-  .franchise .start-screen .title {
-    text-align: center; }
-  .franchise .why-franchise .right-column {
-    width: 100%;
-    max-width: 100%;
-    padding: 35px 15px; }
-    .franchise .why-franchise .right-column ul {
-      padding-left: 45px; } }
-
-@media screen and (min-width: 1240px) and (max-width: 1559px) {
-  .franchise .block-about .photo {
-    bottom: 0; }
-  .franchise .block-about .text-content {
-    max-width: 700px; }
-  .franchise .block-about .signature-block-container {
-    max-width: 560px; } }
-
-@media screen and (max-width: 1239px) {
-  .franchise .block-about .signature-block-container .signature-block {
-    float: left; } }
-
-@media screen and (max-width: 1166px) {
-  .franchise .start-screen {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.38)), color-stop(white), color-stop(rgba(128, 12, 116, 0.69)), to(rgba(128, 12, 116, 0.69))), url(../img/system/franch-start-page-bg.jpg);
-    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.38), white, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url(../img/system/franch-start-page-bg.jpg);
-    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.38), white, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url(../img/system/franch-start-page-bg.jpg);
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.38), white, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url(../img/system/franch-start-page-bg.jpg); }
-    .franchise .start-screen .btn-download-container {
-      border-top: 2px solid rgba(255, 255, 255, 0.45);
-      background-color: rgba(255, 255, 255, 0);
-      text-align: left; } }
-
-@media screen and (max-width: 1100px) {
-  .franchise .eight-reasons .desk .column {
-    max-width: 100% !important; } }
-
-@media screen and (max-width: 991px) {
-  .franchise .questions .title {
-    text-align: center; }
-  .franchise .questions .right-column {
-    margin: auto; } }
-
-@media screen and (min-width: 934px) and (max-width: 1397px) {
-  .franchise .open-offices {
-    max-width: 935px; } }
-
-@media screen and (min-width: 934px) {
-  .franchise .open-offices .cell {
-    margin: 10px; } }
-
-@media screen and (max-width: 933px) {
-  .franchise .open-offices {
-    max-width: 471px; } }
-
-@media screen and (min-width: 911px) and (max-width: 954px) {
-  .franchise .block-result .content .figures-container {
-    max-width: 880px; }
-    .franchise .block-result .content .figures-container .figures .btn-send-application {
-      margin-top: 36px; } }
-
-@media screen and (min-width: 769px) {
-  .franchise .opening-plan {
-    background-position: center -180px;
-    height: 800px; } }
-
-@media screen and (min-width: 768px) and (max-width: 910px) {
-  .franchise .block-result .content .figures-container {
-    padding: 60px 0 0 0;
-    max-width: 738px; }
-    .franchise .block-result .content .figures-container .figures .cell {
-      max-width: 200px; }
-    .franchise .block-result .content .figures-container .figures .btn-send-application {
-      margin-top: 14px; } }
-
-@media screen and (max-width: 768px) {
-  .franchise .eight-reasons {
-    padding: 0; } }
-
-@media screen and (min-width: 760px) and (max-width: 1239px) {
-  .franchise .block-about {
-    padding: 0 60px 0 60px; }
-    .franchise .block-about .photo {
-      max-height: 560px; }
-    .franchise .block-about .text-content {
-      max-width: 80%;
-      padding-bottom: 100px; }
-    .franchise .block-about .signature-block-container {
-      padding: 0 0 200px; }
-    .franchise .block-about .partner-info div .info {
-      max-width: 145px;
-      display: inline-block;
-      vertical-align: top; } }
-
-@media screen and (min-width: 740px) and (max-width: 768px) {
-  .franchise .opening-plan {
-    background-position: center -210px;
-    height: 895px;
-    background-size: 2215px; } }
-
-@media screen and (max-width: 739px) {
-  .franchise .opening-plan {
-    background-position: center 5px;
-    height: 525px;
-    background-size: 968px;
-    padding-top: 0; }
-    .franchise .opening-plan .block-title {
-      background-color: white; }
-    .franchise .opening-plan .sub-title {
-      padding: 15px; } }
-
-@media screen and (max-width: 767px) {
-  .franchise .block-result .content .figures-container {
-    background-image: none;
-    padding: 65px 0 0 0; }
-    .franchise .block-result .content .figures-container .figures .btn-send-application-block {
-      width: 100%;
-      display: block; }
-      .franchise .block-result .content .figures-container .figures .btn-send-application-block .btn-send-application {
-        display: block;
-        margin: auto;
-        color: white;
-        background-color: #ff8f00; }
-  .franchise .block-result .content > p {
-    text-align: center; }
-  .franchise .why-franchise .right-column {
-    padding: 10px 15px; } }
-
-@media screen and (min-width: 729px) and (max-width: 1278px) {
-  .franchise .why-franchise .left-column {
-    padding-top: 48px;
-    width: 100%; }
-    .franchise .why-franchise .left-column .content {
-      padding: 25px 0 25px 55px; }
-      .franchise .why-franchise .left-column .content .title {
-        max-width: 100%;
-        padding: 25px 42px; }
-      .franchise .why-franchise .left-column .content img {
-        top: 0;
-        bottom: inherit;
-        max-width: 285px; } }
-
-@media screen and (max-width: 728px) {
-  .franchise .why-franchise .left-column {
-    width: 100%;
-    padding-top: 68px; }
-    .franchise .why-franchise .left-column .content {
-      padding: 85px 0 0 0; }
-      .franchise .why-franchise .left-column .content .title {
-        padding: 5px 25px; }
-        .franchise .why-franchise .left-column .content .title h3 {
-          position: relative;
-          z-index: 1;
-          font-size: 25px; }
-      .franchise .why-franchise .left-column .content img {
-        right: -57px;
-        top: 0;
-        bottom: inherit;
-        max-width: 260px; } }
-
-@media screen and (max-width: 684px) {
-  .franchise .eight-reasons .desk {
-    padding: 0 15px 25px; }
-    .franchise .eight-reasons .desk .title h2 {
-      font-size: 47px; }
-      .franchise .eight-reasons .desk .title h2 .figure {
-        font-size: 80px; }
-    .franchise .eight-reasons .desk .title .text {
-      font-size: 24px;
-      color: #989B98; } }
-
-@media screen and (min-width: 650px) and (max-width: 1278px) {
-  .franchise .start-screen .title .left-column h1 {
-    font-size: 61px; }
-  .franchise .start-screen .title .left-column p {
-    font-size: 30px; }
-  .franchise .start-screen .title .right-column .amount {
-    font-size: 120px; }
-  .franchise .start-screen .title .right-column .text {
-    font-size: 35px; }
-  .franchise .start-screen .btn-download-container {
-    max-width: 620px; } }
-
-@media screen and (max-width: 649px) {
-  .franchise .start-screen .call-back {
-    padding: 15px 25px;
-    text-align: center; }
-    .franchise .start-screen .call-back p {
-      margin: 0; }
-      .franchise .start-screen .call-back p .tel-number {
-        font-size: 23px; }
-      .franchise .start-screen .call-back p .order-call-back {
-        font-size: 16px; }
-  .franchise .start-screen .title {
-    padding-top: 15px; }
-    .franchise .start-screen .title .left-column h1 {
-      font-size: 42px; }
-    .franchise .start-screen .title .left-column .name {
-      font-size: 28px; }
-    .franchise .start-screen .title .left-column p {
-      font-size: 20px;
-      padding-top: 10px; }
-    .franchise .start-screen .title .right-column {
-      padding: 0; }
-      .franchise .start-screen .title .right-column .amount {
-        font-size: 76px;
-        line-height: 115px; }
-      .franchise .start-screen .title .right-column .text {
-        font-size: 22px;
-        max-width: 110px;
-        line-height: 26px; }
-  .franchise .start-screen .btn-download-container {
-    max-width: 230px;
-    padding: 0 35px;
-    margin: 0 0 50px; }
-    .franchise .start-screen .btn-download-container .btn-download {
-      color: white;
-      font-size: 18px;
-      line-height: 20px;
-      background-image: url("../svg/btn-download-white.svg");
-      background-size: 19px;
-      padding-left: 34px; }
-  .franchise .start-screen .sub-block-advantages .title {
-    font-size: 30px; } }
-
-@media screen and (max-width: 509px) {
-  .franchise .eight-reasons .desk .column ol li:before {
-    top: 0; } }
-
-@media screen and (max-width: 475px) {
-  .franchise .questions .right-column textarea {
-    margin: auto; }
-  .franchise .questions .right-column input {
-    display: block;
-    margin: 15px auto; }
-  .franchise .questions .right-column .btn-purple {
-    margin: 15px auto;
-    display: block; } }
-
-@media screen and (max-width: 659px) {
-  .franchise .block-title {
-    font-size: 30px; } }
-
-@media screen and (max-width: 455px) {
-  .franchise .open-offices .cell {
-    max-height: inherit; } }
-
-@media screen and (max-width: 375px) {
-  .franchise .block-result .content .sub-block-advantages .cell .cell-title {
-    font-size: 27px; } }
-
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6628,3 +5438,1575 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+.slick-next {
+  right: -25px; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold.woff");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBoldItalic";
+  src: url("../fonts/GothamProBoldItalic.woff");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProItalic";
+  src: url("../fonts/GothamProItalic.woff");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProLightItalic";
+  src: url("../fonts/GothamProLightItalic.woff");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "IntroRustG";
+  src: url("../fonts/IntroRustG-Base.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular.woff");
+  font-style: normal;
+  font-weight: normal; }
+
+.header {
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3); }
+  .header .navbar-toggle {
+    border-color: rgba(221, 221, 221, 0) !important;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .header .navbar-toggle .icon-bar {
+      background: #ff9600;
+      width: 22px;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+    .header .navbar-toggle .top-bar {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform-origin: 10% 10%;
+      -ms-transform-origin: 10% 10%;
+      transform-origin: 10% 10%; }
+    .header .navbar-toggle .middle-bar {
+      opacity: 0; }
+    .header .navbar-toggle .bottom-bar {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: 10% 90%;
+      -ms-transform-origin: 10% 90%;
+      transform-origin: 10% 90%; }
+    .header .navbar-toggle:hover {
+      background: transparent !important; }
+  .header .navbar-toggle.collapsed {
+    border-color: #dddddd !important;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .header .navbar-toggle.collapsed .top-bar {
+      -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+      transform: rotate(0); }
+    .header .navbar-toggle.collapsed .middle-bar {
+      opacity: 1; }
+    .header .navbar-toggle.collapsed .bottom-bar {
+      -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+      transform: rotate(0); }
+
+a, input, button, textarea {
+  outline: none;
+  padding: 0 5px; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0; }
+
+.franchise {
+  /*---------- start-screen ------------ */
+  /*---------- end start-screen ------------ */
+  /*---------- block-result ------------ */
+  /*-------- end block-result -----------*/
+  /*---------- block-partnership ------------ */
+  /*---------- end block-partnership ------------ */
+  /*---------- for-whom-franchise ------------ */
+  /*----------end for-whom-franchise ------------ */
+  /*---------- open-offices ------------ */
+  /*---------- end open-offices ------------ */
+  /*---------- why-franchise ------------ */
+  /*---------- end why-franchise ------------ */
+  /*---------- opening-plan ------------ */
+  /*---------- end opening-plan ------------ */
+  /*---------- questions ------------ */
+  /*---------- end questions ------------ */
+  /*---------- all-thought-out ------------ */
+  /*-------- end all-thought-out -----------*/
+  /*-------------- 8-Reasons ----------------*/
+  /*------------ end 8-Reasons --------------*/
+  /*-------------- block-about ----------------*/
+  /*-------------- end block-about ----------------*/ }
+  .franchise a:focus, .franchise a:hover {
+    text-decoration: none;
+    outline: none; }
+  .franchise p {
+    font-size: 14px;
+    font-family: "GothamProRegular"; }
+  .franchise .block-title {
+    font-size: 45px;
+    font-family: "IntroRustG";
+    color: #232323;
+    text-align: center;
+    padding: 15px; }
+  .franchise .sub-title {
+    font-family: "GothamProRegular";
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 15px; }
+    .franchise .sub-title span {
+      font-family: "GothamProBold";
+      font-size: 16px;
+      color: #ff8f00; }
+  .franchise .btn-purple {
+    display: block;
+    max-width: 231px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: "GothamProBold";
+    text-align: center;
+    background-color: #800C74;
+    border: none;
+    border-radius: 2px;
+    padding: 7px; }
+  .franchise .btn-white {
+    display: block;
+    max-width: 231px;
+    width: 100%;
+    height: 40px;
+    color: #FF8F00;
+    font-size: 18px;
+    font-family: "GothamProBold";
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 7px; }
+  .franchise input {
+    max-width: 191px;
+    height: 40px;
+    width: 100%;
+    border: solid 1px #919491;
+    border-radius: 2px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .franchise input:focus {
+      border-color: #FF9600; }
+  .franchise .prev-arrow {
+    background-image: url(../svg/arrow-slick.svg);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 45px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 15px;
+    position: absolute;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    z-index: 1; }
+  .franchise .next-arrow {
+    background-image: url(../svg/arrow-slick.svg);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 45px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 15px;
+    position: absolute;
+    z-index: 1; }
+  .franchise .panel-question {
+    border-bottom: 1px solid #E4E6E4; }
+    .franchise .panel-question .panel-heading {
+      padding: 15px 7px; }
+      .franchise .panel-question .panel-heading .panel-title a {
+        display: table;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+        .franchise .panel-question .panel-heading .panel-title a:before {
+          display: table-cell;
+          content: '';
+          width: 14px;
+          height: 14px;
+          background-image: url("../svg/question-caret.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative;
+          right: 12px;
+          -webkit-transition: 0.2s;
+          -o-transition: 0.2s;
+          transition: 0.2s; }
+        .franchise .panel-question .panel-heading .panel-title a[aria-expanded="true"] {
+          color: #640657; }
+          .franchise .panel-question .panel-heading .panel-title a[aria-expanded="true"]:before {
+            -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg); }
+    .franchise .panel-question .panel-body {
+      border: none;
+      padding-bottom: 5px; }
+      .franchise .panel-question .panel-body p {
+        color: #919491;
+        padding: 0 10px; }
+  .franchise textarea::-webkit-input-placeholder, .franchise input::-webkit-input-placeholder {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    color: #919491;
+    font-family: "GothamProRegular"; }
+  .franchise textarea:focus::-webkit-input-placeholder, .franchise input:focus::-webkit-input-placeholder {
+    opacity: 0; }
+  .franchise .start-screen {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(128, 12, 116, 0.69)), to(rgba(128, 12, 116, 0.69))), url("../img/system/franch-start-page-bg.jpg");
+    background-image: -webkit-linear-gradient(bottom, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url("../img/system/franch-start-page-bg.jpg");
+    background-image: -o-linear-gradient(bottom, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url("../img/system/franch-start-page-bg.jpg");
+    background-image: linear-gradient(to top, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url("../img/system/franch-start-page-bg.jpg");
+    background-position: center top; }
+    .franchise .start-screen .call-back {
+      padding: 15px 60px;
+      text-align: right; }
+      .franchise .start-screen .call-back .tel-number {
+        font-size: 30px;
+        font-family: "GothamProBold";
+        color: #FFC581; }
+      .franchise .start-screen .call-back .order-call-back {
+        color: white;
+        font-family: "GothamProBold";
+        font-size: 18px;
+        text-decoration: underline; }
+    .franchise .start-screen .btn-download-container {
+      background-color: rgba(255, 255, 255, 0.45);
+      padding: 20px 70px;
+      max-width: 700px;
+      margin: 40px 0 50px;
+      text-align: right; }
+      .franchise .start-screen .btn-download-container .btn-download {
+        padding-left: 43px;
+        max-width: 260px;
+        background-color: transparent;
+        border: none;
+        text-align: left;
+        background-image: url(../svg/btn-download.svg);
+        background-size: 25px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        height: 69px;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: "GothamProBold";
+        text-decoration: underline; }
+    .franchise .start-screen .title {
+      color: white;
+      max-width: 1325px;
+      margin: auto; }
+      .franchise .start-screen .title .left-column {
+        max-width: 750px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 15px; }
+        .franchise .start-screen .title .left-column h1 {
+          font-family: "GothamProBold";
+          font-size: 70px;
+          margin: 0;
+          text-transform: uppercase; }
+        .franchise .start-screen .title .left-column .name {
+          position: relative; }
+        .franchise .start-screen .title .left-column p {
+          font-family: "GothamProRegular";
+          font-size: 35px; }
+      .franchise .start-screen .title .right-column {
+        max-width: 585px;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: "GothamProBold";
+        padding: 15px;
+        position: relative;
+        bottom: 15px; }
+        .franchise .start-screen .title .right-column .text {
+          font-size: 43px;
+          display: inline-block;
+          max-width: 210px;
+          line-height: 43px;
+          vertical-align: middle;
+          text-align: left; }
+        .franchise .start-screen .title .right-column .amount {
+          font-size: 147px;
+          display: inline-block;
+          line-height: 120px;
+          vertical-align: middle;
+          padding: 0 15px 0 0; }
+    .franchise .start-screen .sub-block-advantages {
+      display: block;
+      padding-bottom: 120px;
+      -webkit-box-shadow: 0 50px 107px 86px rgba(255, 255, 255, 0.4);
+      box-shadow: 0 50px 107px 86px rgba(255, 255, 255, 0.4);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(white), color-stop(rgba(255, 255, 255, 0.98)), color-stop(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.35)));
+      background-image: -webkit-linear-gradient(bottom, white, white, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.35));
+      background-image: -o-linear-gradient(bottom, white, white, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.35));
+      background-image: linear-gradient(to top, white, white, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.35)); }
+      .franchise .start-screen .sub-block-advantages .title {
+        font-size: 38px;
+        font-family: "GothamProBold";
+        color: #232323;
+        padding-bottom: 25px; }
+      .franchise .start-screen .sub-block-advantages .cell {
+        max-width: 405px;
+        width: 100%;
+        padding: 11px 0 0 3px;
+        display: inline-block;
+        vertical-align: top;
+        position: relative; }
+        .franchise .start-screen .sub-block-advantages .cell .cell-title {
+          color: #FF9600;
+          font-size: 32px;
+          font-family: "GothamProBold";
+          padding-bottom: 15px;
+          padding: 0 30px; }
+        .franchise .start-screen .sub-block-advantages .cell .info {
+          font-size: 24px;
+          color: #919591; }
+          .franchise .start-screen .sub-block-advantages .cell .info strong {
+            font-family: "GothamProBold"; }
+        .franchise .start-screen .sub-block-advantages .cell:before {
+          content: '';
+          display: block;
+          height: 86px;
+          width: 6px;
+          background-color: #E4E6E4;
+          position: absolute;
+          -webkit-transition: 0.2s;
+          -o-transition: 0.2s;
+          transition: 0.2s; }
+        .franchise .start-screen .sub-block-advantages .cell:hover:before {
+          background-color: #FF9600; }
+  .franchise .block-result {
+    padding: 60px 0 100px 0;
+    background-image: url(../img/system/block-result-bg.jpg);
+    background-position: center;
+    background-size: cover; }
+    .franchise .block-result .content {
+      display: block;
+      margin: auto;
+      max-width: 1630px;
+      padding: 0 15px; }
+      .franchise .block-result .content .figures-container {
+        background-image: url(../svg/ramka.svg);
+        max-width: 923px;
+        width: 100%;
+        margin: 0 auto 100px auto;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 92px 0 0 0; }
+        .franchise .block-result .content .figures-container .figures {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          .franchise .block-result .content .figures-container .figures .cell {
+            max-width: 250px;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            margin: auto; }
+            .franchise .block-result .content .figures-container .figures .cell .description {
+              color: #B3B8B3;
+              font-size: 18px; }
+            .franchise .block-result .content .figures-container .figures .cell .value {
+              font-family: "IntroRustG";
+              color: #FF9600;
+              font-size: 100px;
+              line-height: 100px; }
+          .franchise .block-result .content .figures-container .figures .btn-send-application {
+            height: 61px;
+            max-width: 374px;
+            width: 100%;
+            display: block;
+            margin: auto;
+            background-color: transparent;
+            border: none;
+            font-size: 29px;
+            color: #3F2400;
+            font-family: "GothamProBold";
+            margin-top: 52px; }
+      .franchise .block-result .content > p {
+        max-width: 957px;
+        margin: auto;
+        font-size: 21px;
+        color: #3c0336; }
+        .franchise .block-result .content > p:after {
+          content: '';
+          display: block;
+          height: 78px;
+          width: 13px;
+          background-color: #FF9600;
+          position: relative;
+          right: 55px;
+          bottom: 161px; }
+        .franchise .block-result .content > p strong {
+          font-family: "GothamProBold";
+          font-size: 32px; }
+  .franchise .block-partnership {
+    padding: 0 0 35px 0; }
+    .franchise .block-partnership .sub-title {
+      font-size: 18px;
+      max-width: 460px;
+      margin: auto; }
+    .franchise .block-partnership p {
+      text-align: center; }
+    .franchise .block-partnership .column .title {
+      padding-bottom: 30px; }
+      .franchise .block-partnership .column .title .name {
+        font-family: "GothamProBold";
+        font-size: 40px; }
+      .franchise .block-partnership .column .title .description {
+        font-family: "GothamProRegular";
+        font-size: 28px;
+        line-height: 28px;
+        margin: 0; }
+      .franchise .block-partnership .column .title p {
+        font-family: "GothamProItalic";
+        font-size: 20px; }
+    .franchise .block-partnership .column .title {
+      position: relative; }
+      .franchise .block-partnership .column .title a {
+        padding-bottom: 30px;
+        color: #33042F; }
+        .franchise .block-partnership .column .title a .name {
+          font-family: "GothamProBold";
+          font-size: 40px; }
+        .franchise .block-partnership .column .title a .description {
+          font-family: "GothamProRegular";
+          font-size: 28px;
+          line-height: 28px;
+          margin: 0; }
+        .franchise .block-partnership .column .title a p {
+          font-family: "GothamProItalic";
+          font-size: 20px; }
+    .franchise .block-partnership .column .desk {
+      border: 1px solid #E4E6E4;
+      border-radius: 3px; }
+      .franchise .block-partnership .column .desk .sub-title {
+        font-family: "GothamProBold";
+        font-size: 24px;
+        color: #33042f;
+        text-align: left;
+        padding: 15px 15px 0 30px;
+        text-decoration: underline;
+        display: table;
+        margin: 0;
+        min-width: 100%; }
+        .franchise .block-partnership .column .desk .sub-title:before {
+          display: table-cell;
+          content: '';
+          background-image: url("../svg/plus.svg");
+          width: 16px;
+          height: 16px;
+          position: relative;
+          right: 15px;
+          background-repeat: no-repeat;
+          background-position: center; }
+      .franchise .block-partnership .column .desk .cell {
+        padding: 15px; }
+        .franchise .block-partnership .column .desk .cell img {
+          max-width: 50px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px; }
+        .franchise .block-partnership .column .desk .cell .description {
+          max-width: calc(100% - 70px);
+          display: inline-block;
+          vertical-align: middle;
+          font-family: "GothamProRegular";
+          font-size: 16px; }
+      .franchise .block-partnership .column .desk .order-block {
+        padding-bottom: 20px;
+        margin-top: 20px; }
+        .franchise .block-partnership .column .desk .order-block .sell {
+          font-family: "GothamProBold";
+          font-size: 28px;
+          margin-bottom: 0; }
+          .franchise .block-partnership .column .desk .order-block .sell:before {
+            display: block;
+            content: '';
+            height: 1px;
+            max-width: 346px;
+            width: 75%;
+            background-color: #E4E6E4;
+            margin: 0 auto 15px; }
+        .franchise .block-partnership .column .desk .order-block p {
+          font-size: 20px;
+          margin-bottom: 20px; }
+        .franchise .block-partnership .column .desk .order-block .btn-purple {
+          margin: auto; }
+    .franchise .block-partnership .center-column .title {
+      color: #FF8F00; }
+      .franchise .block-partnership .center-column .title a {
+        color: #FF8F00; }
+    .franchise .block-partnership .center-column .desk {
+      background-color: #FF8F00;
+      border-color: #FF8F00; }
+      .franchise .block-partnership .center-column .desk .cell .description {
+        color: white; }
+      .franchise .block-partnership .center-column .desk .order-block {
+        background-color: rgba(255, 255, 255, 0.2); }
+        .franchise .block-partnership .center-column .desk .order-block p {
+          color: white; }
+        .franchise .block-partnership .center-column .desk .order-block .btn-white {
+          margin: auto; }
+  .franchise .for-whom-franchise .cell {
+    display: inline-block;
+    max-width: 460px;
+    vertical-align: top; }
+    .franchise .for-whom-franchise .cell .image img {
+      max-width: 100%; }
+    .franchise .for-whom-franchise .cell .title {
+      font-family: "GothamProBold";
+      color: #FF9600;
+      font-size: 22px;
+      padding: 15px 0; }
+    .franchise .for-whom-franchise .cell .description {
+      text-align: left;
+      font-family: "GothamProRegular";
+      font-size: 19px;
+      color: #232323;
+      padding-left: 25px; }
+      .franchise .for-whom-franchise .cell .description li {
+        list-style: none;
+        display: table; }
+        .franchise .for-whom-franchise .cell .description li:before {
+          display: table-cell;
+          content: '';
+          background-image: url(../svg/check-mark.svg);
+          background-repeat: no-repeat;
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+          margin-right: 15px;
+          position: relative;
+          top: 5px;
+          right: 10px; }
+  .franchise .open-offices {
+    padding: 5px;
+    max-width: 1400px;
+    margin: auto; }
+    .franchise .open-offices a {
+      padding: 0; }
+    .franchise .open-offices .cell {
+      display: inline-block;
+      max-width: 440px;
+      width: 100%;
+      max-height: 268px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 3px; }
+      .franchise .open-offices .cell .title {
+        position: absolute;
+        padding: 15px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 67px;
+        color: white;
+        z-index: 1;
+        font-size: 38px;
+        font-family: "GothamProBold";
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        text-align: center; }
+      .franchise .open-offices .cell .substrate {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(100, 6, 87, 0.3); }
+      .franchise .open-offices .cell .mask {
+        background-color: rgba(100, 6, 87, 0.7);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        opacity: 0; }
+        .franchise .open-offices .cell .mask .description {
+          color: white;
+          text-align: left;
+          padding: 15px;
+          font-family: "GothamProRegular"; }
+          .franchise .open-offices .cell .mask .description span {
+            font-family: "GothamProBold";
+            display: block;
+            padding-bottom: 15px; }
+      .franchise .open-offices .cell:hover .mask {
+        opacity: 1; }
+      .franchise .open-offices .cell:hover .title {
+        opacity: 0; }
+    .franchise .open-offices .cell-add {
+      text-align: center;
+      color: #919491;
+      font-family: "GothamProRegular";
+      height: 100%;
+      border: 2px dashed rgba(172, 177, 172, 0.55);
+      padding: 81px 0; }
+      .franchise .open-offices .cell-add .plus {
+        font-size: 93px;
+        font-weight: 800;
+        line-height: 60px; }
+      .franchise .open-offices .cell-add p {
+        color: #919491;
+        font-size: 16px;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+      .franchise .open-offices .cell-add:hover p {
+        opacity: 1; }
+  .franchise .why-franchise {
+    padding: 25px 0; }
+    .franchise .why-franchise .left-column {
+      width: 872px;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden; }
+      .franchise .why-franchise .left-column .content {
+        background-color: #ff8f00;
+        padding: 154px 0 289px 76px; }
+        .franchise .why-franchise .left-column .content img {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          max-width: 389px; }
+        .franchise .why-franchise .left-column .content .title {
+          background-color: rgba(255, 255, 255, 0.3);
+          font-family: "GothamProBold";
+          color: white;
+          max-width: 796px;
+          padding: 83px 25px; }
+          .franchise .why-franchise .left-column .content .title h3 {
+            font-size: 38px; }
+    .franchise .why-franchise .right-column {
+      max-width: 885px;
+      width: 100%;
+      display: inline-block;
+      vertical-align: top; }
+      .franchise .why-franchise .right-column ul {
+        padding-left: 75px; }
+        .franchise .why-franchise .right-column ul li {
+          font-family: "GothamProBold";
+          font-size: 23px;
+          line-height: 19px;
+          list-style: none;
+          position: relative; }
+          .franchise .why-franchise .right-column ul li:before {
+            display: inline-block;
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-image: url("../svg/check-mark.svg");
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -50px;
+            top: -6px; }
+          .franchise .why-franchise .right-column ul li p {
+            font-family: "GothamProRegular";
+            color: #919491;
+            font-size: 16px;
+            line-height: 21px;
+            padding: 7px 0; }
+      .franchise .why-franchise .right-column .panel-question .panel-heading {
+        padding: 15px 0; }
+        .franchise .why-franchise .right-column .panel-question .panel-heading .panel-title a {
+          font-family: "GothamProBold";
+          font-size: 20px; }
+  .franchise .opening-plan {
+    background-image: url("../img/system/plan.jpg");
+    padding: 15px 0;
+    background-size: 1920px;
+    position: relative; }
+    .franchise .opening-plan .image {
+      display: block;
+      max-width: 708px;
+      max-height: 528px;
+      width: 100%;
+      height: 100%;
+      margin: auto; }
+    .franchise .opening-plan .zoom-image {
+      margin: auto;
+      display: block;
+      width: 215px;
+      font-size: 18px;
+      font-family: "GothamProBold";
+      color: #800C74;
+      position: absolute;
+      bottom: 35px;
+      left: 0;
+      right: 0; }
+      .franchise .opening-plan .zoom-image .image {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px; }
+      .franchise .opening-plan .zoom-image span {
+        display: inline-block;
+        max-width: 130px;
+        vertical-align: middle; }
+  .franchise .questions .title {
+    color: #640657;
+    font-family: "GothamProRegular";
+    font-size: 35px; }
+  .franchise .questions .left-column {
+    max-width: 758px; }
+    .franchise .questions .left-column .panel-question .panel-heading .panel-title a {
+      font-family: "gothamProRegular";
+      font-size: 16px;
+      text-decoration: underline; }
+  .franchise .questions .right-column {
+    max-width: 477px;
+    width: 100%; }
+    .franchise .questions .right-column textarea {
+      display: block;
+      resize: none;
+      height: 200px;
+      max-width: 436px;
+      width: 100%;
+      border: 1px solid #919491;
+      border-radius: 2px;
+      margin: 0 5px;
+      padding: 5px; }
+    .franchise .questions .right-column .btn-purple {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 5px; }
+    .franchise .questions .right-column input {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 5px; }
+  .franchise .all-thought-out {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden; }
+    .franchise .all-thought-out .cell {
+      display: inline-block;
+      max-width: 240px;
+      width: 100%;
+      margin: 15px 10px;
+      vertical-align: top; }
+      .franchise .all-thought-out .cell .image {
+        width: inherit;
+        overflow: hidden;
+        display: block;
+        border-radius: 5px;
+        height: 190px; }
+        .franchise .all-thought-out .cell .image img {
+          max-width: 100%;
+          margin: auto; }
+      .franchise .all-thought-out .cell .title {
+        font-family: "GothamProRegular";
+        font-size: 16px;
+        color: #232323; }
+    .franchise .all-thought-out .slick-next {
+      right: 15px;
+      z-index: 1; }
+    .franchise .all-thought-out .slick-prev {
+      left: 15px;
+      z-index: 1; }
+  .franchise .eight-reasons {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(transparent), color-stop(transparent), to(#FFFFFF)), url("../img/system/8-Reasons-bg.jpg");
+    background-image: -webkit-linear-gradient(top, #FFFFFF, transparent, transparent, #FFFFFF), url("../img/system/8-Reasons-bg.jpg");
+    background-image: -o-linear-gradient(top, #FFFFFF, transparent, transparent, #FFFFFF), url("../img/system/8-Reasons-bg.jpg");
+    background-image: linear-gradient(to bottom, #FFFFFF, transparent, transparent, #FFFFFF), url("../img/system/8-Reasons-bg.jpg");
+    background-size: cover;
+    padding: 100px 0 45px;
+    overflow: hidden; }
+    .franchise .eight-reasons .desk {
+      background-image: url("../img/system/reasons-desk-bg.png");
+      background-size: cover;
+      max-width: 1370px;
+      margin: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0 75px 60px 75px; }
+      .franchise .eight-reasons .desk:before {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: #FF9600;
+        -webkit-box-shadow: 0 0 0 6px #FF9600;
+        box-shadow: 0 0 0 6px #FF9600;
+        width: 100%;
+        left: 950px;
+        position: relative; }
+      .franchise .eight-reasons .desk:after {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: #FF9600;
+        -webkit-box-shadow: 0 0 0 6px #FF9600;
+        box-shadow: 0 0 0 6px #FF9600;
+        width: 100%;
+        right: 1203px;
+        top: 60px;
+        position: relative; }
+      .franchise .eight-reasons .desk .title {
+        position: relative;
+        bottom: 63px;
+        right: 202px;
+        padding: 0 600px 0 0; }
+        .franchise .eight-reasons .desk .title h2 {
+          color: #FF9600;
+          font-family: "IntroRustG";
+          line-height: 58px;
+          margin: 0;
+          font-weight: 400;
+          font-size: 91px;
+          text-shadow: 4px 4px 0 #3F2400;
+          position: relative;
+          top: 19px;
+          z-index: 1; }
+          .franchise .eight-reasons .desk .title h2 .figure {
+            font-size: 133px; }
+        .franchise .eight-reasons .desk .title .text {
+          color: #FFFFFF;
+          font-size: 40px;
+          line-height: 40px;
+          font-family: "GothamProRegular";
+          position: relative;
+          z-index: 2; }
+      .franchise .eight-reasons .desk .column {
+        max-width: 46%;
+        position: relative; }
+        .franchise .eight-reasons .desk .column ol {
+          padding: 0; }
+          .franchise .eight-reasons .desk .column ol li {
+            font-family: "GothamProBolditalic";
+            font-size: 22px;
+            color: #33042F;
+            list-style: none;
+            letter-spacing: 0; }
+            .franchise .eight-reasons .desk .column ol li p {
+              font-size: 12px;
+              font-family: "GothamProRegular";
+              padding-left: 60px; }
+            .franchise .eight-reasons .desk .column ol li:before {
+              font-family: "IntroRustG";
+              font-size: 55px;
+              color: #FF9600;
+              display: inline-block;
+              text-align: center;
+              margin: 5px 10px;
+              line-height: 40px;
+              width: 40px;
+              height: 40px;
+              top: 22px;
+              right: 5px;
+              position: relative; }
+        .franchise .eight-reasons .desk .column .first-list {
+          counter-reset: myCounter-1; }
+          .franchise .eight-reasons .desk .column .first-list li:before {
+            counter-increment: myCounter-1;
+            content: counter(myCounter-1); }
+        .franchise .eight-reasons .desk .column .second-list {
+          counter-reset: myCounter-2 4; }
+          .franchise .eight-reasons .desk .column .second-list li:before {
+            counter-increment: myCounter-2;
+            content: counter(myCounter-2); }
+      .franchise .eight-reasons .desk .first-column {
+        bottom: 112px; }
+  .franchise .block-about {
+    padding: 85px 15px 0 15px;
+    max-width: 1630px;
+    position: relative;
+    margin: auto;
+    overflow: hidden; }
+    .franchise .block-about .photo {
+      vertical-align: middle;
+      position: absolute;
+      right: 0;
+      max-height: 795px;
+      z-index: 1;
+      bottom: 0; }
+    .franchise .block-about .text-content {
+      max-width: 1000px;
+      font-family: "GothamProRegular";
+      padding: 15px 0; }
+      .franchise .block-about .text-content p {
+        padding-bottom: 35px;
+        font-size: 31px; }
+    .franchise .block-about .signature-block-container {
+      max-width: 885px;
+      position: relative;
+      display: table;
+      width: 100%;
+      padding: 25px 0 35px; }
+      .franchise .block-about .signature-block-container .signature-block {
+        max-width: 245px;
+        position: relative;
+        float: right;
+        color: #585B58; }
+        .franchise .block-about .signature-block-container .signature-block .name {
+          font-family: "GothamProBold";
+          font-size: 25px;
+          margin: 0; }
+        .franchise .block-about .signature-block-container .signature-block .position {
+          font-family: "GothamProLightItalic";
+          font-size: 18px; }
+        .franchise .block-about .signature-block-container .signature-block img {
+          position: absolute;
+          bottom: -25px;
+          left: 105px;
+          width: 400px; }
+    .franchise .block-about .partner-info {
+      padding: 15px 0; }
+      .franchise .block-about .partner-info .name {
+        font-family: "GothamProBold";
+        font-size: 14px; }
+      .franchise .block-about .partner-info div {
+        font-family: "GothamProRegular";
+        font-size: 14px; }
+        .franchise .block-about .partner-info div .parametr {
+          width: 72px;
+          display: inline-block; }
+
+footer {
+  background-color: #f8f8f8; }
+
+@media screen and (max-width: 759px) {
+  .franchise .block-about {
+    padding: 0; }
+    .franchise .block-about .photo {
+      bottom: 96px;
+      right: -37px;
+      max-height: 295px; }
+    .franchise .block-about .text-content {
+      padding: 15px; }
+      .franchise .block-about .text-content p {
+        font-size: 14px;
+        padding-bottom: 15px; }
+    .franchise .block-about .partner-info {
+      background-color: #E4E6E4; }
+    .franchise .block-about .signature-block-container {
+      padding: 0 0 145px; }
+      .franchise .block-about .signature-block-container .signature-block {
+        max-width: 175px;
+        padding: 15px; }
+        .franchise .block-about .signature-block-container .signature-block .name {
+          font-size: 16px; }
+        .franchise .block-about .signature-block-container .signature-block .position {
+          font-size: 10px; }
+        .franchise .block-about .signature-block-container .signature-block img {
+          bottom: -8px;
+          left: 35px;
+          width: 259px; }
+    .franchise .block-about .partner-info {
+      padding: 15px;
+      height: 96px; }
+      .franchise .block-about .partner-info .name {
+        font-size: 10px; }
+      .franchise .block-about .partner-info div {
+        font-size: 10px; } }
+
+@media screen and (min-width: 1525px) {
+  .franchise .why-franchise .right-column {
+    width: calc(100% - 880px); } }
+
+@media screen and (max-width: 1488px) {
+  .franchise .eight-reasons .desk {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .franchise .eight-reasons .desk .title {
+      bottom: 0;
+      right: 0;
+      padding: 15px 0 15px 0; }
+      .franchise .eight-reasons .desk .title h2 {
+        line-height: normal; }
+    .franchise .eight-reasons .desk .first-column {
+      bottom: 0; } }
+
+@media screen and (min-width: 1400px) {
+  .franchise .start-screen .title .left-column .name {
+    right: 42px; } }
+
+@media screen and (min-width: 1400px) and (max-width: 1524px) {
+  .franchise .why-franchise .left-column {
+    width: 791px; }
+  .franchise .why-franchise .right-column {
+    width: calc(100% - 800px); } }
+
+@media screen and (max-width: 1280px) {
+  .franchise .eight-reasons .desk .title {
+    width: 100%; }
+  .franchise .eight-reasons .desk .column {
+    max-width: 50%; } }
+
+@media screen and (min-width: 1279px) and (max-width: 1399px) {
+  .franchise .why-franchise .left-column {
+    width: 725px; }
+    .franchise .why-franchise .left-column .content {
+      padding: 154px 0 289px 0; }
+  .franchise .why-franchise .right-column {
+    width: calc(100% - 735px); } }
+
+@media screen and (min-width: 1279px) and (max-width: 1319px) {
+  .franchise .start-screen .title {
+    max-width: 1190px; }
+    .franchise .start-screen .title .left-column h1 {
+      font-size: 65px; }
+    .franchise .start-screen .title .right-column .amount {
+      font-size: 110px; } }
+
+@media screen and (max-width: 1278px) {
+  .franchise .start-screen .title {
+    text-align: center; }
+  .franchise .why-franchise .right-column {
+    width: 100%;
+    max-width: 100%;
+    padding: 35px 15px; }
+    .franchise .why-franchise .right-column ul {
+      padding-left: 45px; } }
+
+@media screen and (min-width: 1240px) and (max-width: 1559px) {
+  .franchise .block-about .photo {
+    bottom: 0; }
+  .franchise .block-about .text-content {
+    max-width: 700px; }
+  .franchise .block-about .signature-block-container {
+    max-width: 560px; } }
+
+@media screen and (max-width: 1239px) {
+  .franchise .block-about .signature-block-container .signature-block {
+    float: left; } }
+
+@media screen and (max-width: 1166px) {
+  .franchise .start-screen {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.38)), color-stop(white), color-stop(rgba(128, 12, 116, 0.69)), to(rgba(128, 12, 116, 0.69))), url(../img/system/franch-start-page-bg.jpg);
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.38), white, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url(../img/system/franch-start-page-bg.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.38), white, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url(../img/system/franch-start-page-bg.jpg);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.38), white, rgba(128, 12, 116, 0.69), rgba(128, 12, 116, 0.69)), url(../img/system/franch-start-page-bg.jpg); }
+    .franchise .start-screen .btn-download-container {
+      border-top: 2px solid rgba(255, 255, 255, 0.45);
+      background-color: rgba(255, 255, 255, 0);
+      text-align: left; } }
+
+@media screen and (max-width: 1100px) {
+  .franchise .eight-reasons .desk .column {
+    max-width: 100% !important; } }
+
+@media screen and (max-width: 991px) {
+  .franchise .questions .title {
+    text-align: center; }
+  .franchise .questions .right-column {
+    margin: auto; }
+  .franchise .block-partnership .column .title {
+    padding-bottom: 10px;
+    max-width: 520px;
+    margin: auto;
+    display: block;
+    float: none; }
+    .franchise .block-partnership .column .title a:after {
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 11px;
+      content: '';
+      background-image: url(../svg/partnership-caret.svg);
+      background-repeat: no-repeat;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 17px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .franchise .block-partnership .column .title a[aria-expanded="true"]:after {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .franchise .block-partnership .column:after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 222px;
+    background-color: #E4E6E4;
+    margin: auto; }
+  .franchise .block-partnership .column .desk {
+    margin-bottom: 40px;
+    border: none;
+    padding: 0;
+    border-radius: 0; } }
+
+@media screen and (min-width: 934px) and (max-width: 1397px) {
+  .franchise .open-offices {
+    max-width: 935px; } }
+
+@media screen and (min-width: 934px) {
+  .franchise .open-offices .cell {
+    margin: 10px; } }
+
+@media screen and (max-width: 933px) {
+  .franchise .open-offices {
+    max-width: 471px; } }
+
+@media screen and (min-width: 911px) and (max-width: 954px) {
+  .franchise .block-result .content .figures-container {
+    max-width: 880px; }
+    .franchise .block-result .content .figures-container .figures .btn-send-application {
+      margin-top: 36px; } }
+
+@media screen and (min-width: 769px) {
+  .franchise .opening-plan {
+    background-position: center -180px;
+    height: 800px; } }
+
+@media screen and (min-width: 768px) and (max-width: 910px) {
+  .franchise .block-result .content .figures-container {
+    padding: 60px 0 0 0;
+    max-width: 738px; }
+    .franchise .block-result .content .figures-container .figures .cell {
+      max-width: 200px; }
+    .franchise .block-result .content .figures-container .figures .btn-send-application {
+      margin-top: 14px; } }
+
+@media screen and (max-width: 768px) {
+  .franchise .eight-reasons {
+    padding: 0; } }
+
+@media screen and (min-width: 760px) and (max-width: 1239px) {
+  .franchise .block-about {
+    padding: 0 60px 0 60px; }
+    .franchise .block-about .photo {
+      max-height: 560px; }
+    .franchise .block-about .text-content {
+      max-width: 80%;
+      padding-bottom: 100px; }
+    .franchise .block-about .signature-block-container {
+      padding: 0 0 200px; }
+    .franchise .block-about .partner-info div .info {
+      max-width: 145px;
+      display: inline-block;
+      vertical-align: top; } }
+
+@media screen and (min-width: 740px) and (max-width: 768px) {
+  .franchise .opening-plan {
+    background-position: center -210px;
+    height: 895px;
+    background-size: 2215px; } }
+
+@media screen and (max-width: 739px) {
+  .franchise .opening-plan {
+    background-position: center 5px;
+    height: 525px;
+    background-size: 968px;
+    padding-top: 0; }
+    .franchise .opening-plan .block-title {
+      background-color: white; }
+    .franchise .opening-plan .sub-title {
+      padding: 15px; } }
+
+@media screen and (max-width: 767px) {
+  .franchise .block-result .content .figures-container {
+    background-image: none;
+    padding: 65px 0 0 0; }
+    .franchise .block-result .content .figures-container .figures .btn-send-application-block {
+      width: 100%;
+      display: block; }
+      .franchise .block-result .content .figures-container .figures .btn-send-application-block .btn-send-application {
+        display: block;
+        margin: auto;
+        color: white;
+        background-color: #ff8f00; }
+  .franchise .block-result .content > p {
+    text-align: center; }
+  .franchise .why-franchise .right-column {
+    padding: 10px 15px; } }
+
+@media screen and (min-width: 729px) and (max-width: 1278px) {
+  .franchise .why-franchise .left-column {
+    padding-top: 48px;
+    width: 100%; }
+    .franchise .why-franchise .left-column .content {
+      padding: 25px 0 25px 55px; }
+      .franchise .why-franchise .left-column .content .title {
+        max-width: 100%;
+        padding: 25px 42px; }
+      .franchise .why-franchise .left-column .content img {
+        top: 0;
+        bottom: inherit;
+        max-width: 285px; } }
+
+@media screen and (max-width: 728px) {
+  .franchise .why-franchise .left-column {
+    width: 100%;
+    padding-top: 68px; }
+    .franchise .why-franchise .left-column .content {
+      padding: 85px 0 0 0; }
+      .franchise .why-franchise .left-column .content .title {
+        padding: 5px 25px; }
+        .franchise .why-franchise .left-column .content .title h3 {
+          position: relative;
+          z-index: 1;
+          font-size: 25px; }
+      .franchise .why-franchise .left-column .content img {
+        right: -57px;
+        top: 0;
+        bottom: inherit;
+        max-width: 260px; } }
+
+@media screen and (max-width: 684px) {
+  .franchise .eight-reasons .desk {
+    padding: 0 15px 25px; }
+    .franchise .eight-reasons .desk .title h2 {
+      font-size: 47px; }
+      .franchise .eight-reasons .desk .title h2 .figure {
+        font-size: 80px; }
+    .franchise .eight-reasons .desk .title .text {
+      font-size: 24px;
+      color: #989B98; } }
+
+@media screen and (min-width: 650px) and (max-width: 1278px) {
+  .franchise .start-screen .title .left-column h1 {
+    font-size: 61px; }
+  .franchise .start-screen .title .left-column p {
+    font-size: 30px; }
+  .franchise .start-screen .title .right-column .amount {
+    font-size: 120px; }
+  .franchise .start-screen .title .right-column .text {
+    font-size: 35px; }
+  .franchise .start-screen .btn-download-container {
+    max-width: 620px; } }
+
+@media screen and (max-width: 649px) {
+  .franchise .start-screen .call-back {
+    padding: 15px 25px;
+    text-align: center; }
+    .franchise .start-screen .call-back p {
+      margin: 0; }
+      .franchise .start-screen .call-back p .tel-number {
+        font-size: 23px; }
+      .franchise .start-screen .call-back p .order-call-back {
+        font-size: 16px; }
+  .franchise .start-screen .title {
+    padding-top: 15px; }
+    .franchise .start-screen .title .left-column h1 {
+      font-size: 42px; }
+    .franchise .start-screen .title .left-column .name {
+      font-size: 28px; }
+    .franchise .start-screen .title .left-column p {
+      font-size: 20px;
+      padding-top: 10px; }
+    .franchise .start-screen .title .right-column {
+      padding: 0; }
+      .franchise .start-screen .title .right-column .amount {
+        font-size: 76px;
+        line-height: 115px; }
+      .franchise .start-screen .title .right-column .text {
+        font-size: 22px;
+        max-width: 110px;
+        line-height: 26px; }
+  .franchise .start-screen .btn-download-container {
+    max-width: 230px;
+    padding: 0 35px;
+    margin: 0 0 50px; }
+    .franchise .start-screen .btn-download-container .btn-download {
+      color: white;
+      font-size: 18px;
+      line-height: 20px;
+      background-image: url("../svg/btn-download-white.svg");
+      background-size: 19px;
+      padding-left: 34px; }
+  .franchise .start-screen .sub-block-advantages .title {
+    font-size: 30px; } }
+
+@media screen and (max-width: 509px) {
+  .franchise .eight-reasons .desk .column ol li:before {
+    top: 0; } }
+
+@media screen and (max-width: 475px) {
+  .franchise .questions .right-column textarea {
+    margin: auto; }
+  .franchise .questions .right-column input {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%; }
+  .franchise .questions .right-column .btn-purple {
+    margin: 15px auto;
+    display: block; } }
+
+@media screen and (max-width: 659px) {
+  .franchise .block-title {
+    font-size: 30px; } }
+
+@media screen and (max-width: 455px) {
+  .franchise .open-offices .cell {
+    max-height: inherit; }
+  .franchise .block-partnership .column .title a .name {
+    font-size: 29px; }
+  .franchise .block-partnership .column .title a .description {
+    font-size: 24px; }
+  .franchise .block-partnership .column .title a p {
+    font-size: 17px; } }
+
+@media screen and (max-width: 375px) {
+  .franchise .block-result .content .sub-block-advantages .cell .cell-title {
+    font-size: 27px; } }
