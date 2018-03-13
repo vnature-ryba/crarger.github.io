@@ -114,7 +114,9 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     border-radius: 10px;
     margin-top: 15px;
     -webkit-box-shadow: 0 7px 50px rgba(2, 18, 63, 0.1);
-    box-shadow: 0 7px 50px rgba(2, 18, 63, 0.1); }
+    box-shadow: 0 7px 50px rgba(2, 18, 63, 0.1);
+    /*------ easydropdown -------*/
+    /*------ end easydropdown -------*/ }
     .calculator .calculator-block > .row:first-child .title-calculator {
       border-top: none; }
     .calculator .calculator-block .title-calculator {
@@ -222,6 +224,25 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
         padding: 15px;
         width: 100%;
         margin-top: 18px; }
+    .calculator .calculator-block .dropdown {
+      border: 1px solid #ff9602;
+      color: #ff9602;
+      width: 100%; }
+    .calculator .calculator-block .dropdown .carat {
+      border-top: 8px solid #ff9602; }
+    .calculator .calculator-block .dropdown .selected, .calculator .calculator-block .dropdown li {
+      color: #ff9602; }
+    .calculator .calculator-block .dropdown ul {
+      padding: 0; }
+    .calculator .calculator-block .dropdown li {
+      text-align: center; }
+    .calculator .calculator-block .dropdown li.focus {
+      background: #ff9602;
+      color: #fff;
+      width: 100%; }
+    .calculator .calculator-block .dropdown.open .carat {
+      border-top: 6px solid transparent;
+      border-bottom: 8px solid #ff9602; }
   .calculator p {
     margin-bottom: 0; }
 
@@ -255,76 +276,66 @@ footer {
       background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0));
       background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0)); } }
 
-/* --- EASYDROPDOWN FLAT THEME by Jan Cantor --- */
+/* --- EASYDROPDOWN DEFAULT THEME --- */
 /* PREFIXED CSS */
-.calculator .dropdown,
-.calculator .dropdown div,
-.calculator .dropdown li,
-.calculator .dropdown div::after,
-.calculator .dropdown .carat,
-.calculator .dropdown .carat:after,
-.calculator .dropdown .selected::after,
-.calculator .dropdown:after {
+.dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after {
   -webkit-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out; }
 
-.calculator .dropdown .selected::after,
-.calculator .dropdown.scrollable div::after {
+.dropdown .selected::after,
+.dropdown.scrollable div::after {
   -webkit-pointer-events: none;
   -moz-pointer-events: none;
   -ms-pointer-events: none;
   pointer-events: none; }
 
 /* WRAPPER */
-.calculator .dropdown {
+.dropdown {
   position: relative;
-  width: 100%;
+  width: 160px;
+  border: 1px solid #ccc;
   cursor: pointer;
-  font-weight: 200;
-  background: transparent;
-  padding: 1px 0px 1px;
-  border: 1px solid #ff9602;
+  background: #fff;
   border-radius: 3px;
-  color: #ff9602; }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
-.calculator .dropdown.open {
+.dropdown.open {
   z-index: 2; }
 
-.calculator .dropdown:hover,
-.calculator .dropdown.focus {
-  background: transparent; }
+.dropdown:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+
+.dropdown.focus {
+  -webkit-box-shadow: 0 0 5px rgba(51, 102, 248, 0.4);
+  box-shadow: 0 0 5px rgba(51, 102, 248, 0.4); }
 
 /* CARAT */
-.calculator .dropdown .carat,
-.calculator .dropdown .carat:after {
+.dropdown .carat {
   position: absolute;
-  right: 14px;
+  right: 12px;
   top: 50%;
-  margin-top: -3px;
+  margin-top: -4px;
   border: 6px solid transparent;
-  border-top: 6px solid #ff9602;
-  z-index: 1;
-  -webkit-transform-origin: 50% 20%;
-  -ms-transform-origin: 50% 20%;
-  transform-origin: 50% 20%; }
+  border-top: 8px solid #000; }
 
-.calculator .dropdown:hover .carat:after {
-  border-top-color: #f4f4f4; }
+.dropdown.open .carat {
+  margin-top: -10px;
+  border-top: 6px solid transparent;
+  border-bottom: 8px solid #000; }
 
-.calculator .dropdown.focus .carat {
-  border-top-color: #ff9602; }
-
-.calculator .dropdown.focus .carat:after {
-  border-top-color: #ff9602; }
-
-.calculator .dropdown.open .carat {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
+.dropdown.disabled .carat {
+  border-top-color: #999; }
 
 /* OLD SELECT (HIDDEN) */
-.calculator .dropdown .old {
+.dropdown .old {
   position: absolute;
   left: 0;
   top: 0;
@@ -332,128 +343,106 @@ footer {
   width: 0;
   overflow: hidden; }
 
-.calculator .dropdown select {
+.dropdown select {
   position: absolute;
   left: 0px;
   top: 0px; }
 
-.calculator .dropdown.touch select {
-  left: 0;
-  top: 0;
+.dropdown.touch .old {
+  width: 100%;
+  height: 100%; }
+
+.dropdown.touch select {
   width: 100%;
   height: 100%;
   opacity: 0; }
 
 /* SELECTED FEEDBACK ITEM */
-.calculator .dropdown .selected {
-  color: #ff9602; }
-
-.calculator .dropdown .selected,
-.calculator .dropdown li {
+.dropdown .selected,
+.dropdown li {
   display: block;
-  font-size: 20px;
-  font-weight: normal;
-  text-transform: uppercase;
+  font-size: 18px;
   line-height: 1;
-  padding: 8px 40px 8px 0;
+  color: #000;
+  padding: 9px 12px;
   overflow: hidden;
-  white-space: nowrap;
-  text-align: center; }
+  white-space: nowrap; }
 
-.calculator .dropdown .selected::after {
+.dropdown.disabled .selected {
+  color: #999; }
+
+.dropdown .selected::after {
   content: '';
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 40px;
-  border-radius: 0 50px 50px 0;
-  border-left: 2px solid #ff9602;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-.calculator .dropdown:hover .selected::after, .calculator .dropdown.focus .selected::after {
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+  width: 60px;
+  border-radius: 0 2px 2px 0;
+  -webkit-box-shadow: inset -55px 0 25px -20px #fff;
+  box-shadow: inset -55px 0 25px -20px #fff; }
 
 /* DROP DOWN WRAPPER */
-.calculator .dropdown div {
+.dropdown div {
   position: absolute;
   height: 0;
-  left: 0;
-  right: 0;
+  left: -1px;
+  right: -1px;
   top: 100%;
-  margin-top: 1px;
+  margin-top: -1px;
   background: #fff;
+  border: 1px solid #ccc;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 3px 3px;
   overflow: hidden;
-  opacity: 0;
-  color: #ff9602;
-  border-radius: 6px;
-  border: 1px solid #ff9602;
-  -webkit-box-shadow: 0 0 9px 2px rgba(255, 150, 2, 0.28);
-  box-shadow: 0 0 9px 2px rgba(255, 150, 2, 0.28); }
-
-.calculator .dropdown:hover div {
-  background: #fff;
-  border-radius: 6px; }
+  opacity: 0; }
 
 /* Height is adjusted by JS on open */
-.calculator .dropdown.open div {
+.dropdown.open div {
   opacity: 1;
   z-index: 2; }
 
 /* FADE OVERLAY FOR SCROLLING LISTS */
-.calculator .dropdown.scrollable div::after {
+.dropdown.scrollable div::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 50px;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+  -webkit-box-shadow: inset 0 -50px 30px -35px #fff;
+  box-shadow: inset 0 -50px 30px -35px #fff; }
 
-.calculator .dropdown.scrollable:hover div::after {
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-.calculator .dropdown.scrollable.bottom div::after {
+.dropdown.scrollable.bottom div::after {
   opacity: 0; }
 
 /* DROP DOWN LIST */
-.calculator .dropdown ul {
+.dropdown ul {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
   list-style: none;
-  overflow: hidden;
-  border-radius: 5px; }
+  overflow: hidden; }
 
-.calculator .dropdown.scrollable.open ul {
+.dropdown.scrollable.open ul {
   overflow-y: auto; }
 
 /* DROP DOWN LIST ITEMS */
-.calculator .dropdown li {
+.dropdown li {
   list-style: none;
-  padding: 10px 12px;
-  border-bottom: 1px solid #ff9602; }
-
-.calculator .dropdown li:last-child {
-  border-bottom: 0; }
+  padding: 8px 12px; }
 
 /* .focus class is also added on hover */
-.calculator .dropdown li.focus {
-  background: #ff9602;
+.dropdown li.focus {
+  background: #d24a67;
   position: relative;
   z-index: 3;
   color: #fff; }
 
-.calculator .dropdown li.active {
-  background: #ff9602;
-  color: #fff; }
+.dropdown li.active {
+  font-weight: 700; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
