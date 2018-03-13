@@ -227,7 +227,8 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     .calculator .calculator-block .dropdown {
       border: 1px solid #ff9602;
       color: #ff9602;
-      width: 100%; }
+      width: 100%;
+      outline: none; }
     .calculator .calculator-block .dropdown .carat {
       border-top: 8px solid #ff9602; }
     .calculator .calculator-block .dropdown .selected, .calculator .calculator-block .dropdown li {
@@ -240,6 +241,12 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
       background: #ff9602;
       color: #fff;
       width: 100%; }
+    .calculator .calculator-block .dropdown li.active {
+      background-color: #ff9602;
+      color: white; }
+    .calculator .calculator-block .dropdown.open div {
+      -webkit-box-shadow: 0px 5px 11px 3px rgba(255, 150, 2, 0.35);
+      box-shadow: 0px 5px 11px 3px rgba(255, 150, 2, 0.35); }
     .calculator .calculator-block .dropdown.open .carat {
       border-top: 6px solid transparent;
       border-bottom: 8px solid #ff9602; }
@@ -275,6 +282,67 @@ footer {
       background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0));
       background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0));
       background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0)); } }
+
+.modal-dialog .modal-content {
+  padding: 30px 0 45px; }
+  .modal-dialog .modal-content .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 35px;
+    border: 3px solid #8a8a8a;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 0;
+    color: #898989;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    z-index: 1; }
+    .modal-dialog .modal-content .close:hover {
+      border: 3px solid #ff9602;
+      color: #ff9602;
+      opacity: .8; }
+  .modal-dialog .modal-content .modal-header {
+    border-bottom: none; }
+    .modal-dialog .modal-content .modal-header .modal-title {
+      font-size: 25px;
+      font-family: "gothamProBold";
+      color: #33042F;
+      text-align: center; }
+      .modal-dialog .modal-content .modal-header .modal-title span {
+        color: #FF9600; }
+  .modal-dialog .modal-content .modal-body form input {
+    display: block;
+    width: 230px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #989B98;
+    padding: 10px;
+    margin: 10px auto;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .modal-dialog .modal-content .modal-body form input::-webkit-input-placeholder {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .modal-dialog .modal-content .modal-body form input:focus {
+      border-color: #FF9600;
+      color: #FF9600; }
+      .modal-dialog .modal-content .modal-body form input:focus::-webkit-input-placeholder {
+        opacity: 0; }
+  .modal-dialog .modal-content .modal-body form .btn-purple {
+    margin: 40px auto 0;
+    display: block;
+    font-size: 18px;
+    font-family: "gothamProBold";
+    color: #fff;
+    background-color: #810C74;
+    border: none;
+    border-radius: 3px; }
 
 /* --- EASYDROPDOWN DEFAULT THEME --- */
 /* PREFIXED CSS */
