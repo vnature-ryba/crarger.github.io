@@ -267,6 +267,10 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     .calculator .calculator-block .data-calculator label {
       margin-bottom: 5px; } }
 
+@media (max-width: 424px) {
+  .calculator .calculator-block .footer-calculator .price-center .price {
+    font-size: 50px; } }
+
 footer {
   background-color: #f8f8f8; }
 
