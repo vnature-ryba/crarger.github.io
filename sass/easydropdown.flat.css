@@ -1,0 +1,240 @@
+/* --- EASYDROPDOWN FLAT THEME by Jan Cantor --- */
+
+/* PREFIXED CSS */
+
+.calculator .dropdown,
+.calculator .dropdown div,
+.calculator .dropdown li,
+.calculator .dropdown div::after,
+.calculator .dropdown .carat,
+.calculator .dropdown .carat:after,
+.calculator .dropdown .selected::after,
+.calculator .dropdown:after{
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.calculator .dropdown .selected::after,
+.calculator .dropdown.scrollable div::after{
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+}
+
+/* WRAPPER */
+
+.calculator .dropdown{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 200;
+    background: transparent;
+    padding: 1px 0px 1px;
+    border: 1px solid rgb(255, 150, 2);
+    border-radius: 3px;
+    color: rgb(255, 150, 2);
+}
+
+.calculator .dropdown.open{
+    z-index: 2;
+}
+
+.calculator .dropdown:hover,
+.calculator .dropdown.focus{
+    background: transparent;
+}
+
+/* CARAT */
+
+.calculator .dropdown .carat,
+.calculator .dropdown .carat:after{
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    margin-top: -3px;
+    border: 6px solid transparent;
+    border-top: 6px solid rgb(255, 150, 2);
+    z-index: 1;
+
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%;
+
+}
+
+.calculator .dropdown:hover .carat:after{
+    border-top-color: #f4f4f4;
+}
+
+.calculator .dropdown.focus .carat{
+    border-top-color: rgb(255, 150, 2);
+}
+
+.calculator .dropdown.focus .carat:after{
+    border-top-color: rgb(255, 150, 2);
+}
+
+.calculator .dropdown.open .carat{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* OLD SELECT (HIDDEN) */
+
+.calculator .dropdown .old{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.calculator .dropdown select{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.calculator .dropdown.touch select{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/* SELECTED FEEDBACK ITEM */
+.calculator .dropdown .selected {
+    color: rgb(255, 150, 2);
+}
+
+.calculator .dropdown .selected,
+.calculator .dropdown li{
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 8px 40px 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.calculator .dropdown .selected::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    border-radius: 0 50px 50px 0;
+    border-left: 2px solid rgb(255, 150, 2);
+    box-shadow: none;
+}
+
+.calculator .dropdown:hover .selected::after, .calculator .dropdown.focus .selected::after {
+    box-shadow: none;
+}
+
+/* DROP DOWN WRAPPER */
+
+.calculator .dropdown div{
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 1px;
+    background: #fff;
+    overflow: hidden;
+    opacity: 0;
+    color: rgb(255, 150, 2);
+    border-radius: 6px;
+    border: 1px solid rgb(255, 150, 2);
+    box-shadow: 0 0 9px 2px rgba(255, 150, 2, 0.28);
+}
+
+.calculator .dropdown:hover div{
+    background: #fff;
+    border-radius: 6px;
+}
+
+/* Height is adjusted by JS on open */
+
+.calculator .dropdown.open div{
+    opacity: 1;
+    z-index: 2;
+}
+
+/* FADE OVERLAY FOR SCROLLING LISTS */
+
+.calculator .dropdown.scrollable div::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+
+    box-shadow: none;
+}
+
+.calculator .dropdown.scrollable:hover div::after{
+    box-shadow: none;
+}
+
+.calculator .dropdown.scrollable.bottom div::after{
+    opacity: 0;
+}
+
+/* DROP DOWN LIST */
+
+.calculator .dropdown ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.calculator .dropdown.scrollable.open ul{
+    overflow-y: auto;
+}
+
+/* DROP DOWN LIST ITEMS */
+
+.calculator .dropdown li{
+    list-style: none;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgb(255, 150, 2);
+}
+
+.calculator .dropdown li:last-child {
+    border-bottom: 0;
+}
+
+/* .focus class is also added on hover */
+
+.calculator .dropdown li.focus{
+    background: rgb(255, 150, 2);
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.calculator .dropdown li.active{
+    background: rgb(255, 150, 2);
+    color: #fff;
+}

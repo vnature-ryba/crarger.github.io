@@ -1,0 +1,24 @@
+<!-- заказать звонок -->
+<div class="modal fade" id="request" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Мы Вам перезвоним<br>и ответим на <span>все вопросы</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form action="/download-present/" method="POST" id="modal-franchise">
+                    <!--{% csrf_token %}-->
+                    <input type="text" name="full-name" required placeholder="Ваше имя *">
+                    <input type="text" name="num-phone" placeholder="Ваш телефон">
+                    <input type="text" name="city" required placeholder="Ваш город">
+                    <button class="btn-purple" type="submit"
+                            onclick="yaCounter38004405.reachGoal('colbeck_old'); return true;">Оставить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end заказать звонок -->
