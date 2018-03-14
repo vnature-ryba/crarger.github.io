@@ -119,6 +119,11 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     /*------ end easydropdown -------*/ }
     .calculator .calculator-block > .row:first-child .title-calculator {
       border-top: none; }
+    .calculator .calculator-block .title {
+      text-align: center;
+      font-family: "IntroRustG";
+      color: #800c74;
+      padding: 0 15px 25px; }
     .calculator .calculator-block .title-calculator {
       padding: 30px 10px;
       font-size: 20px;
@@ -153,16 +158,17 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
           transition: .3s; }
       .calculator .calculator-block .data-calculator .form-control {
         width: 100%;
-        color: #ff9602;
-        border: 1px solid #ff9602;
+        color: black;
+        border: 1px solid black;
         border-radius: 3px;
         font-size: 20px;
         padding: 5px;
-        text-align: center;
         height: 42px; }
         .calculator .calculator-block .data-calculator .form-control:focus {
           -webkit-box-shadow: none;
-          box-shadow: none; }
+          box-shadow: none;
+          color: #ff9602;
+          border: 1px solid #ff9602; }
       .calculator .calculator-block .data-calculator .title-data {
         font-size: 20px;
         color: black;
@@ -225,18 +231,19 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
         width: 100%;
         margin-top: 18px; }
     .calculator .calculator-block .dropdown {
-      border: 1px solid #ff9602;
-      color: #ff9602;
+      border: 1px solid black;
+      color: black;
       width: 100%;
       outline: none; }
+      .calculator .calculator-block .dropdown.open {
+        border: 1px solid #ff9602;
+        color: #ff9602; }
     .calculator .calculator-block .dropdown .carat {
-      border-top: 8px solid #ff9602; }
-    .calculator .calculator-block .dropdown .selected, .calculator .calculator-block .dropdown li {
-      color: #ff9602; }
+      border-top: 8px solid black; }
+    .calculator .calculator-block .dropdown .selected, .calculator .calculator-block .dropdown {
+      color: black; }
     .calculator .calculator-block .dropdown ul {
       padding: 0; }
-    .calculator .calculator-block .dropdown li {
-      text-align: center; }
     .calculator .calculator-block .dropdown li.focus {
       background: #ff9602;
       color: #fff;
@@ -247,6 +254,8 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     .calculator .calculator-block .dropdown.open div {
       -webkit-box-shadow: 0px 5px 11px 3px rgba(255, 150, 2, 0.35);
       box-shadow: 0px 5px 11px 3px rgba(255, 150, 2, 0.35); }
+    .calculator .calculator-block .dropdown.open .selected {
+      color: #ff9602; }
     .calculator .calculator-block .dropdown.open .carat {
       border-top: 6px solid transparent;
       border-bottom: 8px solid #ff9602; }
@@ -265,9 +274,13 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
   .calculator .calculator-block {
     padding: 40px 15px !important; }
     .calculator .calculator-block .data-calculator label {
+      margin-bottom: 5px; }
+    .calculator .calculator-block .data-calculator .form-control {
       margin-bottom: 5px; } }
 
 @media (max-width: 424px) {
+  .calculator .calculator-block .title {
+    font-size: 29px; }
   .calculator .calculator-block .footer-calculator .price-center .price {
     font-size: 50px; } }
 

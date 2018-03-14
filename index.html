@@ -46,269 +46,152 @@
                     <div class="row">
                         <div class="col-xs-12 calculator-block">
                             <div class="row">
-                                <div class="col-xs-12 col-md-4 title-calculator">
-                                    <p>1. Выберите тип ремонта</p>
+                                <h1 class="title">Рассчёт стоимости&nbsp;дома</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>1. Размеры</p>
                                 </div>
-                                <div class="col-xs-12 col-md-8 data-calculator">
+                                <div class="col-xs-12 col-md-9 data-calculator">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeRepair" value="overhaul" checked>
-                                                <span class="radio-name">Косметический</span>
-                                            </label>
+                                            <input type="number" id="width" class="form-control" placeholder="Ширина">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeRepair" value="majorOverhaul">
-                                                <span class="radio-name">Капитальный</span>
-                                            </label>
+                                            <input type="number" id="height" class="form-control" placeholder="Высота">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-4 title-calculator">
-                                    <p>2. Тип помещения</p>
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>2. Город</p>
                                 </div>
-                                <div class="col-xs-12 col-md-8 data-calculator">
-                                    <div id="typeRoom" class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeRoom" value="bathroom" checked>
-                                                <span class="radio-name">Ванная</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeRoom" value="toilet">
-                                                <span class="radio-name">Туалет</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeRoom" value="combinedToilet">
-                                                <span class="radio-name">Совмещенный санузел</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="square" class="row">
-                                <div class="col-xs-12 col-md-4 title-calculator">
-                                    <p>3. Площадь помещения, м<sup>2</sup></p>
-                                </div>
-                                <div class="col-xs-12 col-md-8 data-calculator">
+                                <div class="col-xs-12 col-md-9 data-calculator">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <input type="number" class="form-control" name="area" value="2.5" min="1" max="100" step="0.1">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <select name="city" class="dropdown">
+                                                <option value="Череповец">Череповец</option>
+                                                <option value="Вологда">Вологда</option>
+                                                <option value="Москва">Москва</option>
+                                                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                                                <option value="Сочи">Сочи</option>
+                                                <option value="Ярославль">Ярославль</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-4 title-calculator">
-                                    <p>4. Отделка стен</p>
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>3. Этажность</p>
                                 </div>
-                                <div class="col-xs-12 col-md-8 data-calculator walls">
-                                    <div class="col-xs-12 col-sm-4">
-                                        <label>
-                                            <input class="radio" type="radio" name="wallDecoration" value="tile" checked>
-                                            <span class="radio-name">Плитка</span>
-                                        </label>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <label>
-                                            <input class="radio" type="radio" name="wallDecoration" value="panel">
-                                            <span class="radio-name">Панели</span>
-                                        </label>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <label>
-                                            <input class="radio" type="radio" name="wallDecoration" value="paint">
-                                            <span class="radio-name">Краска</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-md-4 title-calculator">
-                                    <p>5. Электромонтаж</p>
-                                </div>
-                                <div class="col-xs-12 col-md-8 data-calculator wiring">
+                                <div class="col-xs-12 col-md-9 data-calculator wiring">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <p class="title-data">Розетки выключатели</p>
-                                        </div>
                                         <div class="col-xs-12 col-sm-3">
                                             <select name="countSockets" class="dropdown">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
+                                                <option value="0">1</option>
+                                                <option value="1,5">1,5</option>
                                                 <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
                                             </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <p class="title-data">Количество бра</p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <select name="countSconce" class="dropdown">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <p class="title-data">Количество потолочных светильников</p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <select name="countCeilingLamps" class="dropdown">
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <label class="label-checkbox">
-                                                <input class="checkbox" type="checkbox" name="ventilation">Принудительная вентиляция
-                                                <span></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <label class="label-checkbox">
-                                                <input class="checkbox" type="checkbox" name="warmFloor">Теплый пол
-                                                <span></span>
-                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-4 title-calculator">
-                                    <p>6. Сантехника</p>
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>4. Фундамент</p>
                                 </div>
-                                <div class="col-xs-12 col-md-8 data-calculator plumbing">
+                                <div class="col-xs-12 col-md-9 data-calculator plumbing">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <p class="title-data">Унитаз</p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeToilet" value="notSuspension">
-                                                <span class="radio-name">Приставной</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeToilet" value="suspension" checked>
-                                                <span class="radio-name">Подвесной</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeToilet" value="noToilet">
-                                                <span class="radio-name">Нет</span>
-                                            </label>
+                                        <div class="col-xs-12 col-sm-7">
+                                            <select name="foundation" class="dropdown">
+                                                <option value="Ленточный">Ленточный</option>
+                                                <option value="Монолитный">Монолитный</option>
+                                                <option value="Свайно-забивной">Свайно-забивной</option>
+                                                <option value="Свайно-винтовой">Свайно-винтовой</option>
+                                            </select>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>5. Материал стен</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator plumbing">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <p class="title-data">Раковина</p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeSink" value="common" checked>
-                                                <span class="radio-name">Обычная</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeSink" value="notCommon">
-                                                <span class="radio-name">С тумбой</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeSink" value="noSink">
-                                                <span class="radio-name">Нет</span>
-                                            </label>
+                                        <div class="col-xs-12 col-sm-7">
+                                            <select name="walls-material" class="dropdown">
+                                                <option value="Каркас">Каркас</option>
+                                                <option value="Клеенный брус">Клеенный брус</option>
+                                                <option value="Блоки">Блоки</option>
+                                                <option value="Кирпич">Кирпич</option>
+                                                <option value="Профилированный брус">Профилированный брус</option>
+                                            </select>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>6. Внешняя отделка</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator plumbing">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-3">
-                                            <p class="title-data">Ванная</p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeBathroom" value="straight" checked>
-                                                <span class="radio-name">Прямая</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeBathroom" value="angular">
-                                                <span class="radio-name">Угловая</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3">
-                                            <label>
-                                                <input class="radio" type="radio" name="typeBathroom" value="noBathroom">
-                                                <span class="radio-name">Нет</span>
-                                            </label>
+                                        <div class="col-xs-12 col-sm-7">
+                                            <select name="exterior-finish" class="dropdown">
+                                                <option value="Плита ОСБ">Плита ОСБ</option>
+                                                <option value="Иммитация бруса с пропиткой">Иммитация бруса с пропиткой</option>
+                                                <option value="Фасадная плитка под камень, кирпич">Фасадная плитка под камень, кирпич</option>
+                                                <option value="Чистовая штукатурка">Чистовая штукатурка</option>
+                                                <option value="Облицовочный кирпич">Облицовочный кирпич</option>
+                                                <option value="Сайдинг">Сайдинг</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="row extra">
                                         <div class="col-xs-12 col-sm-5">
                                             <label class="label-checkbox">
-                                                <input class="checkbox" type="checkbox" name="showercabin">Душевая кабина
+                                                <input class="checkbox" type="checkbox" name="stairs">Лестница
                                                 <span></span>
                                             </label>
                                         </div>
                                         <div class="col-xs-12 col-sm-5 col-sm-offset-1">
                                             <label class="label-checkbox">
-                                                <input class="checkbox" type="checkbox" name="bidet">Биде
+                                                <input class="checkbox" type="checkbox" name="iron-door">Металлическая дверь
                                                 <span></span>
                                             </label>
                                         </div>
                                         <div class="col-xs-12 col-sm-5">
                                             <label class="label-checkbox">
-                                                <input class="checkbox" type="checkbox" name="shower">Гигиенический душ
+                                                <input class="checkbox" type="checkbox" name="windows">Окна
                                                 <span></span>
                                             </label>
                                         </div>
                                         <div class="col-xs-12 col-sm-5 col-sm-offset-1">
                                             <label class="label-checkbox">
-                                                <input class="checkbox" type="checkbox" name="washer">Стиральная машина
+                                                <input class="checkbox" type="checkbox" name="communications">Коммуникации
                                                 <span></span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-xs-12 footer-calculator">
                                     <div class="row">
                                         <div class="col-xs-12 col-md-7 price-center">
                                             <span class="price">от 27 900 Р</span>
-                                            <span class="text-price">Это примерная стоимость ремонта,<br>для более точной стоимости<br>закажите замер</span>
+                                            <span class="text-price">Это примерная стоимость дома,<br>для более точной стоимости<br>закажите замер</span>
                                         </div>
                                         <div class="col-xs-12 col-md-5">
-                                            <button class="btn-purple requestCall6" data-toggle="modal" data-target="#request">ЗАКАЗАТЬ ТОЧНЫЙ ЗАМЕР</button>
+                                            <button class="btn-purple requestCall6" data-toggle="modal"
+                                                    data-target="#request">ЗАКАЗАТЬ ТОЧНЫЙ ЗАМЕР
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
