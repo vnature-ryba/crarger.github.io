@@ -1,0 +1,190 @@
+@media(max-width:768px) {
+    .header-contacts {
+        position: inherit;
+        top: 0;
+        float: inherit;
+        padding: 0 10px 15px 10px;
+        text-align: center;
+    }
+    .header-contacts .btn-call-top {
+        margin-top: 15px;
+    }
+    .start-page {
+        height: 470px;
+    }
+    .start-page .btn-application, .we-working-page .btn-application {
+        width: 100%;
+    }
+    .text-50px-blue {
+        font-size: 39px;
+        padding-top: 20px;
+    }
+    .advantages-page {
+        padding: 40px 0 30px 0;
+    }
+    .we-working-page {
+        padding: 20px 0 40px 0;
+    }
+    .catalog-page {
+        padding: 40px 0 40px 0;
+    }
+    .block-title {
+        font-size: 37px;
+        padding: 0 15px 0 15px;
+    }
+    .we-working-container {
+        margin: 20px 0 30px 0;
+    }
+    .we-working-cell {
+        width: 100%;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    .partners-page {
+        background: none;
+        padding: 20px 0 40px 0;
+    }
+    .add-services-page {
+        padding: 20px 0 0 0;
+    }
+    .add-services-container {
+        margin: 20px 0 100px 0;
+    }
+    .add-services-cell {
+        padding-bottom: 29px;
+        border-bottom: 1px solid #d9ddde;
+    }
+    .partners-sprites {
+        border-bottom: 1px solid #e2e2e2;
+        width: 289px;
+    }
+    .contants-page .contacts-form {
+        width: auto;
+    }
+    .contacts-form .form-input {
+        width: 100%;
+    }
+    .form2 {
+        padding: 0;
+    }
+    .form2 .btn-application, .contacts-form .btn-call-top {
+        width: 100%;
+    }
+    .contacts-block {
+        text-align: left;
+    }
+    .tab-content .recup-winter, .tab-content .recup-summer {
+        height: 295px;
+        width: auto;
+        left: 0;
+        background-size: contain;
+    }
+    .rekuperator-page {
+        padding: 30px 0 40px 0;
+    }
+    .rekuperator-page .nav-tabs {
+        width: 100%;
+    }
+    .container .nav-tabs li {
+        width: 50%;
+    }
+    .container .nav-tabs>li>a {
+        width: 100%;
+    }
+    .recuperator-info {
+        width: auto;
+        padding: 0 0 0 15px;
+    }
+    .tab-content .btn-application {
+        width: 100%;
+    }
+    .review-page {
+        padding: 40px 0 40px 0;
+    }
+    .owl-prev {
+        left: -28px;
+    }
+    .owl-next {
+        right: -28px;
+    }
+    .review-page .owl-prev {
+        left: -14px;
+    }
+    .review-page .owl-next {
+        right: -14px;
+    }
+    .partners-page, .start-page, .advantages-page, .add-services-page {
+        background-image: none;
+    }
+    .lg {
+        background-position: 15px 0;
+    }
+    .samsung {
+        background-position: -312px 0;
+    }
+    .electrolux {
+        background-position: -645px 0;
+    }
+    .panasonic {
+        background-position: 15px -95px;
+    }
+    .mitsubishi {
+        background-position: -312px -95px;
+    }
+    .gree {
+        background-position: -645px -95px;
+    }
+    .bailu {
+        background-position: 15px -200px;
+    }
+    .hisense {
+        background-position: -312px -200px;
+    }
+    .daikin {
+        background-position: -645px -200px;
+    }
+    .contants-page .container {
+        padding: 0;
+    }
+    .contacts-form {
+        padding: 0 15px 30px 15px;
+    }
+    .text-16px-gray {
+        margin-bottom: 30px;
+    }
+}
+
+@media(min-width:768px) {}
+
+@media(min-width:1024px) {
+    .recup-winter, .recup-summer {
+        left: -160px;
+    }
+		.owl-prev {
+				left: -28px;
+		}
+		.owl-next {
+				right: -28px;
+		}
+		.review-page .owl-prev {
+				left: -14px;
+		}
+		.review-page .owl-next {
+				right: -14px;
+		}
+		.contacts-form {
+			width: 958px;
+		}
+}
+
+@media(max-width:1024px) {
+    .start-page .EDGE-332351892 {
+        width: 1489px !important;
+    }
+}
+
+@media(min-width:1200px) {
+    .recup-winter, .recup-summer {
+        left: -100px;
+    }
+}
