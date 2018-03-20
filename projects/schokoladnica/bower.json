@@ -1,0 +1,22 @@
+{
+  "name": "schokoladnica",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+	"dependencies": {
+	"bootstrap": "^3.3.7",
+	"fancybox": "^3.0.47",
+	"owl.carousel": "^2.2.1",
+	"wow": "wowjs#^1.1.2",
+	"bootstrap-formhelpers": "bootstrap-form-helpers#^2.3.0",
+	"webpjs": "*"
+}
+}
