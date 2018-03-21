@@ -1,400 +1,394 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru">
 <head>
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Шоколадница">
-	<meta property="og:title" content="Сеть кофеен шоколадница">
-	<meta property="og:description" content="Улицы наполнены гулом машин, потоками прохожих, шумными разговорами, музыкой, огнями витрин. Город никогда не спит, и Шоколадница живёт с ним в одном ритме">
-	<meta property="og:url" content="http://example.com/page.html">
-	<meta property="og:locale" content="ru_RU">
-	<meta property="og:image" content="images/content/og.jpg" />
-	<meta property="og:image:width" content="968">
-	<meta property="og:image:height" content="504">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta property="og:image" content="images/content/">
-	<title>Шоколадница</title>
-	<link rel="shortcut icon" href="images/system/favicon.png">
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" />
-	<link rel="stylesheet" href="styles/animate.css" />
-	<script src="js/fa.js"></script>
-	<link rel="stylesheet" href="styles/style.css" />
-	<link rel="stylesheet" href="styles/responsive.css" />
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT7bL4xb7HN1IviJp3H9JVvDjtiySlIFo"></script>
+    <title>Шоколадница</title>
+    <meta name="description"
+          content="Производство, продажа и установка заборов и ограждений из сварных 3D-панелей с V-образным изгибом (гиттер) в Череповце">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!--theme color-->
+    <meta name="theme-color" content="#175550">
+    <meta name="msapplication-navbutton-color" content="#175550">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#175550">
+    
+    <!--favicons-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/system/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/favicon-152.png">
+    <link rel="icon" sizes="128x128" href="images/icons/favicon-128.png">
+    <link rel="icon" sizes="192x192" href="images/icons/favicon-192.png">
+    
+    <!--opengraph-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Шоколадница">
+    <meta property="og:title" content="Сеть кофеен шоколадница">
+    <meta property="og:description"
+          content="Улицы наполнены гулом машин, потоками прохожих, шумными разговорами, музыкой, огнями витрин. Город никогда не спит, и Шоколадница живёт с ним в одном ритме">
+    <meta property="og:url" content="http://example.com/page.html">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="images/content/og.jpg"/>
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+    <meta property="og:image" content="images/content/">
+    
+    <!--css-->
+    <link rel="stylesheet" href="css/bundle.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
+<header id="jack-home" class="wow bounceInLeft" data-wow-offset="100"
+        style="visibility: visible; animation-name: flipInX;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Меню</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+            <div class="top-logo">
+                <a href="#jack-home">
+                    <img src="svg/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="menu-collapse">
+            <div class="nav navbar-nav">
+                <div class="social-networks">
+                    <a href="http://vk.com/shokoru" target="_blank">
+                        <div class="radial-cell">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="https://facebook.com/shoko.ru" target="_blank">
+                        <div class="radial-cell">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="http://instagram.com/shoko.ru" target="_blank">
+                        <div class="radial-cell">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-hide"><a href="#jack-coupons">Опрос</a></li>
+                <li class="navbar-hide"><a href="#jack-news">Что нового?</a></li>
+                <li class="navbar-hide"><a href="#jack-map">Адреса</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--- - - - - - - - Стартовая - - - - - - - - - -->
+<section class="start-page">
+    <div class="bg-slider">
+        <div class="owl-carousel owl-theme">
+            <div>
+                <div class="an-screen an-screen-one">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Непрерывно кипит<br>жизнь, куда-то спешат тысячи людей</h1>
+                            <h2>Улицы наполнены гулом машин, потоками прохожих, шумными разговорами, музыкой, огнями витрин. Город никогда не спит, и Шоколадница живёт с ним в одном ритме.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="an-screen an-screen-two">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Ещё в шестидесятых<br>годах она радовала<br>жителей столицы<br>вкусными десертами<br>и европейской атмосферой</h1>
+                            <h2>Шоколадница — важная часть жизни в большом городе. Она всегда рядом — и в рабочее время, и на досуге. Она на одной волне с местными жителями.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="an-screen an-screen-three">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Хочешь ли ты расслабиться<br>или зарядиться энергией</h1>
+                            <h2>В шоколаднице тебе будет хорошо и легко — благодаря дружелюбной обстановке, вкусной еде и вниманию к мелочам.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- - - - - - - end Стартовая - - - - - - - - - -->
 
-	<!--- - - - - - - - Стартовая - - - - - - - - - -->
-	<header id="home" class="wow bounceInLeft" data-wow-offset="100" style="visibility: visible; animation-name: flipInX;">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Меню</span>
-				<span class="icon-bar top-bar"></span>
-				<span class="icon-bar middle-bar"></span>
-				<span class="icon-bar bottom-bar"></span>
-			</button>
-				<a class="navbar-brand" href="#home">
-					<div class="top-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.4 71.7"><defs><style>.cls-2{fill:#dcbdad;}</style></defs><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_2-2" data-name="Слой 2"><path class="cls-2" d="M130.33,45c-3.37,0-5.09-2.57-5.09-6.06s1.76-6,5.09-6,5.09,2.61,5.09,6-1.72,6-5.09,6.06m0-16.56c-6.7,0-10.55,4.53-10.55,10.51s3.73,10.55,10.55,10.55S140.88,45,140.88,38.9s-3.81-10.51-10.55-10.51"/><path class="cls-2" d="M162.73,28.83h-6L149.9,37.2V28.83h-6.41s1,2.25,1,9.14V48.88h5.41V40l6.22,8.88h6.42L155,38.33Z"/><path class="cls-2" d="M35.81,66.25c-16.68,0-30.2-12.47-30.2-30.36S19.13,5.45,35.81,5.45,66,17.93,66,35.89,52.45,66.25,35.81,66.25M35.81,0C16.08,0,0,14.92,0,35.89S16.08,71.7,35.81,71.7,71.62,56.78,71.62,35.89,55.54,0,35.81,0"/><path class="cls-2" d="M49.41,22.3H43.91a21.07,21.07,0,0,1,2,7.86c0,5.05-3.81,10.23-3.81,15.32a12.24,12.24,0,0,0,.72,4.33h5.49a12.24,12.24,0,0,1-.72-4.33c0-5.09,3.81-10.27,3.81-15.32a21.08,21.08,0,0,0-2-7.86"/><path class="cls-2" d="M27.43,22.3H21.94a21.07,21.07,0,0,1,2,7.86c0,5.05-3.81,10.23-3.81,15.32a12.21,12.21,0,0,0,.72,4.33h5.49a12.22,12.22,0,0,1-.72-4.33c0-5.09,3.81-10.27,3.81-15.32a21.07,21.07,0,0,0-2-7.86"/><path class="cls-2" d="M38.42,22.3H32.92a21.07,21.07,0,0,1,2,7.86c0,5.05-3.81,10.23-3.81,15.32a12.22,12.22,0,0,0,.72,4.33h5.49a12.22,12.22,0,0,1-.72-4.33c0-5.09,3.81-10.27,3.81-15.32a21.07,21.07,0,0,0-2-7.86"/><path class="cls-2" d="M110.68,44.19h-6V22.82H99.17V44.19h-6V22.82H85.94c1.12,1.72,1.72,4.41,1.72,9.18V48.88h28.51V22.82h-5.49Z"/><polygon class="cls-2" points="286.29 40.85 286.29 28.83 280.87 28.83 280.87 48.88 286.29 48.88 294.31 36.83 294.31 48.88 299.72 48.88 299.72 28.83 294.31 28.83 286.29 40.85"/><path class="cls-2" d="M324.58,44.27h-2.41V28.83h-5.41V44.27h-7.62V28.83h-5.41V48.88h15.44c.25,3.42,1,4.61,1,4.61h5.41s-1.44-2.25-1-9.22"/><path class="cls-2" d="M271.45,36.41h-8V28.83H257s1,2.25,1,9.22V48.88h5.41V41h8v7.86h5.41V28.83h-5.41Z"/><path class="cls-2" d="M336.21,45.07c-3.09,0-5-2.41-5-6s1.81-6.26,5-6.3c3.65,0,5.45,2.45,5.45,6.06s-2.17,6.22-5.45,6.22m12.19,3.81c-1-1.73-1.24-3.69-1.24-10.27V28.83h-5.41v1.62a8.74,8.74,0,0,0-6.13-2.06c-6.14,0-9.83,4.85-9.83,10.87,0,6.58,4.21,10.19,9.3,10.19A9.06,9.06,0,0,0,342,46.32a6,6,0,0,0,1,2.57Z"/><path class="cls-2" d="M173.24,45c-3.37,0-5.09-2.57-5.09-6.06s1.76-6,5.09-6,5.09,2.61,5.09,6-1.72,6-5.09,6.06m0-16.56c-6.7,0-10.55,4.53-10.55,10.51s3.73,10.55,10.55,10.55S183.79,45,183.79,38.9,180,28.39,173.24,28.39"/><path class="cls-2" d="M188.84,41.55c0,2.21-.84,3.13-2.37,3.13a3.32,3.32,0,0,1-1.28-.24v4.49a6,6,0,0,0,2.57.52c5.17,0,6.34-4.09,6.34-7.82V33.45h4.81V48.88h5.41V28.83H188.88Z"/><path class="cls-2" d="M218.35,45.07c-3.09,0-5-2.41-5-6s1.81-6.25,5-6.3c3.65,0,5.45,2.45,5.45,6.06s-2.17,6.22-5.45,6.22M229.3,28.83h-5.41v1.62a8.74,8.74,0,0,0-6.14-2.06c-6.14,0-9.83,4.85-9.83,10.87,0,6.58,4.21,10.19,9.3,10.19a9.06,9.06,0,0,0,6.92-3.13,6,6,0,0,0,1,2.57h5.41c-1-1.73-1.24-3.69-1.24-10.27Z"/><path class="cls-2" d="M243.46,45c-3.09,0-5.13-2-5.13-5.73,0-3.17,1.68-5.9,5.29-5.9,3.37,0,5.13,2.57,5.13,5.61,0,3.45-1.93,6-5.29,6m-.84-23.9a13.21,13.21,0,0,0-8.22,2.57v4.61a13.17,13.17,0,0,1,7.86-2.57c4.42,0,6.55,2.29,6.68,5.34a8.68,8.68,0,0,0-6.12-2.17c-6.34,0-9.94,4.65-9.94,10.43s3.53,10.19,10.19,10.19c6.82,0,11.31-4.37,11.31-13.63v-.56c0-9.59-4.25-14.2-11.75-14.2"/></g></g></svg></div>
+<!--- - - - - - - опрос/купон - - - - - - - - - -->
+<section class="coupons" id="jack-coupons">
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class="col-md-6 wow bounceInLeft" data-wow-offset="100" style="visibility: visible; animation-name: bounceInLeft;">
+                    <div class="cell opros">
+                        <div class="mask text-center">
+                            <div class="mask-text">
+                                <p>
+                                    Хочешь ли ты расслабиться или зарядиться энергией, в Шоколаднице тебе будет хорошо и легко благодаря дружелюбной обстановке, вкусной еде и вниманию к мелочам
+                                </p>
+                            </div>
+                            <button type="button" class="btn-blue" id="openInterview" name="button" data-toggle="modal" data-target="#interview">пройти опрос</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 wow bounceInLeft" data-wow-offset="100" style="visibility: visible; animation-name: bounceInRight;">
+                    <div class="cell coupon">
+                        <div class="mask text-center">
+                            <div class="mask-text">
+                                <div class="coupon-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="30" viewBox="0 0 54 30"><path fill="#d7b7a6" d="M52.88 0H15.75L13.5 2.3 11.25 0H1.13C.5 0 0 .52 0 1.15v27.7C0 29.49.5 30 1.13 30h10.12l2.25-2.3 2.25 2.3h37.13c.62 0 1.12-.51 1.12-1.15V1.15C54 .52 53.5 0 52.88 0zm-1.13 27.7H16.68l-1.59-1.64-1.59-1.63-1.59 1.63-1.59 1.63H2.25V2.31h8.07l1.59 1.63 1.59 1.63 1.59-1.63 1.59-1.63h35.07zM29.25 5.76a4.56 4.56 0 0 0-4.5 4.61 4.56 4.56 0 0 0 4.5 4.62c2.49 0 4.5-2.07 4.5-4.62a4.56 4.56 0 0 0-4.5-4.61zm0 6.92A2.28 2.28 0 0 1 27 10.4c0-1.28 1.01-2.31 2.25-2.31a2.28 2.28 0 0 1 2.25 2.3c0 1.28-1.01 2.31-2.25 2.31zm9 2.31a4.56 4.56 0 0 0-4.5 4.62 4.57 4.57 0 0 0 4.5 4.61c2.49 0 4.5-2.07 4.5-4.61a4.56 4.56 0 0 0-4.5-4.62zm0 6.92a2.28 2.28 0 0 1-2.25-2.3c0-1.28 1.01-2.31 2.25-2.31a2.28 2.28 0 0 1 2.25 2.3c0 1.28-1.01 2.31-2.25 2.31zm3.38-16.15c-.31 0-.6.13-.8.34L25.08 22.26c-.2.21-.33.5-.33.82 0 .64.5 1.15 1.13 1.15.31 0 .59-.13.79-.34L42.42 7.74c.21-.21.33-.5.33-.82 0-.63-.5-1.15-1.12-1.15zM13.5 6.92c-.62 0-1.12.52-1.12 1.16 0 .64.5 1.15 1.12 1.15.62 0 1.13-.51 1.13-1.15 0-.64-.51-1.16-1.13-1.16zm0 4.62c-.62 0-1.12.51-1.12 1.15 0 .64.5 1.16 1.12 1.16.62 0 1.13-.52 1.13-1.16 0-.64-.51-1.15-1.13-1.15zm0 4.61c-.62 0-1.12.52-1.12 1.16 0 .63.5 1.15 1.12 1.15.62 0 1.13-.52 1.13-1.15 0-.64-.51-1.16-1.13-1.16zm0 4.62c-.62 0-1.12.52-1.12 1.15 0 .64.5 1.16 1.12 1.16.62 0 1.13-.52 1.13-1.16 0-.63-.51-1.15-1.13-1.15z"/></svg>
+                                </div>
+                                <p>
+                                    Получите <span>скидку 300 рублей</span> при заказе от 1 000 рублей
+                                </p>
+                            </div>
+                            <button type="button" class="btn-blue" name="button" data-toggle="modal" data-target="#myModal">получить купон</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- - - - - - - end опрос/купон - - - - - - - - - -->
 
-				</a>
-			</div>
-			<div class="collapse navbar-collapse" id="menu-collapse">
-				<div class="nav navbar-nav">
-					<div class="social-networks">
-						<a href="http://vk.com/shokoru" target="_blank">
-							<div class="radial-cell">
-								<i class="fa fa-vk" aria-hidden="true"></i>
-							</div>
-						</a>
-						<a href="https://facebook.com/shoko.ru" target="_blank">
-							<div class="radial-cell">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</div>
-						</a>
-						<a href="http://instagram.com/shoko.ru" target="_blank">
-							<div class="radial-cell">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-							</div>
-						</a>
-					</div>
-				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li class="navbar-hide"><a href="#coupons">Опрос</a></li>
-					<li class="navbar-hide"><a href="#news">Что нового?</a></li>
-					<li class="navbar-hide"><a href="#map">Адреса</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
-	<section class="start-page">
-		<div class="bg-slider">
-			<div class="owl-carousel owl-theme">
-				<div>
-					<div class="an-screen an-screen-one">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Непрерывно кипит<br>жизнь, куда-то спешат тысячи людей</h1>
-								<h2>Улицы наполнены гулом машин, потоками прохожих, шумными разговорами, музыкой, огнями витрин. Город никогда не спит, и Шоколадница живёт с ним в одном ритме.</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="an-screen an-screen-two">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Ещё в шестидесятых<br>годах она радовала<br>жителей столицы<br>вкусными десертами<br>и европейской атмосферой</h1>
-								<h2>Шоколадница — важная часть жизни в большом городе. Она всегда рядом — и в рабочее время, и на досуге. Она на одной волне с местными жителями.</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="an-screen an-screen-three">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Хочешь ли ты расслабиться<br>или зарядиться энергией</h1>
-								<h2>В шоколаднице тебе будет хорошо и легко — благодаря дружелюбной обстановке, вкусной еде и вниманию к мелочам.</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--- - - - - - - end Стартовая - - - - - - - - - -->
+<!--- - - - - - - десерты - - - - - - - - - -->
+<section class="dessert text-center">
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class="column-one">
+                    <div class="width-cell img-cell wow bounceInLeft" data-wow-offset="100" style="visibility: visible; animation-name: flipInY;">
+                        <img src="img/content/dessert/d-w-1.jpg" alt="">
+                    </div>
+                    <div class="group">
+                        <div class="height-cell undergroup">
+                            <div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.1s" style="visibility: visible; animation-name: flipInY;">
+                                <img src="img/content/dessert/d-c-1.jpg" alt="">
+                            </div>
+                            <div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.2s" style="visibility: visible; animation-name: flipInY;">
+                                <img src="img/content/dessert/d-c-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.3s" style="visibility: visible; animation-name: flipInY;">
+                            <img src="img/content/dessert/d-h-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-three hidden-md hidden-xs hidden-lg">
+                    <div class="cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.8s" style="visibility: visible; animation-name: flipInY;">
+                        <img src="img/content/dessert/d-c-5.jpg" alt="5">
+                    </div>
+                    <div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.9s" style="visibility: visible; animation-name: flipInY;">
+                        <img src="img/content/dessert/d-h-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column-two">
+                    <div class="group">
+                        <div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.4s" style="visibility: visible; animation-name: flipInY;">
+                            <img src="img/content/dessert/d-h-2.jpg" alt="">
+                        </div>
+                        <div class="height-cell undergroup">
+                            <div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.5s" style="visibility: visible; animation-name: flipInY;">
+                                <img src="img/content/dessert/d-c-3.jpg" alt="">
+                            </div>
+                            <div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.6s" style="visibility: visible; animation-name: flipInY;">
+                                <img src="img/content/dessert/d-c-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.7s" style="visibility: visible; animation-name: flipInY;">
+                        <img src="img/content/dessert/d-w-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column-three hidden-xs hidden-md">
+                    <div class="cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.8s" style="visibility: visible; animation-name: flipInY;">
+                        <img src="img/content/dessert/d-c-5.jpg" alt="5">
+                    </div>
+                    <div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.9s" style="visibility: visible; animation-name: flipInY;">
+                        <img src="img/content/dessert/d-h-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- - - - - - - end десерты - - - - - - - - - -->
 
-	<!--- - - - - - - опрос/купон - - - - - - - - - -->
-	<section class="coupons" id="coupons">
-		<div class="container">
-			<div class="row">
-				<div class="content">
-					<div class="col-md-6 wow bounceInLeft" data-wow-offset="100" style="visibility: visible; animation-name: bounceInLeft;">
-						<div class="cell opros">
-							<div class="mask text-center">
-								<div class="mask-text">
-									<p>
-										Хочешь ли ты расслабиться или зарядиться энергией, в Шоколаднице тебе будет хорошо и легко благодаря дружелюбной обстановке, вкусной еде и вниманию к мелочам
-									</p>
-								</div>
-								<button type="button" class="btn-blue" id="openInterview" name="button" data-toggle="modal" data-target="#interview">пройти опрос</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 wow bounceInLeft" data-wow-offset="100" style="visibility: visible; animation-name: bounceInRight;">
-						<div class="cell coupon">
-							<div class="mask text-center">
-								<div class="mask-text">
-									<div class="coupon-icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="54" height="30" viewBox="0 0 54 30"><path fill="#d7b7a6" d="M52.88 0H15.75L13.5 2.3 11.25 0H1.13C.5 0 0 .52 0 1.15v27.7C0 29.49.5 30 1.13 30h10.12l2.25-2.3 2.25 2.3h37.13c.62 0 1.12-.51 1.12-1.15V1.15C54 .52 53.5 0 52.88 0zm-1.13 27.7H16.68l-1.59-1.64-1.59-1.63-1.59 1.63-1.59 1.63H2.25V2.31h8.07l1.59 1.63 1.59 1.63 1.59-1.63 1.59-1.63h35.07zM29.25 5.76a4.56 4.56 0 0 0-4.5 4.61 4.56 4.56 0 0 0 4.5 4.62c2.49 0 4.5-2.07 4.5-4.62a4.56 4.56 0 0 0-4.5-4.61zm0 6.92A2.28 2.28 0 0 1 27 10.4c0-1.28 1.01-2.31 2.25-2.31a2.28 2.28 0 0 1 2.25 2.3c0 1.28-1.01 2.31-2.25 2.31zm9 2.31a4.56 4.56 0 0 0-4.5 4.62 4.57 4.57 0 0 0 4.5 4.61c2.49 0 4.5-2.07 4.5-4.61a4.56 4.56 0 0 0-4.5-4.62zm0 6.92a2.28 2.28 0 0 1-2.25-2.3c0-1.28 1.01-2.31 2.25-2.31a2.28 2.28 0 0 1 2.25 2.3c0 1.28-1.01 2.31-2.25 2.31zm3.38-16.15c-.31 0-.6.13-.8.34L25.08 22.26c-.2.21-.33.5-.33.82 0 .64.5 1.15 1.13 1.15.31 0 .59-.13.79-.34L42.42 7.74c.21-.21.33-.5.33-.82 0-.63-.5-1.15-1.12-1.15zM13.5 6.92c-.62 0-1.12.52-1.12 1.16 0 .64.5 1.15 1.12 1.15.62 0 1.13-.51 1.13-1.15 0-.64-.51-1.16-1.13-1.16zm0 4.62c-.62 0-1.12.51-1.12 1.15 0 .64.5 1.16 1.12 1.16.62 0 1.13-.52 1.13-1.16 0-.64-.51-1.15-1.13-1.15zm0 4.61c-.62 0-1.12.52-1.12 1.16 0 .63.5 1.15 1.12 1.15.62 0 1.13-.52 1.13-1.15 0-.64-.51-1.16-1.13-1.16zm0 4.62c-.62 0-1.12.52-1.12 1.15 0 .64.5 1.16 1.12 1.16.62 0 1.13-.52 1.13-1.16 0-.63-.51-1.15-1.13-1.15z"/></svg>
-									</div>
-									<p>
-										Получите <span>скидку 300 рублей</span> при заказе от 1 000 рублей
-									</p>
-								</div>
-								<button type="button" class="btn-blue" name="button" data-toggle="modal" data-target="#myModal">получить купон</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--- - - - - - - end опрос/купон - - - - - - - - - -->
-
-	<!--- - - - - - - десерты - - - - - - - - - -->
-
-	<section class="dessert text-center">
-		<div class="container">
-			<div class="row">
-				<div class="content">
-					<div class="column-one">
-						<div class="width-cell img-cell wow bounceInLeft" data-wow-offset="100" style="visibility: visible; animation-name: flipInY;">
-							<img src="images/content/dessert/d-w-1.jpg" alt="">
-						</div>
-						<div class="group">
-							<div class="height-cell undergroup">
-								<div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.1s" style="visibility: visible; animation-name: flipInY;">
-									<img src="images/content/dessert/d-c-1.jpg" alt="">
-								</div>
-								<div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.2s" style="visibility: visible; animation-name: flipInY;">
-									<img src="images/content/dessert/d-c-2.jpg" alt="">
-								</div>
-							</div>
-							<div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.3s" style="visibility: visible; animation-name: flipInY;">
-								<img src="images/content/dessert/d-h-1.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="column-three hidden-md hidden-xs hidden-lg">
-						<div class="cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.8s" style="visibility: visible; animation-name: flipInY;">
-							<img src="images/content/dessert/d-c-5.jpg" alt="5">
-						</div>
-						<div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.9s" style="visibility: visible; animation-name: flipInY;">
-							<img src="images/content/dessert/d-h-3.jpg" alt="">
-						</div>
-					</div>
-					<div class="column-two">
-						<div class="group">
-							<div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.4s" style="visibility: visible; animation-name: flipInY;">
-								<img src="images/content/dessert/d-h-2.jpg" alt="">
-							</div>
-							<div class="height-cell undergroup">
-								<div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.5s" style="visibility: visible; animation-name: flipInY;">
-									<img src="images/content/dessert/d-c-3.jpg" alt="">
-								</div>
-								<div class="cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.6s" style="visibility: visible; animation-name: flipInY;">
-									<img src="images/content/dessert/d-c-4.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="width-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.7s" style="visibility: visible; animation-name: flipInY;">
-							<img src="images/content/dessert/d-w-2.jpg" alt="">
-						</div>
-					</div>
-					<div class="column-three hidden-xs hidden-md">
-						<div class="cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.8s" style="visibility: visible; animation-name: flipInY;">
-							<img src="images/content/dessert/d-c-5.jpg" alt="5">
-						</div>
-						<div class="height-cell img-cell wow bounceInLeft" data-wow-offset="100" data-wow-delay="0.9s" style="visibility: visible; animation-name: flipInY;">
-							<img src="images/content/dessert/d-h-3.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--- - - - - - - end десерты - - - - - - - - - -->
-
-	<!--- - - - - - - слайдер 2 - - - - - - - - - -->
-	<section class="slider-two" id="news">
-		<div class="bg-slider">
-			<div class="owl-carousel owl-theme">
-				<div>
-					<div class="an-screen an-screen-one">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Удовольствие</h1>
-								<h2>Призвание Шоколадницы — дарить удовольствие. Всё, что она делает, служит этой цели — будь то вкус, атмосфера, сервис, посуда или внешний вид и манеры официанта</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="an-screen an-screen-two">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Качество</h1>
-								<h2>Обеспечивая удовольствие гостя, Шоколадница уделяет внимание каждой детали, даже если та на первый взгляд кажется мелкой и незаметна для клиентов</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="an-screen an-screen-three">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Актуальность</h1>
-								<h2>Шоколадница современна и чувствует дух времени. Она следит за мировыми и локальными трендами, за модой и за переменами во вкусах гостей — чтобы меняться вместе с ними</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="an-screen an-screen-four">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Дружба</h1>
-								<h2>Шоколадница хорошо понимает каждого клиента и стремится стать его другом, знающим, как порадовать и доставить удовольствие. Поэтому гости любят заходить к ней часто</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="an-screen an-screen-five">
-						<div class="slide-content">
-							<div class="container">
-								<h1>Вместе с городом</h1>
-								<h2>Шоколадница прекрасно знает город и его особенности, она «своя». Она в курсе пристрастий и привычек местных жителей, участвует в жизни города и его сообществ.<br>
-									В своём меню и интерьере Шоколадница отражает городскую культуру или местные достопримечательности</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--- - - - - - - end слайдер 2 - - - - - - - - - -->
+<!--- - - - - - - слайдер 2 - - - - - - - - - -->
+<section class="slider-two" id="jack-news">
+    <div class="bg-slider">
+        <div class="owl-carousel owl-theme">
+            <div>
+                <div class="an-screen an-screen-one">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Удовольствие</h1>
+                            <h2>Призвание Шоколадницы — дарить удовольствие. Всё, что она делает, служит этой цели — будь то вкус, атмосфера, сервис, посуда или внешний вид и манеры официанта</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="an-screen an-screen-two">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Качество</h1>
+                            <h2>Обеспечивая удовольствие гостя, Шоколадница уделяет внимание каждой детали, даже если та на первый взгляд кажется мелкой и незаметна для клиентов</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="an-screen an-screen-three">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Актуальность</h1>
+                            <h2>Шоколадница современна и чувствует дух времени. Она следит за мировыми и локальными трендами, за модой и за переменами во вкусах гостей — чтобы меняться вместе с ними</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="an-screen an-screen-four">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Дружба</h1>
+                            <h2>Шоколадница хорошо понимает каждого клиента и стремится стать его другом, знающим, как порадовать и доставить удовольствие. Поэтому гости любят заходить к ней часто</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="an-screen an-screen-five">
+                    <div class="slide-content">
+                        <div class="container">
+                            <h1>Вместе с городом</h1>
+                            <h2>Шоколадница прекрасно знает город и его особенности, она «своя». Она в курсе пристрастий и привычек местных жителей, участвует в жизни города и его сообществ.<br>
+                                В своём меню и интерьере Шоколадница отражает городскую культуру или местные достопримечательности</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- - - - - - - end слайдер 2 - - - - - - - - - -->
 
 
-	<!--- - - - - - - карта - - - - - - - - - -->
+<!--- - - - - - - карта - - - - - - - - - -->
+<section class="map" id="jack-map"></section>
+<!--- - - - - - - end карта - - - - - - - - - -->
+<!-- - - - -  - обратная связь - - - - - - - - - - -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Получить купон</h4>
+            </div>
+            <div class="modal-body">
+                <form class="text-center" action="index.html" method="post">
+                    <div class="form-group">
+                        <input type="text" name="" value="" placeholder="Имя">
+                        <input type="tel" class="bfh-phone" name="phoneNumber" data-format="+7 (ddd) ddd-dddd" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn-blue" name="button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- - - - -  -end обратная связь - - - - - - - - - - -->
 
-	<section class="map" id="map"></section>
+<!-- - - - -  - опрос - - - - - - - - - - -->
+<div class="modal fade" id="interview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Опрос</h4>
+            </div>
+            <div class="modal-body">
+                <form class="text-center" action="index.html" method="post">
+                    <div class="form-group">
+                        <div id="type_text" class="box"></div>
+                    </div>
+                    <div class="form-group section-stars">
+                        <button type="button" class="btn-star fa fa-star" name="button"></button>
+                        <button type="button" class="btn-star fa fa-star" name="button"></button>
+                        <button type="button" class="btn-star fa fa-star" name="button"></button>
+                        <button type="button" class="btn-star fa fa-star" name="button"></button>
+                        <button type="button" class="btn-star fa fa-star" name="button"></button>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="nextQuestion" class="btn-blue btn-next" name="button" disabled>Далее</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- - - - -  -end опрос - - - - - - - - - - -->
 
-	<!--- - - - - - - end карта - - - - - - - - - -->
+<footer>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <a href="#jack-home">
+                    <img src="svg/logo-bottom.svg" alt="logo">
+                </a>
+            </div>
+            <div class="social-networks">
+                <a href="http://vk.com/shokoru" target="_blank">
+                    <div class="radial-cell">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="https://facebook.com/shoko.ru" target="_blank">
+                    <div class="radial-cell">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="http://instagram.com/shoko.ru" target="_blank">
+                    <div class="radial-cell">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
 
-	<!-- - - - -  - - footer - - - - - - - - - - - -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-hide"><a href="#jack-coupons">Опрос</a></li>
+                <li class="navbar-hide"><a href="#jack-news">Что нового?</a></li>
+                <li class="navbar-hide"><a href="#jack-map">Адреса</a></li>
+            </ul>
 
-	<footer>
-		<div class="container">
-			<div class="navbar-header">
-				<a href="#home">
-					<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.4 71.7"><defs><style>.cls-1{fill:#8b7c72;}</style></defs><title>Ресурс 3</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_2-2" data-name="Слой 2"><path class="cls-1" d="M130.33,45c-3.37,0-5.09-2.57-5.09-6.06s1.76-6,5.09-6,5.09,2.61,5.09,6-1.72,6-5.09,6.06m0-16.56c-6.7,0-10.55,4.53-10.55,10.51s3.73,10.55,10.55,10.55S140.88,45,140.88,38.9s-3.81-10.51-10.55-10.51"/><path class="cls-1" d="M162.73,28.83h-6L149.9,37.2V28.83h-6.41s1,2.25,1,9.14V48.88h5.41V40l6.22,8.88h6.42L155,38.33Z"/><path class="cls-1" d="M35.81,66.25c-16.68,0-30.2-12.47-30.2-30.36S19.13,5.45,35.81,5.45,66,17.93,66,35.89,52.45,66.25,35.81,66.25M35.81,0C16.08,0,0,14.92,0,35.89S16.08,71.7,35.81,71.7,71.62,56.78,71.62,35.89,55.54,0,35.81,0"/><path class="cls-1" d="M49.41,22.3H43.91a21.07,21.07,0,0,1,2,7.86c0,5.05-3.81,10.23-3.81,15.32a12.24,12.24,0,0,0,.72,4.33h5.49a12.24,12.24,0,0,1-.72-4.33c0-5.09,3.81-10.27,3.81-15.32a21.08,21.08,0,0,0-2-7.86"/><path class="cls-1" d="M27.43,22.3H21.94a21.07,21.07,0,0,1,2,7.86c0,5.05-3.81,10.23-3.81,15.32a12.21,12.21,0,0,0,.72,4.33h5.49a12.22,12.22,0,0,1-.72-4.33c0-5.09,3.81-10.27,3.81-15.32a21.07,21.07,0,0,0-2-7.86"/><path class="cls-1" d="M38.42,22.3H32.92a21.07,21.07,0,0,1,2,7.86c0,5.05-3.81,10.23-3.81,15.32a12.22,12.22,0,0,0,.72,4.33h5.49a12.22,12.22,0,0,1-.72-4.33c0-5.09,3.81-10.27,3.81-15.32a21.07,21.07,0,0,0-2-7.86"/><path class="cls-1" d="M110.68,44.19h-6V22.82H99.17V44.19h-6V22.82H85.94c1.12,1.72,1.72,4.41,1.72,9.18V48.88h28.51V22.82h-5.49Z"/><polygon class="cls-1" points="286.29 40.85 286.29 28.83 280.87 28.83 280.87 48.88 286.29 48.88 294.31 36.83 294.31 48.88 299.72 48.88 299.72 28.83 294.31 28.83 286.29 40.85"/><path class="cls-1" d="M324.58,44.27h-2.41V28.83h-5.41V44.27h-7.62V28.83h-5.41V48.88h15.44c.25,3.42,1,4.61,1,4.61h5.41s-1.44-2.25-1-9.22"/><path class="cls-1" d="M271.45,36.41h-8V28.83H257s1,2.25,1,9.22V48.88h5.41V41h8v7.86h5.41V28.83h-5.41Z"/><path class="cls-1" d="M336.21,45.07c-3.09,0-5-2.41-5-6s1.81-6.26,5-6.3c3.65,0,5.45,2.45,5.45,6.06s-2.17,6.22-5.45,6.22m12.19,3.81c-1-1.73-1.24-3.69-1.24-10.27V28.83h-5.41v1.62a8.74,8.74,0,0,0-6.13-2.06c-6.14,0-9.83,4.85-9.83,10.87,0,6.58,4.21,10.19,9.3,10.19A9.06,9.06,0,0,0,342,46.32a6,6,0,0,0,1,2.57Z"/><path class="cls-1" d="M173.24,45c-3.37,0-5.09-2.57-5.09-6.06s1.76-6,5.09-6,5.09,2.61,5.09,6-1.72,6-5.09,6.06m0-16.56c-6.7,0-10.55,4.53-10.55,10.51s3.73,10.55,10.55,10.55S183.79,45,183.79,38.9,180,28.39,173.24,28.39"/><path class="cls-1" d="M188.84,41.55c0,2.21-.84,3.13-2.37,3.13a3.32,3.32,0,0,1-1.28-.24v4.49a6,6,0,0,0,2.57.52c5.17,0,6.34-4.09,6.34-7.82V33.45h4.81V48.88h5.41V28.83H188.88Z"/><path class="cls-1" d="M218.35,45.07c-3.09,0-5-2.41-5-6s1.81-6.25,5-6.3c3.65,0,5.45,2.45,5.45,6.06s-2.17,6.22-5.45,6.22M229.3,28.83h-5.41v1.62a8.74,8.74,0,0,0-6.14-2.06c-6.14,0-9.83,4.85-9.83,10.87,0,6.58,4.21,10.19,9.3,10.19a9.06,9.06,0,0,0,6.92-3.13,6,6,0,0,0,1,2.57h5.41c-1-1.73-1.24-3.69-1.24-10.27Z"/><path class="cls-1" d="M243.46,45c-3.09,0-5.13-2-5.13-5.73,0-3.17,1.68-5.9,5.29-5.9,3.37,0,5.13,2.57,5.13,5.61,0,3.45-1.93,6-5.29,6m-.84-23.9a13.21,13.21,0,0,0-8.22,2.57v4.61a13.17,13.17,0,0,1,7.86-2.57c4.42,0,6.55,2.29,6.68,5.34a8.68,8.68,0,0,0-6.12-2.17c-6.34,0-9.94,4.65-9.94,10.43s3.53,10.19,10.19,10.19c6.82,0,11.31-4.37,11.31-13.63v-.56c0-9.59-4.25-14.2-11.75-14.2"/></g></g></svg></div>
-				</a>
-			</div>
-			<div class="nav navbar-nav">
-				<div class="social-networks">
-					<a href="http://vk.com/shokoru" target="_blank">
-						<div class="radial-cell">
-							<i class="fa fa-vk" aria-hidden="true"></i>
-						</div>
-					</a>
-					<a href="https://facebook.com/shoko.ru" target="_blank">
-						<div class="radial-cell">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-						</div>
-					</a>
-					<a href="http://instagram.com/shoko.ru" target="_blank">
-						<div class="radial-cell">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</div>
-					</a>
-				</div>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="navbar-hide"><a href="#coupons">Опрос</a></li>
-				<li class="navbar-hide"><a href="#news">Что нового?</a></li>
-				<li class="navbar-hide"><a href="#map">Адреса</a></li>
-			</ul>
-		</div>
-	</footer>
+        </div>
+    </div>
+</footer>
+<!-- scripts -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT7bL4xb7HN1IviJp3H9JVvDjtiySlIFo"></script>
+<script src="js/bundle.js"></script>
+<!-- end scripts -->
 
-	<!-- - - - -  - end footer - - - - - - - - - - -->
-
-	<!-- - - - -  - Модальные окна - - - - - - - - - - -->
-
-	<!-- - - - -  - обратная связь - - - - - - - - - - -->
-
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					<h4 class="modal-title" id="myModalLabel">Получить купон</h4>
-				</div>
-				<div class="modal-body">
-					<form class="text-center" action="index.html" method="post">
-						<div class="form-group">
-							<input type="text" name="" value="" placeholder="Имя">
-							<input type="tel" class="bfh-phone" name="phoneNumber" data-format="+7 (ddd) ddd-dddd" required>
-						</div>
-						<div class="form-group">
-							<button type="button" class="btn-blue" name="button">Отправить</button>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- - - - -  -end обратная связь - - - - - - - - - - -->
-
-	<!-- - - - -  - опрос - - - - - - - - - - -->
-
-	<div class="modal fade" id="interview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					<h4 class="modal-title" id="myModalLabel">Опрос</h4>
-				</div>
-				<div class="modal-body">
-					<form class="text-center" action="index.html" method="post">
-						<div class="form-group">
-							<div id="type_text" class="box"></div>
-						</div>
-						<div class="form-group section-stars">
-							<button type="button" class="btn-star fa fa-star" name="button"></button>
-							<button type="button" class="btn-star fa fa-star" name="button"></button>
-							<button type="button" class="btn-star fa fa-star" name="button"></button>
-							<button type="button" class="btn-star fa fa-star" name="button"></button>
-							<button type="button" class="btn-star fa fa-star" name="button"></button>
-						</div>
-						<div class="form-group">
-							<button type="button" id="nextQuestion" class="btn-blue btn-next" name="button" disabled>Далее</button>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- - - - -  -end опрос - - - - - - - - - - -->
-
-	<!-- - - - -  -end Модальные окна - - - - - - - - - - -->
-
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
-	<script type="text/javascript" src="bower_components/wow/dist/wow.min.js"></script>
-	<script type="text/javascript" src="bower_components/bootstrap-formhelpers/js/bootstrap-formhelpers-phone.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 </body>
-
 </html>
