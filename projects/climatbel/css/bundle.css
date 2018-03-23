@@ -6696,7 +6696,6 @@ button.close {
   z-index: 1; }
 
 .top-logo {
-  background: url("../img/system/logo.png") no-repeat;
   width: 220px;
   height: 73px;
   float: left;
@@ -6882,14 +6881,12 @@ body {
   width: 937px;
   height: 1px;
   position: absolute;
-  margin: auto;
-  margin: 84px 101px 0 69px; }
+  margin: 93px 162px 0; }
 
 .we-working-cell {
   width: 180px;
   top: 28px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin: 10px 25px;
   position: relative;
   display: inline-block;
   vertical-align: top; }
@@ -6910,7 +6907,7 @@ body {
   height: 25px;
   text-align: center;
   background: #fff;
-  margin-left: 7px;
+  margin-left: 22px;
   padding: 2px; }
 
 .sprites-we-works {
@@ -7062,7 +7059,7 @@ body {
 .add-services-page {
   padding: 100px 0 120px 0;
   background: url("../img/system/Add-services-bg.jpg");
-  background-position-x: center;
+  background-size: cover;
   font-family: "PFSquareSansProMedium"; }
 
 .add-services-container {
@@ -7072,8 +7069,7 @@ body {
 .add-services-cell {
   width: 210px;
   top: 28px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px;
   position: relative;
   display: inline-block;
   vertical-align: top; }
@@ -7178,18 +7174,16 @@ body {
 .recup-winter {
   background: url("../img/content/recup-winter.png") no-repeat;
   height: 475px;
-  width: 580px;
+  width: 100%;
   position: relative;
-  background-position-x: center;
-  left: -100px; }
+  background-size: contain; }
 
 .recup-summer {
   background: url("../img/content/recup-summer.png") no-repeat;
   height: 475px;
-  width: 580px;
+  width: 100%;
   position: relative;
-  background-position-x: center;
-  left: -100px; }
+  background-size: contain; }
 
 /*--- - - - - - --- end Рекуператор -------------------*/
 /*------------------- Наши работы-----------------------*/
@@ -7335,14 +7329,15 @@ body {
 /*---------------- end Партнеры -----------------*/
 /*----------------- Контакты --------------------*/
 .contacts-form {
-  width: 970px;
+  max-width: 970px;
   -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.31);
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.31);
   margin: auto;
+  left: 0;
+  right: 0;
   border-radius: 5px;
-  position: relative;
-  top: 268px;
-  margin-top: -268px;
+  position: absolute;
+  bottom: 350px;
   background: #fff; }
 
 .form2 {
@@ -7370,12 +7365,12 @@ body {
 
 .line-rotate {
   width: 1px;
-  height: 342px;
+  height: 330px;
   background: #ededed;
   -webkit-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   transform: rotate(20deg);
-  margin: -10px auto; }
+  margin: -12px auto; }
 
 .contacts-block {
   padding-right: 50px;
@@ -7391,7 +7386,8 @@ body {
   font-family: "PFSquareSansProMedium"; }
 
 .map {
-  margin-bottom: -6px; }
+  margin-bottom: -6px;
+  position: relative; }
 
 /*--------------- end Контакты ------------------*/
 .footer {
@@ -7673,6 +7669,16 @@ body {
   .modal .modal-dialog {
     width: 398px; } }
 
+@media screen and (max-width: 767px) {
+  .header {
+    text-align: center; }
+    .header .logo {
+      float: none;
+      margin: 0 auto; }
+    .header .header-contacts {
+      margin: auto;
+      float: none; } }
+
 @media (max-width: 768px) {
   .header-contacts {
     position: inherit;
@@ -7684,8 +7690,6 @@ body {
     margin-top: 15px; }
   .start-page {
     height: 470px; }
-  .start-page .btn-application, .we-working-page .btn-application {
-    width: 100%; }
   .text-50px-blue {
     font-size: 39px;
     padding-top: 20px; }
@@ -7732,19 +7736,6 @@ body {
     width: auto;
     left: 0;
     background-size: contain; }
-  .rekuperator-page {
-    padding: 30px 0 40px 0; }
-  .rekuperator-page .nav-tabs {
-    width: 100%; }
-  .container .nav-tabs li {
-    width: 50%; }
-  .container .nav-tabs > li > a {
-    width: 100%; }
-  .recuperator-info {
-    width: auto;
-    padding: 0 0 0 15px; }
-  .tab-content .btn-application {
-    width: 100%; }
   .review-page {
     padding: 40px 0 40px 0; }
   .owl-prev {
@@ -7755,7 +7746,7 @@ body {
     left: -14px; }
   .review-page .owl-next {
     right: -14px; }
-  .partners-page, .start-page, .advantages-page, .add-services-page {
+  .start-page, .advantages-page, .add-services-page {
     background-image: none; }
   .lg {
     background-position: 15px 0; }
@@ -7782,9 +7773,31 @@ body {
   .text-16px-gray {
     margin-bottom: 30px; } }
 
+@media screen and (max-width: 991px) {
+  .text-50px-blue {
+    font-size: 40px; }
+  .partners-page {
+    background-image: none;
+    padding: 0; }
+  .contacts-form {
+    position: relative;
+    bottom: 0; }
+  .rekuperator-page {
+    padding: 30px 0 40px 0; }
+  .rekuperator-page .nav-tabs {
+    width: 100%; }
+  .container .nav-tabs li {
+    width: 50%; }
+  .container .nav-tabs > li > a {
+    width: 100%; }
+  .recuperator-info {
+    width: auto;
+    padding: 0 0 0 15px; }
+  .tab-content .btn-application {
+    margin: auto;
+    display: block; } }
+
 @media (min-width: 1024px) {
-  .recup-winter, .recup-summer {
-    left: -160px; }
   .owl-prev {
     left: -28px; }
   .owl-next {
@@ -7792,14 +7805,12 @@ body {
   .review-page .owl-prev {
     left: -14px; }
   .review-page .owl-next {
-    right: -14px; }
-  .contacts-form {
-    width: 958px; } }
-
-@media (max-width: 1024px) {
-  .start-page .EDGE-332351892 {
-    width: 1489px !important; } }
+    right: -14px; } }
 
 @media (min-width: 1200px) {
   .recup-winter, .recup-summer {
     left: -100px; } }
+
+@media screen and (max-width: 1210px) {
+  .EDGE-332351892 {
+    display: none; } }

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Gotham Pro Light";
+    src: url("GothamProLightItalic.eot"); /* IE9 */
+    src: url("GothamProLightItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("GothamProLightItalic.woff") format("woff"), /* chrome, firefox */
+    url("GothamProLightItalic.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("GothamProLightItalic.svg#Gotham Pro Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

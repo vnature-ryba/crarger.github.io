@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "a_MonumentoTitul";
+    src: url("amonumentotitul_bold.eot"); /* IE9 */
+    src: url("amonumentotitul_bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("amonumentotitul_bold.woff") format("woff"), /* chrome, firefox */
+    url("amonumentotitul_bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("amonumentotitul_bold.svg#a_MonumentoTitul") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

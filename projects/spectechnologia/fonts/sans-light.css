@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Yandex Sans Text Light";
+    src: url("sans-light.eot"); /* IE9 */
+    src: url("sans-light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("sans-light.woff") format("woff"), /* chrome, firefox */
+    url("sans-light.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("sans-light.svg#Yandex Sans Text Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
