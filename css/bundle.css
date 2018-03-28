@@ -81,12 +81,24 @@ body a {
   padding: 0 10px 20px;
   background-color: gainsboro;
   border-radius: 3px;
-  -webkit-box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.46);
-  box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.46); }
+  -webkit-box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
   .cell:after {
     content: "";
     display: block;
     padding-bottom: 1%; }
+  .cell:hover {
+    -webkit-box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.45);
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top; }
   .cell a {
     color: rgba(255, 255, 255, 0.15); }
     .cell a:hover {
