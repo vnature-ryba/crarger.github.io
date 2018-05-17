@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Рассчет стоимости дома</title>
+    <meta name="description"
+          content="Калькулятор рассчета стоимости дома">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!--theme color-->
+    <meta name="theme-color" content="rgb(128, 12, 116)">
+    <meta name="msapplication-navbutton-color" content="rgb(128, 12, 116)">
+    <meta name="apple-mobile-web-app-status-bar-style" content="rgb(128, 12, 116)">
+    
+    <!--favicons-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/favicon-152.png">
+    <link rel="icon" sizes="128x128" href="img/icons/favicon-128.png">
+    <link rel="icon" sizes="192x192" href="img/icons/favicon-192.png">
+    <!--opengraph-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Дом Недорого">
+    <meta property="og:title" content="Рассчет стоимости">
+    <meta property="og:description" content="Калькулятор рассчета стоимости дома строительной компании Дом Недорого">
+    <meta property="og:url" content="http://stroitelstvodomov.pro">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="img/content/og.jpg">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+    <meta property="og:image" content="img/content">
+    
+    <!--css-->
+    <link rel="stylesheet" href="css/bundle.css"> <!-- Подключаем CSS -->
+</head>
+<body>
+
+<div class="container-fluid calculator" id="calculator">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <div class="col-xs-12 calculator-block">
+                            <div class="row">
+                                <h1 class="title">Рассчёт стоимости&nbsp;дома</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>1. Размеры</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <input type="number" id="sizeLenght" name="sizeLenght" min="0"
+                                                   class="form-control" value="5"
+                                                   placeholder="Длина">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <input type="number" id="sizeWidth" name="sizeWidth" min="0"
+                                                   class="form-control" value="5"
+                                                   placeholder="Ширина">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>2. Этажность</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator wiring">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <select name="floor" class="dropdown">
+                                                <option value="1">1</option>
+                                                <option value="1.5">1,5 - мансардный</option>
+                                                <option value="2">2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>Высота этажа:</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <select name="heightFloor" class="dropdown">
+                                                <option value="2.5">2,5</option>
+                                                <option value="2.7">2,7</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>3. Фундамент</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator plumbing">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <select name="foundation" class="dropdown">
+                                                <option value="banded">Ленточный</option>
+                                                <option value="monolith">Монолитный</option>
+                                                <option value="Pile-driving">Свайно-забивной</option>
+                                                <option value="Pile-screw">Свайно-винтовой</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>4. Материал стен</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator plumbing">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <select name="wallsMaterial" class="dropdown">
+                                                <option value="Frame">Каркас</option>
+                                                <option value="Glued-beams">Клееный брус</option>
+                                                <option value="Blocks">Блоки</option>
+                                                <option value="Brick">Кирпич</option>
+                                                <option value="Profiled-beam">Профилированный брус</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-decoration">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>5. Внешняя отделка</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator plumbing">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <select name="exterierDecoration" class="dropdown">
+                                                <option value="Putty">Штукатурка</option>
+                                                <option value="osb">ОСБ-плита</option>
+                                                <option value="Simulation-bar">Имитация бруса
+                                                </option>
+                                                <option value="Japan-panele">Японские панели
+                                                </option>
+                                                <option value="Siding">Сайдинг</option>
+                                                <option value="Hauberg">Плитка Хауберг Технониколь</option>
+                                                <option value="Brick">Облицовочный кирпич</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-9 col-md-offset-3 data-calculator plumbing">
+                                    <div class="row extra">
+                                        <div class="col-xs-12 col-sm-5">
+                                            <label class="label-checkbox">
+                                                <input class="checkbox" type="checkbox" checked name="stairs">Лестница
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                            <label class="label-checkbox">
+                                                <input class="checkbox" type="checkbox" name="ironDoor">Металлическая
+                                                дверь
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5">
+                                            <label class="label-checkbox">
+                                                <input class="checkbox" type="checkbox" name="windows">Окна
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                            <label class="label-checkbox">
+                                                <input class="checkbox" type="checkbox" name="communications">Коммуникации
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 footer-calculator">
+                                    <div class="row">
+                                        <div class="text-center">
+                                            <h3 class="footer-calculator-title">
+                                                Стоимость дома является примерной и зависит от города, в котором будет
+                                                производиться строительство.<br>
+                                                Чтобы получить точную стоимость закажите рассчет.
+                                            </h3>
+                                        </div>
+                                        <div class="col-xs-12 col-md-7 price-center">
+                                            <span class="price">от <span class="money">27 900</span> р</span>
+                                        </div>
+                                        <div class="col-xs-12 col-md-5">
+                                            <button class="btn-purple requestCall6" data-toggle="modal"
+                                                    data-target="#request">Заказать точный рассчет
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- заказать звонок -->
+<div class="modal fade" id="request" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Мы Вам перезвоним<br>и ответим на <span>все вопросы</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form action="/download-present/" method="POST" id="modal-franchise">
+                    <!--{% csrf_token %}-->
+                    <input type="text" name="full-name" required placeholder="Ваше имя *">
+                    <input type="text" name="num-phone" placeholder="Ваш телефон">
+                    <input type="email" name="email" required placeholder="E-mail">
+                    <input type="text" name="city" required placeholder="Город">
+                    <button class="btn-purple" type="submit"
+                            onclick="yaCounter38004405.reachGoal('colbeck_old'); return true;">Оставить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end заказать звонок -->
+<!-- scripts -->
+<script src="js/bundle.js"></script>
+<!-- end scripts -->
+
+</body>
+</html>
