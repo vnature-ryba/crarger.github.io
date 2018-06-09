@@ -49,134 +49,297 @@ disable:function(){this.disabled=!0;this.$container.addClass("disabled");this.$s
 for(var d="",e=0;e<a.length;e++)b.prototype.definitions[a.charAt(e)]||c.definitions[a.charAt(e)]||c.optionalmarker.start===a.charAt(e)||c.optionalmarker.end===a.charAt(e)||c.quantifiermarker.start===a.charAt(e)||c.quantifiermarker.end===a.charAt(e)||c.groupmarker.start===a.charAt(e)||c.groupmarker.end===a.charAt(e)||c.alternatormarker===a.charAt(e)?d+="\\"+a.charAt(e):d+=a.charAt(e);return d}return b.extendAliases({numeric:{mask:function(a){if(0!==a.repeat&&isNaN(a.integerDigits)&&(a.integerDigits=a.repeat),a.repeat=0,a.groupSeparator===a.radixPoint&&("."===a.radixPoint?a.groupSeparator=",":","===a.radixPoint?a.groupSeparator=".":a.groupSeparator="")," "===a.groupSeparator&&(a.skipOptionalPartCharacter=c),a.autoGroup=a.autoGroup&&""!==a.groupSeparator,a.autoGroup&&("string"==typeof a.groupSize&&isFinite(a.groupSize)&&(a.groupSize=parseInt(a.groupSize)),isFinite(a.integerDigits))){var b=Math.floor(a.integerDigits/a.groupSize),e=a.integerDigits%a.groupSize;a.integerDigits=parseInt(a.integerDigits)+(0===e?b-1:b),a.integerDigits<1&&(a.integerDigits="*")}a.placeholder.length>1&&(a.placeholder=a.placeholder.charAt(0)),"radixFocus"===a.positionCaretOnClick&&""===a.placeholder&&!1===a.integerOptional&&(a.positionCaretOnClick="lvp"),a.definitions[";"]=a.definitions["~"],a.definitions[";"].definitionSymbol="~",!0===a.numericInput&&(a.positionCaretOnClick="radixFocus"===a.positionCaretOnClick?"lvp":a.positionCaretOnClick,a.digitsOptional=!1,isNaN(a.digits)&&(a.digits=2),a.decimalProtect=!1);var f="[+]";if(f+=d(a.prefix,a),!0===a.integerOptional?f+="~{1,"+a.integerDigits+"}":f+="~{"+a.integerDigits+"}",a.digits!==c){a.radixPointDefinitionSymbol=a.decimalProtect?":":a.radixPoint;var g=a.digits.toString().split(",");isFinite(g[0]&&g[1]&&isFinite(g[1]))?f+=a.radixPointDefinitionSymbol+";{"+a.digits+"}":(isNaN(a.digits)||parseInt(a.digits)>0)&&(a.digitsOptional?f+="["+a.radixPointDefinitionSymbol+";{1,"+a.digits+"}]":f+=a.radixPointDefinitionSymbol+";{"+a.digits+"}")}return f+=d(a.suffix,a),f+="[-]",a.greedy=!1,f},placeholder:"",greedy:!1,digits:"*",digitsOptional:!0,enforceDigitsOnBlur:!1,radixPoint:".",positionCaretOnClick:"radixFocus",groupSize:3,groupSeparator:"",autoGroup:!1,allowMinus:!0,negationSymbol:{front:"-",back:""},integerDigits:"+",integerOptional:!0,prefix:"",suffix:"",rightAlign:!0,decimalProtect:!0,min:null,max:null,step:1,insertMode:!0,autoUnmask:!1,unmaskAsNumber:!1,inputmode:"numeric",preValidation:function(b,d,e,f,g){if("-"===e||e==g.negationSymbol.front)return!0===g.allowMinus&&(g.isNegative=g.isNegative===c||!g.isNegative,""===b.join("")||{caret:d,dopost:!0});if(!1===f&&e===g.radixPoint&&g.digits!==c&&(isNaN(g.digits)||parseInt(g.digits)>0)){var h=a.inArray(g.radixPoint,b);if(-1!==h)return!0===g.numericInput?d===h:{caret:h+1}}return!0},postValidation:function(d,e,f){var g=f.suffix.split(""),h=f.prefix.split("");if(e.pos==c&&e.caret!==c&&!0!==e.dopost)return e;var i=e.caret!=c?e.caret:e.pos,j=d.slice();f.numericInput&&(i=j.length-i-1,j=j.reverse());var k=j[i];if(k===f.groupSeparator&&(i+=1,k=j[i]),i==j.length-f.suffix.length-1&&k===f.radixPoint)return e;k!==c&&k!==f.radixPoint&&k!==f.negationSymbol.front&&k!==f.negationSymbol.back&&(j[i]="?",f.prefix.length>0&&i>=(!1===f.isNegative?1:0)&&i<f.prefix.length-1+(!1===f.isNegative?1:0)?h[i-(!1===f.isNegative?1:0)]="?":f.suffix.length>0&&i>=j.length-f.suffix.length-(!1===f.isNegative?1:0)&&(g[i-(j.length-f.suffix.length-(!1===f.isNegative?1:0))]="?")),h=h.join(""),g=g.join("");var l=j.join("").replace(h,"");if(l=l.replace(g,""),l=l.replace(new RegExp(b.escapeRegex(f.groupSeparator),"g"),""),l=l.replace(new RegExp("[-"+b.escapeRegex(f.negationSymbol.front)+"]","g"),""),l=l.replace(new RegExp(b.escapeRegex(f.negationSymbol.back)+"$"),""),isNaN(f.placeholder)&&(l=l.replace(new RegExp(b.escapeRegex(f.placeholder),"g"),"")),l.length>1&&1!==l.indexOf(f.radixPoint)&&("0"==k&&(l=l.replace(/^\?/g,"")),l=l.replace(/^0/g,"")),l.charAt(0)===f.radixPoint&&""!==f.radixPoint&&!0!==f.numericInput&&(l="0"+l),""!==l){if(l=l.split(""),(!f.digitsOptional||f.enforceDigitsOnBlur&&"blur"===e.event)&&isFinite(f.digits)){var m=a.inArray(f.radixPoint,l),n=a.inArray(f.radixPoint,j);-1===m&&(l.push(f.radixPoint),m=l.length-1);for(var o=1;o<=f.digits;o++)f.digitsOptional&&(!f.enforceDigitsOnBlur||"blur"!==e.event)||l[m+o]!==c&&l[m+o]!==f.placeholder.charAt(0)?-1!==n&&j[n+o]!==c&&(l[m+o]=l[m+o]||j[n+o]):l[m+o]=e.placeholder||f.placeholder.charAt(0)}if(!0!==f.autoGroup||""===f.groupSeparator||k===f.radixPoint&&e.pos===c&&!e.dopost)l=l.join("");else{var p=l[l.length-1]===f.radixPoint&&e.c===f.radixPoint;l=b(function(a,b){var c="";if(c+="("+b.groupSeparator+"*{"+b.groupSize+"}){*}",""!==b.radixPoint){var d=a.join("").split(b.radixPoint);d[1]&&(c+=b.radixPoint+"*{"+d[1].match(/^\d*\??\d*/)[0].length+"}")}return c}(l,f),{numericInput:!0,jitMasking:!0,definitions:{"*":{validator:"[0-9?]",cardinality:1}}}).format(l.join("")),p&&(l+=f.radixPoint),l.charAt(0)===f.groupSeparator&&l.substr(1)}}if(f.isNegative&&"blur"===e.event&&(f.isNegative="0"!==l),l=h+l,l+=g,f.isNegative&&(l=f.negationSymbol.front+l,l+=f.negationSymbol.back),l=l.split(""),k!==c)if(k!==f.radixPoint&&k!==f.negationSymbol.front&&k!==f.negationSymbol.back)i=a.inArray("?",l),i>-1?l[i]=k:i=e.caret||0;else if(k===f.radixPoint||k===f.negationSymbol.front||k===f.negationSymbol.back){var q=a.inArray(k,l);-1!==q&&(i=q)}f.numericInput&&(i=l.length-i-1,l=l.reverse());var r={caret:k===c||e.pos!==c?i+(f.numericInput?-1:1):i,buffer:l,refreshFromBuffer:e.dopost||d.join("")!==l.join("")};return r.refreshFromBuffer?r:e},onBeforeWrite:function(d,e,f,g){if(d)switch(d.type){case"keydown":return g.postValidation(e,{caret:f,dopost:!0},g);case"blur":case"checkval":var h;if(function(a){a.parseMinMaxOptions===c&&(null!==a.min&&(a.min=a.min.toString().replace(new RegExp(b.escapeRegex(a.groupSeparator),"g"),""),","===a.radixPoint&&(a.min=a.min.replace(a.radixPoint,".")),a.min=isFinite(a.min)?parseFloat(a.min):NaN,isNaN(a.min)&&(a.min=Number.MIN_VALUE)),null!==a.max&&(a.max=a.max.toString().replace(new RegExp(b.escapeRegex(a.groupSeparator),"g"),""),","===a.radixPoint&&(a.max=a.max.replace(a.radixPoint,".")),a.max=isFinite(a.max)?parseFloat(a.max):NaN,isNaN(a.max)&&(a.max=Number.MAX_VALUE)),a.parseMinMaxOptions="done")}(g),null!==g.min||null!==g.max){if(h=g.onUnMask(e.join(""),c,a.extend({},g,{unmaskAsNumber:!0})),null!==g.min&&h<g.min)return g.isNegative=g.min<0,g.postValidation(g.min.toString().replace(".",g.radixPoint).split(""),{caret:f,dopost:!0,placeholder:"0"},g);if(null!==g.max&&h>g.max)return g.isNegative=g.max<0,g.postValidation(g.max.toString().replace(".",g.radixPoint).split(""),{caret:f,dopost:!0,placeholder:"0"},g)}return g.postValidation(e,{caret:f,dopost:!0,placeholder:"0",event:"blur"},g);case"_checkval":return{caret:f}}},regex:{integerPart:function(a,c){return c?new RegExp("["+b.escapeRegex(a.negationSymbol.front)+"+]?"):new RegExp("["+b.escapeRegex(a.negationSymbol.front)+"+]?\\d+")},integerNPart:function(a){return new RegExp("[\\d"+b.escapeRegex(a.groupSeparator)+b.escapeRegex(a.placeholder.charAt(0))+"]+")}},definitions:{"~":{validator:function(a,d,e,f,g,h){var i=f?new RegExp("[0-9"+b.escapeRegex(g.groupSeparator)+"]").test(a):new RegExp("[0-9]").test(a);if(!0===i){if(!0!==g.numericInput&&d.validPositions[e]!==c&&"~"===d.validPositions[e].match.def&&!h){var j=d.buffer.join("");j=j.replace(new RegExp("[-"+b.escapeRegex(g.negationSymbol.front)+"]","g"),""),j=j.replace(new RegExp(b.escapeRegex(g.negationSymbol.back)+"$"),"");var k=j.split(g.radixPoint);k.length>1&&(k[1]=k[1].replace(/0/g,g.placeholder.charAt(0))),"0"===k[0]&&(k[0]=k[0].replace(/0/g,g.placeholder.charAt(0))),j=k[0]+g.radixPoint+k[1]||"";var l=d._buffer.join("");for(j===g.radixPoint&&(j=l);null===j.match(b.escapeRegex(l)+"$");)l=l.slice(1);j=j.replace(l,""),j=j.split(""),i=j[e]===c?{pos:e,remove:e}:{pos:e}}}else f||a!==g.radixPoint||d.validPositions[e-1]!==c||(d.buffer[e]="0",i={pos:e+1});return i},cardinality:1},"+":{validator:function(a,b,c,d,e){return e.allowMinus&&("-"===a||a===e.negationSymbol.front)},cardinality:1,placeholder:""},"-":{validator:function(a,b,c,d,e){return e.allowMinus&&a===e.negationSymbol.back},cardinality:1,placeholder:""},":":{validator:function(a,c,d,e,f){var g="["+b.escapeRegex(f.radixPoint)+"]",h=new RegExp(g).test(a);return h&&c.validPositions[d]&&c.validPositions[d].match.placeholder===f.radixPoint&&(h={caret:d+1}),h},cardinality:1,placeholder:function(a){return a.radixPoint}}},onUnMask:function(a,c,d){if(""===c&&!0===d.nullable)return c;var e=a.replace(d.prefix,"");return e=e.replace(d.suffix,""),e=e.replace(new RegExp(b.escapeRegex(d.groupSeparator),"g"),""),""!==d.placeholder.charAt(0)&&(e=e.replace(new RegExp(d.placeholder.charAt(0),"g"),"0")),d.unmaskAsNumber?(""!==d.radixPoint&&-1!==e.indexOf(d.radixPoint)&&(e=e.replace(b.escapeRegex.call(this,d.radixPoint),".")),e=e.replace(new RegExp("^"+b.escapeRegex(d.negationSymbol.front)),"-"),e=e.replace(new RegExp(b.escapeRegex(d.negationSymbol.back)+"$"),""),Number(e)):e},isComplete:function(a,c){var d=a.join("");if(a.slice().join("")!==d)return!1;var e=d.replace(c.prefix,"");return e=e.replace(c.suffix,""),e=e.replace(new RegExp(b.escapeRegex(c.groupSeparator),"g"),""),","===c.radixPoint&&(e=e.replace(b.escapeRegex(c.radixPoint),".")),isFinite(e)},onBeforeMask:function(a,d){if(d.isNegative=c,a=a.toString().charAt(a.length-1)===d.radixPoint?a.toString().substr(0,a.length-1):a.toString(),""!==d.radixPoint&&isFinite(a)){var e=a.split("."),f=""!==d.groupSeparator?parseInt(d.groupSize):0;2===e.length&&(e[0].length>f||e[1].length>f||e[0].length<=f&&e[1].length<f)&&(a=a.replace(".",d.radixPoint))}var g=a.match(/,/g),h=a.match(/\./g);if(h&&g?h.length>g.length?(a=a.replace(/\./g,""),a=a.replace(",",d.radixPoint)):g.length>h.length?(a=a.replace(/,/g,""),a=a.replace(".",d.radixPoint)):a=a.indexOf(".")<a.indexOf(",")?a.replace(/\./g,""):a=a.replace(/,/g,""):a=a.replace(new RegExp(b.escapeRegex(d.groupSeparator),"g"),""),0===d.digits&&(-1!==a.indexOf(".")?a=a.substring(0,a.indexOf(".")):-1!==a.indexOf(",")&&(a=a.substring(0,a.indexOf(",")))),""!==d.radixPoint&&isFinite(d.digits)&&-1!==a.indexOf(d.radixPoint)){var i=a.split(d.radixPoint),j=i[1].match(new RegExp("\\d*"))[0];if(parseInt(d.digits)<j.toString().length){var k=Math.pow(10,parseInt(d.digits));a=a.replace(b.escapeRegex(d.radixPoint),"."),a=Math.round(parseFloat(a)*k)/k,a=a.toString().replace(".",d.radixPoint)}}return a},canClearPosition:function(a,b,c,d,e){var f=a.validPositions[b],g=f.input!==e.radixPoint||null!==a.validPositions[b].match.fn&&!1===e.decimalProtect||f.input===e.radixPoint&&a.validPositions[b+1]&&null===a.validPositions[b+1].match.fn||isFinite(f.input)||b===c||f.input===e.groupSeparator||f.input===e.negationSymbol.front||f.input===e.negationSymbol.back;return!g||"+"!=f.match.nativeDef&&"-"!=f.match.nativeDef||(e.isNegative=!1),g},onKeyDown:function(c,d,e,f){var g=a(this);if(c.ctrlKey)switch(c.keyCode){case b.keyCode.UP:g.val(parseFloat(this.inputmask.unmaskedvalue())+parseInt(f.step)),g.trigger("setvalue");break;case b.keyCode.DOWN:g.val(parseFloat(this.inputmask.unmaskedvalue())-parseInt(f.step)),g.trigger("setvalue")}}},currency:{prefix:"$ ",groupSeparator:",",alias:"numeric",placeholder:"0",autoGroup:!0,digits:2,digitsOptional:!1,clearMaskOnLostFocus:!1},decimal:{alias:"numeric"},integer:{alias:"numeric",digits:0,radixPoint:""},percentage:{alias:"numeric",digits:2,digitsOptional:!0,radixPoint:".",placeholder:"0",autoGroup:!1,min:0,max:100,suffix:" %",allowMinus:!1}}),b})},function(a,b,c){"use strict";var d,e,f;"function"==typeof Symbol&&Symbol.iterator;!function(g){e=[c(0),c(1)],d=g,void 0!==(f="function"==typeof d?d.apply(b,e):d)&&(a.exports=f)}(function(a,b){function c(a,b){var c=(a.mask||a).replace(/#/g,"9").replace(/\)/,"9").replace(/[+()#-]/g,""),d=(b.mask||b).replace(/#/g,"9").replace(/\)/,"9").replace(/[+()#-]/g,""),e=(a.mask||a).split("#")[0],f=(b.mask||b).split("#")[0];return 0===f.indexOf(e)?-1:0===e.indexOf(f)?1:c.localeCompare(d)}var d=b.prototype.analyseMask;return b.prototype.analyseMask=function(b,c,e){function f(a,c,d){c=c||"",d=d||h,""!==c&&(d[c]={});for(var e="",g=d[c]||d,i=a.length-1;i>=0;i--)b=a[i].mask||a[i],e=b.substr(0,1),g[e]=g[e]||[],g[e].unshift(b.substr(1)),a.splice(i,1);for(var j in g)g[j].length>500&&f(g[j].slice(),j,g)}function g(b){var c="",d=[];for(var f in b)a.isArray(b[f])?1===b[f].length?d.push(f+b[f]):d.push(f+e.groupmarker.start+b[f].join(e.groupmarker.end+e.alternatormarker+e.groupmarker.start)+e.groupmarker.end):d.push(f+g(b[f]));return 1===d.length?c+=d[0]:c+=e.groupmarker.start+d.join(e.groupmarker.end+e.alternatormarker+e.groupmarker.start)+e.groupmarker.end,c}var h={};return e.phoneCodes&&(e.phoneCodes&&e.phoneCodes.length>1e3&&(b=b.substr(1,b.length-2),f(b.split(e.groupmarker.end+e.alternatormarker+e.groupmarker.start)),b=g(h)),b=b.replace(/9/g,"\\9")),d.call(this,b,c,e)},b.extendAliases({abstractphone:{groupmarker:{start:"<",end:">"},countrycode:"",phoneCodes:[],mask:function(a){return a.definitions={"#":b.prototype.definitions[9]},a.phoneCodes.sort(c)},keepStatic:!0,onBeforeMask:function(a,b){var c=a.replace(/^0{1,2}/,"").replace(/[\s]/g,"");return(c.indexOf(b.countrycode)>1||-1===c.indexOf(b.countrycode))&&(c="+"+b.countrycode+c),c},onUnMask:function(a,b,c){return a.replace(/[()#-]/g,"")},inputmode:"tel"}}),b})},function(a,b,c){"use strict";var d,e,f,g="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(a){return typeof a}:function(a){return a&&"function"==typeof Symbol&&a.constructor===Symbol&&a!==Symbol.prototype?"symbol":typeof a};!function(g){e=[c(2),c(1)],d=g,void 0!==(f="function"==typeof d?d.apply(b,e):d)&&(a.exports=f)}(function(a,b){return void 0===a.fn.inputmask&&(a.fn.inputmask=function(c,d){var e,f=this[0];if(void 0===d&&(d={}),"string"==typeof c)switch(c){case"unmaskedvalue":return f&&f.inputmask?f.inputmask.unmaskedvalue():a(f).val();case"remove":return this.each(function(){this.inputmask&&this.inputmask.remove()});case"getemptymask":return f&&f.inputmask?f.inputmask.getemptymask():"";case"hasMaskedValue":return!(!f||!f.inputmask)&&f.inputmask.hasMaskedValue();case"isComplete":return!f||!f.inputmask||f.inputmask.isComplete();case"getmetadata":return f&&f.inputmask?f.inputmask.getmetadata():void 0;case"setvalue":a(f).val(d),f&&void 0===f.inputmask&&a(f).triggerHandler("setvalue");break;case"option":if("string"!=typeof d)return this.each(function(){if(void 0!==this.inputmask)return this.inputmask.option(d)});if(f&&void 0!==f.inputmask)return f.inputmask.option(d);break;default:return d.alias=c,e=new b(d),this.each(function(){e.mask(this)})}else{if("object"==(void 0===c?"undefined":g(c)))return e=new b(c),void 0===c.mask&&void 0===c.alias?this.each(function(){if(void 0!==this.inputmask)return this.inputmask.option(c);e.mask(this)}):this.each(function(){e.mask(this)});if(void 0===c)return this.each(function(){e=new b(d),e.mask(this)})}}),a.fn.inputmask})},function(a,b,c){var d=c(12);"string"==typeof d&&(d=[[a.i,d,""]]);c(14)(d,{});d.locals&&(a.exports=d.locals)},function(a,b,c){"use strict";function d(a){return a&&a.__esModule?a:{default:a}}c(8),c(3),c(4),c(5),c(6);var e=c(1),f=d(e),g=c(0),h=d(g),i=c(2),j=d(i);h.default===j.default&&c(7),window.Inputmask=f.default},function(a,b,c){"use strict";var d;"function"==typeof Symbol&&Symbol.iterator;void 0!==(d=function(){return document}.call(b,c,b,a))&&(a.exports=d)},function(a,b,c){"use strict";var d;"function"==typeof Symbol&&Symbol.iterator;void 0!==(d=function(){return window}.call(b,c,b,a))&&(a.exports=d)},function(a,b,c){b=a.exports=c(13)(void 0),b.push([a.i,"span.im-caret {\r\n    -webkit-animation: 1s blink step-end infinite;\r\n    animation: 1s blink step-end infinite;\r\n}\r\n\r\n@keyframes blink {\r\n    from, to {\r\n        border-right-color: black;\r\n    }\r\n    50% {\r\n        border-right-color: transparent;\r\n    }\r\n}\r\n\r\n@-webkit-keyframes blink {\r\n    from, to {\r\n        border-right-color: black;\r\n    }\r\n    50% {\r\n        border-right-color: transparent;\r\n    }\r\n}\r\n\r\nspan.im-static {\r\n    color: grey;\r\n}\r\n\r\ndiv.im-colormask {\r\n    display: inline-block;\r\n    border-style: inset;\r\n    border-width: 2px;\r\n    -webkit-appearance: textfield;\r\n    -moz-appearance: textfield;\r\n    appearance: textfield;\r\n}\r\n\r\ndiv.im-colormask > input {\r\n    display: inline-block;\r\n    background-color: transparent;\r\n    color: transparent;\r\n    -webkit-appearance: caret;\r\n    -moz-appearance: caret;\r\n    appearance: caret;\r\n    border-style: none;\r\n}\r\n\r\ndiv.im-colormask > input:focus {\r\n    outline: none;\r\n}\r\n\r\ndiv.im-colormask > div {\r\n    color: black;\r\n    position: absolute;\r\n    display: inline-block;\r\n    left: 0; /*calculated*/\r\n}",""])},function(a,b){function c(a,b){var c=a[1]||"",e=a[3];if(!e)return c;if(b&&"function"==typeof btoa){var f=d(e),g=e.sources.map(function(a){return"/*# sourceURL="+e.sourceRoot+a+" */"});return[c].concat(g).concat([f]).join("\n")}return[c].join("\n")}function d(a){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(a))))+" */"}a.exports=function(a){var b=[];return b.toString=function(){return this.map(function(b){var d=c(b,a);return b[2]?"@media "+b[2]+"{"+d+"}":d}).join("")},b.i=function(a,c){"string"==typeof a&&(a=[[null,a,""]]);for(var d={},e=0;e<this.length;e++){var f=this[e][0];"number"==typeof f&&(d[f]=!0)}for(e=0;e<a.length;e++){var g=a[e];"number"==typeof g[0]&&d[g[0]]||(c&&!g[2]?g[2]=c:c&&(g[2]="("+g[2]+") and ("+c+")"),b.push(g))}},b}},function(a,b,c){function d(a,b){for(var c=0;c<a.length;c++){var d=a[c],e=o[d.id];if(e){e.refs++;for(var f=0;f<e.parts.length;f++)e.parts[f](d.parts[f]);for(;f<d.parts.length;f++)e.parts.push(k(d.parts[f],b))}else{for(var g=[],f=0;f<d.parts.length;f++)g.push(k(d.parts[f],b));o[d.id]={id:d.id,refs:1,parts:g}}}}function e(a){for(var b=[],c={},d=0;d<a.length;d++){var e=a[d],f=e[0],g=e[1],h=e[2],i=e[3],j={css:g,media:h,sourceMap:i};c[f]?c[f].parts.push(j):b.push(c[f]={id:f,parts:[j]})}return b}function f(a,b){var c=q(a.insertInto);if(!c)throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var d=t[t.length-1];if("top"===a.insertAt)d?d.nextSibling?c.insertBefore(b,d.nextSibling):c.appendChild(b):c.insertBefore(b,c.firstChild),t.push(b);else{if("bottom"!==a.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");c.appendChild(b)}}function g(a){a.parentNode.removeChild(a);var b=t.indexOf(a);b>=0&&t.splice(b,1)}function h(a){var b=document.createElement("style");return a.attrs.type="text/css",j(b,a.attrs),f(a,b),b}function i(a){var b=document.createElement("link");return a.attrs.type="text/css",a.attrs.rel="stylesheet",j(b,a.attrs),f(a,b),b}function j(a,b){Object.keys(b).forEach(function(c){a.setAttribute(c,b[c])})}function k(a,b){var c,d,e;if(b.singleton){var f=s++;c=r||(r=h(b)),d=l.bind(null,c,f,!1),e=l.bind(null,c,f,!0)}else a.sourceMap&&"function"==typeof URL&&"function"==typeof URL.createObjectURL&&"function"==typeof URL.revokeObjectURL&&"function"==typeof Blob&&"function"==typeof btoa?(c=i(b),d=n.bind(null,c,b),e=function(){g(c),c.href&&URL.revokeObjectURL(c.href)}):(c=h(b),d=m.bind(null,c),e=function(){g(c)});return d(a),function(b){if(b){if(b.css===a.css&&b.media===a.media&&b.sourceMap===a.sourceMap)return;d(a=b)}else e()}}function l(a,b,c,d){var e=c?"":d.css;if(a.styleSheet)a.styleSheet.cssText=v(b,e);else{var f=document.createTextNode(e),g=a.childNodes;g[b]&&a.removeChild(g[b]),g.length?a.insertBefore(f,g[b]):a.appendChild(f)}}function m(a,b){var c=b.css,d=b.media;if(d&&a.setAttribute("media",d),a.styleSheet)a.styleSheet.cssText=c;else{for(;a.firstChild;)a.removeChild(a.firstChild);a.appendChild(document.createTextNode(c))}}function n(a,b,c){var d=c.css,e=c.sourceMap,f=void 0===b.convertToAbsoluteUrls&&e;(b.convertToAbsoluteUrls||f)&&(d=u(d)),e&&(d+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(e))))+" */");var g=new Blob([d],{type:"text/css"}),h=a.href;a.href=URL.createObjectURL(g),h&&URL.revokeObjectURL(h)}var o={},p=function(a){var b;return function(){return void 0===b&&(b=a.apply(this,arguments)),b}}(function(){return window&&document&&document.all&&!window.atob}),q=function(a){var b={};return function(c){return void 0===b[c]&&(b[c]=a.call(this,c)),b[c]}}(function(a){return document.querySelector(a)}),r=null,s=0,t=[],u=c(15);a.exports=function(a,b){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");b=b||{},b.attrs="object"==typeof b.attrs?b.attrs:{},void 0===b.singleton&&(b.singleton=p()),void 0===b.insertInto&&(b.insertInto="head"),void 0===b.insertAt&&(b.insertAt="bottom");var c=e(a);return d(c,b),function(a){for(var f=[],g=0;g<c.length;g++){var h=c[g],i=o[h.id];i.refs--,f.push(i)}if(a){d(e(a),b)}for(var g=0;g<f.length;g++){var i=f[g];if(0===i.refs){for(var j=0;j<i.parts.length;j++)i.parts[j]();delete o[i.id]}}}};var v=function(){var a=[];return function(b,c){return a[b]=c,a.filter(Boolean).join("\n")}}()},function(a,b){a.exports=function(a){var b="undefined"!=typeof window&&window.location;if(!b)throw new Error("fixUrls requires window.location");if(!a||"string"!=typeof a)return a;var c=b.protocol+"//"+b.host,d=c+b.pathname.replace(/\/[^\/]*$/,"/");return a.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi,function(a,b){var e=b.trim().replace(/^"(.*)"$/,function(a,b){return b}).replace(/^'(.*)'$/,function(a,b){return b});if(/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(e))return a;var f;return f=0===e.indexOf("//")?e:0===e.indexOf("/")?c+e:d+e.replace(/^\.\//,""),"url("+JSON.stringify(f)+")"})}}]);
 
 $(document).ready(()=>{
-    $('span.money').text(Calculate());
+    $('span.money').text(splitStr(calc()));
 
     $('div.calculator').click((event)=>{
-        $('span.money').text(Calculate().toLocaleString());
+         $('span.money').text(splitStr(calc()));
     });
+
 });
 
-function Calculate() {
-    let cost1m = 10000; //стоимость одного квадратного метра
 
-    let sizeLenght = $('input[name=sizeLenght]').val();
-    let sizeWidth = $('input[name=sizeWidth]').val();
-    let city = $('select[name=city]').val();
-    let floor = $('select[name=floor]').val();
+/**
+ * считаем периметр
+ */
+function perimeter(lenght, width) {
+    return 2 * (lenght + width);
+}
+
+/**
+ * считаем площпдь
+ */
+function area(lenght, width) {
+    return lenght * width;
+}
+
+/**
+ * считаем ленточный фундамент
+ */
+function lentFoundation(lenght, width) {
+    return (((2 * lenght + 3 * width) * 0.24) + 2) * 11;
+}
+
+/**
+ * считаем фундамент монолитная плита
+ */
+function monolithFoundation(lenght, width) {
+    return (lenght * width) * 0.3 * 11 + 100000;
+}
+
+/**
+ * считаем свайно-забивной фундамент
+ */
+function szFoundation(lenght, width) {
+    return ((lenght / 3) + 1) + ((width / 3) + 1) * 5500;
+}
+
+/**
+ * считаем свайно-винтовой фундамент
+ */
+function svFoundation(lenght, width) {
+    return ((lenght / 3) + 1) + ((width / 3) + 1) * 3500;
+}
+
+/**
+ * проверяем выбранный тип фундамента и возвращаем стоимость
+ */
+function foundat(foundation, sizeLenght, sizeWidth) {
+    switch(foundation) {
+        case "Pile-screw":
+            return svFoundation(sizeLenght, sizeWidth);
+            break;
+        case "monolith":
+            return monolithFoundation(sizeLenght, sizeWidth);
+            break;
+        case "Pile-driving":
+            return szFoundation(sizeLenght, sizeWidth);
+            break;
+        default:
+            return lentFoundation(sizeLenght, sizeWidth);
+    }
+}
+
+/**
+ * считаем материал стен кирпич
+ */
+function wallsBrick(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 9000) +
+        (perimeter(lenght, width) * (2.5 + height) * 5000) + (area(lenght, width) * 1.7 * 1600) +
+        (area(lenght, width) * countFloor * 1400);
+}
+
+/**
+ * считаем материал стен клееный брус
+ */
+function wallsGluedBeam(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 5150) +
+        (perimeter(lenght, width) * (2.5 + height) * 5150) + (area(lenght, width) * 1.7 * 1600) +
+        (area(lenght, width) * countFloor * 1400);
+}
+
+/**
+ * считаем материал стен профилированный брус
+ */
+function wallsProfiledBeam(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 2150) +
+        (perimeter(lenght, width) * (2.5 + height) * 2150) + (area(lenght, width) * 1.7 * 1600) +
+        (area(lenght, width) * countFloor * 1400);
+}
+
+/**
+ * считаем материал стен каркас
+ */
+function wallsKarcass(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * ( countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 950) +
+        (perimeter(lenght, width) * (2.5 + height) * 730) + (area(lenght, width) * 1.7 * 2100) +
+        (area(lenght, width) * (countFloor + 1) * 1355);
+}
+
+/**
+ * считаем материал стен блоки
+ */
+function wallsBlocks(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 2120) +
+        (perimeter(lenght, width) * (2.5 + height) * 1040) + (area(lenght, width) * 1.7 * 2500) +
+        (area(lenght, width) * (countFloor + 1) * 1555);
+}
+
+
+/**
+ * проверяем выбранный материал стен и возвращаем стоимость
+ */
+function wallsMaterial(material, lenght, width, height, countFloor) {
+    switch(material) {
+        case "Glued-beams":
+            return wallsGluedBeam(lenght, width, height, countFloor);
+            break;
+        case "Blocks":
+            return wallsBlocks(lenght, width, height, countFloor);
+            break;
+        case "Brick":
+            return wallsBrick(lenght, width, height, countFloor);
+            break;
+        case "Profiled-beam":
+            return wallsProfiledBeam(lenght, width, height, countFloor);
+            break;
+        default:
+            return wallsKarcass(lenght, width, height, countFloor);
+    }
+}
+
+
+/**
+ * считаем внешнюю отделку Штукатурка
+ */
+function putty(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 920);
+}
+
+/**
+ * считаем внешнюю отделку Штукатурка
+ */
+function osb(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 430);
+}
+
+/**
+ * считаем внешнюю отделку Имитация бруса
+ */
+function imitationBar(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 1010);
+}
+
+/**
+ * считаем внешнюю отделку Японские панели
+ */
+function japanPanele(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 1700);
+}
+
+/**
+ * считаем внешнюю отделку Сайдинг
+ */
+function siding(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 900);
+}
+
+/**
+ * считаем внешнюю отделку Хауберг
+ */
+function hauberg(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 1250);
+}
+
+/**
+ * считаем внешнюю отделку Облицовка кирпичом
+ */
+function facingBrick(lenght, width, height, countFloor) {
+    return ((((perimeter(lenght, width) * (countFloor * height + 0.6))) + ((Math.pow(width,2)) * 0.5)) * 2200);
+}
+
+
+/**
+ * проверяем выбранный тип отделки и возвращаем стоимость
+ */
+function decoration(exterierDecoration, lenght, width, height, countFloor) {
+    switch(exterierDecoration) {
+        case "Simulation-bar":
+            return imitationBar(lenght, width, height, countFloor);
+            break;
+        case "Japan-panele":
+            return japanPanele(lenght, width, height, countFloor);
+            break;
+        case "Siding":
+            return siding(lenght, width, height, countFloor);
+            break;
+        case "Hauberg":
+            return hauberg(lenght, width, height, countFloor);
+            break;
+        case "Brick":
+            return facingBrick(lenght, width, height, countFloor);
+            break;
+        case "osb":
+            return facingBrick(lenght, width, height, countFloor);
+            break;
+        default:
+            return putty(lenght, width, height, countFloor);
+    }
+}
+
+/**
+ * считаем стоимость окон
+ */
+function windowsPrice(lenght, width, height, countFloor) {
+    return ((perimeter(lenght, width) * (countFloor * height + 0.6)) * 800);
+}
+
+/**
+ * считаем чекбоксы
+ */
+function checks(stairs, ironDoor, windows, communications, lenght, width, height, countFloor) {
+    let sum = 0;
+
+    if(stairs) {
+        sum = sum + 70000;
+    }
+    if(ironDoor){
+        sum = sum + 40000;
+    }
+
+    if(windows){
+        sum = sum + windowsPrice(lenght, width, height, countFloor);
+    }
+
+    if(communications){
+        sum = sum + 400000;
+    }
+
+    return sum;
+}
+
+
+/**
+ * проверяем выбранный материал стен и решаем брать ли в рассчет отделку
+ */
+function selectMaterial( material, exterierDecoration, lenght, width, height, countFloor) {
+    switch (material) {
+        case "Blocks":
+        case "Frame":
+            $('.row-decoration').show();
+            return wallsMaterial(material, lenght, width, height, countFloor) +
+                decoration(exterierDecoration, lenght, width, height, countFloor);
+            break;
+        default:
+            $('.row-decoration').hide();
+            return wallsMaterial(material, lenght, width, height, countFloor);
+            break;
+    }
+}
+
+function splitStr(value) {
+    return value.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1 `);
+}
+
+/**
+ * суммируем все полученные данные и округляем их до целочисленных
+ */
+function calc() {
     let foundation = $('select[name=foundation] option:selected').val();
-    let wallsMaterial = $('select[name=wallsMaterial]').val();
     let exterierDecoration = $('select[name=exterierDecoration]').val();
+    let wMaterial = $('select[name=wallsMaterial]').val();
+    let sizeLenght = parseInt($('input[name=sizeLenght]').val());
+    let sizeWidth = parseInt($('input[name=sizeWidth]').val());
+    let floorHeight = parseInt($('select[name=heightFloor]').val());
+    let countFloor = parseInt($('select[name=floor] option:selected').val(), 10);
     let stairs = $('input[name=stairs]').is(':checked');
     let windows = $('input[name=windows]').is(':checked');
     let ironDoor = $('input[name=ironDoor]').is(':checked');
     let communications = $('input[name=communications]').is(':checked');
 
-    let sum = (sizeLenght * sizeWidth) * cost1m;
-
-
-    /**
-     * считаем город
-     */
-    if (city == "Cherepovets") {
-        sum = sum + 10000;
-    }
-    else if (city == "Vologda") {
-        sum = sum + 12000;
-    }
-    else if (city == "Moscow") {
-        sum = sum + 16000;
-    }
-    else if (city == "Rostov") {
-        sum = sum + 15000;
-    }
-    else if (city == "Sochi") {
-        sum = sum + 18000;
-    }
-    else {
-        sum = sum + 14000;
-    }
-
-    if (floor !== '') {
-        sum = sum * floor;
-    }
-
-    /**
-     * считаем фундамент
-     */
-    if (foundation == "banded") {
-        sum = sum * 1.2;
-    }
-    else if (foundation == "monolith") {
-        sum = sum * 1.5;
-    }
-    else if (foundation == "Pile-driving") {
-        sum = sum * 1.7;
-    }
-    else {
-        sum = sum * 1.8;
-    }
-
-    /**
-     * считаем материал стен
-     */
-    if (wallsMaterial == "Frame") {
-        sum = sum * 1.2;
-    }
-    else if (wallsMaterial == "Glued-beams") {
-        sum = sum * 1.5;
-    }
-    else if (wallsMaterial == "Blocks") {
-        sum = sum * 1.7;
-    }
-    else if (wallsMaterial == "Brick") {
-        sum = sum * 1.8;
-    }
-    else {
-        sum = sum * 1.9;
-    }
-
-    /**
-     * считаем внешнюю отделку
-     */
-    if (exterierDecoration == "OBS-plate") {
-        sum = sum * 1.2;
-    }
-    else if (exterierDecoration == "Simulation-bar") {
-        sum = sum * 1.4;
-    }
-    else if (exterierDecoration == "Brick-tile") {
-        sum = sum * 1.5;
-    }
-    else if (exterierDecoration == "Plaster") {
-        sum = sum * 1.7;
-    }
-    else if (exterierDecoration == "Brick") {
-        sum = sum * 1.8;
-    }
-    else {
-        sum = sum * 1.9;
-    }
-
-    /**
-     * чекбоксы
-     */
-    if(stairs){
-        sum = sum + 2500;
-    }
-
-    if(ironDoor){
-        sum = sum + 2500;
-    }
-
-    if(windows){
-        sum = sum + 2500;
-    }
-
-    if(communications){
-        sum = sum + 5500;
-    }
-
-    return sum;
+    return (foundat(foundation, sizeLenght, sizeWidth) +
+        selectMaterial(wMaterial, exterierDecoration, sizeLenght, sizeWidth, floorHeight, countFloor) +
+        checks(stairs, ironDoor, windows, communications, sizeLenght, sizeWidth, floorHeight, countFloor) +
+        400000).toFixed(0);
 }
 
 //маска телефона

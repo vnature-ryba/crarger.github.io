@@ -54,38 +54,22 @@
                                 <div class="col-xs-12 col-md-9 data-calculator">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <input type="number" id="sizeLenght" name="sizeLenght" min="0" class="form-control" value="5"
+                                            <input type="number" id="sizeLenght" name="sizeLenght" min="1"
+                                                   max="25" class="form-control" value="5"
                                                    placeholder="Длина">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <input type="number" id="sizeWidth" name="sizeWidth" min="0" class="form-control" value="5"
+                                            <input type="number" id="sizeWidth" name="sizeWidth" min="1"
+                                                   max="25" class="form-control" value="5"
                                                    placeholder="Ширина">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-xs-12 col-md-3 title-calculator">
-                                    <p>2. Город</p>
-                                </div>
-                                <div class="col-xs-12 col-md-9 data-calculator">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <select name="city" class="dropdown">
-                                                <option value="Cherepovets">Череповец</option>
-                                                <option value="Vologda">Вологда</option>
-                                                <option value="Moscow">Москва</option>
-                                                <option value="Rostov">Ростов-на-Дону</option>
-                                                <option value="Sochi">Сочи</option>
-                                                <option value="Yaroslavl">Ярославль</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-md-3 title-calculator">
-                                    <p>3. Этажность</p>
+                                    <p>2. Этажность</p>
                                 </div>
                                 <div class="col-xs-12 col-md-9 data-calculator wiring">
                                     <div class="row">
@@ -99,9 +83,29 @@
                                     </div>
                                 </div>
                             </div>
+
+
                             <div class="row">
                                 <div class="col-xs-12 col-md-3 title-calculator">
-                                    <p>4. Фундамент</p>
+                                    <p>Высота этажа:</p>
+                                </div>
+                                <div class="col-xs-12 col-md-9 data-calculator">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <select name="heightFloor" class="dropdown">
+                                                <option value="2.5">2,5</option>
+                                                <option value="2.7">2,7</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 title-calculator">
+                                    <p>3. Фундамент</p>
                                 </div>
                                 <div class="col-xs-12 col-md-9 data-calculator plumbing">
                                     <div class="row">
@@ -119,7 +123,7 @@
 
                             <div class="row">
                                 <div class="col-xs-12 col-md-3 title-calculator">
-                                    <p>5. Материал стен</p>
+                                    <p>4. Материал стен</p>
                                 </div>
                                 <div class="col-xs-12 col-md-9 data-calculator plumbing">
                                     <div class="row">
@@ -136,27 +140,30 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row row-decoration">
                                 <div class="col-xs-12 col-md-3 title-calculator">
-                                    <p>6. Внешняя отделка</p>
+                                    <p>5. Внешняя отделка</p>
                                 </div>
                                 <div class="col-xs-12 col-md-9 data-calculator plumbing">
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <select name="exterierDecoration" class="dropdown">
-                                                <option value="OBS-plate">Плита ОСБ</option>
-                                                <option value="Simulation-bar">Имитация бруса с
-                                                    пропиткой
+                                                <option value="Putty">Штукатурка</option>
+                                                <option value="osb">ОСБ-плита</option>
+                                                <option value="Simulation-bar">Имитация бруса
                                                 </option>
-                                                <option value="Brick-tile">Фасадная плитка под
-                                                    камень, кирпич
+                                                <option value="Japan-panele">Японские панели
                                                 </option>
-                                                <option value="Plaster">Чистовая штукатурка</option>
-                                                <option value="Brick">Облицовочный кирпич</option>
                                                 <option value="Siding">Сайдинг</option>
+                                                <option value="Hauberg">Плитка Хауберг Технониколь</option>
+                                                <option value="Brick">Облицовочный кирпич</option>
                                             </select>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-9 col-md-offset-3 data-calculator plumbing">
                                     <div class="row extra">
                                         <div class="col-xs-12 col-sm-5">
                                             <label class="label-checkbox">
@@ -192,7 +199,8 @@
                                     <div class="row">
                                         <div class="text-center">
                                             <h3 class="footer-calculator-title">
-                                                Стоимость дома является примерной и зависит от города, в котором будет производиться строительство.<br>
+                                                Стоимость дома является примерной и зависит от города, в котором будет
+                                                производиться строительство.<br>
                                                 Чтобы получить точную стоимость закажите рассчет.
                                             </h3>
                                         </div>
@@ -228,7 +236,8 @@
                     <!--{% csrf_token %}-->
                     <input type="text" name="full-name" required placeholder="Ваше имя *">
                     <input type="text" name="num-phone" placeholder="Ваш телефон">
-                    <input type="text" name="city" required placeholder="Ваш город">
+                    <input type="email" name="email" required placeholder="E-mail">
+                    <input type="text" name="city" required placeholder="Город">
                     <button class="btn-purple" type="submit"
                             onclick="yaCounter38004405.reachGoal('colbeck_old'); return true;">Оставить заявку
                     </button>
