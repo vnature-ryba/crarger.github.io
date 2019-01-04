@@ -82,38 +82,49 @@
                 </span>
             </div>
         
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalRegister">
+            <button class="btn btn-primary btn-lg hidden" data-toggle="modal" data-target="#modalRegister">
                 register
             </button>
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalLogIn">
+            <button class="btn btn-primary btn-lg hidden" data-toggle="modal" data-target="#modalLogIn">
                 login
             </button>
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalRestorePass">
+            <button class="btn btn-primary btn-lg hidden" data-toggle="modal" data-target="#modalRestorePass">
                 restore
             </button>
         </div>
     </div>
     <div class="main-content">
         <header class="header menu-scroll">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
-                        <span class="sr-only">Меню</span>
-                        <span class="icon-bar top-bar"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
-                    </button>
-                    <a class="logo" href="/">
-                        <img src="img/system/header-logo.png" alt="Логотип">
-                    </a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+                    <span class="sr-only">Меню</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a class="logo" href="/">
+                    <img src="img/system/header-logo.png" alt="Логотип">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse menu" id="menu-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-hide"><a href="#">REDBLACK</a></li>
+                    <li class="navbar-hide"><a href="#">СТАВКИ</a></li>
+                    <li class="navbar-hide"><a href="/finance.html">ФИНАНСЫ</a></li>
+                    <li class="navbar-hide"><a href="/index.html">Профиль</a></li>
+                </ul>
+            </div>
+            <div class="block-user">
+                <div class="user">
+                    <div class="avatar">
+                        <img src="img/system/avatar.svg" alt="">
+                    </div>
+                    <p class="userName">YAMAXAM</p>
                 </div>
-                <div class="collapse navbar-collapse menu" id="menu-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="navbar-hide"><a href="#">REDBLACK</a></li>
-                        <li class="navbar-hide"><a href="#">СТАВКИ</a></li>
-                        <li class="navbar-hide"><a href="/finance.html">ФИНАНСЫ</a></li>
-                        <li class="navbar-hide"><a href="/index.html">Профиль</a></li>
-                    </ul>
-                </div>
+                <button class="btn-logOut">
+                    ВЫЙТИ <img src="img/system/logOut.svg" alt="">
+                </button>
+            </div>
         </header>
         <div class="red-and-black">
         
@@ -222,17 +233,6 @@
             </table>
         </div>
         <div class="block-statistics">
-            <div class="block-header">
-                <div class="user">
-                    <div class="avatar">
-                        <img src="img/system/avatar.svg" alt="">
-                    </div>
-                    <p class="userName">YAMAXAM</p>
-                </div>
-                <button class="btn-logOut">
-                    ВЫЙТИ <img src="img/system/logOut.svg" alt="">
-                </button>
-            </div>
             <div class="title-block">
                 <h3 class="title">СТАТИСТИКА</h3>
             </div>
