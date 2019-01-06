@@ -56,15 +56,15 @@
                 </label>
             </div>
             <ul class="navbar-left">
-                <li class="paragraph"><a href="#"><span><img src="img/system/platform.png" alt=""></span>Платформа</a></li>
-                <li class="paragraph"><a href="#subMenu-1" data-toggle="collapse"><span><img src="img/system/games.png" alt=""></span>Игры</a>
+                <li class="paragraph"><a href="#"><span class="paragraph-icon"><img src="img/system/platform.png" alt=""></span><span class="paragraph-name">Платформа</span></a></li>
+                <li class="paragraph"><a href="#subMenu-1" data-toggle="collapse"><span class="paragraph-icon"><img src="img/system/games.png" alt=""></span><span class="paragraph-name">Игры</span></a>
                     <ul id="subMenu-1" class="nav-item subMenu panel-collapse collapse">
                         <li class="active"><a href="#">RedBlack</a></li>
                         <li><a href="#">BITLottery</a></li>
                     </ul>
                 </li>
-                <li class="paragraph"><a href="#subMenu-2" data-toggle="collapse"><span><img src="img/system/ICO.png"
-                                                                                             alt=""></span>ICO</a>
+                <li class="paragraph"><a href="#subMenu-2" data-toggle="collapse"><span class="paragraph-icon"><img src="img/system/ICO.png"
+                                                                                                                    alt=""></span><span class="paragraph-name">ICO</span></a>
                     <ul id="subMenu-2" class="nav-item subMenu panel-collapse collapse">
                         <li><a href="#">Backtest Generator</a></li>
                     </ul>
@@ -93,7 +93,7 @@
             </button>
         </div>
     </div>
-    <div class="main-content">
+    <div class="main-section">
         <header class="header menu-scroll">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
@@ -102,9 +102,12 @@
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
                 </button>
-                <a class="logo" href="/">
-                    <img src="img/system/header-logo.png" alt="Логотип">
-                </a>
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/system/header-logo.png" alt="Логотип">
+                    </a>
+                </div>
+        
             </div>
             <div class="collapse navbar-collapse menu" id="menu-collapse">
                 <ul class="nav navbar-nav">
@@ -126,274 +129,278 @@
                 </button>
             </div>
         </header>
-        <div class="red-and-black">
-        
-            <div class="cell one">
-                <div class="icon">
-                    <img src="img/system/red-and-black-icon.png" alt="">
-                </div>
-                <div class="description">
-                    <p class="sum">0.0001 <span>ВТС</span></p>
-                    <p class="win">выигрыш<span> + 0.000179</span></p>
-                </div>
-            </div>
-            <div class="cell two">
-                <div class="icon">
-                    <img src="img/system/red-and-black-icon.png" alt="">
-                </div>
-                <div class="description">
-                    <p class="sum">0.0005 <span>ВТС</span></p>
-                    <p class="win">выигрыш<span> + 0.000895</span></p>
-                </div>
-            </div>
-            <div class="cell three">
-                <div class="icon">
-                    <img src="img/system/red-and-black-icon.png" alt="">
-                </div>
-                <div class="description">
-                    <p class="sum">0.001 <span>ВТС</span></p>
-                    <p class="win">выигрыш<span> + 0.00179</span></p>
-                </div>
-            </div>
-        
-        </div>
-
-        <div class="col-xs-12">
-            <div class="section-bets">
-                <div class="row">
-                    <div class="row">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#finishedBets">СЫГРАННЫЕ СТАВКИ</a>
-                            </li>
-                            <li><a data-toggle="tab" href="#activeBets">АКТИВНЫЕ СТАВКИ</a></li>
-                        </ul>
+        <div class="main-content">
+            <div class="section-content">
+                <div class="red-and-black">
+                
+                    <div class="cell one">
+                        <div class="icon">
+                            <img src="img/system/red-and-black-icon.png" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="sum">0.0001 <span>ВТС</span></p>
+                            <p class="win">выигрыш<span> + 0.000179</span></p>
+                        </div>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="cell two">
+                        <div class="icon">
+                            <img src="img/system/red-and-black-icon.png" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="sum">0.0005 <span>ВТС</span></p>
+                            <p class="win">выигрыш<span> + 0.000895</span></p>
+                        </div>
+                    </div>
+                    <div class="cell three">
+                        <div class="icon">
+                            <img src="img/system/red-and-black-icon.png" alt="">
+                        </div>
+                        <div class="description">
+                            <p class="sum">0.001 <span>ВТС</span></p>
+                            <p class="win">выигрыш<span> + 0.00179</span></p>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="section-bets">
                         <div class="row">
-                            <div class="content">
-                                <div class="tab-content">
-                                    <div id="finishedBets" class="tab-pane fade in active">
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <p class="countRows">Показаны записи <span>1-7</span> из <span>50</span>
-                                                </p>
-                                                <div class="tableContent table-responsive">
-                                                    <table>
-                                                        <tr class="tableHead">
-                                                            <td class="date">
-                                                                <div id="date">Дата</div>
-                                                            </td>
-                                                            <td class="amount">
-                                                                <div id="amount">Ставка</div>
-                                                            </td>
-                                                            <td class="note">
-                                                                <div id="note">Хеш SHA256</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow black">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow black">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow black">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="activeBets" class="tab-pane fade">
-                                        <div class="row">
-                                            <div class="col-xs-12">
+                            <div class="row">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#finishedBets">СЫГРАННЫЕ СТАВКИ</a>
+                                    </li>
+                                    <li><a data-toggle="tab" href="#activeBets">АКТИВНЫЕ СТАВКИ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="content">
+                                        <div class="tab-content">
+                                            <div id="finishedBets" class="tab-pane fade in active">
+
                                                 <p class="countRows">Показаны записи <span>1-7</span> из <span>50</span>
                                                 </p>
                                                 <div class="tableContent">
-                                                    <table>
-                                                        <tr class="tableHead">
-                                                            <td class="date">
-                                                                <div id="date">Дата</div>
-                                                            </td>
-                                                            <td class="amount">
-                                                                <div id="amount">Ставка</div>
-                                                            </td>
-                                                            <td class="note">
-                                                                <div id="note">Хеш SHA256</div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow black">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow black">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="tableRow black">
-                                                            <td>
-                                                                <p>12.07.2018</p>
-                                                                <p>22:50:50</p>
-                                                            </td>
-                                                            <td class="value">0.0001</td>
-                                                            <td class="treatment">
-                                                                34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
-                                                            </td>
-                                                            <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
-                                                            </td>
-                                                        </tr>
-                                                    </table>
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <tr class="tableHead">
+                                                                <td class="date">
+                                                                    <div class="date">Дата</div>
+                                                                </td>
+                                                                <td class="amount">
+                                                                    <div class="amount">Ставка</div>
+                                                                </td>
+                                                                <td class="note">
+                                                                    <div class="note">Хеш SHA256</div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tableRow black">
+                                                                <td>
+                                                                    <p>12.07.2018</p>
+                                                                    <p>22:50:50</p>
+                                                                </td>
+                                                                <td class="value">0.0001</td>
+                                                                <td class="treatment">
+                                                                    34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                </td>
+                                                                <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tableRow">
+                                                                <td>
+                                                                    <p>12.07.2018</p>
+                                                                    <p>22:50:50</p>
+                                                                </td>
+                                                                <td class="value">0.0001</td>
+                                                                <td class="treatment">
+                                                                    34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                </td>
+                                                                <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tableRow">
+                                                                <td>
+                                                                    <p>12.07.2018</p>
+                                                                    <p>22:50:50</p>
+                                                                </td>
+                                                                <td class="value">0.0001</td>
+                                                                <td class="treatment">
+                                                                    34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                </td>
+                                                                <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tableRow">
+                                                                <td>
+                                                                    <p>12.07.2018</p>
+                                                                    <p>22:50:50</p>
+                                                                </td>
+                                                                <td class="value">0.0001</td>
+                                                                <td class="treatment">
+                                                                    34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                </td>
+                                                                <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tableRow black">
+                                                                <td>
+                                                                    <p>12.07.2018</p>
+                                                                    <p>22:50:50</p>
+                                                                </td>
+                                                                <td class="value">0.0001</td>
+                                                                <td class="treatment">
+                                                                    34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                </td>
+                                                                <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tableRow black">
+                                                                <td>
+                                                                    <p>12.07.2018</p>
+                                                                    <p>22:50:50</p>
+                                                                </td>
+                                                                <td class="value">0.0001</td>
+                                                                <td class="treatment">
+                                                                    34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                </td>
+                                                                <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div id="activeBets" class="tab-pane fade">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <p class="countRows">Показаны записи <span>1-7</span> из <span>50</span>
+                                                        </p>
+                                                        <div class="tableContent">
+                                                            <table>
+                                                                <tr class="tableHead">
+                                                                    <td class="date">
+                                                                        <div id="date">Дата</div>
+                                                                    </td>
+                                                                    <td class="amount">
+                                                                        <div id="amount">Ставка</div>
+                                                                    </td>
+                                                                    <td class="note">
+                                                                        <div id="note">Хеш SHA256</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="tableRow black">
+                                                                    <td>
+                                                                        <p>12.07.2018</p>
+                                                                        <p>22:50:50</p>
+                                                                    </td>
+                                                                    <td class="value">0.0001</td>
+                                                                    <td class="treatment">
+                                                                        34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                    </td>
+                                                                    <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="tableRow">
+                                                                    <td>
+                                                                        <p>12.07.2018</p>
+                                                                        <p>22:50:50</p>
+                                                                    </td>
+                                                                    <td class="value">0.0001</td>
+                                                                    <td class="treatment">
+                                                                        34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                    </td>
+                                                                    <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="tableRow">
+                                                                    <td>
+                                                                        <p>12.07.2018</p>
+                                                                        <p>22:50:50</p>
+                                                                    </td>
+                                                                    <td class="value">0.0001</td>
+                                                                    <td class="treatment">
+                                                                        34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                    </td>
+                                                                    <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="tableRow">
+                                                                    <td>
+                                                                        <p>12.07.2018</p>
+                                                                        <p>22:50:50</p>
+                                                                    </td>
+                                                                    <td class="value">0.0001</td>
+                                                                    <td class="treatment">
+                                                                        34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                    </td>
+                                                                    <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="tableRow black">
+                                                                    <td>
+                                                                        <p>12.07.2018</p>
+                                                                        <p>22:50:50</p>
+                                                                    </td>
+                                                                    <td class="value">0.0001</td>
+                                                                    <td class="treatment">
+                                                                        34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                    </td>
+                                                                    <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="tableRow black">
+                                                                    <td>
+                                                                        <p>12.07.2018</p>
+                                                                        <p>22:50:50</p>
+                                                                    </td>
+                                                                    <td class="value">0.0001</td>
+                                                                    <td class="treatment">
+                                                                        34aa4d30c44a3e873915557813e3d9ee0bdde8c7b8b7de34d78a51c34b11c3ee
+                                                                    </td>
+                                                                    <td>red_7af3b4e0-eddb-4b33-abe2-b9c03a6e1b4a
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <div class="row">
-                                            <ul class="pagination">
-                                                <li class="prevPage">
-                                                    <a href="#">
-                                                        <<
-                                                    </a>
-                                                </li>
-                                    
-                                                <li class="active">
-                                                    <a href="#">
-                                                        1
-                                                    </a>
-                                                </li>
-                                    
-                                                <li>
-                                                    <a href="#">
-                                                        2
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        3
-                                                    </a>
-                                                </li>
-                                    
-                                                <li class="nextPage">
-                                                    <a href="#">
-                                                        >>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <ul class="pagination">
+                                                        <li class="prevPage">
+                                                            <a href="#">
+                                                                <<
+                                                            </a>
+                                                        </li>
+                                            
+                                                        <li class="active">
+                                                            <a href="#">
+                                                                1
+                                                            </a>
+                                                        </li>
+                                            
+                                                        <li>
+                                                            <a href="#">
+                                                                2
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                3
+                                                            </a>
+                                                        </li>
+                                            
+                                                        <li class="nextPage">
+                                                            <a href="#">
+                                                                >>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -402,65 +409,68 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="right-sidebar">
-        <div class="block-statistics">
-            <div class="title-block">
-                <h3 class="title">СТАТИСТИКА</h3>
-            </div>
-            <div class="bets">
-                <div class="content">
-                    <div class="column toDay">
-                        <p class="col-title">
-                            ставок<br>сегодня
-                        </p>
-                        <p class="value">
-                            236
-                        </p>
+
+            <div class="right-sidebar">
+                <div class="block-statistics">
+                    <div class="title-block">
+                        <h3 class="title">СТАТИСТИКА</h3>
                     </div>
-                    <div class="column allTime text-right">
-                        <p class="col-title">
-                            ставок<br>ВСЕГО
-                        </p>
-                        <p class="value">
-                            4554
-                        </p>
+                    <div class="bets">
+                        <div class="content">
+                            <div class="column toDay">
+                                <p class="col-title">
+                                    ставок<br>сегодня
+                                </p>
+                                <p class="value">
+                                    236
+                                </p>
+                            </div>
+                            <div class="column allTime text-right">
+                                <p class="col-title">
+                                    ставок<br>ВСЕГО
+                                </p>
+                                <p class="value">
+                                    4554
+                                </p>
+                            </div>
+                            <div class="column sum text-right">
+                                <p class="col-title">
+                                    НА СУММУ<br><span>BTC</span>
+                                </p>
+                                <p class="value">
+                                    20.51
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="column sum text-right">
-                        <p class="col-title">
-                            НА СУММУ<br><span>BTC</span>
-                        </p>
-                        <p class="value">
-                            20.51
-                        </p>
-                    </div>
+                    <table>
+                        <tr>
+                            <td>КОЛИЧЕСТВО<br>ПАРТНЕРОВ</td>
+                            <td><img src="img/system/avatar-icon-purple.png" alt=""></td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="bonus">
+                            <td>ПАРТНЕРСКИЙ<br>БОНУС</td>
+                            <td>BTC</td>
+                            <td>0.000895</td>
+                        </tr>
+                        <tr>
+                            <td>МНОЮ<br>ВЫИГРАНО</td>
+                            <td>BTC</td>
+                            <td>0.020227</td>
+                        </tr>
+                        <tr class="total">
+                            <td>Заработано<br>всего</td>
+                            <td class="btc">BTC</td>
+                            <td class="sum">0.020227</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <table>
-                <tr>
-                    <td>КОЛИЧЕСТВО<br>ПАРТНЕРОВ</td>
-                    <td><img src="img/system/avatar-icon-purple.png" alt=""></td>
-                    <td>5</td>
-                </tr>
-                <tr class="bonus">
-                    <td>ПАРТНЕРСКИЙ<br>БОНУС</td>
-                    <td>BTC</td>
-                    <td>0.000895</td>
-                </tr>
-                <tr>
-                    <td>МНОЮ<br>ВЫИГРАНО</td>
-                    <td>BTC</td>
-                    <td>0.020227</td>
-                </tr>
-                <tr class="total">
-                    <td>Заработано<br>всего</td>
-                    <td class="btc">BTC</td>
-                    <td class="sum">0.020227</td>
-                </tr>
-            </table>
         </div>
     </div>
+
+
 </div>
 <!-- Modal Register -->
 <div class="modalRegister modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
