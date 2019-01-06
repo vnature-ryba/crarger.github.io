@@ -7059,6 +7059,8 @@ footer {
       width: 180px; } }
 
 @media screen and (max-width: 1449px) {
+  .wrapper .main-section .main-content .section-content {
+    max-width: calc(100% - 310px); }
   .wrapper .right-sidebar {
     max-width: 310px; } }
 
@@ -7073,6 +7075,8 @@ footer {
     padding: 30px 15px 0 15px; } }
 
 @media screen and (max-width: 1180px) {
+  .wrapper .main-section .main-content .section-content {
+    max-width: 100%; }
   .wrapper .right-sidebar {
     right: -325px;
     position: fixed; } }
