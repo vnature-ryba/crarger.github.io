@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Red and Black Game</title>
+
+    <!--system-meta-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Red and Black Game">
+    
+    <!--theme color-->
+    <meta name="theme-color" content="rgb(23, 20, 20)">
+    <meta name="msapplication-navbutton-color" content="rgb(23, 20, 20)">
+    <meta name="apple-mobile-web-app-status-bar-style" content="rgb(23, 20, 20)">
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!--opengraph-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Red and Black Game">
+    <meta property="og:title" content="Red and Black Game">
+    <meta property="og:description" content="Описание">
+    <meta property="og:url" content="http://">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="images/content/og.jpg">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/bundle.css"> <!-- Подключаем CSS -->
+</head>
+<body class="page-game">
+<div class="wrapper">
+
+    <div class="left-sidebar">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="img/system/RBNC_logo.svg" alt="">
+            </div>
+            <div class="language">
+                <label for="ru">
+                    <input type="radio" id="ru" name="language" value="ru" hidden/>
+                    <span>РУС</span>
+                </label>
+                |
+                <label for="en">
+                    <input type="radio" id="en" name="language" value="en" hidden/>
+                    <span>ENG</span>
+                </label>
+            </div>
+        
+            <div class="left-menu">
+                <ul class="navbar-left">
+                    <li class="paragraph"><a href="#"><span class="paragraph-icon"><img src="img/system/platform.png" alt=""></span><span
+                            class="paragraph-name">Платформа</span></a></li>
+                    <li class="paragraph"><a href="#subMenu-1" data-toggle="collapse"><span class="paragraph-icon"><img
+                            src="img/system/games.png" alt=""></span><span class="paragraph-name">Игры</span></a>
+                        <ul id="subMenu-1" class="nav-item subMenu panel-collapse collapse">
+                            <li class="active"><a href="#">RedBlack</a></li>
+                            <li><a href="#">BITLottery</a></li>
+                        </ul>
+                    </li>
+                    <li class="paragraph"><a href="#subMenu-2" data-toggle="collapse"><span class="paragraph-icon"><img
+                            src="img/system/ICO.png"
+                            alt=""></span><span class="paragraph-name">ICO</span></a>
+                        <ul id="subMenu-2" class="nav-item subMenu panel-collapse collapse">
+                            <li><a href="#">Backtest Generator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="social-network">
+                <span>
+                    <a target="_blank" href="https://www.facebook.com">FB</a>
+                </span>
+                <span>
+                    <a target="_blank" href="https://twitter.com">Tw</a>
+                </span>
+                <span>
+                    <a target="_blank" href="https://vk.com">Vk</a>
+                </span>
+            </div>
+        
+        </div>
+        <button class="btn-open-left-sidebar app-open-sidebar"></button>
+    </div>
+    <div class="main-section">
+        <header class="header menu-scroll">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+                    <span class="sr-only">Меню</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/system/header-logo.svg" alt="Логотип">
+                    </a>
+                </div>
+        
+            </div>
+            <div class="collapse navbar-collapse menu" id="menu-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-hide"><a href="#">REDBLACK</a></li>
+                    <li class="navbar-hide"><a href="#">СТАВКИ</a></li>
+                    <li class="navbar-hide"><a href="/finance.html">ФИНАНСЫ</a></li>
+                    <li class="navbar-hide"><a href="/index.html">Профиль</a></li>
+                </ul>
+            </div>
+            <div class="block-user">
+                <div class="user">
+                    <div class="avatar">
+                        <img src="img/system/avatar.svg" alt="">
+                    </div>
+                    <p class="userName">YAMAXAM</p>
+                </div>
+                <button class="btn-logOut">
+                    ВЫЙТИ <img src="img/system/logOut.svg" alt="">
+                </button>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="section-content">
+                <div class="games">
+
+                    <div class="section-description">
+                        <h2 class="title">
+                            ВАРИАНТЫ ИГРЫ
+                        </h2>
+                        <p>Сделай ставку на цвет или доверься случайному выбору компьютера</p>
+                    </div>
+                    <div class="games-content-block text-center total-game">
+                        <div class="win">
+                            <p class="value">0.0001 <span>ВТС</span></p>
+                            <p>выигрыш + <span>0.000895</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="sidebar">
+                    <div class="block-status">
+                        <div class="title-block">
+                            <h3 class="title">СТАТУС</h3>
+                        </div>
+                        <table>
+                            <tr class="col-title">
+                                <td>Дней до<br>приостановки</td>
+                                <td>автомаТ.<br>СТАВКА</td>
+                                <td>СтатуС<br>ПРОФИЛЯ</td>
+                            </tr>
+                            <tr>
+                                <td class="value">12 <i class="far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"></i></td>
+                                <td>
+                                    <label for="autoRate">
+                                        <input type="checkbox" id="autoRate" hidden>
+                                        <span></span>
+                                        <i class="far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"></i>
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="thisStatus status-active">
+                                        Актив <i class="far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="block-statistics">
+                        <div class="title-block">
+                            <h3 class="title">СТАТИСТИКА</h3>
+                            <i class="fas fa-signal"></i>
+                        </div>
+                        <div class="bets">
+                            <div class="content">
+                                <div class="column toDay">
+                                    <p class="col-title">
+                                        ставок<br>сегодня
+                                    </p>
+                                    <p class="value">
+                                        236
+                                    </p>
+                                </div>
+                                <div class="column allTime text-right">
+                                    <p class="col-title">
+                                        ставок<br>ВСЕГО
+                                    </p>
+                                    <p class="value">
+                                        4554
+                                    </p>
+                                </div>
+                                <div class="column sum text-right">
+                                    <p class="col-title">
+                                        НА СУММУ<br><span>BTC</span>
+                                    </p>
+                                    <p class="value">
+                                        20.51
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>КОЛИЧЕСТВО<br>ПАРТНЕРОВ</td>
+                                <td>
+                                    <div class="avatar">
+                                        <img src="img/system/avatar-icon-purple.png" alt="">
+                                    </div>
+                                    <i class="far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"></i>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr class="bonus">
+                                <td>ПАРТНЕРСКИЙ<br>БОНУС</td>
+                                <td>BTC</td>
+                                <td>0.000895</td>
+                            </tr>
+                            <tr>
+                                <td>МНОЮ<br>ВЫИГРАНО</td>
+                                <td>BTC</td>
+                                <td>0.020227</td>
+                            </tr>
+                            <tr class="total">
+                                <td>Заработано<br>всего</td>
+                                <td class="btc">BTC</td>
+                                <td class="sum">0.020227</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="block-rating">
+                        <div class="block-header">
+                            <p class="title">
+                                РЕЙТИНГ
+                            </p>
+                            <i class="fas fa-signal"></i>
+                        </div>
+                        <table>
+                            <tr class="count-gamers-title">
+                                <td>СЕЙЧАС<br>В ИГРЕ</td>
+                                <td>НОВЫХ<br>СЕГОДНЯ</td>
+                                <td>БЕЗ РЕФ.<br>ССЫЛКИ</td>
+                            </tr>
+                            <tr class="count-gamers-value">
+                                <td>486</td>
+                                <td>25</td>
+                                <td>5</td>
+                            </tr>
+                            <tr class="tableHead">
+                                <td>лидер<br>по ставкам</td>
+                                <td>ставок<br>сегодня</td>
+                                <td>БОНУС</td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td>
+                                    <div class="avatar">
+                                        <img src="img/system/avatar.svg" alt="">
+                                    </div>
+                                    <span>YAMAXAM</span>
+                                </td>
+                                <td>7</td>
+                                <td>
+                                    +5
+                                    <div class="purple-avatar">
+                                        <img src="img/system/avatar-icon-purple.png" alt="">
+                                    </div>
+                                    <i class="far fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Tooltip on left"></i>
+                                </td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td>
+                                    <div class="avatar">
+                                        <img src="img/system/avatar.svg" alt="">
+                                    </div>
+                                    <span>Elysium_</span>
+                                </td>
+                                <td>4</td>
+                                <td>
+                                    +0.001<br>
+                                    <span>BTC</span>
+                                </td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td>
+                                    <div class="avatar">
+                                        <img src="img/system/avatar.svg" alt="">
+                                    </div>
+                                    <span>Nick_msc</span>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                    +0.001<br>
+                                    <span>BTC</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button class="btn-open-right-sidebar app-open-sidebar"><i class="far fa-chart-bar"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- Modal Register -->
+<div class="modalRegister modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="avatar">
+                    <img src="img/system/avatar.svg" alt="">
+                </div>
+                <h4 class="modal-title">Регистрация</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input required type="text" placeholder="Никнейм">
+                    <input required type="text" placeholder="Логин (адрес электронной почты)">
+                    <input type="text" placeholder="Реферальный код (если есть)">
+                    <p>
+                        Нажимая на кнопку "Регистрация"
+                        я&nbsp;подтверждаю что внимательно прочитал,
+                        понял и согласен с положением об
+                        использовании ресурса
+                        (пользовательским&nbsp;соглашением)
+                    </p>
+                    <button class="btn-red">РЕГИСТРАЦИЯ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal LogIn -->
+<div class="modalLogIn modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="avatar">
+                    <img src="img/system/avatar.svg" alt="">
+                </div>
+                <h4 class="modal-title">ВХОД В RB</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input required type="text" placeholder="Моя почта">
+                    <p class="input-description">
+                        Введите email, указанный вами при регистрации
+                    </p>
+                    <input required type="password" placeholder="Мой пароль">
+                    <p class="input-description">
+                        Введите пароль
+                    </p>
+                    <button class="btn-red">ВХОД В RB</button>
+                </form>
+                <div class="links">
+                    <a href="#" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#modalRegister">РЕГИСТРАЦИЯ</a>
+                    <a href="#" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#modalRestorePass">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Restore Password -->
+<div class="modalRestorePass modal fade" id="modalRestorePass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="avatar">
+                    <img src="img/system/avatar.svg" alt="">
+                </div>
+                <h4 class="modal-title">Восстановить<br>пароль</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input required type="text" placeholder="Логин (адрес электронной почты)">
+                    <button class="btn-red">Прислать пароль</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- autogames count -->
+<div class="modalCountGames modal fade" id="modalAutoGames-count" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title text-center">Введите количество ставок</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input required type="text" placeholder="Количество игр">
+                    <button class="btn-white">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="">
+    <div class="footer">
+        <div class="copiright-area">
+            <p class="copiright">
+                © 2018 <span>rbcn.NETWORK</span>
+            </p>
+            <p>
+                All Rights Reserved
+            </p>
+        </div>
+
+        <div class="social-network">
+        <span>
+            <a target="_blank" href="https://www.facebook.com">FB</a>
+        </span>
+            <span>
+            <a target="_blank" href="https://twitter.com">Tw</a>
+        </span>
+            <span>
+            <a target="_blank" href="https://vk.com">Vk</a>
+        </span>
+        </div>
+
+        <ul class="footer-menu">
+            <li><a href="#">RedBlack.Cash</a></li>
+            <li><a href="#">ПРАВИЛА ИГРЫ «КРАСНОЕ ИЛИ ЧЕРНОЕ»</a></li>
+            <li><a href="#">ПОМОЩЬ</a></li>
+            <li><a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- scripts -->
+<script src="js/bundle.js"></script>
+<!-- end scripts -->
+</body>
+</html>
