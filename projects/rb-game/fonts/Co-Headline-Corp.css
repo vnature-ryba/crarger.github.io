@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Co Headline Corp";
+    src: url("Co-Headline-Corp.eot"); /* IE9 */
+    src: url("Co-Headline-Corp.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Co-Headline-Corp.woff") format("woff"), /* chrome, firefox */
+    url("Co-Headline-Corp.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Co-Headline-Corp.svg#Co Headline Corp") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
