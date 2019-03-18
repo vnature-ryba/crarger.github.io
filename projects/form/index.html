@@ -136,7 +136,7 @@
 
 <div class="container d-flex justify-content-center align-items-center">
     <div class="form-wrapper">
-        <form action="">
+        <form class="step-fourth" action="">
             <div class="step-dots">
                 <span class="active"></span>
                 <span></span>
@@ -144,33 +144,86 @@
                 <span></span>
             </div>
             <h2>Tell us about your store</h2>
+            <p>Choose delivery methods you want to use - no hassle on your side, it’s automated</p>
             <div class="form-inline">
-                <input type="checkbox" required hidden>
-                <span class="custom-checkbox"></span>
-                <label for="">
+                <input id="one" type="checkbox" hidden>
+                <label for="one" class="custom-checkbox"></label>
+                <label for="one">
                     Pick Up
                 </label>
             </div>
             <div class="form-inline">
-                <input class="" type="checkbox" required>
-                <label for="">
+                <input id="two" type="checkbox" required hidden>
+                <label for="two" class="custom-checkbox"></label>
+                <label for="two">
                     1-hour delivery
                 </label>
             </div>
             <div class="form-inline">
-                <input class="" type="checkbox" required>
-                <label for="">
+                <input id="three" type="checkbox" required hidden>
+                <label for="three" class="custom-checkbox"></label>
+                <label for="three">
                     Next day delivery
                 </label>
             </div>
             <div class="form-inline">
-                <input class="" type="checkbox" required>
-                <label for="">
+                <input id="fourth" type="checkbox" required hidden>
+                <label for="fourth" class="custom-checkbox"></label>
+                <label for="fourth">
                     Self-service delivery (dispatching is on us)
                 </label>
             </div>
             <div class="btns-area form-inline justify-content-between">
                 <button class="btn btn-white btn-back">Back  <i class="fas fa-chevron-left"></i></button>
+                <button class="btn btn-orange" disabled>Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+    
+            <div class="form-info text-center">
+                <h3>
+                    Start you free trial
+                </h3>
+                <h6>Get your store online. Sell. Pickup. Deliver.</h6>
+                <div class="form-info-image">
+                    <img src="img/excavator-icon.svg" alt="">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="form-wrapper">
+        <form class="step-fourth" action="">
+            <div class="step-dots">
+                <span></span>
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+            </div>
+            <h2>Let's start building your store now</h2>
+            <div class="form-group">
+                <input class="form-control form-validated" type="text" required>
+                <label for="">
+                    What is the store name you want to create?
+                </label>
+            </div>
+            <div class="group-color-brand d-flex flex-wrap justify-content-between">
+                <div class="brand-color color-lime"></div>
+                <div class="brand-color color-green"></div>
+                <div class="brand-color color-aqua active"></div>
+                <div class="brand-color color-blue"></div>
+                <div class="brand-color color-gray"></div>
+                <div class="brand-color color-purple"></div>
+                <div class="brand-color color-pink"></div>
+                <div class="brand-color color-red"></div>
+                <div class="brand-color color-orange"></div>
+                <div class="brand-color color-brown"></div>
+                <div class="brand-color color-beige"></div>
+                <div class="brand-color color-custom">Custom</div>
+    
+            </div>
+            <div class="btns-area form-inline justify-content-between">
+                <button class="btn btn-white btn-back">Back <i class="fas fa-chevron-left"></i></button>
                 <button class="btn btn-orange" disabled>Next <i class="fas fa-chevron-right"></i></button>
             </div>
     
