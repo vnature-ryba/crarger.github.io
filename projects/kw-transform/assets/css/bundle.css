@@ -1,0 +1,38 @@
+.keyworder-wrapper {
+  padding: 15px 0 0;
+  min-height: 100vh; }
+
+.btn:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.btn-copy .icon-check {
+  display: none; }
+
+.btn-copy.btn-success .icon-check {
+  display: block; }
+
+.btn-copy.btn-success .icon-copy {
+  display: none; }
+
+.btn-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40px;
+  width: 45px;
+  padding: 0; }
+
+.form-control:focus, .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+textarea {
+  resize: none; }
